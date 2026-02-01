@@ -9,10 +9,10 @@ layout: default
 
 **Upcoming Events:**
 * **Quality Managers Network:**
-**The Joy of Little Experiments, 7:30-9:00AM, 6 February 2026, by Zoom. Details are posted [here](http://www.mmbstatistical.com/QMN.html).**
+**The Joy of Little Experiments, 7:30-9:00AM, 6 February 2026, by Zoom. Details are posted [here](pages/QMN.md).**
 
 * **Quality Engineers Network:**
-**Topic TBD, 7:30-9:00AM, 6 2026, by Zoom. Details are posted  [here](http://www.mmbstatistical.com/QEN.html).**
+**Topic TBD, 7:30-9:00AM, 6 2026, by Zoom. Details are posted  [here](pages/QEN.md).**
 
 **[What We Do](WhatWeDo.html)**
 
