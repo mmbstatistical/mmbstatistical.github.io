@@ -1,8 +1,8 @@
 
-title: Mathews Malnar and Bailey, Inc.
+# title: Mathews Malnar and Bailey, Inc.
 theme: minima
 markdown: kramdown
-# markdown: GFM
+# markdown: GFM         # Garbles the table in index.md
 
 # themes:
 # https://foolishgeneralist.com/p/a-little-help-with-github-pages-and

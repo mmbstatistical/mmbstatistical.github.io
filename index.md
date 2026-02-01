@@ -4,7 +4,9 @@ layout: default
 
 
 |--------------------------------------------------|:---:|--------------------------------------------------|
-| ![2^3 Design](assets/images/MMB2^3COnlyYellow.gif) | **Mathews Malnar and Bailey, Inc.** | ![Run Chart](assets/images/MMBChartOnlyYellow.gif) |
+
+# | ![2^3 Design](assets/images/MMB2^3COnlyYellow.gif) | Mathews Malnar and Bailey, Inc. | ![Run Chart](assets/images/MMBChartOnlyYellow.gif) |
+
 |                                                    | Quality engineering, applied statistical consulting,  and training services for R&D, product, process,  and manufacturing engineering organizations. |                                                    |
 
 **Upcoming Events:**
