@@ -1,4 +1,4 @@
-
+** Quality Engineers Network Meetings**  
 The **Quality Engineers Network (QEN)** is sponsored by 
 **[Geauga  Growth Partnership](http://www.geaugagrowthpartnership.com/)**. 
 Meeting announcements are in
@@ -45,24 +45,17 @@ We'll talk about Where Good Ideas Come From at this month's
 meeting and I'll introduce some of the other excellent books that
 I found on the way including:
 
-* Kuhn, Structures of Scientific
-  Revolution
-* Kidder, Soul of a New
-  Machine
+* Kuhn, Structures of Scientific Revolution
+* Kidder, Soul of a New Machine
 * Rich, Skunk Works
 * Levy, Hackers
 * Isaacson, The Innovators
 * Winchester, The Map That Changed the World
 * Darwin, Voyage of the Beagle
-* Costa, Radical by Nature: The Revolutionary
-  Life of Alfred Russel Wallace
-* Johnson, The Ghost Map: The Story of London's
-  Most Terrifying Epidemic - and How it Changed Science, Cities,
-  and the Modern World
-* Bhattacharya, The Man from the Future: The
-  Visionary Life of John von Neumann
-* Moss, The Woman Who Split the Atom: The Life
-  of Lise Meitner
+* Costa, Radical by Nature: The Revolutionary Life of Alfred Russel Wallace
+* Johnson, The Ghost Map: The Story of London's Most Terrifying Epidemic - and How it Changed Science, Cities, and the Modern World
+* Bhattacharya, The Man from the Future: The Visionary Life of John von Neumann
+* Moss, The Woman Who Split the Atom: The Life of Lise Meitner
 * Sobel, Longitude
 
 I don't intend to offer up these book suggestions into a vacuum. I
@@ -119,9 +112,7 @@ in their knowledge would be wise to consider investing in this
 book. The book is very expensive but it's something that most
 organizations should buy and make available to their staff.
 
-**Which Interval Do I Need: Confidence, Prediction, or
-Tolerance?,** **11
-April 2025,  7:30-9:00AM, by Zoom**  
+**Which Interval Do I Need: Confidence, Prediction, or Tolerance?, 11 April 2025, 7:30-9:00AM, by Zoom**  
 Statistical software like MINITAB can be an amazing tool
 but it can also present a bewildering collection of methods that
 look so much alike that it can be difficult to determine which
@@ -134,8 +125,7 @@ interval. If you have any examples or data that you would like to
 share for this discussion, please send them to me (Paul) with a
 short description of what you're trying to do.
 
-**The Blake and Mouton Leader/Follower
-Model,** **7:30-9:00AM, 14 March 2025, by Zoom**  
+**The Blake and Mouton Leader/Follower Model, 7:30-9:00AM, 14 March 2025, by Zoom**  
 One of the most important things we have to learn in the practice
 of applied statistics is how to deal with people who are
 statistically naive. I was recently working with one of my
@@ -153,7 +143,7 @@ including my customers, bosses, coworkers, and students.
 
 Way back when I worked for GE they put us through a lot of
 training. One of the many great courses that I got to take was
-their two week long Project Leadership Course. One of the
+their two-week-long Project Leadership Course. One of the
 fascinating topics they taught us was the Blake and Mouton
 leader/follower model. Blake and Mouton were management theorists
 who were trying to determine what leadership styles were most
@@ -170,8 +160,7 @@ Many of the stories that I tell in classes and at meetings come
 from learnings from the Blake and Mouton model. I'll talk about
 these and many other cases at this month's meeting.
 
-**Deming's Funnel Experiment,** **7:30-9:00AM,
-14 February 2025, by Zoom**  
+**Deming's Funnel Experiment, 7:30-9:00AM, 14 February 2025, by Zoom**  
 Deming's funnel experiment was one of the exercises he performed
 during his famous three day seminars. The purpose of the
 experiment is to show the effect of tampering with a process, i.e.
@@ -183,22 +172,17 @@ simulation. We're meeting remotely so we'll do this by computer
 simulation in MINITAB.
 
 Deming considered four process control rules in the experiment:
-> 1) Hands off, i.e. don't attempt to
-> control the process
-> 2) Correct the funnel position relative to the
-> last position
-> 3) Correct the funnel position relative to the
-> target
-> 4) Move the funnel to the last trial's position,
-> i.e. make the next part like the previous one
+1. Hands off, i.e. don't attempt to control the process
+2. Correct the funnel position relative to the last position
+3. Correct the funnel position relative to the target
+4. Move the funnel to the last trial's position, i.e. make the next part like the previous one
 
 These simple rules capture some of the most common
 mistakes people make when trying to control their processes. The
 exercise helps demonstrate these mistakes so you can recognize and
 eliminate them in your own processes.
 
-**IT'S A TRAP! (Box-Cox and Johnson Transforms),** **7:30-9:00AM, 13 December 2024, by
-Zoom**  
+**IT'S A TRAP! (Box-Cox and Johnson Transforms), 7:30-9:00AM, 13 December 2024, by Zoom**  
 A constant problem that we all have is choosing an
 appropriate distribution model for a problematic data set. MINITAB
 has the fabulous **Stat> Quality Tools> Individual
@@ -207,9 +191,9 @@ distribution models to your data, including the Box-Cox and
 Johnson transforms; however, during training, I always warn
 against liberal use of these methods - especially the Box-Cox and
 Johnson transforms - because I think they are a trap. John von
-Neumann concisely explained the problem: "*Give me three
+Neumann concisely explained the problem: *"Give me three
 parameters and I can fit an elephant. Give me four parameters
-and I can make him wiggle his trunk.*" When you attempt so
+and I can make him wiggle his trunk."* When you attempt so
 many distribution models something is going to look good, but
 usually the best fit won't make any sense, especially when there
 are probably other problems in the data. So as appealing as these
@@ -234,94 +218,71 @@ meeting we will discuss the factors that should be considered when
 trying to choose between a confidence interval and a hypothesis
 test for the analysis of a planned experiment.
 
-**Applications of Chat GPT to Quality
-Engineering Problems, 7:30-9:00AM, 11 October 2024, by Zoom**  
-
+**Applications of ChatGPT to Quality Engineering Problems, 7:30-9:00AM, 11 October 2024, by Zoom**
 At our September QEN meeting Sergei Ivanov of FoundAItion AI
-described the basics of using of Chat GPT for general problem
-solving. (E-mail me for Sergei's contact information if you want
+described the basics of using of ChatGPT for general problem-solving. 
+(E-mail me for Sergei's contact information if you want
 to follow up with him.) I (Paul) have been experimenting with the
-use of Chat GPT in more specific quality engineering applications
+use of ChatGPT in more specific quality engineering applications
 including SPC, acceptance sampling, formulation of hypothesis test
 statements, sample size calculations, etc. At this month's QEN
 meeting I will present some of my results. We should have time to
 consider other problems if you have something in mind that would
 be interesting.
 
-**Applications of Chat GPT in Manufacturing
+**Applications of ChatGPT in Manufacturing
 Quality Engineering, 13 September, 7:30-9:00AM, by Zoom**  
 
 Join us for an engaging presentation that explores the
-transformative capabilities of Chat GPT in Manufacturing Quality
+transformative capabilities of ChatGPT in Manufacturing Quality
 Engineering. This session will cover the basics of prompt
-engineering and demonstrate practical applications of Chat GPT in
+engineering and demonstrate practical applications of ChatGPT in
 solving common engineering problems. Attendees will learn how to
-use Chat GPT to diagnose quality control issues, generate
+use ChatGPT to diagnose quality control issues, generate
 technical reports, draft internal memos, plan projects, and assist
 in research and analysis. Through hands-on exercises, we will show
-how AI can enhance efficiency and accuracy  in manufacturing
-processes. Discover how to leverage Chat GPT to improve your
+how AI can enhance efficiency and accuracy in manufacturing
+processes. Discover how to leverage ChatGPT to improve your
 workflow and achieve quality excellence.
 
-**Nonstandard SPC Charts, 9
-August 2024, 7:30-9:00AM, by Zoom**  
-
- At our last two QEN meetings we discussed the
+**Nonstandard SPC Charts, 9 August 2024, 7:30-9:00AM, by Zoom**
+At our last two QEN meetings we discussed the
 Shewhart family of SPC charts. At this month's meeting we will
 consider some nonstandard charts including
 
-* Taguchi's Loss Function chart
-* Shewhart charts for unusual statistics
-
-+ median and midrange charts
-+ charts for order statistics, e.g. min, max,
-  ...
-
-* Acceptance control charts
+* Taguchi's Loss Function chart  
+* Shewhart charts for unusual statistics  
+    * median and midrange charts  
+    * charts for order statistics, e.g. min, max,  
+    * ...
+* Acceptance control charts  
 * Time-weighted charts
-
-+ moving average
-+ EWMA
-+ CUSUM
-
+    * moving average  
+    * EWMA  
+    *CUSUM
 * Groups charts for multi-stream processes
 * Multivariate charts
 
- This is a lot of material so we'll only have time
+This is a lot of material so we'll only have time
 to do superficial coverage of these methods. Most of them are
 supported in MINITAB.
 
-**Introduction to Statistical Process Control (SPC)
-Part 2, 12 July 2024, 7:30-9:00AM, by Zoom**  
+**Introduction to Statistical Process Control (SPC) Part 2, 12 July 2024, 7:30-9:00AM, by Zoom**  
 At our June QEN meeting we discussed:
 
-* Taguchi's Loss Function as a motivator for
-  using SPC charts to reduce lost value by controlling a
-  process's location and variation
-* How control charts help us distinguish between
-  common cause/noise variation and special cause/assignable
-  cause variation which require different process management
-  actions
-* The distinction between statistical process **control**
-  which falls in the prevention (i.e. the best) quality cost
-  category and statistical process **documentation** which
-  is at best an appraisal cost and at worst a failure cost.
+* Taguchi's Loss Function as a motivator for using SPC charts to reduce lost value by controlling a process's location and variation
+* How control charts help us distinguish between common cause/noise variation and special cause/assignable cause variation which require different process management actions
+* The distinction between statistical process **control** which falls in the prevention (i.e. the best) quality cost category and statistical process **documentation** which is at best an appraisal cost and at worst a failure cost.
 
- We discussed the most common form of control
+We discussed the most common form of control
 charts, the Shewhart charts, including:
 
-* Defectives (np) charts for defective counts
-  with constant sample size
-* Proportion defective (p) charts for defective
-  counts with variable sample size
-* Defects (c) charts for defect counts with
-  constant sample size
-* Defect per unit (u) charts for defect counts
-  with variable sample size
-* Xbar and R charts for variables data with
-  subgroup sample size n > 1
-* Individual and Moving Range (IMR) charts for
-  variable data with subgroup sample size n = 1
+* Defectives (np) charts for defective counts with constant sample size
+* Proportion defective (p) charts for defective counts with variable sample size
+* Defects (c) charts for defect counts with constant sample size
+* Defect per unit (u) charts for defect counts with variable sample size
+* Xbar and R charts for variables data with subgroup sample size n > 1
+* Individual and Moving Range (IMR) charts for variable data with subgroup sample size n = 1
 
 We also talked about how to configure these
 charts in MINITAB, how to specify the observations to use for
@@ -331,13 +292,10 @@ rules to detect out-of-control events.
 At this month's QEN meeting we will continue our
 discussion of SPC charts including:
 
- * Run rules: How they work, how they are
-  designed, and the Western Electric rules
- * The risks associated with using too many run
-  rules and too many control charts
- * Details of center line and control limit
-  calculations
- * SPC chart lifetime
+* Run rules: How they work, how they are designed, and the Western Electric rules
+* The risks associated with using too many run rules and too many control charts
+* Details of center line and control limit calculations
+* SPC chart lifetime
 
 **An Introduction to SPC with Implementation in MINITAB, 14 June
 2024, 7:30-9:00AM, by Zoom**  
@@ -356,7 +314,7 @@ run rules, the risks of using too many run rules or keeping too
 many charts, and the implementation of these charts using MINITAB.
 
 **The Kano Model for Classifying Process
-Output Variables,** **10 May 2024, 7:30-9:00AM, by Zoom**  
+Output Variables, 10 May 2024, 7:30-9:00AM, by Zoom**  
 You guys know that I like to use an Input-Process-Output (IPO)
 diagram to document all of a process's process input variables
 (PIV) and process output variables (POV). The next step in
@@ -374,7 +332,7 @@ look at the Kano Model at this month's QEN meeting.
 
 Kano Model: https://en.wikipedia.org/wiki/Kano\_model
 
-**Interpreting the Results of a Medical Diagnostic Test,** **9 February 2024, 7:30-9:00AM, by Zoom**  
+**Interpreting the Results of a Medical Diagnostic Test, 9 February 2024, 7:30-9:00AM, by Zoom**  
 There is a famous biomedical statistics problem that I use
 in homework assignments that was originally published by Edler and
 then followed up by Gerd Gigerenzer. The problem involves a cancer
@@ -402,8 +360,7 @@ consider the ANOM methods for variables data, proportions, and
 counts and MINITAB's implementation of them in the **Stat>
 ANOVA> Analysis of Means** menu.
 
-**Variable Transforms,** **10 November
-2023, 7:30-9:00AM, by Zoom**  
+**Variable Transforms, 10 November 2023, 7:30-9:00AM, by Zoom**  
 Most statistical analysis methods that test a characteristic of a
 distribution (e.g. mean, standard deviation, or distribution
 shape) make assumptions about the behavior of the data. These
@@ -430,8 +387,7 @@ make them, and how we could do better. It's probably too late to
 keep you out of statistics hell but this may help you avoid moving
 further up in line.
 
-**Manipulating Data in MINITAB,** **8
-September 2023, 7:30-9:00AM, by Zoom**  
+**Manipulating Data in MINITAB, 8 September 2023, 7:30-9:00AM, by Zoom**  
 Most of us use MINITAB for our statistical analysis needs but
 often format our data for analysis in Excel and then copy the
 Excel worksheet over into MINITAB. MINITAB has its own rich tool
@@ -439,9 +395,7 @@ set for data manipulation including many features missing from
 base Excel. At this month's QEN meeting we will look at MINITAB's
 many tools for data manipulation.
 
-**Specifying Success Criteria for
-Attribute GR&R Studies, 11 August 2023, 7:30-9:00AM, by
-Zoom**  
+**Specifying Success Criteria for Attribute GR&R Studies, 11 August 2023, 7:30-9:00AM, by Zoom**  
 GR&R attribute studies require a completely different set of
 performance metrics from their variables data siblings because of the pass/fail nature of their
 inspection results. If you look at the output from
@@ -453,10 +407,10 @@ metrics are used for and which of them present the best
 opportunities to define attribute R&R study success criteria.
 
 **Assessing Agreement Between Two Measurement Systems with the
-Bland-Altman Method, 9 June 2023****,** **7:30-9:00AM,** **by Zoom**  
+Bland-Altman Method, 9 June 2023, 7:30-9:00AM, by Zoom**  
 Some measurement systems can be difficult to use, take too
 long to perform, or are too expensive. In such cases, it is
-natural that an measurement alternative system be considered that
+natural that a measurement alternative system be considered that
 addresses these issues; however, how do we compare the old and new
 measurement systems to quantify their agreement? The first
 analysis method that comes to mind is a simple correlation
@@ -471,8 +425,7 @@ Altman. The Bland-Altman method is superior to the correlation
 method because it addresses issues of bias and scaling in absolute
 terms.
 
-**Experiment Protocol Documents, 12 May 2023, 7:30-9:00AM, by
-Zoom**  
+**Experiment Protocol Documents, 12 May 2023, 7:30-9:00AM, by Zoom**  
 As a consultant I've seen a wide range of practices with respect
 to how organizations plan and execute their experimental work.
 Those that skimp on the early planning and preparation phases and
@@ -491,9 +444,7 @@ we'll discuss the content of an experiment protocol document and
 develop a protocol template that we can all share for managing our
 own experimental processes.
 
-**Design and Operation of Variables
-Sampling Plans for Defectives, 7:30-9:00AM, Friday, 14 April
-2023, by Zoom**  
+**Design and Operation of Variables Sampling Plans for Defectives, 7:30-9:00AM, Friday, 14 April  2023, by Zoom**  
 At last month's QEN meeting we discussed the calculation of and
 application of normal tolerance intervals. A closely related and
 well known alternative method is variables sampling plans (VSP)
@@ -501,12 +452,8 @@ for defectives. VSPs are defined in the same terms as attribute
 sampling plans: By acceptable quality level (AQL) and rejectable
 quality level (RQL) conditions where:
 
-* AQL condition: The sampling plan should have a
-  high probability (e.g. 95%) of accepting lots with low
-  proportion defective (the AQL level)
-* RQL condition: The sampling plan should have a
-  low probability (e.g. 10%) of accepting lots with high
-  proportion defective (the RQL level).
+* AQL condition: The sampling plan should have a high probability (e.g. 95%) of accepting lots with low proportion defective (the AQL level)
+* RQL condition: The sampling plan should have a low probability (e.g. 10%) of accepting lots with high proportion defective (the RQL level).
 
 In an attribute sampling plan we draw a sample of
 specified size n, inspect the sample and count the number of
@@ -521,47 +468,30 @@ are defined by the choice of AQL and RQL values. At this month's
 meeting we will discuss the design and operation of VSPs by manual
 means and using MINITAB.
 
-**Normal Tolerance
-Intervals for Two or More Treatment Groups,** **7:30-9:00AM, 10 March 2023, by
-Zoom**  
+**Normal Tolerance Intervals for Two or More Treatment Groups, 7:30-9:00AM, 10 March 2023, by Zoom**  
 Given measurement data from a sample, a normal
 tolerance interval can be used to calculate an interval that
 contains a specified proportion of a population with a
 specified confidence level. Common applications for normal
 tolerance intervals are:
 
-* A design
-  engineer uses a normal tolerance interval to calculate
-  preliminary specification limits from available data.
-* A
-  manufacturing engineer uses a normal tolerance interval to
-  show that his process is operating within specification
-  limits.
+* A design engineer uses a normal tolerance interval to calculate preliminary specification limits from available data.
+* A  manufacturing engineer uses a normal tolerance interval to show that his process is operating within specification limits.
 
-Normal tolerance
-intervals are calculated from a sample's mean (xbar) and
-standard deviation (s) and a factor (k1
-or k2)
+Normal tolerance intervals are calculated from a sample's mean (xbar) and
+standard deviation (s) and a factor (k1 or k2)
 that accounts for the distribution of the population and the
 estimation precision for the population mean and standard
 deviation. Normal tolerance intervals have the form:
 
-* UTL/LTL
-  = xbar +/- k2s for a two-sided tolerance
-  interval
-* UTL =
-  xbar + k1s  for a one-sided upper
-  tolerance interval
-* LTL =
-  xbar - k1s
-  for a one-sided lower tolerance interval
+* UTL/LTL = xbar +/- k2s for a two-sided tolerance interval
+* UTL = xbar + k1s for a one-sided upper tolerance interval
+* LTL = xbar - k1s for a one-sided lower tolerance interval
 
-where the k1
-and k2
+where the k1 and k2
 factors are functions of the coverage (i.e. the desired
 fraction of the population in the interval), the confidence
-level, and the sample size. k1
-and k2
+level, and the sample size. k1 and k2
 values are available in published tables and they are built
 into MINITAB's **Stat> Quality Tools> Tolerance
 Intervals (Normal Distribution)** method.
@@ -587,8 +517,7 @@ discuss how to construct normal tolerance intervals for two or
 more treatment groups by combining their information into a
 single analysis.
 
-**Outliers!,** **7:30-9:00AM, 10 February 2023, by
-Zoom**  
+**Outliers!, 7:30-9:00AM, 10 February 2023, by Zoom**  
 I've been struggling recently to help a customer analyze
 his lab data. The analysis wouldn't be difficult except that
 there are occasional outliers in the data sets. Sometimes there
@@ -599,7 +528,7 @@ At this month's QEN meeting we will discuss methods for
 detecting outliers, their possible causes, and the right and
 wrong way to handle them in our analyses.
 
-**The Effect of Part Choice on Gage R&R Study Results,** **7:30-9:00AM, 13 January 2023, by Zoom**  
+**The Effect of Part Choice on Gage R&R Study Results, 7:30-9:00AM, 13 January 2023, by Zoom**  
 The classic gage R&R study experiment design uses three
 operators who each measure ten parts twice. In previous meetings
 we've discussed why three operators isn't enough and why measuring
@@ -614,8 +543,7 @@ but these choices can give very different results. We'll take a
 look at these choices and other possibilities at this month's
 meeting.
 
-**Analysis of Censored Data, 7:30-9:00AM, 9 December 2022, by
-Zoom**  
+**Analysis of Censored Data, 7:30-9:00AM, 9 December 2022, by Zoom**  
 In most inspection or measurement operations we collect complete
 data; that is, we collect an observation from each unit in a
 sample and we use well known methods for analyzing the complete
@@ -639,8 +567,7 @@ At this month's QEN meeting we'll talk about how to analyze
 incomplete/censored data like this, how to get MINITAB to do the
 work, and how to interpret the results.
 
-**Statistical Quick Tests,** **7:30-9:00AM,
-11 November 2022, by Zoom**  
+**Statistical Quick Tests, 7:30-9:00AM, 11 November 2022, by Zoom**  
 We all know that most statistical tests involve some manual
 calculation or require special software. The calculations aren't
 too difficult to perform but they do take some time, resources,
@@ -655,9 +582,7 @@ the Boxplot Slippage Tests for the two-sample location problem,
 some other quick test methods, and some other closely related
 methods.
 
-**Case Study: Analysis of Very
-Noisy Serial Data,** **7:30-9:00AM, 14 October
-2022, by Zoom**  
+**Case Study: Analysis of Very Noisy Serial Data, 7:30-9:00AM, 14 October 2022, by Zoom**  
 I was recently helping network member Ralph L analyze some
 interesting lab data. His experiment involves two treatment groups
 - a test group and a control group - and he is trying to determine
@@ -677,7 +602,7 @@ experimental data for this discussion. If you want to get a jump
 on understanding the analysis method check out this classic paper
 on the topic <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1662443/>.
 
-**Editing Graphs in MINITAB,** **7:30-9:00AM, 9 September 2022, by Zoom**  
+**Editing Graphs in MINITAB, 7:30-9:00AM, 9 September 2022, by Zoom**  
 In addition to its broad scope and depth in the statistical
 methods topics, MINITAB software provides an equally broad and
 deep set of graphical methods. MINITAB's default graphs are
@@ -745,8 +670,7 @@ Learning, Data Science, and Integrated Computational Materials
 Engineering for solving real world engineering and quality
 problems.
 
-**The Life Cycle of an SPC Control Chart,** **10 June 2022, 7:30-9:00AM****, by
-Zoom**  
+**The Life Cycle of an SPC Control Chart, 10 June 2022, 7:30-9:00AM, by Zoom**  
 When Walter Shewhart invented control charts a century ago,
 they were constructed using rocks and sticks (aka pencils and
 paper). Today SPC software is ubiquitous; however, many people who
@@ -758,7 +682,7 @@ administration of SPC charts as intended by Shewhart and what
 revisions to his intentions are required today when SPC is
 implemented in software.
 
-**Taguchi's Loss Function and the S-Double-Bar ($) Chart,** **7:30-9:00AM, 13 May 2022, by Zoom**  
+**Taguchi's Loss Function and the S-Double-Bar ($) Chart, 7:30-9:00AM, 13 May 2022, by Zoom**  
 Most of us were taught the goalpost model of interpreting
 specification limits: Any units that fall between the
 specification limits (aka the goalposts) are good and any units
@@ -773,7 +697,7 @@ design a Loss Function-based S-Double-Bar ($) Chart that can be
 used to supplement the usual SPC X-bar and R charts.
 
 **Misuse of Two-Sample T Tests To Analyze Two-way and Multi-way
-Classification Designs,** **8 April 2022, 7:30-9:00AM, by Zoom**  
+Classification Designs, 8 April 2022, 7:30-9:00AM, by Zoom**  
 I have recently seen a flurry of incidents when people have
 inappropriately used a two-sample t test to analyze data from a
 two-way or multi-way classification design. There is a close
@@ -789,8 +713,7 @@ meeting and we will look at examples of when there is agreement
 and disagreement between the different analysis methods.
 
 **Use Operating Characteristic (OC) Curves to Interpret Sampling
-Plan Performance,** **7:30-9:00AM,
-11 March 2022, by Zoom**  
+Plan Performance, 7:30-9:00AM, 11 March 2022, by Zoom**  
 Acceptance sampling plans, of both the attribute and
 variable type, are workhorse methods in quality engineering. We
 often pick a plan to meet one or two stated requirements, but we
@@ -823,11 +746,11 @@ program and how they can put you ahead of schedule and under
 budget.
 
 **Extending the Two-Level Factorial Designs to Fractional
-Factorial and Response Surface Designs,** **7:30-9:00AM, 14 January 2022, by Zoom**  
-This session is a follow up to our last (December 10)
+Factorial and Response Surface Designs, 7:30-9:00AM, 14 January 2022, by Zoom**  
+This session is a follow-up to our last (December 10)
 session when we discussed the basics of the two-level factorial
 experiment designs. In those designs all of the study variables
-(i.e the independent variables), whether they are of attribute or
+(i.e. the independent variables), whether they are of attribute or
 variable type, appear at only two levels. For example, in the
 paper helicopter experiment that we considered, the 2^3 experiment
 design had three variables: blade length (short/long), blade width
@@ -838,12 +761,8 @@ makes these experiment designs tremendously useful - you could
 base a whole career on them. However, quite soon you will run into
 two of their limitations:
 
-* When the number of number of study variables
-  becomes large the number of runs required to build the design
-  quickly becomes impractical
-* When the study variables are quantitative and
-  there is significant curvature in the y versus x relationship
-  a linear model is inappropriate
+* When the number of study variables becomes large the number of runs required to build the design quickly becomes impractical
+* When the study variables are quantitative and there is significant curvature in the y versus x relationship a linear model is inappropriate
 
 These limitations can be overcome by simple
 modifications to the two-level factorial designs - by the
@@ -868,8 +787,7 @@ helicopters), and we'll talk about their role at the core of the
 fractional factorial and response surface designs. This topic may
 be extended to more sessions if there is sufficient interest.
 
-**Design of SPC Chart Run Rules, 7:30-9:00AM, 12 November 2021,
-by Zoom**  
+**Design of SPC Chart Run Rules, 7:30-9:00AM, 12 November 2021, by Zoom**  
 In many circumstances, Walter Shewhart's Western Electric Rules
 for out-of-control patterns on SPC charts are safe and sufficient;
 however, Shewhart didn't anticipate that SPC charts could become
@@ -880,11 +798,11 @@ be managed by proper run rule design that takes into account the
 number of rules and the number of charts. At this month's QEN
 meeting we will discuss Shewhart's design criteria for run rules,
 their performance in the context of Shewhart's era, and how the
-rules can be modified to be save in the modern context of
+rules can be made safe in the modern context of
 automated SPC charts.
 
-**The SPC Between/Within Subgroups Chart,** **7:30-9:00AM, 8 October 2021, by Zoom**  
-At this month's QEN meeting will will discuss SPC
+**The SPC Between/Within Subgroups Chart, 7:30-9:00AM, 8 October 2021, by Zoom**  
+At this month's QEN meeting we will discuss SPC
 Between/Within Subgroups Charts and the associated process
 capability analysis.
 
@@ -913,8 +831,7 @@ process and it can be used to calculate a more accurate set of
 process capability statistics that indicate the true capability of
 the process.
 
-**MINITAB's Graph Builder Tool, 7:30-9:00AM, 10
-September 2021, by Zoom**  
+**MINITAB's Graph Builder Tool, 7:30-9:00AM, 10 September 2021, by Zoom**  
 Finding the right graphical presentation method for a data set can
 be crucial to conveying the correct interpretation of the data to
 your audience; however, finding that perfect graph can be a
@@ -931,9 +848,7 @@ same data set so that we can inspect them to choose our favorite.
 We'll take a look at the MINITAB **Graph Builder** tool at this
 month's QEN meeting.
 
-**Using Jitter to Address a Coarse Measurement
-Scale When Assessing Normality, 7:30-9:00AM, 13 August 2021 by
-Zoom**  
+**Using Jitter to Address a Coarse Measurement Scale When Assessing Normality, 7:30-9:00AM, 13 August 2021 by Zoom**  
 One of the most common assumptions we check in the many different
 statistical analyses that we perform is the assumption of normality.
 Normality tests appear in ordinary confidence intervals and
@@ -953,8 +868,7 @@ the original data. At this month's meeting we'll discuss this case,
 when the use of jitter is appropriate, how to implement jitter, and
 how to report the results.
 
-**Crafting Hypotheses, 7:30-9:00AM, 11 June 2021 by
-Zoom**  
+**Crafting Hypotheses, 7:30-9:00AM, 11 June 2021 by Zoom**  
 The issues surrounding statistical methods can present a bewildering
 array of choices to statistical novices. One of the most crucial
 topics - and the among the most difficult to learn - is how to craft
@@ -1073,16 +987,14 @@ certifications that ASQ offers, their technical scope, the
 requirements for applying for certification, how to prepare for the
 exam, and the general value of holding these certifications.
 
-**Free Software!, 7:30-9:00AM, Friday, 11 December
-2020, by Zoom**  
+**Free Software!, 7:30-9:00AM, Friday, 11 December 2020, by Zoom**  
 Everybody loves free stuff! This is a topic that we do periodically
 that's always a lot of fun and everyone leaves finding something
 that they need or at least want to try out. I've posted my four page
-list of free software that you can check out **[here](/Notes/FreeSoftware.pdf)** (Warning: it hasn't
+list of free software that you can check out **[here](assets/notes/FreeSoftware.pdf)** (Warning: it hasn't
 been updated in a while) but plan to come with your own suggestions.
 
-**Tests for Proportions or Fractions Defective, 7:30-9:00AM,
-13 November 2020, by Zoom**  
+**Tests for Proportions or Fractions Defective, 7:30-9:00AM, 13 November 2020, by Zoom**  
 I was in a meeting recently with a customer where the topic of
 discussion was the possibility of a difference between the defective
 rates of two product assembly processes. When both processes were
@@ -1110,9 +1022,7 @@ will discuss this and similar situations:
   common defective rate or is there evidence for differences in
   the defective rates between groups?
 
-**Two Types of Missing Values in Data Sets: Data
-Truncation and Data Censoring, 7:30-9:00AM, 9 October 2020, by
-Zoom**  
+**Two Types of Missing Values in Data Sets: Data Truncation and Data Censoring, 7:30-9:00AM, 9 October 2020, by Zoom**  
 At last month's QEN meeting we discussed the use of mathematical
 transformations to convert nonnormal responses to normal so that
 classical statistical tests and analysis methods can be used. During
@@ -1124,15 +1034,10 @@ observations that are missing-with-cause (MWC). There are several
 kinds of MWC situations but this month we'll discuss two of the most
 common ones:
 
-* Truncation: Some observations are selectively omitted from the
-  data set; for example, observations that fall outside of
-  specification limits
-* Censoring: Observations from a product life study that are
-  missing because the life test was suspended before all units
-  failed
+* Truncation: Some observations are selectively omitted from the data set; for example, observations that fall outside of specification limits
+* Censoring: Observations from a product life study that are missing because the life test was suspended before all units failed
 
-**Variable Transformations for Nonnormal Data, 7:30-9:00AM,
-11 September 2020, by Zoom**  
+**Variable Transformations for Nonnormal Data, 7:30-9:00AM, 11 September 2020, by Zoom**  
 I recently heard from a customer who was struggling to analyze and
 present data which had a number of outliers with large values in the
 data set. She was trying to make the case that those observations
@@ -1150,9 +1055,7 @@ recognize when a transformation will be required and which
 transformation will do the job given the fundamental first
 principles of the process that produced the response.
 
-**Use An Input-Process-Output Diagram to Document
-the Variables in Your Process, 7:30-9:00AM, 14 August 2020, by
-Zoom**  
+**Use An Input-Process-Output Diagram to Document the Variables in Your Process, 7:30-9:00AM, 14 August 2020, by Zoom**  
 We all use the well known Cause and Effect Diagram (aka Fishbone or
 Ishikawa diagram) for documenting the factors that affect a process.
 Recall that in the absence of specific categories for organizing the
@@ -1169,8 +1072,7 @@ many ways to build a fishbone diagram. Note cards on a bulletin
 board work great, but we will use the free software package FreeMind
 to study the construction of and some examples of IPO diagrams.
 
-**Which Interval Do I Need: Confidence, Prediction,
-or Tolerance?, 7:30-9:00AM, 10 July 2020, by Zoom**  
+**Which Interval Do I Need: Confidence, Prediction, or Tolerance?, 7:30-9:00AM, 10 July 2020, by Zoom**  
 Statistical software like MINITAB can be an amazing tool but it can
 also present a bewildering collection of methods that look so much
 alike that it can be difficult to determine which ones are
@@ -1182,9 +1084,7 @@ each type of statistical interval. If you have any examples or data
 you would like to share for the discussion, please send them to me
 (Paul) with a short description of what you're trying to do.
 
-**Improve the Quality of Your Inspection Results by
-Upgrading the Measurement Scale, 7:30-9:00AM, 12 June 2020, by
-Zoom**  
+**Improve the Quality of Your Inspection Results by Upgrading the Measurement Scale, 7:30-9:00AM, 12 June 2020, by Zoom**  
 I've seen a recent flurry of customers who were struggling to define
 methods to characterize somewhat subjective quality characteristics
 in their experiments:
@@ -1219,8 +1119,7 @@ opportunities and benefits of replacing low-value observations with
 high-value observations, and the possibilities for reducing
 experimental sample size.
 
-**Errors, Mistakes, and
-Failures of Measurement Instruments,** **8 May 2020,** ****7****:30-9:00AM,**by Zoom**  
+**Errors, Mistakes, and Failures of Measurement Instruments, 8 May 2020,7:30-9:00AM, by Zoom**  
 At last month's QEN meeting we discussed considerations in choosing
 a measurement instrument to match the requirements of a measurement
 task. We discussed the usual issues: range, discrimination,
@@ -1236,9 +1135,7 @@ impact on the instrument, the time elapsed between when an
 instrument failed and when the failure was detected, and the
 associated consequences to the business.
 
-**Considerations in Choosing a Measurement
-Instrument, 10 April 2020, 7:30-9:00AM.****Join the on-line meeting using Zoom [here](https://zoom.us/j/421185186?pwd=b3dCVWRqUWhJbk8wYnZWcWt3RjBGQT09)****or from your web browser using meeting ID: 421 185 186 and
-password: 022 990**.
+**Considerations in Choosing a Measurement Instrument, 10 April 2020, 7:30-9:00AM. by Zoom.**
 We had a request at our last meeting to discuss how to choose an
 appropriate measurement instrument for an inspection operation. This
 question isn't as simple as it sounds. The usual first thought is to
@@ -1252,20 +1149,22 @@ uncertainty (in the accuracy sense), the part's process capability,
 and whether the purpose of the inspection operation is to collect
 data to be used to determine process capability or just to provide
 pass/fail results relative to specification limits. We'll discuss
-all of these issues at our April 10th meeting.**Quality Audit Checklists with Examples, 13 March 2020,** ****7:30-9:00AM,** at GGP**
+all of these issues at our April 10th meeting.
+
+**Quality Audit Checklists with Examples, 13 March 2020, **7:30-9:00AM,** at GGP**  
 Quality audit checklists are a crucial quality management tool for
 processes that are complex and difficult to quantify. At this
 month's meeting we will discuss the design, construction, and use of
 audit checklists and we'll look at some obscure examples including
-1) a checklist for evaluating the use of SPC within an organization,
-2) a health and safety checklist, and 3) a checklist for evaluating
+1. a checklist for evaluating the use of SPC within an organization,
+2. a health and safety checklist, and 3) a checklist for evaluating
 quality culture within an organization at the upper management,
 middle management, and worker levels. The results from the quality
 culture audits are especially fascinating - they provide very clear
 indications of healthy and disfunctional quality cultures.
 
-**Process Precontrol, 14 February 2020,
-7:30-9:00AM, at GGP**At this month's meeting we're going to discuss an
+**Process Precontrol, 14 February 2020, 7:30-9:00AM, at GGP**    
+At this month's meeting we're going to discuss an
 alternative to Statistical Process Control (SPC) called Process
 Precontrol.
 
@@ -1284,8 +1183,7 @@ in sampling mode when the data look good or switch back to 100%
 inspection mode when the data indicates that the process has gone
 out of control.
 
-**Statistical Process Control, Part 2, 17 January
-2020, 7:30-9:00AM, at GGP**
+**Statistical Process Control, Part 2, 17 January 2020, 7:30-9:00AM, at GGP**  
 At last month's QEN meeting we started a discussion about the basics
 of statistical process control (SPC) including the design and
 operation of IMR and x-bar and R charts. This month we'll continue
@@ -1294,9 +1192,7 @@ into the design and operation of them in more detail. We'll also
 talk about sample size, sampling frequency, the risks of using too
 many charts at one time, and the life cycle of a control chart.
 
-**An Introduction to SPC and Control Charts, 13
-December 2019,** **7:30-9:00AM, at
-GGP**
+**An Introduction to SPC and Control Charts, 13 December 2019, 7:30-9:00AM, at GGP**  
 Perhaps the single, most effective and ubiquitous process
 improvement method in existence is statistical process control
 (SPC). SPC is a foundational tool in the quality engineering tool
@@ -1309,8 +1205,7 @@ individual and moving range (IMR) charts and xbar and R charts. We
 can discuss other types of charts and advanced methods in future
 meetings.
 
-**Testing Data for Normality and What to Do When
-They're Not, 8 November 2019, 7:30-9:00AM, at GGP**
+**Testing Data for Normality and What to Do When They're Not, 8 November 2019, 7:30-9:00AM, at GGP**  
 In our last two meetings on process capability we saw that it was
 very important to test process capability data for normality.
 Normality testing also has a huge role in many other statistical
@@ -1323,8 +1218,7 @@ transforms (such as square roots and logarithms) to transform data
 from non-normal to normal and we'll look at related methods for
 fitting other distributions that aren't inherently normal.
 
-**Process Capability, 11 October 2019, 7:30-9:00AM,
-at GGP**
+**Process Capability, 11 October 2019, 7:30-9:00AM, at GGP**  
 At this month's QEN meeting we will continue our discussion of
 process capability. We'll review the basic process capability
 statistics Cp, Cpk, Pp, and Ppk and their confidence intervals and
@@ -1335,8 +1229,7 @@ capability statistics require a normal distribution) and the use of
 transformations to convert non-normal distributions back to normal
 distributions.
 
-**Process Capability, 13 September 2019,
-7:30-9:00AM, at GGP**
+**Process Capability, 13 September 2019, 7:30-9:00AM, at GGP**  
 At this month's QEN meeting we will take up a discussion of process
 capability. We'll review the basic process capability statistics Cp,
 Cpk, Pp, and Ppk and then discuss their use, interpretation, and the
@@ -1345,8 +1238,7 @@ discussion of how to do process capability under complicated
 conditions, such as for non-normal distributions, and we'll take up
 that topic again at the October meeting.
 
-**Design and Analysis of Gage R&R Studies (Part
-2), 9 August 2019, 7:30-9:00AM, at GGP**
+**Design and Analysis of Gage R&R Studies (Part 2), 9 August 2019, 7:30-9:00AM, at GGP**  
 At last month's QEN meeting we started a discussion of the design
 and analysis of gage R&R studies. We'll take up the topic again
 this month by going into more details of the classic operator by
@@ -1357,8 +1249,7 @@ designs, designs with additional study variables (i.e. "expanded"
 designs), and studies with attribute responses. We may pick up one
 or more of these advanced topics in a third session.
 
-**Design and Analysis of Gage R&R Studies (Part
-1), 12 July 2019, 7:30-9:00AM, at GGP**
+**Design and Analysis of Gage R&R Studies (Part 1), 12 July 2019, 7:30-9:00AM, at GGP**  
 Measurement reliability is determined by measurement accuracy which
 is established by calibration and measurement precision which is
 quantified in a gage repeatability and reproducibility or GR&R
@@ -1381,8 +1272,7 @@ design. If we have time, we'll start talking about the analysis and
 interpretation of GR&R studies but we'll resume that discussion
 in more detail at the next meeting.
 
-**A Quality Cost Interpretation for Acceptance Sampling
-Plans, 14 June 2019, 7:30-9:00AM, at GGP**
+**A Quality Cost Interpretation for Acceptance Sampling Plans, 14 June 2019, 7:30-9:00AM, at GGP**  
 At last month's QEN meeting we discussed how to design attribute and
 variable sampling plans to control defective rates relative to
 specification limits. The design of these plans required us to
@@ -1404,8 +1294,7 @@ understanding the general behavior of quality cost in acceptance
 sampling can provide significant insight into the benefits and risks
 of the method.
 
-**An Introduction to Acceptance Sampling for
-Attributes and Variables, 10 May 2019, 7:30-9:00AM, at GGP**
+**An Introduction to Acceptance Sampling for Attributes and Variables, 10 May 2019, 7:30-9:00AM, at GGP**  
 Acceptance sampling in quality control is a huge topic but the
 simplest acceptance sampling methods are pretty easy to understand.
 In a classic acceptance sampling for attributes (i.e. for pass/fail
@@ -1420,12 +1309,10 @@ value.
 
 Attributes and variables sampling plans are usually designed to meet
 two input criteria which may be:
-1) Provide a high probability of accepting good product and a low
-probability of accepting bad product
-2) Provide a high probability of accepting good product with a zero
-acceptance number sampling plan
-3) Provide a low probability of accepting bad product with a zero
-acceptance number sampling plan
+
+1. Provide a high probability of accepting good product and a low  probability of accepting bad product
+2. Provide a high probability of accepting good product with a zero acceptance number sampling plan
+3. Provide a low probability of accepting bad product with a zero acceptance number sampling plan
 
 These plans provide different protections for the manufacturer and
 for the consumer so it is crucial to understand what you're getting
@@ -1434,8 +1321,7 @@ discuss the design of simple attributes and variables sampling plans
 and we'll talk about some of the issues in setting up and operating
 them.
 
-**Inaugural Meeting: A Survey of Quality
-Engineering Methods, 12 April 2019, 7:30-9:00AM, at GGP**
+**Inaugural Meeting: A Survey of Quality Engineering Methods, 12 April 2019, 7:30-9:00AM, at GGP**  
 The first QEN meeting will be held on Friday, April 12th, from
 7:30-9:00 AM at GGP's location in Newbury Business Park when Paul
 Mathews and Rick Ales will present a survey of quality engineering
@@ -1463,5 +1349,4 @@ The topics to be discussed are but are not limited to:
 * Six Sigma
 * Lean
 
-[Return to
-MM&B Home Page](http://www.mmbstatistical.com/)
+[Return to MM&B Home Page](/index.md)
