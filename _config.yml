@@ -1,6 +1,9 @@
 
 title: Mathews Malnar and Bailey, Inc.
 description: Quality engineering, applied statistical consulting, and training services for R&D, product, process, and manufacturing engineering organizations.
+author:
+    name: Mathews Malnar and Bailey, Inc.
+url: https://mmbstatistical.github.io/
 
 # theme: minima
 # minima:
