@@ -1,4 +1,4 @@
-** Quality Engineers Network Meetings**  
+**Quality Engineers Network Meetings**  
 The **Quality Engineers Network (QEN)** is sponsored by 
 **[Geauga  Growth Partnership](http://www.geaugagrowthpartnership.com/)**. 
 Meeting announcements are in

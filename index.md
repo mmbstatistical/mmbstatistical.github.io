@@ -3,10 +3,6 @@ layout: default
 ---
 
 
-|--------------------------------------------------|:---:|--------------------------------------------------|
-| ![2^3 Design](assets/images/MMB2^3COnlyYellow.gif) | **Mathews Malnar and Bailey, Inc.** | ![Run Chart](assets/images/MMBChartOnlyYellow.gif) |
-|                                                    | **Quality engineering, applied statistical consulting,  and training services for R&D, product, process,  and manufacturing engineering organizations.** |                                                    |
-
 **Upcoming Events:**
 * [**Quality Managers Network:**](pages/QMN.md)
     * **The Joy of Little Experiments, 7:30-9:00AM, 6 February 2026, by Zoom.**  
@@ -14,7 +10,7 @@ layout: default
 * [**Quality Engineers Network:**](pages/QEN.md)
     * **Topic TBD, 7:30-9:00AM, 6 2026, by Zoom.**
 
-**[What We Do](WhatWeDo.html)**
+**[What We Do](pages/WhatWeDo.html)**
 
 **Textbooks:**
 * [**Design of Experiments with MINITAB**](DOEwithMINITAB.html)
