@@ -29,6 +29,8 @@ minima:
 # Build settings
 markdown: kramdown
 
+header_pages: null
+
 
 
 # themes:

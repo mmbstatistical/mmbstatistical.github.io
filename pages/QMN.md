@@ -1,4 +1,4 @@
-<!--- Quality Managers Network Meeting Abstracts --->  
+## Quality Managers Network Meeting Abstracts
 QMN meeting announcements are in reverse order with the most recent
 meeting at the top. All meetings are free and everyone is welcome to
 present or to recommend a topic. Please e-mail me at
@@ -12,7 +12,7 @@ your participation.
 <br> <br>  
 
 ## Meeting Abstracts  
-### The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom    
+#### The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom    
 I was helping Matt B and his team interpret the results from a
 rather complex experiment this week. During that discussion, we
 recognized several gaps in our knowledge that were worrisome. I
@@ -27,7 +27,7 @@ substantial. At this month's QMN meeting we'll discuss the joy and
 benefits from running little experiments and where to find them.
 <br> <br>
 
-### Consequences of Poor Measurement Resolution, 9 January 2026, 7:30-9:00AM by Zoom    
+#### Consequences of Poor Measurement Resolution, 9 January 2026, 7:30-9:00AM by Zoom    
 Recently a customer asked me to help him analyze a data set with
 very poor measurement resolution. He'd planned to analyze the data
 using a two-sample t test, but because of the coarseness of the
@@ -68,7 +68,7 @@ methods:
 * Number of distinct categories (NDC)
 <br> <br>
 
-### MINITAB Macros, 5 December 2025, 7:30-9:00AM by Zoom    
+#### MINITAB Macros, 5 December 2025, 7:30-9:00AM by Zoom    
 Recently one of my students/customers was analyzing data from a
 large process capability study with many variables. He was
 frustrated about 1) having to repeat the same analyses over and over
@@ -83,7 +83,7 @@ discuss how to convert an EXEC style macro into a more general LOCAL
 macro.
 <br> <br>
 
-### Measurement Systems Validation, 7 November 2025, 7:30-9:00AM by Zoom    
+#### Measurement Systems Validation, 7 November 2025, 7:30-9:00AM by Zoom    
 We've talked many times about gage error studies, most often about
 the operator-by-part crossed experiment design, but there are many
 other gage R&R study designs possible and even that topic is
@@ -97,7 +97,7 @@ also look at MINITAB's new gage R&R method: **Stat> Quality
 Tools> Gage Study> Evaluate Measurement Process**.
 <br> <br>
 
-### How to Choose a Statistical Analysis Method, 3 October 2025, 7:30-9:00AM by Zoom    
+#### How to Choose a Statistical Analysis Method, 3 October 2025, 7:30-9:00AM by Zoom    
 Many of you have seen my matrix of hypothesis testing methods. The
 matrix is a two-way classification table of distribution
 characteristics (mean, standard deviation, proportion, counts, and
@@ -117,7 +117,7 @@ methods like SPC, acceptance sampling, and tolerance intervals
 belong.
 <br> <br>
 
-### Managing Missing Values in Designed Experiments II, 6 June 2025, 7:30-9:00AM, by Zoom    
+#### Managing Missing Values in Designed Experiments II, 6 June 2025, 7:30-9:00AM, by Zoom    
 At last month's QMN meeting we started discussing how to handle
 missing values in a designed experiment. In that meeting we covered
 how to detect missing values using the correlation matrix of model
@@ -126,7 +126,7 @@ coefficients. At this follow-up meeting we will discuss specific
 strategies to mitigate the effects of missing values.
 <br> <br>
 
-### Managing Missing Values in Designed Experiments, 2 May 2025, 7:30-9:00AM, by Zoom    
+#### Managing Missing Values in Designed Experiments, 2 May 2025, 7:30-9:00AM, by Zoom    
 When we build a designed experiment\* we usually build an equal
 number of runs (aka replicates) in each of the experiment's cells
 because that imparts some desirable mathematical properties to the
@@ -150,7 +150,7 @@ complicated (e.g. data collected for one or more responses from a
 factorial, response surface, or other design).
 <br> <br>
 
-### Comparing Different Models In Designed Experiments, 4 April 2025, 7:30-9:00AM, by Zoom    
+#### Comparing Different Models In Designed Experiments, 4 April 2025, 7:30-9:00AM, by Zoom    
 One of the things that we learn to do during the analysis of a
 designed experiment is to fit a first, best guess model, and then to
 refine the model, usually by dropping terms that are not
@@ -172,7 +172,7 @@ a data set. Some of the cases that we will consider are:
   input variables might work better.
 <br> <br>
 
-### Analysis of Life/Survival Data When There Are No Failures, 7:30-9:00AM, 7 March 2025, by Zoom  
+#### Analysis of Life/Survival Data When There Are No Failures, 7:30-9:00AM, 7 March 2025, by Zoom  
 I was recently helping Matt B. analyze data from a life/survival
 study. Matt was trying to compare two products - an old product and
 a new product - for the purpose of showing that the new product is
@@ -190,7 +190,7 @@ QMN meeting we'll discuss what analyses we can do with these data
 and if we can answer the "at least as good as" claim.
 <br> <br>
 
-### A Checklist of Good and Bad Statistical Practices (Part 3), 7:30-9:00AM, 7 February 2025, by Zoom  
+#### A Checklist of Good and Bad Statistical Practices (Part 3), 7:30-9:00AM, 7 February 2025, by Zoom  
 We spent the previous two QMN meetings reviewing my checklist of
 good and bad statistical practices. I thought that we'd get through
 the entire list in the first meeting, but you guys have had good
@@ -202,7 +202,7 @@ latest version so please try to review it in advance to see if you
 have anything to add or any recommendations for changes.
 <br> <br>
 
-### A Checklist of Good and Bad Statistical Practices (Part 2), 7:30-9:00AM, 10 January 2025, by Zoom  
+#### A Checklist of Good and Bad Statistical Practices (Part 2), 7:30-9:00AM, 10 January 2025, by Zoom  
 At last month's QMN meeting we started discussing a long list of
 good and bad statistical practices that I developed for a new pharma
 customer. The list was very well received and I have since added
@@ -212,7 +212,7 @@ the items on the last half of the list. I've attached the document
 so you can review it in advance.
 <br> <br>
 
-### A Checklist of Good and Bad Statistical Practices (Part 1), 7:30-9:00AM, 6 December 2024, by Zoom  
+#### A Checklist of Good and Bad Statistical Practices (Part 1), 7:30-9:00AM, 6 December 2024, by Zoom  
 Some of my consulting friends and I recently did applied statistics
 training for a new pharma customer who is expanding into a product
 type where we have experience but they do not. The purpose of the
@@ -227,7 +227,7 @@ these issues so I'd like your help refining and revising the
 checklist.
 <br> <br>
 
-### Debugging the Real-Time Data Collection and Processing Functions of a Hobby Electronics Project, 7:30-9:00AM, 1 November 2024 via Zoom  
+#### Debugging the Real-Time Data Collection and Processing Functions of a Hobby Electronics Project, 7:30-9:00AM, 1 November 2024 via Zoom  
 In the QMN meeting back on 5 August 2022 I described some of the
 real-time data processing problems I was having on my hobby
 electronics project to replace the instruments on my sailboat. At
@@ -248,7 +248,7 @@ configuration. I was able to fix both problems and now the system
 does an excellent job collecting, processing, and displaying data.
 <br> <br>
 
-### Paradoxes in Statistics, 7:30-9:00AM, 4 October 2024, by Zoom  
+#### Paradoxes in Statistics, 7:30-9:00AM, 4 October 2024, by Zoom  
 Statistical methods can be confusing enough, but they are aggravated
 by a set of common traps/mistakes that get clustered into a family
 of "statistical paradoxes". (See the list in Wikipedia:
@@ -258,7 +258,7 @@ potential analysis errors. We'll consider some of these paradoxes at
 this month's QMN meeting.
 <br> <br>
 
-### An Introduction to Blue Sky Statistics Statistical Software, Sanjay Kumar, CEO, Blue Sky Statistics, 7:30-9:00AM, 2 August 2024, by Zoom  
+#### An Introduction to Blue Sky Statistics Statistical Software, Sanjay Kumar, CEO, Blue Sky Statistics, 7:30-9:00AM, 2 August 2024, by Zoom  
 Sanjay Kumar, CEO and co-founder of
 BlueSky Statistics, a Chicago-based company, will introduce BlueSky
 Statistics Software through a live demo and Q&A. BlueSky
@@ -277,7 +277,7 @@ charts, distribution fit analysis, hypothesis testing, regression
 analysis, graphs and plots, DOE, and more as time permits.
 <br> <br>
 
-### Pugh Concept Selection Matrix, 7 June 2024, 7:30-9:00AM, by Zoom  
+#### Pugh Concept Selection Matrix, 7 June 2024, 7:30-9:00AM, by Zoom  
 Following the Analyze phase of the Six Sigma DMAIC process (for
 improving an existing process) or the DMADV process (for designing a
 new product or service) it is necessary to leverage the process
@@ -299,7 +299,7 @@ DMAIC Define, Measure, Analyze, Improve, and Control
 DMADV Define, Measure, Analyze, Design, Verify
 <br> <br>
 
-### The Ramirez-Runger Test: Do my data come from a single stable population?, 3 May 2024, 7:30-9:00AM, by Zoom  
+#### The Ramirez-Runger Test: Do my data come from a single stable population?, 3 May 2024, 7:30-9:00AM, by Zoom  
 
 When we're collecting data from some process, we usually make the
 assumption that the process is stable in time, that is, that its
@@ -336,7 +336,7 @@ Ramirez and Runger, Quantitative Techniques to Evaluate Process
 Stability, June 2006, Quality Engineering 18(1):53-68
 <br> <br>
 
-### The Many Uses of the Sign Test, 5 April 2024, 7:30-9:00AM, by Zoom  
+#### The Many Uses of the Sign Test, 5 April 2024, 7:30-9:00AM, by Zoom  
 The nonparametric sign test is one of the few statistical methods
 that have a simple instinctive interpretation. It appears any time
 you're expecting binary observations to have a 50/50 split. Consider
@@ -376,7 +376,7 @@ you'll learn to recognize the many places that it appears and how to
 interpret its results.
 <br> <br>
 
-### Accelerated Life Test of a Hand Sanitizer Product, 2 February 2024, 7:30-9:00AM, by Zoom  
+#### Accelerated Life Test of a Hand Sanitizer Product, 2 February 2024, 7:30-9:00AM, by Zoom  
 In our December and January meetings we discussed many ways to
 analyze the data for an accelerated life test. This month we'll
 consider another type of life test. In the previous discussions, the
@@ -395,14 +395,14 @@ accelerated testing. We'll show that by evaluating samples stored at
 using 6 month data.
 <br> <br>
 
-### Design, Analysis, and Sample Size Calculations for an Accelerated Life Test - Part 2, 5 January 2024,
+#### Design, Analysis, and Sample Size Calculations for an Accelerated Life Test - Part 2, 5 January 2024,
 7:30-9:00AM, by Zoom  
 We didn't finish our discussion of accelerated life tests last month
 so we will continue our discussion in January. See the December
 abstract for the planned scope of the discussion.
 <br> <br>
 
-### Design, Analysis, and Sample Size Calculations for an Accelerated Life Test, 1 December 2023, 7:30-9:00AM, by Zoom  
+#### Design, Analysis, and Sample Size Calculations for an Accelerated Life Test, 1 December 2023, 7:30-9:00AM, by Zoom  
 I am working on an experiment design and sample size calculation for
 an accelerated life test for a customer. MINITAB has methods for the
 the data analysis and the sample size calculation; however, I'm
@@ -436,7 +436,7 @@ the sample size calculation) is here:
 > perform the same test under unaccelerated conditions.
 <br> <br>
 
-### Goodness of Fit Tests for Linear Regression, 3 November 2023, 7:30-9:00AM, by Zoom  
+#### Goodness of Fit Tests for Linear Regression, 3 November 2023, 7:30-9:00AM, by Zoom  
 One of the assumptions of the linear regression method is that the
 form of the model is appropriate for the data. This condition is
 referred to as "goodness of fit" or "lack of fit". Many people make
@@ -456,7 +456,7 @@ will consider some of these goodness of fit tests and implement them
 manually and using MINITAB's built in capabilities.
 <br> <br>
 
-### Examples of Equivalence, Superiority, and Noninferiority Tests, 6 October 2023, 7:30-9:00AM via Zoom  
+#### Examples of Equivalence, Superiority, and Noninferiority Tests, 6 October 2023, 7:30-9:00AM via Zoom  
 At last month's QMN meeting we discussed the formulation of
 equivalence, superiority, and noninferiority test hypotheses. We'll
 continue that topic this month by discussing detailed examples of
@@ -464,7 +464,7 @@ these cases. If you've run any of these tests yourself, please
 consider volunteering to explain your work.
 <br> <br>
 
-### Formulating Equivalence, Superiority, and Noninferiority Test Hypotheses, 1 September 2023, 7:30-9:00AM, by Zoom  
+#### Formulating Equivalence, Superiority, and Noninferiority Test Hypotheses, 1 September 2023, 7:30-9:00AM, by Zoom  
 After learning the basic significance test methods we often find
 ourselves with the need to perform equivalence, superiority, and
 noninferiority tests. The analyses and interpretation of these
@@ -473,7 +473,7 @@ new issues that complicate their formulation. We'll consider these
 issues at September's QMN meeting.
 <br> <br>
 
-### Sample Size Calculations for One-way, Two-way, and Multi-way Classification Designs, 4 August 2023, 7:30-9:00AM, by Zoom  
+#### Sample Size Calculations for One-way, Two-way, and Multi-way Classification Designs, 4 August 2023, 7:30-9:00AM, by Zoom  
 In our previous sessions we discussed how to adapt the sample size
 calculation for the two-sample t test using Bonferroni's correction
 to the more general case of testing for biases between three or more
@@ -485,7 +485,7 @@ multi-way classification designs and then compare their results to
 those from the Bonferroni-corrected two-sample t test method.
 <br> <br>
 
-### Connections Between Sample Size Calculations for the Two-sample T Test, Two-level Factorial Designs, and Linear Regression****, 2 June 2023, 7:30-9:00AM, by Zoom  
+#### Connections Between Sample Size Calculations for the Two-sample T Test, Two-level Factorial Designs, and Linear Regression****, 2 June 2023, 7:30-9:00AM, by Zoom  
 In recent past QMN meetings we've discussed sample size calculations
 for the two-sample t test, the two-level factorial designs, and
 linear regression. All sample size calculations have similar
@@ -497,7 +497,7 @@ may be opportunities to perform a calculation for one method by
 using another method's solution or software implementation.
 <br> <br>
 
-### Sample Size Calculations for Linear Regression, 5 May 2023, 7:30-9:00AM, by Zoom  
+#### Sample Size Calculations for Linear Regression, 5 May 2023, 7:30-9:00AM, by Zoom  
 The next topic in our ongoing discussion of sample size calculation
 methods is linear regression. This is probably one of the most
 abused and ignored sample size calculation methods in engineering,
@@ -516,7 +516,7 @@ however, they are not supported in MINITAB and other common
 software.
 <br> <br>
 
-### Sample Size Calculations: Poisson Count Responses, 7:30-9:00AM, Friday, 7 April 2023, by Zoom  
+#### Sample Size Calculations: Poisson Count Responses, 7:30-9:00AM, Friday, 7 April 2023, by Zoom  
 At this month's QMN meeting we will discuss sample size calculations
 for Poisson count responses. Poisson counts appear whenever you are
 counting the number of events per unit area of opportunity, such as:
@@ -549,7 +549,7 @@ following situations:
 Thankfully MINITAB supports most of these methods.
 <br> <br>
 
-### Sample Size Calculations: Two Proportions, 7:30-9:00AM, 3 March 2023 by Zoom  
+#### Sample Size Calculations: Two Proportions, 7:30-9:00AM, 3 March 2023 by Zoom  
 One of the most common and important experiment design categories is
 the two populations design. This design can be used to generically
 compare any two populations but it is especially important when
@@ -588,7 +588,7 @@ MINITAB macro can be used. At this month's QMN meeting will consider
 both of these tools.
 <br> <br>
 
-### Sample Size Calculations: One Proportion, 7:30-9:00AM, 3 February 2023 by Zoom  
+#### Sample Size Calculations: One Proportion, 7:30-9:00AM, 3 February 2023 by Zoom  
 Near the top of the list on the Pareto chart of most-used
 statistical analysis methods are methods for one proportion. These
 methods include the generic confidence intervals and hypotheses
@@ -612,7 +612,7 @@ sample size calculator (<https://homepage.divms.uiowa.edu/~rlenth/Power/>)
 if you don't have MINITAB.
 <br> <br>
 
-### Sample Size Calculations: Standard Deviations and Process Capability, 7:30-9:00AM, 6 January 2023 by Zoom  
+#### Sample Size Calculations: Standard Deviations and Process Capability, 7:30-9:00AM, 6 January 2023 by Zoom  
 At our December meeting we discussed sample size calculations for
 the two-sample means problem and the associated many-sample means
 problem. At our January QMN meeting we will discuss sample size
@@ -622,7 +622,7 @@ sample size calculations for process capability metrics. The result
 is quite depressing.
 <br> <br>
 
-### An Introduction to Sample Size Calculations - Part 3, 7:30-9:00AM, 2 December 2022, by Zoom  
+#### An Introduction to Sample Size Calculations - Part 3, 7:30-9:00AM, 2 December 2022, by Zoom  
 At our November meeting we discussed sample size calculations for
 the one-sample and two-sample Student t tests for location and at
 the end of that discussion we rushed into the extension of the
@@ -636,7 +636,7 @@ calculation for one-way ANOVA relates to ANOVA for two-way and
 multi-way classification designs.
 <br> <br>
 
-### An Introduction to Sample Size Calculations - Part 2, 7:30-9:00AM, 4 November 2022, by Zoom  
+#### An Introduction to Sample Size Calculations - Part 2, 7:30-9:00AM, 4 November 2022, by Zoom  
 At last month's meeting we started a discussion of sample size
 calculation methods. We started all the way back at the beginning of
 the topic and took our time with the material. We got through the z-
@@ -650,7 +650,7 @@ material as slowly as you like, so please come prepared to ask lots
 of questions. We will continue with this topic in future meetings.
 <br> <br>
 
-### An Introduction to Sample Size Calculations, 7:30-9:00AM, 7 October 2022, by Zoom  
+#### An Introduction to Sample Size Calculations, 7:30-9:00AM, 7 October 2022, by Zoom  
 We frequently address the topic of sample size calculations in this
 forum, usually taking on a specific method of interest. I recently
 heard a request to backtrack from the advanced material a bit and
@@ -673,7 +673,7 @@ prepared to ask lots of questions. We can continue on with this
 topic in future meetings.
 <br> <br>
 
-### Diagnostic Tests and ROC Curves, 7:30-9:00AM, 2 September 2022, by Zoom  
+#### Diagnostic Tests and ROC Curves, 7:30-9:00AM, 2 September 2022, by Zoom  
 A diagnostic test is used to distinguish two populations, for
 example, between diseased and healthy subjects, using a quantitative
 measurement compared to a threshold value. Observations that fall on
@@ -701,7 +701,7 @@ values can be evaluated using a receiver operating characteristic
 the false positive rate or 1 - specificity.
 <br> <br>
 
-### Smoothing Noisy Time Series Data - A Solution from the Technical Trading Stock Market Community, 7:30-9:00AM, 5 August 2022, by Zoom  
+#### Smoothing Noisy Time Series Data - A Solution from the Technical Trading Stock Market Community, 7:30-9:00AM, 5 August 2022, by Zoom  
 Most of you know that my wife and I have a sailboat that we race and
 cruise on Lake Erie. The boat's instrument system is over 20 years
 old now and its LCD displays have lost their contrast so are
@@ -743,7 +743,7 @@ describe some other simple algorithms that can be implemented in
 MINITAB code or other software.
 <br> <br>
 
-### The Rank-Order Transform and Nonparametric Analysis Methods for When Your Data Aren't Normal, 3 June 2022, 7:30-9:00AM, by Zoom  
+#### The Rank-Order Transform and Nonparametric Analysis Methods for When Your Data Aren't Normal, 3 June 2022, 7:30-9:00AM, by Zoom  
 We all know that the classical statistical analysis methods like the
 one-sample t test, two-sample t test, and ANOVA require that the
 data be normally distributed. Those methods aren't particularly
@@ -762,7 +762,7 @@ nonparametric methods can be applied to any rank ordered data, even
 when a measurement scale isn't available.
 <br> <br>
 
-### Fitting Multiple Regression Models with Inputs Expressed in Physical Units, 7:30-9:00AM, 6 May 2022, by Zoom  
+#### Fitting Multiple Regression Models with Inputs Expressed in Physical Units, 7:30-9:00AM, 6 May 2022, by Zoom  
 When we build a designed experiment in MINITAB, MINITAB prompts us
 to enter the physical values of our process input variables (PIV);
 however, when it reports the results of the analysis it expresses
@@ -787,7 +787,7 @@ permit expressing a multiple regression model in terms of the
 physical values of the PIVs.
 <br> <br>
 
-### Double and Multiple Sampling Plans Versus Bonferroni-Corrected Single Sampling Plans Adapted for Double and Multiple Sampling, 1 April 2022, 7:30-9:00AM, by Zoom  
+#### Double and Multiple Sampling Plans Versus Bonferroni-Corrected Single Sampling Plans Adapted for Double and Multiple Sampling, 1 April 2022, 7:30-9:00AM, by Zoom  
 At our last meeting I described how to use Bonferroni's method to
 expand a zero acceptance number sampling plan to allow one or more
 defectives in double or multiple inspection episodes. The Bonferroni
@@ -800,7 +800,7 @@ double and multiple sampling to the formal methods available for
 designing double and multiple sampling plans.
 <br> <br>
 
-### Use of Bonferroni's Method to Account for Early Defectives in Attribute Sampling, 7:30-9:00AM, 4 March 2022, by Zoom  
+#### Use of Bonferroni's Method to Account for Early Defectives in Attribute Sampling, 7:30-9:00AM, 4 March 2022, by Zoom  
 At last month's QMN meeting we discussed the application of
 Bonferroni's correction to the post-ANOVA multiple comparisons test
 problem; however, applications of Bonferroni's method have much
@@ -822,7 +822,7 @@ sampling plan design and these related methods at this month's QMN
 meeting.
 <br> <br>
 
-### Bonferroni's Correction for Multiple Comparisons Tests, 7:30-9:00AM, 4 February 2022, by Zoom  
+#### Bonferroni's Correction for Multiple Comparisons Tests, 7:30-9:00AM, 4 February 2022, by Zoom  
 When we're planning a statistical analysis by hypothesis test or
 confidence interval one of the decisions we have to make is what
 type 1 or false alarm error rate to tolerate. The most common choice
@@ -852,7 +852,7 @@ approach is simple, conservative, and very flexible so it is used
 more often than every other type of multiple comparisons test.
 <br> <br>
 
-### Weighted ANOVA and Weighted Regression (What To Do When You Can't Find a Variable Transform), 7:30-9:00AM, 7 January 2022, by Zoom  
+#### Weighted ANOVA and Weighted Regression (What To Do When You Can't Find a Variable Transform), 7:30-9:00AM, 7 January 2022, by Zoom  
 When we perform ANOVA or regression we always analyze the model
 residuals to determine if the assumptions of normality and
 homoscedasticity (aka equal variances) are satisfied. When they're
@@ -876,7 +876,7 @@ original/raw residuals. We'll take a look at these methods in this
 month's meeting.
 <br> <br>
 
-### Resampling Methods, 7:30-9:00AM, 3 December 2021, by Zoom  
+#### Resampling Methods, 7:30-9:00AM, 3 December 2021, by Zoom  
 I'm so used to my old habits when working in MINITAB that I often
 don't notice additions that have been made to the program. Recently
 I was talking a customer through an analysis and did a double-take
@@ -902,7 +902,7 @@ session so make sure you join us next week so that you're not behind
 in the following sessions.
 <br> <br>
 
-### Tests and Sample Size Calculations for Poisson Count Responses, 7:30-9:00AM, 5 November 2021, by Zoom  
+#### Tests and Sample Size Calculations for Poisson Count Responses, 7:30-9:00AM, 5 November 2021, by Zoom  
 We've spent a lot of time discussing tests and sample size
 calculations for measurement responses and for proportions (e.g.
 proportions defective or yield); however, we haven't taken up the
@@ -913,7 +913,7 @@ discuss the one-sample, two-sample, and many-sample tests for
 Poisson counts and their associated sample size calculations.
 <br> <br>
 
-### Tests for Homoscedasticity (aka Equal Variances) by F, Bonett, and Levene Test Methods, 7:30-9:00AM, 1 October 2021, by Zoom  
+#### Tests for Homoscedasticity (aka Equal Variances) by F, Bonett, and Levene Test Methods, 7:30-9:00AM, 1 October 2021, by Zoom  
 At this month's QMN meeting we will review the F test for
 homoscedasticity and consider two alternative tests: Bonett's and
 Levene's tests.
@@ -933,7 +933,7 @@ Levene's method also has the added benefit of being applicable when
 there are two, three, or more treatment groups.
 <br> <br>
 
-### The Two-Sample T Test and the Paired-Sample T Test, 7:30-9:00AM, 3 September 2021 by Zoom  
+#### The Two-Sample T Test and the Paired-Sample T Test, 7:30-9:00AM, 3 September 2021 by Zoom  
 Two of the most frequently used hypothesis testing methods are the
 two-sample t test and the paired-sample t test. Both methods are
 tests of means so they're obviously closely related which makes them
@@ -976,7 +976,7 @@ extra sample size that we planned for the two-sample t test just
 provides greater power for the paired-sample t test.
 <br> <br>
 
-### Organizational Statistical Maturity Checklist, 7:30-9:00AM, 6 August 2021 by Zoom  
+#### Organizational Statistical Maturity Checklist, 7:30-9:00AM, 6 August 2021 by Zoom  
 As a consultant I see a wide range of statistical and quality
 engineering skills and practices among my many customers. Invariably
 they all want to know how their company compares to others. An
@@ -991,7 +991,7 @@ up by executing the checklist at work and then comparing results at
 a future meeting.
 <br> <br>
 
-### Modeling Standard Deviations, 7:30-9:00AM, 4 June 2021 by Zoom  
+#### Modeling Standard Deviations, 7:30-9:00AM, 4 June 2021 by Zoom  
 When we're doing experimental work our first concern is for
 understanding how process input variables (PIV) affect the process's
 mean response. The statistical analysis methods used to compare two
@@ -1014,7 +1014,7 @@ treatment groups, many treatment groups, and in designed
 experiments.
 <br> <br>
 
-### The Slipped Confidence Intervals Method versus the Two-Sample t Test Method, 7:30-9:00AM, 7 May 2021, by Zoom  
+#### The Slipped Confidence Intervals Method versus the Two-Sample t Test Method, 7:30-9:00AM, 7 May 2021, by Zoom  
 My friend Mark is planning a clinical trial for which we designed an
 appropriate experiment to be analyzed using a two-sample t test with
 a matching sample size calculation; however, his sponsors, who have
@@ -1045,7 +1045,7 @@ using 84% confidence intervals is equivalent to the two-sample t
 test.
 <br> <br>
 
-### Normality - When Does It Matter and When Does It Not? (Part 3), 7:30-9:00AM, 2 April 2021, by Zoom  
+#### Normality - When Does It Matter and When Does It Not? (Part 3), 7:30-9:00AM, 2 April 2021, by Zoom  
 At the last two QMN meetings we've been talking about where the
 normality assumption applies and where it does not, especially in
 the context of process capability analysis. We weren't quite done
@@ -1057,7 +1057,7 @@ Hopefully after this meeting we can achieve some better
 understanding if not clarity on these issues.
 <br> <br>
 
-### Normality - When Does It Matter and When Does It Not? (Part 2), 7:30-9:00AM, 5 March 2021, by Zoom  
+#### Normality - When Does It Matter and When Does It Not? (Part 2), 7:30-9:00AM, 5 March 2021, by Zoom  
 Many statistical analysis methods require or work better when the
 data follow a normal distribution; however, in experiments with
 complex structure it can be difficult to decide what to check for
@@ -1072,7 +1072,7 @@ meeting we'll discuss how to run the analysis in this situation and
 some more complex ones.
 <br> <br>
 
-### Normality - When Does It Matter and When Does It Not?, 7:30-9:00AM, 5 February 2021, by Zoom  
+#### Normality - When Does It Matter and When Does It Not?, 7:30-9:00AM, 5 February 2021, by Zoom  
 I ran into two recent instances of mistakes made in testing for
 normality to support another analysis:
 
@@ -1104,7 +1104,7 @@ test is inappropriate and may mislead you. We'll talk about these
 two and many other cases at this month's meeting.
 <br> <br>
 
-### Development, Validation, and Use of Subjective Measurement/Observation Scales Using Ordinal Data, 7:30-9:00AM, 8 January 2021, by Zoom  
+#### Development, Validation, and Use of Subjective Measurement/Observation Scales Using Ordinal Data, 7:30-9:00AM, 8 January 2021, by Zoom  
 Way back at our 4 August 2017 QMN meeting we discussed
 the development of a pseudo-measurement system for making subjective
 observations on an ordinal scale. The specific application was Joe
@@ -1125,7 +1125,7 @@ response and the associated issue of determining the sample size for
 such an experiment.
 <br> <br>
 
-### Quality, Statistics, Engineering, and Science Reading List, 7:30-9:00AM, Friday, 4 December 2020, by Zoom  
+#### Quality, Statistics, Engineering, and Science Reading List, 7:30-9:00AM, Friday, 4 December 2020, by Zoom  
 On the small chance that anyone else out there still reads (yes, I
 still read actual physical books with paper pages), let's discuss
 our favorite quality engineering, statistics, engineering, and
@@ -1134,7 +1134,7 @@ recommend posted **[here](http://www.mmbstatistical.com/ReadingList.html)**
 that we can start from but come ready with your own recommendations.
 <br> <br>
 
-### Why We Randomize, 7:30-9:00AM, 6 November 2020, by Zoom  
+#### Why We Randomize, 7:30-9:00AM, 6 November 2020, by Zoom  
 One of the good indicators of you or your organization's
 "statistical maturity" is your understanding and insistence on the
 use of randomization when you're collecting experimental data. As is
@@ -1167,7 +1167,7 @@ necessity of randomizing the order of the runs in your experimental
 work.
 <br> <br>
 
-### Configuring MINITAB's Stat> ANOVA> General Linear Model Menu (Part 2) and Related Methods, 7:30-9:00AM, 2 October 2020, by Zoom  
+#### Configuring MINITAB's Stat> ANOVA> General Linear Model Menu (Part 2) and Related Methods, 7:30-9:00AM, 2 October 2020, by Zoom  
 Last month we discussed how to configure MINITAB's **Stat>
 ANOVA> General Linear Model** menu. I was rushing at the end
 of the presentation, skipping some of the examples and advanced
@@ -1186,7 +1186,7 @@ MINITAB provides for including:
   Study**)
 <br> <br>
 
-### Configuring MINITAB's Stat> ANOVA> General Linear Model Menu, 7:30-9:00AM, 4 September 2020, by Zoom  
+#### Configuring MINITAB's Stat> ANOVA> General Linear Model Menu, 7:30-9:00AM, 4 September 2020, by Zoom  
 One of the most powerful tools that MINITAB provides for data
 analysis is its **Stat> ANOVA> General Linear Model**
 menu. This menu can be used to analyze a quantitative response as a
@@ -1215,7 +1215,7 @@ ANOVA> General Linear Model** for the following issues:
 * Making predictions from the fitted model
 <br> <br>
 
-### Fitting Curved Functions to Y versus X Data, 7:30-9:00AM, 7 August 2020, by Zoom  
+#### Fitting Curved Functions to Y versus X Data, 7:30-9:00AM, 7 August 2020, by Zoom  
 At this month's QMN meeting we will discuss methods for fitting
 curved functions to experimental $y$ versus $x$ data from a scatterplot.
 
@@ -1239,7 +1239,7 @@ principles understanding when possible. We will use MINITAB to fit
 models to example data using all of these methods.
 <br> <br>
 
-### Sample Size Calculations for One- and Two-Sample Proportions - Examples, 7:30-9:00AM, 5 June 2020, by Zoom  
+#### Sample Size Calculations for One- and Two-Sample Proportions - Examples, 7:30-9:00AM, 5 June 2020, by Zoom  
 Given the great interest in last month's topic (sample size
 calculations for proportions), let's do a follow-up session. Last
 month I felt that I rushed through the material, spent too much time
@@ -1257,7 +1257,7 @@ at sample size calculations for the following problems:
 * hypotheses test for a difference between two proportions
 <br> <br>
 
-### Sample Size Calculations for One- and Two-Sample Proportions with Applications to Managing Defective Rate and Reliability, 7:30-9:00AM, 1 May 2020, by Zoom  
+#### Sample Size Calculations for One- and Two-Sample Proportions with Applications to Managing Defective Rate and Reliability, 7:30-9:00AM, 1 May 2020, by Zoom  
 I've had a recent flurry of requests for help with sample size
 calculations for attribute pass/fail responses. These are very
 common problems and many companies have internal expertise to get
@@ -1290,7 +1290,7 @@ there are several problems that MINITAB doesn't do that we'll also
 consider.
 <br> <br>
 
-### An Introduction to MINITAB Macros, 7:30-9:00AM, 3 April 2020, by Zoom  
+#### An Introduction to MINITAB Macros, 7:30-9:00AM, 3 April 2020, by Zoom  
 You have all seen in class or meetings that I frequently use the
 MINITAB command line or macros to do some tasks. I find the command
 line is often faster than using the mouse and GUI to configure
@@ -1308,7 +1308,7 @@ operations to create an EXEC macro, and how to modify the EXEC macro
 to create a LOCAL macro.
 <br> <br>
 
-### Taguchi's Contributions to Quality Engineering, Paul Pastor, 7:30-9:00AM, 6 March 2020, Lakeland Community College, Room T136  
+#### Taguchi's Contributions to Quality Engineering, Paul Pastor, 7:30-9:00AM, 6 March 2020, Lakeland Community College, Room T136  
 Dr. Genichi Taguchi was a mechanical engineer who made several
 important advancements in Quality Engineering. Among them, Taguchi
 introduced “Robust Design” to the quality world. Robustness in
@@ -1330,7 +1330,7 @@ designed experiment. The Signal-to-Noise (S/N) ratio concept that
 Taguchi developed will also be discussed.
 <br> <br>
 
-### Goodness-of-Fit (aka Lack-of-Fit) Tests, 7 February 2020, 7:30-9:00AM, Lakeland Community College, Room T136  
+#### Goodness-of-Fit (aka Lack-of-Fit) Tests, 7 February 2020, 7:30-9:00AM, Lakeland Community College, Room T136  
 The most common model-fitting task most of us perform is fitting a
 simple linear regression model of the form $y = b_0 + b_{1}x$
 where $y$ is the response, $x$ is the predictor, and $b_0$ and $b_1$
@@ -1371,7 +1371,7 @@ cases. We'll look at these and other examples of goodness-of-fit
 tests at our February meeting.
 <br> <br>
 
-### Fixed and Random Variables in Statistical Analysis, 10 January 2020, 7:30-9:00AM, Lakeland
+#### Fixed and Random Variables in Statistical Analysis, 10 January 2020, 7:30-9:00AM, Lakeland
 Community College, Room T136  
 American Statistical Association's (ASA) Statistical Consulting
 Section is currently hosting a discussion about the distinction
@@ -1406,7 +1406,7 @@ discuss some of the more interesting postings in the Statistical
 Consulting Section's discussion of the topic.
 <br> <br>
 
-### Like Nails On A Chalkboard, 6 December 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
+#### Like Nails On A Chalkboard, 6 December 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
 As creators and consumers of information presented using statistical
 methods we've all suffered through instances of the abuse and misuse
 of those methods. At this month's QMN meeting let's discuss the
@@ -1430,7 +1430,7 @@ are:
     * "Here's a stack of data. Find something in there to publish."
 <br> <br>
 
-### Critique of a YouTuber's Experiment to Test the Mechanical Properties of 3D Printed Parts, 1 November 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
+#### Critique of a YouTuber's Experiment to Test the Mechanical Properties of 3D Printed Parts, 1 November 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
 My brother is a hobbyist woodworker and uses a 3D printer to make
 jigs and fixtures for some of his fancier work. A while ago he
 pointed me to the YouTuber CNCKitchen who posts videos on building
@@ -1448,7 +1448,7 @@ together and then go back through it to critique his work and
 identify opportunities to improve his future experiments.
 <br> <br>
 
-### Equivalence, Superiority, and Non-inferiority Tests - Part 2, 4 October 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
+#### Equivalence, Superiority, and Non-inferiority Tests - Part 2, 4 October 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
 At this month's QMN meeting we will continue our discussion of
 equivalence tests and their related methods. We'll start with a
 quick review of equivalence tests, especially of the two one-sided
@@ -1458,7 +1458,7 @@ We'll follow up with discussion and examples of superiority and
 non-inferiority tests.
 <br> <br>
 
-### Equivalence Tests, 6 September 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
+#### Equivalence Tests, 6 September 2019, 7:30-9:00AM, Lakeland Community College, Room T136  
 The hypothesis testing method that all of us learned first and
 use almost exclusively is the method of *significance tests*. The goal of significance testing is to reject the null
 hypothesis of no difference or no effect in favor of the alternate
@@ -1490,7 +1490,7 @@ us at this month's meeting to discuss the use of these other testing
 methods.
 <br> <br>
 
-### Paper Helicopter Experiments, 2 August 2019, 7:30-9:00AM, LCC Room T136  
+#### Paper Helicopter Experiments, 2 August 2019, 7:30-9:00AM, LCC Room T136  
 In the theme of summer vacation, let's do something fun at next
 week's QMN meeting: Let's run paper helicopter experiments! Because
 of its low cost, ease of construction, and myriad design variables,
@@ -1514,7 +1514,7 @@ conditions that maximize flight time.
 to confirm the predicted maximal flight time.
 <br> <br>
 
-### SPC and Process Capability for Processes with a Drifting Mean - Part 2, 7 June 2019, 7:30-9:00AM, LCC Room T136  
+#### SPC and Process Capability for Processes with a Drifting Mean - Part 2, 7 June 2019, 7:30-9:00AM, LCC Room T136  
 At last month's QMN meeting we discussed SPC and process capability
 methods for processes with drifting means such as tool wear
 processes. Our discussion was limited to the simplest cases so this
@@ -1523,7 +1523,7 @@ diverse situations. The abstract from last month's meeting is
 presented below to provide more background on the topic.
 <br> <br>
 
-### SPC and Process Capability for Processes with a Drifting Mean, Such as Tool Wear, 3 May 2019, 7:30-9:00AM, LCC Room T136  
+#### SPC and Process Capability for Processes with a Drifting Mean, Such as Tool Wear, 3 May 2019, 7:30-9:00AM, LCC Room T136  
 The ideal conditions for the use of a traditional Shewhart SPC
 control chart is when the process being studied is producing units
 that come from a single stable process with a constant mean,
@@ -1546,7 +1546,7 @@ process control methods for processes with drifting process means
 and some ideas for evaluating their process capability.
 <br> <br>
 
-### Reliability Test Planning, Part 2, 5 April 2019, 7:30-9:00AM, LCC Room T136  
+#### Reliability Test Planning, Part 2, 5 April 2019, 7:30-9:00AM, LCC Room T136  
 At last month's meeting we discussed the basic concepts of
 reliability test planning and considered some of the simplest
 experiment designs. (See last month's abstract below.) This month we
@@ -1556,7 +1556,7 @@ cases. We'll wrap up with a discussion of how to execute the planned
 experiment and how to perform the data analysis.
 <br> <br>
 
-### Reliability Test Planning, 1 March 2019, 7:30-9:00AM, LCC Room T136.  
+#### Reliability Test Planning, 1 March 2019, 7:30-9:00AM, LCC Room T136.  
 At this month's QMN meeting we will discuss reliability test
 planning. The response of interest in a reliability test can be
 either the time (or number of cycles to failure) when a specified
@@ -1577,7 +1577,7 @@ experiment designs, sample size and acceptance criteria
 requirements, and how to analyze their experimental data.
 <br> <br>
 
-### A Tour of Micro Laboratories, 4 February 2019, 8:00-9:30AM, at Micro Labs.**  
+#### A Tour of Micro Laboratories, 4 February 2019, 8:00-9:30AM, at Micro Labs.**  
 Keith Kokal, the President and Owner of Micro Laboratories in
 Mentor, has invited us for a tour of the Micro Laboratories
 facilities. Micro Laboratories is a calibration services provider
@@ -1593,7 +1593,7 @@ Please e-mail me if you would like to come. We'll send more details
 as we get closer to the event date.
 <br> <br>
 
-### Use Propagation of Error to Focus Your Process Improvement Activities****, 4 January 2019, 7:30-9:00AM, Room T136.  
+#### Use Propagation of Error to Focus Your Process Improvement Activities****, 4 January 2019, 7:30-9:00AM, Room T136.  
 To continue our recent theme of process capability and
 tolerancing, at this month's QMN meeting we will consider
 propagation of error - a method used to determine how variation in a
@@ -1639,7 +1639,7 @@ In addition to the spring problem we'll look at three others:
   and dose variables
 <br> <br>
 
-### Strength-Load Interference, Interference Fits, and Stack-up Tolerances****, 7 December 2018, 7:30-9:00AM, Room T136.  
+#### Strength-Load Interference, Interference Fits, and Stack-up Tolerances****, 7 December 2018, 7:30-9:00AM, Room T136.  
 In our discussions from the last two months on process
 capability evaluation with variable tolerances (such as for GD&T
 true position with bonus tolerances) one of the fundamental topics
@@ -1655,7 +1655,7 @@ interference and we'll address the many other cases using Monte
 Carlo simulation.
 <br> <br>
 
-### Process Capability for GD&T True Position, Part 2, 2 November 2018, 7:30-9:00AM, Room T136.  
+#### Process Capability for GD&T True Position, Part 2, 2 November 2018, 7:30-9:00AM, Room T136.  
 At last month's very well attended meeting we discussed some basics
 of Geometric Dimensioning and Tolerancing (GD&T) and the
 complications of assessing process capability in the presence of
@@ -1669,7 +1669,7 @@ statistics reported in common software, and at some real data
 volunteered by Alyssa W.
 <br> <br>
 
-### Process Capability for GD&T True Position, Part 1, 5 October 2018, 7:30-9:00AM, Room T136.  
+#### Process Capability for GD&T True Position, Part 1, 5 October 2018, 7:30-9:00AM, Room T136.  
 My (Paul) understanding of GD&T is weak so Scott H is going to
 open this month's session with an introduction to GD&T True
 Position. There's a good introduction to the topic, including a
@@ -1705,7 +1705,7 @@ with performing process capability for True Position. We'll look at
 this and related issues at this month's meeting.
 <br> <br>
 
-### Design of Gage R&R Studies Part 3, 7 September 2018, 7:30-9:00AM, Room T136.  
+#### Design of Gage R&R Studies Part 3, 7 September 2018, 7:30-9:00AM, Room T136.  
 After our second meeting on August 10th on the topic of gage R&R
 studies we still have some unresolved questions to discuss so we
 will pick up the topic for a third time.
@@ -1727,7 +1727,7 @@ category that the attribute measurement system is intended to
 detect.
 <br> <br>
 
-### Design of Gage R&R Studies Part 2, 10 August 2018, 7:30-9:00AM, Room T136.  
+#### Design of Gage R&R Studies Part 2, 10 August 2018, 7:30-9:00AM, Room T136.  
 We had a great - and somewhat terrifying - discussion about gage
 R&R study design at our June 1st QMN meeting but there were many
 related issues that we didn't get to so we will take up the topic
@@ -1743,7 +1743,7 @@ please send it to me before the meeting and come prepared to
 describe the study and its implications.
 <br> <br>
 
-### Design of Gage R&R Studies, 1 June 2018, 7:30-9:00AM, Room T136.  
+#### Design of Gage R&R Studies, 1 June 2018, 7:30-9:00AM, Room T136.  
 The best known GR&R study design is the classic operator by part
 crossed design with 3 operators, 10 parts, and 2 trials. Most of the
 references out there don't give any guidance about why those numbers
@@ -1758,7 +1758,7 @@ measurement procedure, the use or not of a jig or fixture, and other
 variables into your GR&R study design.
 <br> <br>
 
-### Report from the ASA Spring Conference: *Successful Data Mining in Practice* by Dick De Veaux, 4 May 2018, 7:30-9:00AM, Room T136.  
+#### Report from the ASA Spring Conference: *Successful Data Mining in Practice* by Dick De Veaux, 4 May 2018, 7:30-9:00AM, Room T136.  
 Recently network members Paul P., Jim G., and I attended Dick De
 Veaux's presentation *Successful Data Mining in Practice* at
 the ASA Spring Conference. At this month's QMN meeting the three of
@@ -1769,7 +1769,7 @@ the specialized tools developed for data mining, and we will look at
 some simple examples of data mining methods using MINITAB and R.
 <br> <br>
 
-### The Normal Distribution, Variable Transforms, and Processes with Time-Dependent Parameters, 6 April 2018, 7:30-9:00AM, Room T136.  
+#### The Normal Distribution, Variable Transforms, and Processes with Time-Dependent Parameters, 6 April 2018, 7:30-9:00AM, Room T136.  
 At this month's meeting we'll talk about methods for testing data
 for normality, why they matter, and what to do if our data aren't
 normal.
@@ -1790,7 +1790,7 @@ parameters that vary with time and learn to manage the time
 dependencies.
 <br> <br>
 
-### Outliers, 9 March 2018, 7:30-9:00AM, Room T136.  
+#### Outliers, 9 March 2018, 7:30-9:00AM, Room T136.  
 Nothing ruins a beautiful data set as fast as an ugly outlier. We've
 all seen them. We've all got them. What to do? What to do?
 
@@ -1814,7 +1814,7 @@ you primed for the discussion:
 > and practiced the correct way to manage outliers.
 <br> <br>
 
-### When Experiments Go Bad (Part 3), 2 February 2018, 7:30-9:00AM, Room T136.  
+#### When Experiments Go Bad (Part 3), 2 February 2018, 7:30-9:00AM, Room T136.  
 The discussion topic for our last two meetings was *When
 Experiments Go Bad*. There are so many ways that can happen
 that we're not done with the topic yet so we'll take it up one more
@@ -1829,7 +1829,7 @@ you're willing to talk about and share please send me its run matrix
 before we meet so we can analyze it together.
 <br> <br>
 
-### When Experiments Go Bad (Part 2), 1 December 2017, 7:30-9:00AM, Room T136.  
+#### When Experiments Go Bad (Part 2), 1 December 2017, 7:30-9:00AM, Room T136.  
 Last month we had such a great turnout and discussion about
 experiments that have gone bad and what we can learn from them that
 the group decided to do a follow-up session this month. I told many
@@ -1840,7 +1840,7 @@ damage, and potential remedial actions to recover as much
 information as possible.
 <br> <br>
 
-### When Experiments Go Bad (Part 1), 3 November 2017, 7:30-9:00AM, Room T136.  
+#### When Experiments Go Bad (Part 1), 3 November 2017, 7:30-9:00AM, Room T136.  
 This week I had two different customers who had problems with
 experiments that they were running and they reminded me how you can
 learn more from a compromised or even failed experiment than one
@@ -1850,7 +1850,7 @@ to salvage the situation, and how we can prevent these problems from
 happening again in the future.
 <br> <br>
 
-### A Discussion of John Ioannidis's article *Why Most Published Research Findings Are False*, 6 October 2017, 7:30-9:00AM, Room T136.  
+#### A Discussion of John Ioannidis's article *Why Most Published Research Findings Are False*, 6 October 2017, 7:30-9:00AM, Room T136.  
 When we do statistical analysis of data we usually use the p <
 0.05 criterion to indicate a statistically significant result. That
 choice means that in those cases where there really is no
@@ -1876,7 +1876,7 @@ discussion check out Derek Muller's *Veritassium* video on the
 topic posted [here](https://www.youtube.com/watch?v=42QuXLucH3Q).
 <br> <br>
 
-### Software Cost Estimation, Stuart Kretch, 1 September 2017, 7:30-9:00AM, Room T136.  
+#### Software Cost Estimation, Stuart Kretch, 1 September 2017, 7:30-9:00AM, Room T136.  
 Software implementation has been problematic for
 decades. In spite of enormous amounts of investment and work,
 it remains highly uncertain work with failure rates that are worse
@@ -1895,7 +1895,7 @@ implement software more effectively, we're going to have to do a
 better job of respecting mathematics.
 <br> <br>
 
-### Development of a Custom Corrosion Measurement System, Paul Mathews and Joe R., 4 August 2017, 7:30-9:00AM, T136.  
+#### Development of a Custom Corrosion Measurement System, Paul Mathews and Joe R., 4 August 2017, 7:30-9:00AM, T136.  
 Network member Joe R is working on a project to reduce corrosion of
 steel parts. He plans to build a series of designed experiments to
 investigate anti-corrosion treatment methods; however, he first has
@@ -1907,7 +1907,7 @@ ratio measurement scales and discuss how to define a corrosion
 measurement scale that will meet the needs of Joe's experiments.
 <br> <br>
 
-### A Peek into MINITAB V18 and Definitive Screening Designs, 2 June 2017, 7:30-9:00AM, Room T136.  
+#### A Peek into MINITAB V18 and Definitive Screening Designs, 2 June 2017, 7:30-9:00AM, Room T136.  
 I have a beta version of MINITAB V18. There are some significant
 changes coming, among them a complete redesign of the way the
 Session window is managed. We'll take a quick look at some of the
@@ -1918,7 +1918,7 @@ the Plackett-Burman designs. We'll investigate the structure of the
 DSDs and then compare their performance to the classic designs.
 <br> <br>
 
-### Use Accelerated Testing to Reduce the Length of Life Tests, 5 May 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Use Accelerated Testing to Reduce the Length of Life Tests, 5 May 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
 In an ordinary life test, where the response (such as the fraction
 of units surviving or the concentration of a chemical) changes with
 time, the units under test are operated at the same conditions as
@@ -1942,7 +1942,7 @@ of the time it would take to perform the same test under
 unaccelerated conditions.
 <br> <br>
 
-### Guidelines for Setting Specification Limits on CTQ and non-CTQ Quality Characteristics, 7 April 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Guidelines for Setting Specification Limits on CTQ and non-CTQ Quality Characteristics, 7 April 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Quality characteristics that are critical to quality (CTQ) for your
 customer must have their specifications set to meet your customer's
 requirements; however, the constraints for setting specifications on
@@ -1963,7 +1963,7 @@ join us to finally learn how setting specification limits should
 really be done.
 <br> <br>
 
-### Estimations from Distribution Tails with Applications to Process Capability and Reliability, 3 March 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Estimations from Distribution Tails with Applications to Process Capability and Reliability, 3 March 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Most of our statistical analysis tasks are directed at estimating
 the simplest distribution parameters. For example, in statistical
 process control we use x-bar and R charts to keep track of the
@@ -1990,7 +1990,7 @@ methods for normal distributions and then generalize those methods
 to other distributions such as the Weibull.
 <br> <br>
 
-### Multivariate Control Charts, 3 February 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Multivariate Control Charts, 3 February 2017, 7:30-9:00AM, Lakeland Community College, Room T136.  
 An X-bar and R chart is appropriate when we want to control one
 process characteristic but what if there are two or more process
 characteristics to control in a single process? In such cases we can
@@ -2011,7 +2011,7 @@ statistic and its application to one-sample tests, two-sample tests,
 and multivariate control charts.
 <br> <br>
 
-### Hard-To-Change Variables in Designed Experiments, 6 January 2017****, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Hard-To-Change Variables in Designed Experiments, 6 January 2017****, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Ideally all of the study variables in a designed experiment are easy
 to change so that the levels of the study variables can all be
 randomized in the run matrix; however, in some cases one or more of
@@ -2027,7 +2027,7 @@ of analyzing a split plot design incorrectly as a full factorial
 design.
 <br> <br>
 
-### Assessing the Health of your SPC System and Alternatives to SPC (Part 2), 2 December 2016****, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Assessing the Health of your SPC System and Alternatives to SPC (Part 2), 2 December 2016****, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Our November meeting was very lively and well-attended and because
 we didn't finish our discussion on the topic we'll pick it up again
 in December. We'll start with a review of the November discussion
@@ -2038,7 +2038,7 @@ and my old (in desperate need of revision) SPC Audit Checklist is
 posted **[here](http://www.mmbstatistical.com/Notes/SPCAuditChecklist.xls)**.
 <br> <br>
 
-### Assessing the Health of your SPC System and Alternatives to SPC (Part 1), 4 November 2016****, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Assessing the Health of your SPC System and Alternatives to SPC (Part 1), 4 November 2016****, 7:30-9:00AM, Lakeland Community College, Room T136.  
 The go-to method for putting a process under control (such as in the
 Control phase of a Six Sigma DMAIC project) used by most
 organizations is statistical process control (SPC); however, how do
@@ -2052,7 +2052,7 @@ likely that this topic will be too big to cover in one session so
 we'll probably do a follow-up session in December.
 <br> <br>
 
-### Who Won the Debate? An Application of McNemar's Test, 7 October 2016****, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Who Won the Debate? An Application of McNemar's Test, 7 October 2016****, 7:30-9:00AM, Lakeland Community College, Room T136.  
 We're coming to the end of election season which means we're now
 suffering through presidential debates. Immediately after one of
 these debates both sides claim that they won; however, how would you
@@ -2090,7 +2090,7 @@ of the many other applications of McNemar's test. For example:
   cocaine?
 <br> <br>
 
-### What Do You See When You Look At a Boxplot?, 2 September 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### What Do You See When You Look At a Boxplot?, 2 September 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Boxplots are the preferred graphical presentation method for small
 data sets. Despite their simplicity, they can be used to perform
 many analyses, some being quite complex. At this month's meeting
@@ -2102,7 +2102,7 @@ differences between two or more means, and tests for differences
 between two or more standard deviations.
 <br> <br>
 
-### Continuous and Skip Lot Sampling Plans, 5 August 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Continuous and Skip Lot Sampling Plans, 5 August 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 I've been working with a customer recently who has a supplier
 inspection procedure that operates much like a skip lot sampling
 plan. I haven't seen skip lot sampling used in a while and I thought
@@ -2140,7 +2140,7 @@ examples, compare the performance of some plans, and then talk about
 some of the published CSPs and SkSPs that are available.
 <br> <br>
 
-### Experiment Protocol Documents (Part 2), 3 June 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Experiment Protocol Documents (Part 2), 3 June 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Last month's meeting on experiment protocols was very
 well attended so this month we're going to do a follow-up on the
 same topic. We'll start by reviewing the potential content of an
@@ -2163,7 +2163,7 @@ experiment protocol design mind map:
 * [Tab-indexed text file](http://www.mmbstatistical.com/Notes/ExperimentProtocol.txt) (.txt, outline form)
 <br> <br>
 
-### Experiment Protocol Documents,6 May 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Experiment Protocol Documents,6 May 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 As a consultant I've seen a wide range of practices with
 respect to how organizations plan and execute their experimental
 work. Those that skimp on the early planning and preparation phases
@@ -2183,7 +2183,7 @@ develop a protocol template that we can all share for managing our
 own experimental processes.
 <br> <br>
 
-### Nonlinear Regression Models, 8 April 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Nonlinear Regression Models, 8 April 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 When a simple linear model ($y = b_0 + b_{1}x$) for
 data in a scatter plot doesn't fit the data we can often apply a
 variable transformation to the x and/or y values and linearize the
@@ -2199,7 +2199,7 @@ network members please forward the data to Paul before the meeting
 and come prepared to explain the data set.
 <br> <br>
 
-### Two-level Factorial Experiments with Binary (e.g. Pass/Fail) Responses, 11 March 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Two-level Factorial Experiments with Binary (e.g. Pass/Fail) Responses, 11 March 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Designed experiments are the preferred method for studying how a
 quantitative response depends on several independent variables;
 however, what if the response is not quantitative but is instead a
@@ -2209,7 +2209,7 @@ response, the use of binary logistic regression for the analysis,
 and how to calculate an appropriate sample size for the experiment.
 <br> <br>
 
-### Validation/Sampling Plan Design for a Complex Product, 5 February 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Validation/Sampling Plan Design for a Complex Product, 5 February 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 In training and most shop floor discussions of sampling plan design
 (be it for a one-time validation study or a periodic inspection
 operation) the processes we're considering are usually relatively
@@ -2236,7 +2236,7 @@ relevant to any product or process that has multiple and complex
 performance requirements.
 <br> <br>
 
-### Automate Microsoft Word Reports Using ODBC and VBA Calls to MINITAB, 8 January 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Automate Microsoft Word Reports Using ODBC and VBA Calls to MINITAB, 8 January 2016, 7:30-9:00AM, Lakeland Community College, Room T136.  
 At our last two QMN meetings we discussed how to use MINITAB EXEC
 and LOCAL macros to perform routine MINITAB analyses. At this
 month's meeting we'll discuss two more methods to improve your
@@ -2249,7 +2249,7 @@ generates a ready-to-publish Word document including integrated
 output from MINITAB.
 <br> <br>
 
-### Automate Routine Graphical and Statistical Analyses Using MINITAB Macros (Part 2), 4 December 2015, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Automate Routine Graphical and Statistical Analyses Using MINITAB Macros (Part 2), 4 December 2015, 7:30-9:00AM, Lakeland Community College, Room T136.  
 At last month's QMN meeting we discussed how to create and run a
 MINITAB EXEC macro by collecting the code that MINITAB creates from
 operations performed with the graphical user interface. We also
@@ -2279,7 +2279,7 @@ automatically populate Word and PowerPoint reports with MINITAB
 output.
 <br> <br>
 
-### Automate Routine Graphical and Statistical Analyses Using MINITAB Macros (Part 1), 6 November 2015, 7:30-9:00AM, Lakeland Community College, Room L104.  
+#### Automate Routine Graphical and Statistical Analyses Using MINITAB Macros (Part 1), 6 November 2015, 7:30-9:00AM, Lakeland Community College, Room L104.  
 Many of us have graphical or statistical analyses in MINITAB that we
 have to repeat periodically. For example, we may have to prepare a
 weekly or monthly quality report, update a collection of SPC charts,
@@ -2297,7 +2297,7 @@ automatically populate Word and PowerPoint reports with MINITAB
 output.
 <br> <br>
 
-### Short Run SPC with MINITAB's Z-MR Charts, 2 October 2015,
+#### Short Run SPC with MINITAB's Z-MR Charts, 2 October 2015,
 7:30-9:00AM, Lakeland Community College, Room T136.  
 I recently spent two days at a conference for consultants hosted by
 and at MINITAB. A good portion of our time was spent on training on
@@ -2317,7 +2317,7 @@ following short run SPC situations:
 * Deviation from target chart, unequal standard deviations for runs
 <br> <br>
 
-### A Menagerie of Reliability Problems (Part 3), 4 September 2015, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### A Menagerie of Reliability Problems (Part 3), 4 September 2015, 7:30-9:00AM, Lakeland Community College, Room T136.  
 At last month's meeting we used MINITAB's **Stat>
 Reliability/Survival> Test Plans> Demonstration** and **Test
 Plans> Estimation** menus to design and analyze
@@ -2343,7 +2343,7 @@ members please e-mail the data to Paul (paul@mmbstatistical.com)
 before the meeting.
 <br> <br>
 
-### A Menagerie of Reliability Problems (Part 2), **7 August 2015**, 7:30-9:00AM, Lakeland Community College, Room T-136  
+#### A Menagerie of Reliability Problems (Part 2), **7 August 2015**, 7:30-9:00AM, Lakeland Community College, Room T-136  
 At last month's meeting we used MINITAB to analyze
 seven of the most common quality engineering problems. This month
 we'll continue the theme of reliability analysis with MINITAB by
@@ -2352,7 +2352,7 @@ tests, accelerated reliability tests, and the analysis of
 reliability data using linear regression, ANOVA, and DOE methods.
 <br> <br>
 
-### A Menagerie of Reliability Problems (Part 1), 5 June 2015, 7:30-9:00AM, Lakeland Community College, Room T-136. 
+#### A Menagerie of Reliability Problems (Part 1), 5 June 2015, 7:30-9:00AM, Lakeland Community College, Room T-136. 
 At this month's QMN meeting we're going to work
 through as many example reliability problems as possible using
 MINITAB. We'll look at examples of the following types:
@@ -2373,7 +2373,7 @@ This topic is large enough that it will probably require at least
 one follow-up meeting.
 <br> <br>
 
-### Equivalence, Superiority, and Non-inferiority Tests (Part 2), 1 May 2015, 7:30-9:00AM, Lakeland Community College, Room L-104. 
+#### Equivalence, Superiority, and Non-inferiority Tests (Part 2), 1 May 2015, 7:30-9:00AM, Lakeland Community College, Room L-104. 
 We had a great turnout at last month's meeting so
 this month we will continue our discussion of equivalence,
 superiority, and noninferiority tests. We'll review the material
@@ -2384,7 +2384,7 @@ discussion please e-mail it to me with a short description of the
 situation.
 <br> <br>
 
-### Equivalence, Superiority, and Non-inferiority Tests, 10 April 2015, 7:30-9:00AM, Lakeland Community College, Room E116.  
+#### Equivalence, Superiority, and Non-inferiority Tests, 10 April 2015, 7:30-9:00AM, Lakeland Community College, Room E116.  
 (The presentation notes are **[here](file:///C%3A/Statistics/MMBInc/mmbstatisticalwebsite/QualityTools/EquivalenceTests.pdf)**.)
 The hypothesis testing method that all of us learned first and
 use almost exclusively is the method of *significance tests*. The goal of significance testing is to reject the null
@@ -2417,7 +2417,7 @@ needed a test other than a significance test come join us at this
 month's meeting to discuss the use of these other testing methods.
 <br> <br>
 
-### Acceptance Sampling Plan Design for Variables Data, 6 March 2015, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Acceptance Sampling Plan Design for Variables Data, 6 March 2015, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Last month's meeting on acceptance sampling using
 attribute data was well attended so this month we'll continue the
 discussion by considering acceptance sampling using variables (aka
@@ -2434,7 +2434,7 @@ variable sampling plan calculation methods and the corresponding
 methods provided in MINITAB.
 <br> <br>
 
-### Acceptance Sampling Plan Design for Attribute Data, 6 February 2015, 7:30-9:00AM, Lakeland Community College, Room T221.  
+#### Acceptance Sampling Plan Design for Attribute Data, 6 February 2015, 7:30-9:00AM, Lakeland Community College, Room T221.  
 Acceptance sampling is a fundamental method of
 quality engineering. In attribute acceptance sampling a random
 sample is drawn from a production lot and the sample is inspected to
@@ -2468,7 +2468,7 @@ continue this conversation by considering acceptance sampling plans
 for measurement data.
 <br> <br>
 
-### Binary Logistic Regression Case Studies: A Toxicology Study and O-ring Failures Before the Space Shuttle Challenger Accident, 7 November 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Binary Logistic Regression Case Studies: A Toxicology Study and O-ring Failures Before the Space Shuttle Challenger Accident, 7 November 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Many experiments generate responses that are quantitative, but some
 experiments generate qualitative or attribute responses. There are
 three common families of attribute responses: binary responses,
@@ -2485,7 +2485,7 @@ toxicology study and 2) the o-ring failure data that was available
 before the loss of the space shuttle Challenger.
 <br> <br>
 
-### Those Confusing Process Capability Statistics (Part 3), 3 October 2014, 7:30-9:00AM, Lakeland Community College, Room L104.  
+#### Those Confusing Process Capability Statistics (Part 3), 3 October 2014, 7:30-9:00AM, Lakeland Community College, Room L104.  
 Our last two meetings about process
 capability issues were both lively and well attended. At this
 month's meeting we'll continue the process capability
@@ -2497,7 +2497,7 @@ conditions such as normal and non-normal data, short and long
 term data, time dependent distribution parameter values, etc.
 <br> <br>
 
-### Those Confusing Process Capability Statistics (Part 2), 5 September 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Those Confusing Process Capability Statistics (Part 2), 5 September 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
 At our last meeting in June, which was
 lively and well attended, we discussed some of the many
 process capability statistics that are in use and how they are
@@ -2509,7 +2509,7 @@ lot of these issues are difficult, confusing, and contentious
 so we should have another lively discussion.
 <br> <br>
 
-### Those Confusing Process Capability Statistics (Part 1), 6 June 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Those Confusing Process Capability Statistics (Part 1), 6 June 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
 You've probably developed some degree of comfort working with
 process capability statistics; however, sooner or later you're going
 to run into another organization that uses a different set of
@@ -2526,7 +2526,7 @@ control, confidence intervals, hypothesis tests, sample size
 calculations, and statistical terrorism.
 <br> <br>
 
-### Quality Engineering Principles Applied to Health and Safety, 2 May 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Quality Engineering Principles Applied to Health and Safety, 2 May 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Network members: I need your help. I recently met Melissa, a now-new
 QMN member, who has taken on a new job collecting, analyzing, and
 reporting on company-wide health and safety issues. She has lots of
@@ -2540,7 +2540,7 @@ and safety issues you should come just to get practice thinking
 outside of your own box.
 <br> <br>
 
-### When Gage Error Studies Go Bad (Part 2), 7 March 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### When Gage Error Studies Go Bad (Part 2), 7 March 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
 At the last well-attended QMN meeting (Feb 7) we discussed the
 analysis and interpretation of a GR&R study performed by one of
 the network members, Ron I.. During the discussion we drew attention
@@ -2551,7 +2551,7 @@ brainstorm a complete list of potential problems that are
 encountered in GR&R studies.
 <br> <br>
 
-### When Gage Error Studies Go Bad I (Part 1), 7 February 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### When Gage Error Studies Go Bad I (Part 1), 7 February 2014, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Despite our best intentions, there are so many ways that a gage
 error study can go bad that they often get the better of us. We'll
 use this meeting of the QMN to discuss some of our experiences, both
@@ -2559,7 +2559,7 @@ good and bad, so that perhaps some of us might avoid a disaster in
 the future based on someone else's account of a bad study.
 <br> <br>
 
-### Methods for Analyzing Censored Data, 6 December 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Methods for Analyzing Censored Data, 6 December 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
 In some data collection situations it is impossible or impractical
 to observe values less than or greater than a limiting value. For
 example:
@@ -2586,7 +2586,7 @@ analyzing data with censored observations including:
 * Parametric analysis using the maximum likelihood method
 <br> <br>
 
-### Sample Size Calculations for Experiments with Binary Responses, 4 October 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Sample Size Calculations for Experiments with Binary Responses, 4 October 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
 At this month's QMN meeting and at the request of a network member
 we're going to discuss sample size calculations for experiments with
 binary (pass/fail) responses. We'll start by considering one of the
@@ -2600,7 +2600,7 @@ regression/ANOVA for two-level factorial designs with quantitative
 responses.
 <br> <br>
 
-### The Kano Model, 2 August 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### The Kano Model, 2 August 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
 An important step in voice of the customer (VOC) analysis is
 to correctly classify process output variables (POVs) with respect
 to their importance to the customer. At the simplest level of
@@ -2617,7 +2617,7 @@ of a POV, how POVs change over time with respect to their Kano
 classification, and some extensions of the original Kano model.
 <br> <br>
 
-### Free Software!, 7 June 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Free Software!, 7 June 2013, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Many of us have reluctantly become the
 computer and software technical support services for our
 family and extended family. For example, without spending
@@ -2630,7 +2630,7 @@ and alternatives from the network members. A list of some of
 the software that he will discuss is presented [here](http://www.mmbstatistical.com/Notes/FreeSoftware.txt).
 <br> <br>
 
-### To be rescheduled: A Comparison of Practices Used to Manage Experimental Work, 7:30-9:00AM, Room T136  
+#### To be rescheduled: A Comparison of Practices Used to Manage Experimental Work, 7:30-9:00AM, Room T136  
 As a consultant I see a wide range of practices in how
 organizations manage their experimental work. (By "experiment" I
 mean any activity that involves data collection, analysis, and
@@ -2648,7 +2648,7 @@ the problems, management tools, and solutions associated with
 different approaches to managing experimental work.
 <br> <br>
 
-### Diagnostic Tests and ROC Curves, 7:30-9:00AM, 5 April 2013, Room T136.  
+#### Diagnostic Tests and ROC Curves, 7:30-9:00AM, 5 April 2013, Room T136.  
 At this month's QMN meeting Paul Mathews will introduce the
 fundamental concepts and issues of diagnostic tests with examples
 from medicine, engineering, manufacturing, and science.
@@ -2681,7 +2681,7 @@ the false positive rate or 1 - specificity. [Presentation
 Notes](http://www.mmbstatistical.com/Notes/ROC.pdf)
 <br> <br>
 
-### Use of ISight Software for Propagation of Error Analysis, Paul Mathews with Mike Plishka and Jim Soltisz of Dassault Systems, 1 February 2013, 7:30-9:00AM, Room T136.  
+#### Use of ISight Software for Propagation of Error Analysis, Paul Mathews with Mike Plishka and Jim Soltisz of Dassault Systems, 1 February 2013, 7:30-9:00AM, Room T136.  
 At the last QMN meeting in November we talked about propagation of
 error - how variation in process input variables (PIV) causes
 variation in a critical-to-quality (CTQ) response. As a case study,
@@ -2714,7 +2714,7 @@ study systems with 3-5 CTQs as functions of more than 50 PIVs. -
 Paul)
 <br> <br>
 
-### Stack-up Tolerance Analysis for O-ring Compression in a Mechanical Seal, 7 December 2012, 7:30-9:00AM, Room T136.  
+#### Stack-up Tolerance Analysis for O-ring Compression in a Mechanical Seal, 7 December 2012, 7:30-9:00AM, Room T136.  
 At the last QMN meeting in October we decided that in a future
 meeting we'd discuss electronic data collection methods using a
 communication interface (e.g. RS232, GPIB, ...) between a computer
@@ -2741,7 +2741,7 @@ evaluate the distribution of compression from the component
 distributions by the simulation and analytical methods.
 <br> <br>
 
-### Beyond Shewhart Charts, 5 October 2012, 7:30-9:00AM, Room T136.    
+#### Beyond Shewhart Charts, 5 October 2012, 7:30-9:00AM, Room T136.    
 In most circumstances the classical Shewhart charts, like the
 well-known x-bar and R chart, are sufficient for effective
 statistical process control; however, the Shewhart charts are less
@@ -2759,7 +2759,7 @@ perform compared to the Shewhart charts in the presence of small
 shifts.
 <br> <br>
 
-### Introduction to Lean Six Sigma, 3 August 2012, 7:30-10:00AM, Room T136.  
+#### Introduction to Lean Six Sigma, 3 August 2012, 7:30-10:00AM, Room T136.  
 Lean Six Sigma is the integration of the two famous, complementary
 business process improvement methodologies – Lean to reduce waste
 and Six Sigma for quality improvement. Students of this course will
@@ -2773,7 +2773,7 @@ learn to:
 * Use the DMAIC methodology to run Lean and Six Sigma projects
 <br> <br>
 
-### Failure Modes and Effects Analysis, Louise Watson, 1 June 2012, 7:30-9:00AM, Room T136.  
+#### Failure Modes and Effects Analysis, Louise Watson, 1 June 2012, 7:30-9:00AM, Room T136.  
 Failure Modes and Effects Analysis (FMEA) is a well known method of
 risk assessment and risk management. Louise Watson will review
 the steps involved in FMEA including: initial review of the project,
@@ -2796,7 +2796,7 @@ ovens, high concentrations of toxic acids, flammable and toxic gases
 in pressure vessels, and oxygen-free high temperature furnaces.
 <br> <br>
 
-### Upgrade Your Inspections By Replacing Attribute Criteria With Measurement Criteria, 4 May 2012, 7:30-9:00AM, Room T136.  
+#### Upgrade Your Inspections By Replacing Attribute Criteria With Measurement Criteria, 4 May 2012, 7:30-9:00AM, Room T136.  
 The value of individual observations increases according to the
 measurement scale hierarchy: nominal (of which binary is a special
 case), ordinal, interval, and ratio. Understanding this hierarchy
@@ -2812,7 +2812,7 @@ measurement scales and discuss the opportunities and benefits of
 replacing low-value observations with high-value observations.
 <br> <br>
 
-### Interpreting Gage R&R Study Results (Part 2), 2 March 2012, 7:30-9:00AM, Room T136.  
+#### Interpreting Gage R&R Study Results (Part 2), 2 March 2012, 7:30-9:00AM, Room T136.  
 At the well-attended February 3rd QMN meeting we had a lively
 conversation about the different methods of interpreting gage error
 study results; however, we ran out of time before we were able to
@@ -2830,7 +2830,7 @@ selection strategies and their consequences and try to identify
 appropriate methods for interpreting their gage error study results.
 <br> <br>
 
-### Baselines for Interpreting Gage R&R Study Results (Part 1), 3 February 2012, 7:30-9:00AM, Room T136.  
+#### Baselines for Interpreting Gage R&R Study Results (Part 1), 3 February 2012, 7:30-9:00AM, Room T136.  
 The default baseline for interpreting the gage repeatability (EV)
 and reproducibility (AV) in gage R&R studies is the tolerance
 width (TOL). The usual acceptance criteria are that EV/TOL and
@@ -2850,7 +2850,7 @@ evaluating gage R&R study results and discuss their strengths
 and weaknesses.
 <br> <br>
 
-### Binary Logistic Regression Case Studies: A Toxicology Study and O-ring Failures Before the Space Shuttle Challenger Accident, 6 January 2012, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Binary Logistic Regression Case Studies: A Toxicology Study and O-ring Failures Before the Space Shuttle Challenger Accident, 6 January 2012, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Many experiments generate responses that are quantitative, but some
 experiments generate qualitative or attribute responses. There are
 three common families of attribute responses: binary responses,
@@ -2867,7 +2867,7 @@ toxicology study and 2) the o-ring failure data that was available
 before the loss of the space shuttle Challenger.
 <br> <br>
 
-### Variable Transformations (Part III), 2 December 2011, 7:30-9:00AM, Room T136.  
+#### Variable Transformations (Part III), 2 December 2011, 7:30-9:00AM, Room T136.  
 In the last two meetings on the topic of variable transformations we
 considered transformations that convert nonnormal data to at least
 approximate normality such as for the purpose of process capability
@@ -2882,7 +2882,7 @@ simplify and improve the power and robustness of some otherwise
 painful analyses.
 <br> <br>
 
-### Variable Transformations for Nonnormal Data (Part II), 4 November 2011, 7:30-9:00AM, Room T136.  
+#### Variable Transformations for Nonnormal Data (Part II), 4 November 2011, 7:30-9:00AM, Room T136.  
 At the October 7th meeting we talked about different variable
 transformation methods for performing process capability analysis of
 nonnormal data. This month we'll continue that conversation by
@@ -2893,7 +2893,7 @@ share with the network members, please e-mail your data to Paul at
 paul@mmbstatistical.com.
 <br> <br>
 
-### Variable Transformations for Nonnormal Data, 7 October 2011, 7:30-9:00AM, Room E116.  
+#### Variable Transformations for Nonnormal Data, 7 October 2011, 7:30-9:00AM, Room E116.  
 Many statistical methods, such as process capability analysis,
 depend on the assumption that the quality characteristic under
 consideration is normally distributed. When a nonnormal distribution
@@ -2910,7 +2910,7 @@ analyze and are willing to share with the network members, please
 e-mail your data to Paul at paul@mmbstatistical.com.
 <br> <br>
 
-### Introduction to Six Sigma, 9 September 2011, 7:30-10:00AM, Room T136.  
+#### Introduction to Six Sigma, 9 September 2011, 7:30-10:00AM, Room T136.  
 Paul Mathews will present a free overview of Six Sigma.
 
 Measurement Validation, 5
@@ -2932,7 +2932,7 @@ meeting, Paul Mathews will lead a discussion of these FDA guidance
 documents and other valuable sources for industry standards.
 <br> <br>
 
-### Variable Scope in Experiments (Part 3), 3 June 2011, 7:30-9:00AM, Room T136.  
+#### Variable Scope in Experiments (Part 3), 3 June 2011, 7:30-9:00AM, Room T136.  
 We had great attendance at last month's meeting and I received many
 comments and requests afterward by e-mail, so we're going to do a
 third session on the topic of variable scope in experiments.
@@ -2949,7 +2949,7 @@ calculate and express the results using the standard language of the
 study types.
 <br> <br>
 
-### Scope Management Decisions in Experiments (Part 2): Applications to Process Capability Studies, 6 May 2011, 7:30-9:00AM, Room T136.  
+#### Scope Management Decisions in Experiments (Part 2): Applications to Process Capability Studies, 6 May 2011, 7:30-9:00AM, Room T136.  
 As a follow-up to last month's QMN meeting, we'll talk some more
 about issues of variable scope in experiments. Paul Mathews will
 present data and analysis from three different process capability
@@ -2961,7 +2961,7 @@ is, data from a typical SPC x-bar and R chart)
 and random variables
 <br> <br>
 
-### Scope Management Decisions in Experiments, 8 April 2011, 7:30-9:00AM, Room T136.  
+#### Scope Management Decisions in Experiments, 8 April 2011, 7:30-9:00AM, Room T136.  
 I recently had several customers who
 each needed to perform an experiment to study the effect of a
 single two-level variable. The simplest experiment design choices
@@ -2988,7 +2988,7 @@ strategies for making decisions about scope
 in experiments.
 <br> <br>
 
-### Checking Model Assumptions in ANOVA and Regression, 7 January 2011, 7:30-9:00AM, T136.  
+#### Checking Model Assumptions in ANOVA and Regression, 7 January 2011, 7:30-9:00AM, T136.  
 The statistician George Box said famously, "All models are wrong;
 some are useful." One of the important steps to determine if a model
 might be useful involves checking to see if the assumptions of the
@@ -3001,7 +3001,7 @@ graphical methods to test these assumptions and suggest remedial
 actions to consider when they are violated.
 <br> <br>
 
-### Mind Mapping Your ISO9000 Documentation with FreeMind, 3 December 2010, 7:30-9:00AM, T136.  
+#### Mind Mapping Your ISO9000 Documentation with FreeMind, 3 December 2010, 7:30-9:00AM, T136.  
 At the November 5th meeting we discussed the use of
 the FreeMind mind-mapping software (<http://freemind.sourceforge.net/>) for organizing information, such as for an
 input-process-output (IPO) diagram, the information collected
@@ -3014,7 +3014,7 @@ FreeMind to create a single document containing links to all
 of your ISO9000 documentation.
 <br> <br>
 
-### Mind Maps, 5 November 2010, 7:30-9:00AM, T136.  
+#### Mind Maps, 5 November 2010, 7:30-9:00AM, T136.  
 A mind map is a diagram with a radial branching tree-like structure
 used to organize information, especially information collected in a
 brainstorming session. Mind maps have general uses but in quality
@@ -3027,7 +3027,7 @@ constructed and demonstrate the use of the FreeMind mind mapping software packag
 to document a brainstorming activity.
 <br> <br>
 
-### Management of Circular Normal Quality Characteristics, 1 October 2010, 7:30-9:00AM, T136.  
+#### Management of Circular Normal Quality Characteristics, 1 October 2010, 7:30-9:00AM, T136.  
 The normal distribution is the best known model for
 characterizing measurement data but when measurements are of radial
 deviations in a plane from a reference point then the two
@@ -3044,7 +3044,7 @@ specifications for circular normal data, and how to perform SPC and
 process capability calculations for circular normal data.
 <br> <br>
 
-### Use, Abuse, and Alternatives to the Correlation Coefficient, 10 September 2010, 7:30-9:00AM, T136.  
+#### Use, Abuse, and Alternatives to the Correlation Coefficient, 10 September 2010, 7:30-9:00AM, T136.  
 The most popular summary statistic following any regression analysis
 or ANOVA is the coefficient of determination (R-squared) or its
 square root, called the correlation coefficient (R). The popularity
@@ -3056,7 +3056,7 @@ and alternative methods to R-squared when that method is
 inappropriate.
 <br> <br>
 
-### Managing Missing Values in Designed Experiments, 6 August 2010, 7:30-9:00AM, T136.  
+#### Managing Missing Values in Designed Experiments, 6 August 2010, 7:30-9:00AM, T136.  
 Designed experiments, such as the well known factorial designs,
 offer an efficient and low risk method for quantifying a response as
 a function of two more process variables, however, the analysis of
@@ -3067,13 +3067,13 @@ managing missing values in designed experiments.
 
 <br> <br>
 
-### Practical 5S Applications, Stephanie Demyan, 9 July 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Practical 5S Applications, Stephanie Demyan, 9 July 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Stephanie Demyan will present practical applications of 5S that will deliver improvements to your company's bottom line. After sharing common definitions of 5S, Stephanie will demonstrate a practical 5S application that can used in nearly all businesses including service industries. Feel free to submit 5S questions in advance to SDemyan@kikcorp.com.
 
 Stephanie Demyan is a senior member of ASQ and Director of Quality, Technical & Regulatory for KIK Custom Products. KIK Custom Products is the leading aerosol contract filler in North America filling personal, household, and pharmaceutical products. Stephanie has a Chemical Engineering degree from Tri-State University and an MBA from Kent State. She is a CQA and CQIA and has over 25 years in the quality field with extensive auditing and continuous improvement experience.
 <br> <br>
 
-### Experiments with Two or More Responses, 4 June 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Experiments with Two or More Responses, 4 June 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
 The goal of most designed
 experiments is to learn to manage a single response as a
 function of the input variables. Special analysis methods must
@@ -3085,7 +3085,7 @@ of your own that you'd like to share at the meeting, please
 forward it to Paul at paul@mmbstatistical.com.
 <br> <br>
 
-### Carl Sagan's  Baloney Detection Kit, 7 May 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Carl Sagan's  Baloney Detection Kit, 7 May 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Carl Sagan's many books are filled with important guidance
 for those of us who have to interpret data (which really means
 everyone). Among my favorites are his simple explanation of the
@@ -3099,7 +3099,7 @@ Sagan. If you want to prepare for the meeting, start with a
 short summary of Sagan's baloney detection kit at <http://www.xenu.net/archive/baloney_detection.html>.
 <br> <br>
 
-### GM, Toyota, and NUMMI: GM's Failure to Learn Toyota's Lean Manufacturing Lessons at NUMMI, 9 April 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### GM, Toyota, and NUMMI: GM's Failure to Learn Toyota's Lean Manufacturing Lessons at NUMMI, 9 April 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
 One of my all time favorite quality mis-management case
 studies is Chapter 2: The NUMMI Commandos, from Ingrassia and
 White's book Comeback: The Fall and Rise of the American
@@ -3132,7 +3132,7 @@ the (TAL) radio story together. (TAL's stories are usually about
 20 minutes long.)
 <br> <br>
 
-### Free Software!, 5 March 2009, 7:30-9:00AM, Lakeland Community College, Room T136.
+#### Free Software!, 5 March 2009, 7:30-9:00AM, Lakeland Community College, Room T136.
 Many of us have reluctantly become the
 computer and software technical support services for our
 family and extended family. For example, without spending
@@ -3145,7 +3145,7 @@ and alternatives from the network members. A list of some of
 the software that he will discuss is presented [here](http://www.mmbstatistical.com/Notes/FreeSoftware.txt).
 <br> <br>
 
-### The Eight (8) Disciplines to Problem Solving, Paul Gundersen, 5 February 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### The Eight (8) Disciplines to Problem Solving, Paul Gundersen, 5 February 2010, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Many companies and their quality assurance professionals
 initiate corrective actions only to have the symptoms recur.
 The 8 Disciplines method provides a structured, permanent approach
@@ -3166,7 +3166,7 @@ Paul has a B.S. degree in Electrical Engineering and CSSBB, CQE, and
 CQA certifications from ASQ. 
 <br> <br>
 
-### A Six Sigma Master Black Belt's Journey Through Six Sigma Training, Angela Lunato, 4 December 2009, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### A Six Sigma Master Black Belt's Journey Through Six Sigma Training, Angela Lunato, 4 December 2009, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Many organizations today have attempted Six Sigma
 initiatives. These initiatives typically include mass training
 programs which require significant infrastructure to contain and
@@ -3177,7 +3177,7 @@ what actions could be taken to improve Six Sigma in your
 organization.
 <br> <br>
 
-### Binary Regression II: The Challenger and Titanic Accidents, 6 November 2009, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Binary Regression II: The Challenger and Titanic Accidents, 6 November 2009, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Last month we discussed binary
 logistic regression and analyzed the o-ring failure data that
 were available before the space shuttle Challenger accident. I
@@ -3188,7 +3188,7 @@ was so popular last month, we're going to analyze fatality
 data from the Titanic accident.
 <br> <br>
 
-### Regression Analysis with a Binary Response: Was the Loss of the Space Shuttle Challenger An Accident?, 2 October 2009, 7:30-9:00AM, Lakeland Community College, Room T136.  
+#### Regression Analysis with a Binary Response: Was the Loss of the Space Shuttle Challenger An Accident?, 2 October 2009, 7:30-9:00AM, Lakeland Community College, Room T136.  
 Many experiments generate responses that are quantitative, but some
 experiments generate qualitative or attribute responses. There are
 three common families of attribute responses: binary responses,
@@ -3204,7 +3204,7 @@ binary response using the o-ring failure data that was available
 before the loss of the space shuttle Challenger. 
 <br> <br>
 
-### Use Quality Cost Analysis to Compare Process Models, 7:30-9:00AM, 4 September 2009, Lakeland Community College, Room T136.  
+#### Use Quality Cost Analysis to Compare Process Models, 7:30-9:00AM, 4 September 2009, Lakeland Community College, Room T136.  
 Most companies have invested the time and effort to create flow
 charts or process maps for their processes. When the costs
 associated with the steps in a process are known, a quality cost
@@ -3216,7 +3216,7 @@ Paul Mathews will demonstrate how to calculate and use quality
 cost responses to compare some simple process models.
 <br> <br>
 
-### Response Surface Designs, 7:30-9:00AM, 7 August 2009, Lakeland Community College, Room T136.  
+#### Response Surface Designs, 7:30-9:00AM, 7 August 2009, Lakeland Community College, Room T136.  
 In designed experiments, response surface designs are used
 when the response is expected to be a curved function of one or
 more of the design variables. The common response surface
@@ -3227,7 +3227,7 @@ design a small hybrid response surface design with eight variables starting from
 screening design.
 <br> <br>
 
-### Discussion of Joseph Conklin's article, It's a Marathon, Not a Sprint, in the June issue of Quality Progress magazine, 7:30-9:00 AM, THURSDAY, 25 June 2009, Lakeland Community College, Room T136.  
+#### Discussion of Joseph Conklin's article, It's a Marathon, Not a Sprint, in the June issue of Quality Progress magazine, 7:30-9:00 AM, THURSDAY, 25 June 2009, Lakeland Community College, Room T136.  
 At this month's meeting, we're going discuss Joseph Conklin's
 article, It's a Marathon, Not a
 Sprint, in the June issue of Quality Progress magazine. In
@@ -3241,7 +3241,7 @@ get the wrong answers. Let me know by e-mail
 try to analyze it yourself before we meet.
 <br> <br>
 
-### Prioritizing Process Variation Reduction Activities Using a DOE Model, 7:30-9:00 AM, 29 May 2009, Lakeland Community College, Room T136.  
+#### Prioritizing Process Variation Reduction Activities Using a DOE Model, 7:30-9:00 AM, 29 May 2009, Lakeland Community College, Room T136.  
 It's well known that the model obtained from a designed experiment
 may be used to predict or set the response as a function of the
 input variables. It's not so well known that the same model may be
@@ -3252,7 +3252,7 @@ variation in input variables. Paul Mathews will describe how this
 method works and demonstrate it with a simple example.
 <br> <br>
 
-### Errors in Predictor Variables, 7:30-9:00 AM, 3 April 2009, Lakeland Community College, Room T136.  
+#### Errors in Predictor Variables, 7:30-9:00 AM, 3 April 2009, Lakeland Community College, Room T136.  
 Least squares linear regression for the response y as
 a function of the predictor variable x (where both y and x are
 quantitative) assumes that the x values are known exactly. Errors in
@@ -3264,7 +3264,7 @@ consequences of errors in predictor variables and describe the use
 of the errors-in-variables method to correct the situation.
 <br> <br>
 
-### Good and Bad Practices in Process Capability Analysis, 7:30-9:00 AM, 6 March 2009, Lakeland Community College, Room T136.  
+#### Good and Bad Practices in Process Capability Analysis, 7:30-9:00 AM, 6 March 2009, Lakeland Community College, Room T136.  
 By the end of last month's well-attended meeting on the source of the 1.5σ shift in capability analysis our discussion had turned to
 common mistakes and misunderstandings in the calculation and
 interpretation of process capability statistics. We'll continue
@@ -3275,7 +3275,7 @@ calculate and report process capability indices for non-normal
 and censored data.
 <br> <br>
 
-### Six Sigma's 1.5σ Process Capability Shift, 7:30-9:00 AM, 6 February 2009, Lakeland Community College, Room T136.  
+#### Six Sigma's 1.5σ Process Capability Shift, 7:30-9:00 AM, 6 February 2009, Lakeland Community College, Room T136.  
 Motorola introduced the practice of allowing a 1.5σ shift
 in the mean of a process when setting tolerances and process
 capability requirements, however, the motivation for this practice
@@ -3283,7 +3283,7 @@ is not well understood. Paul Mathews will present his interpretation
 of where the 1.5σ shift comes from and why it's necessary.
 <br> <br>
 
-### Rectifying Inspection Using the Dodge-Romig Method, 7:30-9:00 AM, 9 January 2009, Room T136.  
+#### Rectifying Inspection Using the Dodge-Romig Method, 7:30-9:00 AM, 9 January 2009, Room T136.  
 At our last meetings we've discussed the attributes sampling
 standard ANSI/ASQ Z1.4 (formerly MIL-STD-105) and the variables
 sampling standard ANSI/ASQ Z1.9 (formerly MIL-STD-414). At the
@@ -3297,7 +3297,7 @@ Dodge-Romig plans are designed specifically to control the
 post-inspection rejectable quality level (RQL).
 <br> <br>
 
-### The ANSI/ASQ Z1.9 Acceptance Sampling Standard for Variables Data, 7:30-9:00AM, 5 December 2008, Room T136.  
+#### The ANSI/ASQ Z1.9 Acceptance Sampling Standard for Variables Data, 7:30-9:00AM, 5 December 2008, Room T136.  
 At last month's meeting we discussed the use and performance of two
 well known attribute acceptance sampling standards: ANSI/ASQ Z1.4
 (formerly MIL-STD-105) and Squeglia's Zero Acceptance Number
@@ -3306,7 +3306,7 @@ known and unfortunately under-used ANSI/ASQ Z1.9 variables sampling
 standard.
 <br> <br>
 
-### Evaluating Sampling Plans from ANSI/ASQ Z1.4 (Formerly MIL-STD-105) Using Operating Characteristic Curves, 7:30-9:00AM, 31 October 2008, Room E116.  
+#### Evaluating Sampling Plans from ANSI/ASQ Z1.4 (Formerly MIL-STD-105) Using Operating Characteristic Curves, 7:30-9:00AM, 31 October 2008, Room E116.  
 ANSI/ASQ Z1.4 is the best known and most popular sampling standard
 for attributes. Paul Mathews will review the use of the standard
 including the switching rules between normal, tightened, and reduced
@@ -3314,7 +3314,7 @@ inspection and he will discuss the use of operating characteristic
 (OC) curves to evaluate and compare sampling plans.
 <br> <br>
 
-### Comparing the Sample Sizes Required for Attribute and Variables Inspections, 7:30-9:00AM, 3 October 2008, Room T136.  
+#### Comparing the Sample Sizes Required for Attribute and Variables Inspections, 7:30-9:00AM, 3 October 2008, Room T136.  
 A common mistake that quality technicians and engineers often make
 is to use an attribute (i.e. pass/fail) inspection when a suitable
 variables or measurements inspection is available. While the
@@ -3332,7 +3332,7 @@ inspection sampling plans and then use OC curves to evaluate plans
 from the ANSI/ASQ Z1.4 (formerly MIL-STD-105) sampling standard.
 <br> <br>
 
-### An Introduction to Sample Size Calculations II, 29 August 2008, 7:30-9:00AM, T136.  
+#### An Introduction to Sample Size Calculations II, 29 August 2008, 7:30-9:00AM, T136.  
 At the last meeting we discussed sample size calculations for
 confidence intervals and we looked at several examples including the
 sample sizes required to estimate: a small proportion (e.g. a small
@@ -3345,7 +3345,7 @@ means. He'll also demonstrate the use of Russ Lenth's free power and
 sample size calculation program called piface (<http://www.stat.uiowa.edu/~rlenth/Power/>).
 <br> <br>
 
-### An Introduction to Sample Size Calculations I, 1 August 2008, 7:30-9:00AM, T136.  
+#### An Introduction to Sample Size Calculations I, 1 August 2008, 7:30-9:00AM, T136.  
 Every opportunity to collect data raises the issue of how much data
 are necessary. Collecting too few data might cause you to miss an
 important opportunity and collecting too many data wastes time and
@@ -3354,7 +3354,7 @@ collection activities by calculating sample sizes that are
 consistent with the goals of those activities.
 <br> <br>
 
-### Managing Missing Data in Experiments, 27 June 2008, 7:30-9:00AM, T136.  
+#### Managing Missing Data in Experiments, 27 June 2008, 7:30-9:00AM, T136.  
 When each level of a variable in an experiment has the same number
 of observations, the experiment is said to be balanced. Balanced experiments
 have desirable properties but when an experiment becomes unbalanced
@@ -3364,7 +3364,7 @@ unbalanced designs and suggest some strategies for managing missing
 data.
 <br> <br>
 
-### Arc Lamp Dose Development Using Mixture Designs, Tom Coffey, 30 May 2008, 7:30-9:00AM, T136.  
+#### Arc Lamp Dose Development Using Mixture Designs, Tom Coffey, 30 May 2008, 7:30-9:00AM, T136.  
 Mixture designs are a special family of designed experiments used to
 determine the correct proportions of the components in a
 multi-component blend. Tom Coffey will describe the use of a mixture
@@ -3375,7 +3375,7 @@ increasingly important as pressure grows to decrease commercial and
 residential energy consumption.
 <br> <br>
 
-### A Tour of a Dimensional Metrology Calibration Lab, Keith Kokal, 25 April 2008, 8:00-9:30AM, at Micro Laboratories, Inc.,7158 Industrial Park Blvd., Mentor, OH.  
+#### A Tour of a Dimensional Metrology Calibration Lab, Keith Kokal, 25 April 2008, 8:00-9:30AM, at Micro Laboratories, Inc.,7158 Industrial Park Blvd., Mentor, OH.  
 At our March meeting we discussed calibration uncertainty statements
 so it seems fitting that this month we should go see how
 calibrations are done. Keith Kokal is President of Micro
@@ -3393,7 +3393,7 @@ tour starts at 8:00AM and please park on the side of the building.
 Coffee and pastry will be provided.
 <br> <br>
 
-### Measurement Uncertainty in Calibration,  28 March 2008, 7:30-9:00AM, T136.  
+#### Measurement Uncertainty in Calibration,  28 March 2008, 7:30-9:00AM, T136.  
 Measurement accuracy is established by calibration, but even the
 best calibration still contains errors (hopefully small ones) from
 many different sources. The combined effect of these potential
@@ -3405,7 +3405,7 @@ relates to measurement systems analysis (MSA) and gage error
 (GR&R) studies.
 <br> <br>
 
-### Resampling Statistics III,  29 February 2008, 7:30-9:00AM, T136.  
+#### Resampling Statistics III,  29 February 2008, 7:30-9:00AM, T136.  
 Paul Mathews will continue with the demonstration of the free
 resampling software Statistics101 (www.statistics101.net) which
 reproduces many of the features of the commercial package Resampling
@@ -3414,7 +3414,7 @@ bias-corrected confidence intervals for highly skewed (i.e.
 non-normal) data sets.
 <br> <br>
 
-### Resampling Statistics II,  25 January 2008, 7:30-9:00AM, T136.  
+#### Resampling Statistics II,  25 January 2008, 7:30-9:00AM, T136.  
 At the last QMN meeting in November Paul Mathews presented an
 introduction to resampling statistics methods which provide
 distribution-free methods for constructing confidence intervals and
@@ -3425,7 +3425,7 @@ software Statistics101 (www.statistics101.net) which reproduces many
 of the features of the commercial package Resampling Stats.
 <br> <br>
 
-### Resampling Statistics I, 30 November 2007, 7:30-9:00AM, T136.  
+#### Resampling Statistics I, 30 November 2007, 7:30-9:00AM, T136.  
 Classical inferential statistical methods make assumptions about the
 distributions of test statistics in order to calculate confidence
 intervals and hypothesis tests. For example, the classical methods
@@ -3442,7 +3442,7 @@ Paul Mathews will present an overview of resampling methods for
 constructing confidence intervals and performing hypothesis tests.
 <br> <br>
 
-### Quality management of half-normal and circular-normal distribution data,  26 October 2007, 7:30-9:00AM, T136.  
+#### Quality management of half-normal and circular-normal distribution data,  26 October 2007, 7:30-9:00AM, T136.  
 In engineering and manufacturing there are two special “relatives” of the normal
 distribution that appear frequently but are not usually
 recognized. These are the half-normal and circular-normal
@@ -3472,7 +3472,7 @@ determining process yields, and setting statistical process
 control limits.
 <br> <br>
 
-### Are Your Data Normal?,  28 Sept 2007, 7:30-9:00AM, T136  
+#### Are Your Data Normal?,  28 Sept 2007, 7:30-9:00AM, T136  
 Many statistical analysis methods (e.g. SPC, acceptance
 sampling, GR&R studies, process capability studies, tolerancing)
 require that the distribution of measurement values under
@@ -3491,12 +3491,12 @@ describe some special non-normal distributions that show up
 frequently in real life situations.
 <br> <br>
 
-### An Introduction to and Some Examples of Failure Mode and Effect Analysis (FMEA), Haans Petruschke, 27 July 2007, 7:30-9:00 AM, Room T136  
+#### An Introduction to and Some Examples of Failure Mode and Effect Analysis (FMEA), Haans Petruschke, 27 July 2007, 7:30-9:00 AM, Room T136  
 Haans Petruscke is a Deming-trained quality engineer currently employed at Libra Industries in Mentor. At this meeting Haans will present a novice-level introduction to failure modes and effects analysis (FMEA) and several FMEA case studies. (A comment from Paul: I've seen Haans do this FMEA presentation and thought that he was a great speaker and VERY knowledgeable on this topic, among many others. Even if you're already an FMEA  expert, I think that you'll enjoy Haans' presentation and the lively discussion that I think will follow.)
 
 <br> <br>
 
-### Attribute GR&R Studies (III), 29 June 2007, 7:30-9:00 AM, Room T136.  
+#### Attribute GR&R Studies (III), 29 June 2007, 7:30-9:00 AM, Room T136.  
 At the last two network meetings Paul Mathews presented an overview
 of gage error studies (GR&R studies) for measurement and
 attribute data and methods of analyzing GR&R study data. At the
@@ -3510,7 +3510,7 @@ that you'd like to share with the network, please forward your data
 to Paul at paul@mmbstatistical.com.
 <br> <br>
 
-### Attribute GR&R Studies (II), 1 June 2007, 7:30-9:00 AM, Room T136.  
+#### Attribute GR&R Studies (II), 1 June 2007, 7:30-9:00 AM, Room T136.  
 At the last network meeting (27 April 2007) we discussed
 different types of attribute gage error studies, their design,
 and analysis. At the next meeting (1 June 2007) we will design,
@@ -3527,7 +3527,7 @@ and a description of the situation to Paul Mathews at
 paul@mmbstatistical.com.
 <br> <br>
 
-### Attribute Gage Error Studies (I), 27 April 2007, 7:30 - 9:00 AM, Room T136.  
+#### Attribute Gage Error Studies (I), 27 April 2007, 7:30 - 9:00 AM, Room T136.  
 Most of us are familiar with gage repeatability and
 reproducibility (GR&R) studies for measurement data,
 however, eventually everyone encounters an attribute inspection
@@ -3542,7 +3542,7 @@ correlation. Then he will present examples of capable and
 incapable attribute gaging systems.
 <br> <br>
 
-### Interference Fit and Stack-Up Tolerancing, 30 March 2007, 7:30-9:00 AM, Room T136.  
+#### Interference Fit and Stack-Up Tolerancing, 30 March 2007, 7:30-9:00 AM, Room T136.  
 Paul Mathews will discuss tolerance calculations for
 interference fit and stack-up tolerancing problems, including
 methods for both normal and non-normal distributions. He will
@@ -3551,7 +3551,7 @@ fictional stack-up assemblies using data from relatively small
 samples.
 <br> <br>
 
-### Excel Pivot Tables, Ray Tison, 2 March 2007, 7:30-9:00 AM, T136.  
+#### Excel Pivot Tables, Ray Tison, 2 March 2007, 7:30-9:00 AM, T136.  
 Pivot tables in Excel provide a powerful tool to subset and stratify
 your data. Ray Tison will demonstrate how to create a pivot table in
 Excel and how to use the pivot table to identify patterns in the
@@ -3560,7 +3560,7 @@ to use pivot tables in Access when your data set becomes too big for
 Excel.
 <br> <br>
 
-### An Introduction to Data Analysis Using R, 26 January 2007, 7:30-9:00AM, T136.  
+#### An Introduction to Data Analysis Using R, 26 January 2007, 7:30-9:00AM, T136.  
 R is free software used for graphical and statistical data analysis
 that can be downloaded from the Internet. Because R code is written
 and shared by many people around the world, it has a tremendous
@@ -3580,7 +3580,7 @@ using R including:
 * How to learn more about R.
 <br> <br>
 
-### Too Many Experiment Designs? (Part II), 1 December 2006, 7:30-9:00 AM, T136.  
+#### Too Many Experiment Designs? (Part II), 1 December 2006, 7:30-9:00 AM, T136.  
 We had such good turnout at the 27 October meeting (about 20
 people), and we didn't finish our discussion of the topic (Too Many
 Experiment Designs?), so we're going hold a second session on the
@@ -3596,7 +3596,7 @@ factorial, fractional factorial, response surface, and Taguchi
 orthogonal designs.
 <br> <br>
 
-### Too Many Experiment Designs?, 27 October 2006, 7:30-9:00AM, T136.  
+#### Too Many Experiment Designs?, 27 October 2006, 7:30-9:00AM, T136.  
 There are so many different kinds of experiment designs available
 that it can be difficult to choose the right one for a particular
 situation. Paul Mathews will present a review of types experiment
@@ -3605,14 +3605,14 @@ Taguchi, and Shainin methods. Then he will lead an exercise to
 develop a flow chart for experiment design selection.
 <br> <br>
 
-### Component Swap II, 29 September 2006, 7:30-9:00AM, T136.  
+#### Component Swap II, 29 September 2006, 7:30-9:00AM, T136.  
 At this second session on the component swap
 method, Paul Mathews will discuss the use of ANOVA to analyze
 component swap data and severl network members will present
 their component swap case studies.
 <br> <br>
 
-### Component Swap I, 1 September 2006, 7:30-9:00AM, T136.  
+#### Component Swap I, 1 September 2006, 7:30-9:00AM, T136.  
 When an assembly has several separable
 components and there is excess variability that causes some of
 the assemblies to be good and others to be bad, the component
@@ -3626,7 +3626,7 @@ that you'd like to share, please contact Paul before the meeting
 at paul@mmbstatistical.com.
 <br> <br>
 
-### Quality Management Jeopardy, 23 June 2006, 7:30-9:00 AM, T136.  
+#### Quality Management Jeopardy, 23 June 2006, 7:30-9:00 AM, T136.  
 Paul Mathews will host three rounds of
 quality management Jeopardy! Bring your co-workers and test your
 knowledge of quality management, Six Sigma, and Lean against
@@ -3638,7 +3638,7 @@ re-play these three rounds of Quality Management Jeopardy and
 create your own rounds.
 <br> <br>
 
-### Design and Analysis of Accelerated Life Tests, 2 June 2006, 7:30-9:00 AM, T136.  
+#### Design and Analysis of Accelerated Life Tests, 2 June 2006, 7:30-9:00 AM, T136.  
 When a life test run under normal operating
 conditions would take more time than is available and when there
 is a known stress factor (temperature, voltage, load, ...) that
@@ -3649,7 +3649,7 @@ tests and then he will use MINITAB to analyze a stepped-stress
 experiment.
 <br> <br>
 
-### Reliability Demonstration Tests, 31 March 2006, 7:30 - 9:00 AM, T136  
+#### Reliability Demonstration Tests, 31 March 2006, 7:30 - 9:00 AM, T136  
 Common goals of reliability experiments are to: demonstrate
 that the mean life exceeds a minimum value; demonstrate that
 the reliability at a specified time exceeds a minimum value;
@@ -3664,7 +3664,7 @@ and he will demonstrate how to design such tests using the new
 tools available in MINITAB V14.
 <br> <br>
 
-### Analysis of Experiments with Nested Variables, 24 February 2006, 7:30 - 9:00 AM, T136  
+#### Analysis of Experiments with Nested Variables, 24 February 2006, 7:30 - 9:00 AM, T136  
 Experiments that include all possible combinations of levels
 of two or more variables are called factorial experiments,
 however, sometimes the levels of an experimental variable are
@@ -3688,7 +3688,7 @@ would like to share with the network members, please forward
 them to Paul at paul@mmbstatistical.com.
 <br> <br>
 
-### Validating Your Process Capability Statistics, 27 January 2006, 7:30-9:00AM, T136  
+#### Validating Your Process Capability Statistics, 27 January 2006, 7:30-9:00AM, T136  
 With the popularity and growth of Six Sigma, the use of
 process capability and performance statistics has
 exploded, but few people recognize how sensitive these
@@ -3701,7 +3701,7 @@ a procedure for validating process capability
 statistics.
 <br> <br>
 
-### Process Capability Analysis For Non-Normal Populations, 2 December 2005, 7:30-9:00AM, T136  
+#### Process Capability Analysis For Non-Normal Populations, 2 December 2005, 7:30-9:00AM, T136  
 The popular process capability statistics like cp and cpk are
 only meaningful if the population being
 studied is normally distributed. When the
@@ -3716,7 +3716,7 @@ methods for analyzing and reporting process capability for non-normal
 populations.
 <br> <br>
 
-### Time-Weighted SPC Charts, 23 September 2005, 7:30-9:00AM, T136  
+#### Time-Weighted SPC Charts, 23 September 2005, 7:30-9:00AM, T136  
 The most common control charts (e.g. x-bar and
 R, IMR, p, np, c, and u charts) plot statistics determined from the
 most recent process data. These charts are referred to as Shewhart
@@ -3736,7 +3736,7 @@ disadvantages, and analyze case study data using CUSUM, EWMA,
 and MA methods.
 <br> <br>
 
-### Analysis Methods for Autocorrelated SPC Data, 26 August 2005, 7:30-9:00AM, T136  
+#### Analysis Methods for Autocorrelated SPC Data, 26 August 2005, 7:30-9:00AM, T136  
 Time-series data frequently display autocorrelation, that
 is, observations are not independent of each other but are serially
 correlated. For example, the temperature of a furnace, the dimension
@@ -3759,7 +3759,7 @@ members, please forward your data to Paul in Excel or MINITAB format
 at paul@mmbstatistical.com.
 <br> <br>
 
-### Experiments with Attribute Responses - Binary Responses III, Paul Mathews, Ray Tison, and Bob Anastos, 22 July 2005, 7:30-9:00AM, T136  
+#### Experiments with Attribute Responses - Binary Responses III, Paul Mathews, Ray Tison, and Bob Anastos, 22 July 2005, 7:30-9:00AM, T136  
 At our last two meetings we discussed experiments that
 involved binary (e.g. pass/fail) responses. Now that we know how to
 fit and interpret binary logistic regression models and validate
@@ -3776,7 +3776,7 @@ you have your own binary response data set that you'd like to share
 with the group, please send it in advance to Paul Mathews at [paul@mmbstatistical.com](paul%40mmbstatistical.com).
 <br> <br>
 
-### Experiments with Attribute Responses - Binary Responses II, 24 June 2005, 7:30-9:00AM, T1368  
+#### Experiments with Attribute Responses - Binary Responses II, 24 June 2005, 7:30-9:00AM, T1368  
 At the last meeting (27 May 2005), Paul Mathews presented
 some basic concepts in the analysis of binary (pass/fail) responses
 and we analyzed a factorial experiment performed at Bescast to study
@@ -3789,7 +3789,7 @@ associated with binary response experiments and analyze data from
 several other experiments.
 <br> <br>
 
-### Experiments with Attribute Responses - Binary Responses I, 27 May 2005, 7:30-9:00AM, T136  
+#### Experiments with Attribute Responses - Binary Responses I, 27 May 2005, 7:30-9:00AM, T136  
 While many experiments generate responses that are
 quantitative, some experiments generate qualitative or attribute
 responses. There are three common families of attribute responses:
@@ -3801,7 +3801,7 @@ into three or more qualitative categories.
 
 <br> <br>
 
-### Multiple-Stream Processes II, 22 April 2005, 7:30-9:00AM, T136  
+#### Multiple-Stream Processes II, 22 April 2005, 7:30-9:00AM, T136  
 At our last meeting, Paul Mathews described some of the
 quality control methods available for multiple stream processes. In
 this second installment on the same topic, Paul will present
@@ -3811,7 +3811,7 @@ multiple stream process that you wish to share with the group,
 please forward them to Paul at paul@mmbstatistical.com.
 <br> <br>
 
-### Multiple-Stream Processes, 24 March 2005, 7:30-9:00AM, T136  
+#### Multiple-Stream Processes, 24 March 2005, 7:30-9:00AM, T136  
 Multiple-stream processes have two or more parallel paths
 along which parts or material passes. Ideally all of the paths
 operate identically, so that there are no differences between
@@ -3831,7 +3831,7 @@ please bring it in an Excel or MINITAB formatted file or e-mail
 the data to Paul before the meeting.
 <br> <br>
 
-### A Trebuchet Experiment (Session 2): Documenting the Experiment, 25 Feb 2005, 7:30-9:00AM, T136  
+#### A Trebuchet Experiment (Session 2): Documenting the Experiment, 25 Feb 2005, 7:30-9:00AM, T136  
  At our last meeting (February 4) we designed and ran a
 screening experiment to study the launch distance of a trebuchet. We
 ran into some problems though, or rather the projectile did, like
@@ -3848,7 +3848,7 @@ components of: 1) the complete DOE project, 2) a Powerpoint
 presentation, and 3) a formal report. 
 <br> <br>
 
-### Design of Experiments: A Trebuchet Experiment (Session 1) and How to Document and Report It (Session 2), 4 Feb and 25 Feb 2005, 7:30-9:00AM, T136  
+#### Design of Experiments: A Trebuchet Experiment (Session 1) and How to Document and Report It (Session 2), 4 Feb and 25 Feb 2005, 7:30-9:00AM, T136  
 The next two sessions (February 4 and Feruary 25) of the
 Tools and Techniques subgroup will consider design of
 experiments (DOE) topics. At the February 4 meeting, we will
@@ -3883,7 +3883,7 @@ are a lot of people coming, we'll try to have more than one
 trebuchet available.
 <br> <br>
 
-### Degrees of Freedom, 3 Dec 2004, 7:30-9:00AM, T136  
+#### Degrees of Freedom, 3 Dec 2004, 7:30-9:00AM, T136  
 In response to a recent query from
 one of the network members, the next T&T session will be
 on degrees of freedom. The concept of degrees of freedom is
@@ -3906,7 +3906,7 @@ this initially abstract topic, this session will be of
 significant value to you. 
 <br> <br>
 
-### A Designed Experiment: The Bending of Beams, 2 Nov 2004, 7:30-9:00AM, T136  
+#### A Designed Experiment: The Bending of Beams, 2 Nov 2004, 7:30-9:00AM, T136  
 At the request of several network members, our next
 session will be on design of experiments (DOE). Classroom
 exercises in DOE and Six Sigma Black Belt courses usually
@@ -3931,7 +3931,7 @@ have to work quickly to get through both the data collection
 and analysis steps.
 <br> <br>
 
-### Reliability IV, 24 Sept 2004, 7:30-9:00AM, T136  
+#### Reliability IV, 24 Sept 2004, 7:30-9:00AM, T136  
 Based on the high
 degree of interest in the topic and the great attendance at
 the earlier sessions, we decided to hold another Tools and
@@ -3953,7 +3953,7 @@ pmathews@apk.net or bring the data with you on a floppy disk
 in a MINITAB or Excel format.
 <br> <br>
 
-### Reliability III, Angela Lunato and Paul Mathews, 3 Sept 2004, 7:30-9:00AM, T136  
+#### Reliability III, Angela Lunato and Paul Mathews, 3 Sept 2004, 7:30-9:00AM, T136  
 In this third session on reliability,
 Angela Lunato will describe two recent
 experiments that she was involved in to study electric motor
@@ -3968,7 +3968,7 @@ examples or case studies that you would like to share,
 please contact Paul at pmathews@apk.net.
 <br> <br>
 
-### Reliability II, 30 July 2004, 7:30-9:00AM, T136  
+#### Reliability II, 30 July 2004, 7:30-9:00AM, T136  
 At the last network meeting Paul Mathews presented an
 overview of reliability experiments, data, and analysis using
 exponential and Weibull reliability models. He also demonstrated how
@@ -3981,7 +3981,7 @@ you'd like to share with the group please forward it to Paul at
 pmathews@apk.net.
 <br> <br>
 
-### Reliability I, 25 June 2004, 7:30-9:00AM, T136  
+#### Reliability I, 25 June 2004, 7:30-9:00AM, T136  
 In our next three meetings (June, July, and August) Paul
 Mathews will give presentations on the design and analysis of
 experiments to study reliability. In the first meeting (June 25, 2004)
@@ -3998,7 +3998,7 @@ general interest and would like to share with the Network members
 please contact Paul at pmathews@apk.net.
 <br> <br>
 
-### Management of Circular Normal Quality Characteristics, 21 May 2004, 7:30-9:00AM, T136  
+#### Management of Circular Normal Quality Characteristics, 21 May 2004, 7:30-9:00AM, T136  
 The normal distribution model is the one usually invoked to
 characterize measurement data, however, in some cases the normal
 model isn't appropriate. One such case is common in manufacturing
@@ -4018,7 +4018,7 @@ think might be circular normal please bring them to class in an
 Excel or Minitab file or forward them to Paul at pmathews@apk.net.
 <br> <br>
 
-### Acceptance Sampling  and Quality Cost, 23 April 2004, 7:30-9:00AM, T136  
+#### Acceptance Sampling  and Quality Cost, 23 April 2004, 7:30-9:00AM, T136  
 Although quality engineers frequently use the ANSI/ASQ Z1.4
 standard (formerly MIL-STD-105) to design sampling plans for
 pass/fail inspection, Z1.4 does not explicitly take into account the
@@ -4035,7 +4035,7 @@ presentation please forward him your sampling plan design and cost
 information at pmathews@apk.net.
 <br> <br>
 
-### How to Use Statistical Methods to Analyze Investments, Paul Mathews and George Braidich, 26 March 2004, 7:30-9:00AM, T136  
+#### How to Use Statistical Methods to Analyze Investments, Paul Mathews and George Braidich, 26 March 2004, 7:30-9:00AM, T136  
 Statistics are an extremely powerful and reliable tool in
 determining an investment's short-term performance. Still today they
 are not widely talked about. This presentation will illustrate how
@@ -4048,7 +4048,7 @@ will illustrate how to apply these concepts to evaluate financial
 investments.
 <br> <br>
 
-### How to Read a  Financial Statement - An Overview for Non-Financial Managers, George Braidich, 20 Feb 2004, 7:30-9:00AM, T136  
+#### How to Read a  Financial Statement - An Overview for Non-Financial Managers, George Braidich, 20 Feb 2004, 7:30-9:00AM, T136  
 Financial statements are the instrument panel of a business
 enterprise. They constitute a report on current managerial
 performance and flash warning signals of future impending
@@ -4059,7 +4059,7 @@ used in a financial analysis. George will discuss these ratios and
 what each ratio attempts to measure. He will also discuss the Quality of Earnings in a business entity.
 <br> <br>
 
-### The Use of Gage Error Studies to Guide An Instrument Purchasing Decision, 23 Jan 2004, 7:30-9:00AM, L104  
+#### The Use of Gage Error Studies to Guide An Instrument Purchasing Decision, 23 Jan 2004, 7:30-9:00AM, L104  
 Prior to making a large purchase of new large diameter bore
 gages, a network member ran a series of gage error studies of gages
 from four different manufacturers. The purpose of the study was to
@@ -4072,7 +4072,7 @@ important business decision – one that you'll probably have to live
 with for years after the purchasing decision is made.
 <br> <br>
 
-### Are Your Data Normal?, 20 Nov 2003, 7:30-9:00AM, T136  
+#### Are Your Data Normal?, 20 Nov 2003, 7:30-9:00AM, T136  
 Most QC methods for products and processes assume that the
 distribution of errors follows the normal or bell-shaped curve. When
 this assumption is violated those methods can give erroneous results
@@ -4091,7 +4091,7 @@ might behave in the manner described please bring it on a floppy
 disk in Excel or Minitab format to share with the network members.
 <br> <br>
 
-### Are Your Data  Normal?, 23 Sept and 23 Oct, 2003,  7:30-9:00AM, T136  
+#### Are Your Data  Normal?, 23 Sept and 23 Oct, 2003,  7:30-9:00AM, T136  
 Many statistical analysis methods (e.g. SPC, acceptance
 sampling, GR&R studies, process capability studies, tolerancing)
 require that the distribution of measurement values under
@@ -4111,7 +4111,7 @@ the half-normal and circular normal distributions, that show up
 frequently in real life situations.
 <br> <br>
 
-### Methods of Setting Specifications, 25 July and 22 August, 2003, 7:30-9:00AM, T136  
+#### Methods of Setting Specifications, 25 July and 22 August, 2003, 7:30-9:00AM, T136  
 Quality characteristics that are critical to quality (CTQ)
 for your customer must have their specifications set to meet your
 customer's requirements. However, the specifications for many other

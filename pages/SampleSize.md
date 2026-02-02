@@ -1,6 +1,7 @@
-# Sample Size Calculations: Practical Methods for Engineers and Scientists
-## Paul Mathews, Mathews Malnar and Bailey, Inc., 2010
-## ISBN 978-0-615-32461-6.
+## Sample Size Calculations: 
+## Practical Methods for Engineers and Scientists
+### Paul Mathews, Mathews Malnar and Bailey, Inc., 2010
+### ISBN 978-0-615-32461-6.
 *Sample Size Calculations: Practical Methods for Engineers and Scientists* presents power and sample size calculations for 
 common statistical analyses including methods for means, standard deviations, proportions, counts, regression, correlation, 
 and measures of agreement. Topics of special interest to quality engineering professionals include designed experiments, 
@@ -62,7 +63,7 @@ and worth every penny. The book may be purchased through amazon.com.
 <br> <br>
 
 ### Links:
-[Russ Lenth's Piface program](http://www.stat.uiowa.edu/%7Erlenth/Power/)
-[MINITAB](http://www.minitab.com/)
-[NCSS and PASS](http://www.ncss.com/)
-[The R Project for Statistical Computing](http://cran.r-project.org/)
+* [Russ Lenth's Piface program](http://www.stat.uiowa.edu/%7Erlenth/Power/)
+* [MINITAB](http://www.minitab.com/)
+* [NCSS and PASS](http://www.ncss.com/)
+* [The R Project for Statistical Computing](http://cran.r-project.org/)
