@@ -1,4 +1,4 @@
-# Quality Managers Network Meeting Abstracts  
+<!--- Quality Managers Network Meeting Abstracts --->  
 QMN meeting announcements are in reverse order with the most recent
 meeting at the top. All meetings are free and everyone is welcome to
 present or to recommend a topic. Please e-mail me at

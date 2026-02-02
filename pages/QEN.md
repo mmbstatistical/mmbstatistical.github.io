@@ -1,4 +1,5 @@
-# Quality Engineers Network Meetings 
+
+<!--- Quality Engineers Network Meeting Abstracts ---> 
 QEN meeting announcements are in
 reverse order with the most recent meeting at the top. All meetings
 are free and everyone is welcome to present or to
@@ -13,7 +14,7 @@ your participation.
 <br>
 
 ## Meeting Abstracts
-### **Free Software!, 12 December 2025, 7:30-9:00AM by Zoom  
+#### Free Software!, 12 December 2025, 7:30-9:00AM by Zoom  
 Everyone loves free stuff! We haven't done this topic in over five
 years and some things have changed, so let's take it on again. And
 the timing should allow you to investigate some of these
@@ -32,7 +33,7 @@ editing, and programming IDEs. Please come ready with your own
 ideas and suggestions.
 <br> <br>  
   
-### Book Review: *Where Good Ideas Come From: The Natural History of Innovation* by Steven Johnson, 14 November 2025, 7:30-9:00AM by Zoom  
+#### Book Review: *Where Good Ideas Come From: The Natural History of Innovation* by Steven Johnson, 14 November 2025, 7:30-9:00AM by Zoom  
 This year I've been on a reading binge of science history books
 and I found a gem that helps to put them into perspective. That
 book is Steven Johnson's Where Good Ideas Come From: The Natural
