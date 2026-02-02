@@ -1,4 +1,4 @@
-**Quality Managers Network Meeting Abstracts**
+**Quality Managers Network Meeting Abstracts**  
 QMN meeting announcements are in reverse order with the most recent
 meeting at the top. All meetings are free and everyone is welcome to
 present or to recommend a topic. Please e-mail me at
@@ -6,7 +6,7 @@ paul@mmbstatistical to be added to the mailing list.
 
 Use these meetings to earn recertification units (RUs) for your ASQ
 certifications.  
-
+  
 
 **The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom**    
 I was helping Matt B and his team interpret the results from a
@@ -1101,9 +1101,9 @@ These are just two of many possible ways that a simple normality
 test is inappropriate and may mislead you. We'll talk about these
 two and many other cases at this month's meeting.
 
-**Development, Validation, and Use of Subjective
-Measurement/Observation Scales Using Ordinal Data, 7:30-9:00AM,
-8 January 2021, by Zoom**  Way back at our 4 August 2017 QMN meeting we discussed
+**Development, Validation, and Use of Subjective Measurement/Observation Scales Using Ordinal Data, 7:30-9:00AM,
+8 January 2021, by Zoom**  
+Way back at our 4 August 2017 QMN meeting we discussed
 the development of a pseudo-measurement system for making subjective
 observations on an ordinal scale. The specific application was Joe
 R's need for developing a measurement system for interpreting the
@@ -1257,7 +1257,7 @@ at sample size calculations for the following problems:
 * confidence interval for the difference between two proportions
 * hypotheses test for a difference between two proportions
 
-**Sample Size **Calculation**s for One- and Two-Sample
+**Sample Size Calculations for One- and Two-Sample
 Proportions with Applications to Managing Defective Rate and
 Reliability, 7:30-9:00AM, 1 May 2020, by Zoom**  
 I've had a recent flurry of requests for help with sample size
@@ -1314,18 +1314,18 @@ Paul Pastor, 7:30-9:00AM, 6 March 2020, Lakeland Community
 College, Room T136**  
 Dr. Genichi Taguchi was a mechanical engineer who made several
 important advancements in Quality Engineering. Among them, Taguchi
-introduced Â“Robust DesignÂ” to the quality world. Robustness in
+introduced “Robust Design” to the quality world. Robustness in
 the Taguchi sense is to identify the process input variables that
 are uncontrollable and to minimize their effects on critical to
-quality (CTQ) characteristics. Taguchi also created a Â“Loss
-FunctionÂ” which merges process variation, cost, and process targets
+quality (CTQ) characteristics. Taguchi also created a “Loss
+Function” which merges process variation, cost, and process targets
 into a key metric used to determine lost value passed on to society.
 This metric considers specifications as a minor factor in
 determining lost value. Taguchi also made significant contributions
 to parameter design techniques used in quality improvement of
 products and processes.
 Today we will present Taguchi's Robust Design, Loss Function, and
-"Off-lineÂ” Quality improvement process consisting of: 1) System
+"Off-line” Quality improvement process consisting of: 1) System
 Design, 2) Parameter Design, and 3) Tolerance Design. We will
 discuss a Parameter Design problem that looks at control factors,
 noise factors, and the use of orthogonal arrays to perform a
@@ -1422,17 +1422,13 @@ are:
 * Accuracy / precision confusion
 * Confidence / prediction / tolerance interval confusion
 * Wrong and/or painful phrases:
-
-+ "The data say ..."
-+ "The data prove ..."
-+ "We built a design of experiments ..."
-+ "It's just a theory."
-+ "The p value is the probability that the
-  null hypothesis is true."
-+ "The confidence level of the hypothesis
-  test is 95%."
-+ "Here's a stack of data. Find something
-  in there to publish."
+    * "The data say ..."
+    * "The data prove ..."
+    * "We built a design of experiments ..."
+    * "It's just a theory."
+    * "The p value is the probability that the null hypothesis is true."
+    * "The confidence level of the hypothesis test is 95%."
+    * "Here's a stack of data. Find something in there to publish."
 
 **Critique of a YouTuber's Experiment to Test the
 Mechanical Properties of 3D Printed Parts, 1 November 2019,
@@ -1470,9 +1466,9 @@ hypothesis that a difference or effect is present. As an example,
 suppose that the goal of an experiment is to demonstrate that the
 population mean for a new process (#2) is different from the
 population mean for the old process (#1). Then we would test the
-hypotheses H0: Âµ1 = Âµ2 versus HA:
-Âµ1 ≠ Âµ2 and reject H0 in
-favor of HA if Âµ1 and Âµ2 were
+hypotheses H0: µ1 = µ2 versus HA:
+µ1 ≠ µ2 and reject H0 in
+favor of HA if µ1 and µ2 were
 statistically far apart. Under the strict rules of hypothesis
 testing there is no opportunity to accept H0. We can only
 reject it in favor of HA or else the test is
@@ -1483,8 +1479,8 @@ But what if the goal of the experiment is to demonstrate that there
 is *no* difference between the two population means? To honor
 Sagan's requirement we must put the burden of proof on the data by
 inverting the original hypotheses, writing the new hypotheses as H0:
-Âµ1 ≠ Âµ2 versus HA: Âµ1 =
-Âµ2 with the intention of rejecting H0 in favor
+µ1 ≠ µ2 versus HA: µ1 =
+µ2 with the intention of rejecting H0 in favor
 of HA. This test belongs to the family of *equivalence
 tests*. Slight modifications to these hypotheses give rise to
 related methods called *superiority tests* and *non-inferiority
@@ -1552,8 +1548,7 @@ horizontal, center line. At this month's QMN meeting we'll discuss
 process control methods for processes with drifting process means
 and some ideas for evaluating their process capability.
 
-**Reliability Test Planning, Part 2, 5 April 2019,
-7:30-9:00AM, LCC Room T136**  
+**Reliability Test Planning, Part 2, 5 April 2019, 7:30-9:00AM, LCC Room T136**  
 At last month's meeting we discussed the basic concepts of
 reliability test planning and considered some of the simplest
 experiment designs. (See last month's abstract below.) This month we
@@ -1562,8 +1557,7 @@ month's meeting) and then we will look at some more complicated
 cases. We'll wrap up with a discussion of how to execute the planned
 experiment and how to perform the data analysis.
 
-**Reliability Test Planning, 1 March 2019,
-7:30-9:00AM, LCC Room T136.**  
+**Reliability Test Planning, 1 March 2019, 7:30-9:00AM, LCC Room T136.**  
 At this month's QMN meeting we will discuss reliability test
 planning. The response of interest in a reliability test can be
 either the time (or number of cycles to failure) when a specified
@@ -1573,23 +1567,17 @@ a minimum acceptable condition is satisfied or to estimate the value
 of a reliability parameter. Common examples of these problems are:
 
 * Demonstration tests:
-
-+ To demonstrate that the fraction failed at X hours is less
-  than a specified upper limit
-+ To demonstrate that the time when the fraction failed
-  reaches f is greater then a specified lower limit
-
+    * To demonstrate that the fraction failed at X hours is less than a specified upper limit
+    * To demonstrate that the time when the fraction failed reaches f is greater then a specified lower limit
 * Estimation tests:
-
-+ To estimate the fraction failed at X hours with specified
-  precision
-+ To estimate the time when the fraction failed is f with
-  specified precision
+    * To estimate the fraction failed at X hours with specified precision
+    * To estimate the time when the fraction failed is f with specified precision
 
 We'll look at these four cases and others, their associated
 experiment designs, sample size and acceptance criteria
 requirements, and how to analyze their experimental data.
-**A Tour of Micro Laboratories, 4 February 2019, 8:00-9:30AM, at Micro Labs.**
+
+**A Tour of Micro Laboratories, 4 February 2019, 8:00-9:30AM, at Micro Labs.**  
 Keith Kokal, the President and Owner of Micro Laboratories in
 Mentor, has invited us for a tour of the Micro Laboratories
 facilities. Micro Laboratories is a calibration services provider
@@ -1682,15 +1670,15 @@ calculations are performed, at some of the process capability
 statistics reported in common software, and at some real data
 volunteered by Alyssa W.
 
-**Process Capability for GD&T True Position,
-Part 1, 5 October 2018, 7:30-9:00AM, Room T136.**  
+**Process Capability for GD&T True Position, Part 1, 5 October 2018, 7:30-9:00AM, Room T136.**  
 My (Paul) understanding of GD&T is weak so Scott H is going to
 open this month's session with an introduction to GD&T True
 Position. There's a good introduction to the topic, including a
 painfully slow video, posted [here](https://www.gdandtbasics.com/true-position/). From
 that posting:
 
-*True Position Â– Location of a Feature**Position in terms of an axis, point, or plane defines how
+* True Position – Location of a Feature  
+* Position in terms of an axis, point, or plane defines how
 much variation a feature can have from a specified exact true
 location. The tolerance is a two- or three-dimensional tolerance
 zone that surrounds the true location where a feature must lie.
@@ -1701,7 +1689,7 @@ where the position should be and your tolerance specifies how far
 from this you can be. The location is most often positioned with
 two or three datums to exactly locate the reference
 position. The true position is usually called out as a
-diameter to represent a circular or cylindrical tolerance zone.*
+diameter to represent a circular or cylindrical tolerance zone.
 
 One of the complications inherent in tolerancing by True Position is
 that the positional tolerance changes based on the feature's size.
@@ -1863,8 +1851,7 @@ and discuss the experiments that we've run that have gone bad, how
 to salvage the situation, and how we can prevent these problems from
 happening again in the future.
 
-**A Discussion of John Ioannidis's article *Why
-Most Published Research Findings Are False*****, 6 October 2017, 7:30-9:00AM******, Room T136.**  **
+**A Discussion of John Ioannidis's article *Why Most Published Research Findings Are False*, 6 October 2017, 7:30-9:00AM, Room T136.**  
 When we do statistical analysis of data we usually use the p <
 0.05 criterion to indicate a statistically significant result. That
 choice means that in those cases where there really is no
@@ -1889,8 +1876,7 @@ can't make it to the meeting or want to be better prepared for the
 discussion check out Derek Muller's *Veritassium* video on the
 topic posted [here](https://www.youtube.com/watch?v=42QuXLucH3Q).
 
-**Software Cost Estimation, Stuart Kretch****, 1
-September 2017, 7:30-9:00AM******, Room T136.**  **
+**Software Cost Estimation, Stuart Kretch, 1 September 2017, 7:30-9:00AM, Room T136.**  
 Software implementation has been problematic for
 decades. In spite of enormous amounts of investment and work,
 it remains highly uncertain work with failure rates that are worse
@@ -1908,8 +1894,7 @@ them have been known and ignored for years. If we're going to
 implement software more effectively, we're going to have to do a
 better job of respecting mathematics.
 
-**Development of a Custom Corrosion Measurement
-System, Paul Mathews and Joe R.****, 4 August 2017,
+**Development of a Custom Corrosion Measurement System, Paul Mathews and Joe R., 4 August 2017,
 7:30-9:00AM, T136.**  
 Network member Joe R is working on a project to reduce corrosion of
 steel parts. He plans to build a series of designed experiments to
@@ -2111,9 +2096,7 @@ of the many other applications of McNemar's test. For example:
 * Does early use of marijuana increase the later risk of use of
   cocaine?
 
-**What Do You See When You Look At a Boxplot?******,******2
-September 2016, 7:30-9:00AM, Lakeland Community College, Room
-T136.**  
+**What Do You See When You Look At a Boxplot?, 2 September 2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  
 Boxplots are the preferred graphical presentation method for small
 data sets. Despite their simplicity, they can be used to perform
 many analyses, some being quite complex. At this month's meeting
@@ -2124,9 +2107,7 @@ asymmetric, platykurtic, and leptokurtic distributions), tests for
 differences between two or more means, and tests for differences
 between two or more standard deviations.
 
-****Continuous and Skip Lot Sampling
-Plans,******5
-August 2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  
+**Continuous and Skip Lot Sampling Plans, 5 August 2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  
 I've been working with a customer recently who has a supplier
 inspection procedure that operates much like a skip lot sampling
 plan. I haven't seen skip lot sampling used in a while and I thought
@@ -2163,9 +2144,8 @@ parameters so after discussing the basics we'll look at some
 examples, compare the performance of some plans, and then talk about
 some of the published CSPs and SkSPs that are available.
 
-****Experiment Protocol Documents
-(Part 2**),****3 June
-2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  Last month's meeting on experiment protocols was very
+**Experiment Protocol Documents (Part 2), 3 June 2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  
+Last month's meeting on experiment protocols was very
 well attended so this month we're going to do a follow-up on the
 same topic. We'll start by reviewing the potential content of an
 experiment protocol. Then we'll discuss how to structure a formal
@@ -2180,18 +2160,14 @@ I'll bring my own projector next month in case we have trouble
 again. In the meantime, here are links to different versions of my
 experiment protocol design mind map:
 
-* [Native
-  FreeMind](http://www.mmbstatistical.com/Notes/ExperimentProtocol.mm) (open in FreeMind Version 1.0.1)
-* [PDF](http://www.mmbstatistical.com/Notes/ExperimentProtocol.pdf)
-  (static, in mind map tree format)
-* [Clickable
-  HTML](http://www.mmbstatistical.com/Notes/ExperimentProtocol.html) (opens in your browser, allows you to expand and
+* [Native FreeMind](http://www.mmbstatistical.com/Notes/ExperimentProtocol.mm) (open in FreeMind Version 1.0.1)
+* [PDF](http://www.mmbstatistical.com/Notes/ExperimentProtocol.pdf) (static, in mind map tree format)
+* [Clickable HTML](http://www.mmbstatistical.com/Notes/ExperimentProtocol.html) (opens in your browser, allows you to expand and
   collapse the branches)
-* [Tab-indexed
-  text file](http://www.mmbstatistical.com/Notes/ExperimentProtocol.txt) (.txt, outline form)
+* [Tab-indexed text file](http://www.mmbstatistical.com/Notes/ExperimentProtocol.txt) (.txt, outline form)
 
-****Experiment Protocol Documents,******6
-May 2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  As a consultant I've seen a wide range of practices with
+**Experiment Protocol Documents,6 May 2016, 7:30-9:00AM, Lakeland Community College, Room T136.**  
+As a consultant I've seen a wide range of practices with
 respect to how organizations plan and execute their experimental
 work. Those that skimp on the early planning and preparation phases
 and rush to build their experiments tend to experience more failures
@@ -2342,16 +2318,12 @@ Variables Charts for Individuals> Z-MR). So in this month's
 meeting we'll discuss the use of MINITAB's Z-MR charts for the
 following short run SPC situations:
 
-* Deviation from target chart, equal standard deviations for all
-  parts
-* Deviation from average chart, equal standard deviations for
-  all parts
-* Deviation from target chart, unequal standard deviations for
-  parts
-* Deviation from target chart, unequal standard deviations for
-  runs
+* Deviation from target chart, equal standard deviations for all parts
+* Deviation from average chart, equal standard deviations for all parts
+* Deviation from target chart, unequal standard deviations for parts
+* Deviation from target chart, unequal standard deviations for runs
 
-**A Menagerie of Reliability Problems (Part 3), 4 September 2015, 7:30-9:00AM, Lakeland Community College, Room T-136.**
+**A Menagerie of Reliability Problems (Part 3), 4 September 2015, 7:30-9:00AM, Lakeland Community College, Room T-136.**  
 At last month's meeting we used MINITAB's **Stat>
 Reliability/Survival> Test Plans> Demonstration** and **Test
 Plans> Estimation** menus to design and analyze
@@ -2376,8 +2348,7 @@ accelerated life test that you are willing to share with the network
 members please e-mail the data to Paul (paul@mmbstatistical.com)
 before the meeting.
 
-A Menagerie of Reliability Problems (Part 2), **7 August 2015**, 7:30-9:00AM, Lakeland Community College, Room
-T-136.
+**A Menagerie of Reliability Problems (Part 2), **7 August 2015**, 7:30-9:00AM, Lakeland Community College, Room T-136.**  
 At last month's meeting we used MINITAB to analyze
 seven of the most common quality engineering problems. This month
 we'll continue the theme of reliability analysis with MINITAB by
@@ -2385,16 +2356,14 @@ considering the design and analysis of reliability demonstration
 tests, accelerated reliability tests, and the analysis of
 reliability data using linear regression, ANOVA, and DOE methods.
 
-A Menagerie of Reliability Problems (Part 1), **5 June 2015**, 7:30-9:00AM, Lakeland Community College, Room
-T-136.
+**A Menagerie of Reliability Problems (Part 1), 5 June 2015, 7:30-9:00AM, Lakeland Community College, Room T-136.**  
 At this month's QMN meeting we're going to work
 through as many example reliability problems as possible using
 MINITAB. We'll look at examples of the following types:
 
 * Distribution fitting
 * Right- and interval-censored data
-* Predictions for distribution parameters, reliabilities,
-  percents, and percentiles
+* Predictions for distribution parameters, reliabilities, percents, and percentiles
 * One-, two- and many-sample problems
 * Accelerated testing
 * Demonstration test design and analysis
@@ -2418,8 +2387,7 @@ discussion please e-mail it to me with a short description of the
 situation.
 
 **Equivalence, Superiority, and Non-inferiority Tests, 10 April 2015, 7:30-9:00AM, Lakeland Community College, Room E116.**  
-(The presentation
-notes are **[here](file:///C%3A/Statistics/MMBInc/mmbstatisticalwebsite/QualityTools/EquivalenceTests.pdf)**.)
+(The presentation notes are **[here](file:///C%3A/Statistics/MMBInc/mmbstatisticalwebsite/QualityTools/EquivalenceTests.pdf)**.)
 The hypothesis testing method that all of us learned first and
 use almost exclusively is the method of *significance tests*. The goal of significance testing is to reject the null
 hypothesis of no difference or no effect in favor of the alternate
@@ -2427,22 +2395,19 @@ hypothesis that a difference or effect is present. As an example,
 suppose that the goal of an experiment is to demonstrate that the
 population mean for a new process (#2) is different from the
 population mean for the old process (#1). Then we would test the
-hypotheses H0: Âµ1 = Âµ2 versus HA:
-Âµ1
-
-≠ Âµ2 and reject H0 in favor of HA
-if Âµ1 and Âµ2 were statistically far apart.
+hypotheses H0: µ1 = µ2 versus HA: µ1 ≠ µ2 and reject H0 in favor of HA
+if µ1 and µ2 were statistically far apart.
 Under the strict rules of hypothesis testing there is no opportunity
 to accept H0. We can only reject it in favor of HA
 or else the test is inconclusive. This approach puts the burden of
 proof on the data. It forces us to honor Sagan's guidance that *the
-extraordinary claim (H**A**) requires
+extraordinary claim (HA) requires
 extraordinary evidence*. But what if the goal of the experiment
 is to demonstrate that there is *no* difference between the
 two population means? To honor Sagan's requirement we must put the
 burden of proof on the data by inverting the original hypotheses,
-writing the new hypotheses as H0: Âµ1 ≠ Âµ2
-versus HA: Âµ1 = Âµ2 with the
+writing the new hypotheses as H0: µ1 ≠ µ2
+versus HA: µ1 = µ2 with the
 intention of rejecting H0 in favor of HA. This
 test belongs to the family of *equivalence tests*. Slight
 modifications to these hypotheses give rise to related methods
@@ -2453,9 +2418,7 @@ interpreted using simple confidence intervals. So if you've ever
 needed a test other than a significance test come join us at this
 month's meeting to discuss the use of these other testing methods.
 
-Acceptance Sampling Plan
-Design for Variables Data, 6 March 2015, 7:30-9:00AM, Lakeland Community College, Room
-T136.
+**Acceptance Sampling Plan Design for Variables Data, 6 March 2015, 7:30-9:00AM, Lakeland Community College, Room T136.**  
 Last month's meeting on acceptance sampling using
 attribute data was well attended so this month we'll continue the
 discussion by considering acceptance sampling using variables (aka
@@ -2471,8 +2434,7 @@ size and the acceptance criterion. We'll look at some simple manual
 variable sampling plan calculation methods and the corresponding
 methods provided in MINITAB.
 
-**Acceptance Sampling Plan Design for Attribute Data, 6 February 2015, 7:30-9:00AM, Lakeland Community College, Room
-T221.**  
+**Acceptance Sampling Plan Design for Attribute Data, 6 February 2015, 7:30-9:00AM, Lakeland Community College, Room T221.**  
 Acceptance sampling is a fundamental method of
 quality engineering. In attribute acceptance sampling a random
 sample is drawn from a production lot and the sample is inspected to
@@ -2522,7 +2484,7 @@ binary responses using data from two case studies: 1) a drug
 toxicology study and 2) the o-ring failure data that was available
 before the loss of the space shuttle Challenger.
 
-**Those Confusing Process Capability Statistics (Part 3), 3 October 2014, 7:30-9:00AM, Lakeland Community College, Room L104.**
+**Those Confusing Process Capability Statistics (Part 3), 3 October 2014, 7:30-9:00AM, Lakeland Community College, Room L104.**  
 Our last two meetings about process
 capability issues were both lively and well attended. At this
 month's meeting we'll continue the process capability
@@ -2788,7 +2750,7 @@ shifts.
 
 **Introduction to Lean Six Sigma, 3 August 2012, 7:30-10:00AM, Room T136.**  
 Lean Six Sigma is the integration of the two famous, complementary
-business process improvement methodologies Â– Lean to reduce waste
+business process improvement methodologies – Lean to reduce waste
 and Six Sigma for quality improvement. Students of this course will
 learn to:
 
@@ -3435,7 +3397,7 @@ constructing confidence intervals and performing hypothesis tests.
 
 **Quality management of half-normal and circular-normal distribution data,  26
 October 2007, 7:30-9:00AM, T136.**  
-In engineering and manufacturing there are two special Â“relativesÂ” of the normal
+In engineering and manufacturing there are two special “relatives” of the normal
 distribution that appear frequently but are not usually
 recognized. These are the half-normal and circular-normal
 distributions.
@@ -3784,7 +3746,7 @@ and weaknesses of the various methods. If you have data from a
 multiple stream process that you wish to share with the group,
 please forward them to Paul at paul@mmbstatistical.com.
 
-**Multiple-Stream Processes, 24 March 2005, 7:30-9:00AM, T136**
+**Multiple-Stream Processes, 24 March 2005, 7:30-9:00AM, T136**  
 Multiple-stream processes have two or more parallel paths
 along which parts or material passes. Ideally all of the paths
 operate identically, so that there are no differences between
@@ -3864,8 +3826,8 @@ degrees of freedom takes some practice and study to achieve.
 In this session, Paul Mathews will present an overview of
 the calculation and interpretation of degrees of freedom in
 common statistical analyses. His presentation will start
-from the simplest of problems Â– the one-sample t test for
-location Â– and make the logical progression through
+from the simplest of problems – the one-sample t test for
+location – and make the logical progression through
 two-sample t tests for location (Did you know that there are
 three different two-sample t tests, with different degrees
 of freedom?); one-way and two-way ANOVA; full-factorial and
@@ -4020,7 +3982,7 @@ they convey. Various ratios and other mathematical techniques are
 used in a financial analysis. George will discuss these ratios and
 what each ratio attempts to measure. He will also discuss the Quality of Earnings in a business entity.
 
-**The Use of Gage Error Studies to Guide An Instrument Purchasing Decision, 23 Jan 2004, 7:30-9:00AM, L104**
+**The Use of Gage Error Studies to Guide An Instrument Purchasing Decision, 23 Jan 2004, 7:30-9:00AM, L104**  
 Prior to making a large purchase of new large diameter bore
 gages, a network member ran a series of gage error studies of gages
 from four different manufacturers. The purpose of the study was to
@@ -4074,7 +4036,7 @@ Quality characteristics that are critical to quality (CTQ)
 for your customer must have their specifications set to meet your
 customer's requirements. However, the specifications for many other
 quality characteristics that are not critical to quality are often
-set by observation Â– if experience has shown that a certain range of
+set by observation – if experience has shown that a certain range of
 values is acceptable then that range is taken to be the
 specification. Despite the lesser importance of these non-CTQ
 quality characteristics, valid methods of setting their
@@ -4090,7 +4052,7 @@ that the quality characteristic follows a normal or some other well
 behaved distribution. In the second part (August 22) Paul will
 demonstrate the tolerance limit method. This method is used when it
 is safe to assume that the quality characteristic is normally
-distributed Â– an assumption which must be carefully tested.
+distributed – an assumption which must be carefully tested.
 Specifications determined from both methods, the nonparametric and
 tolerance limit methods, are determined from random samples drawn
 from the product or process being studied.

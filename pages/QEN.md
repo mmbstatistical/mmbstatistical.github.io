@@ -9,6 +9,7 @@ added to the mailing list.
 
 Use these meetings to earn recertification units (RUs) for your
 ASQ certifications.
+  
 
 **Free Software!, 12 December 2025, 7:30-9:00AM by Zoom**  
 Everyone loves free stuff! We haven't done this topic in over five
@@ -245,7 +246,7 @@ how AI can enhance efficiency and accuracy in manufacturing
 processes. Discover how to leverage ChatGPT to improve your
 workflow and achieve quality excellence.
 
-**Nonstandard SPC Charts, 9 August 2024, 7:30-9:00AM, by Zoom**
+**Nonstandard SPC Charts, 9 August 2024, 7:30-9:00AM, by Zoom**  
 At our last two QEN meetings we discussed the
 Shewhart family of SPC charts. At this month's meeting we will
 consider some nonstandard charts including
@@ -259,7 +260,7 @@ consider some nonstandard charts including
 * Time-weighted charts
     * moving average  
     * EWMA  
-    *CUSUM
+    * CUSUM
 * Groups charts for multi-stream processes
 * Multivariate charts
 
@@ -615,8 +616,7 @@ and then we'll look at how to double click and right click your
 way through customizing your MINITAB-produced graphs to make the
 perfect graphs that you need.
 
-**Use Expectation Value to Evaluate and Compare
-Business Process Models, 7:30-9:00AM, 12 August 2022, by Zoom.**
+**Use Expectation Value to Evaluate and Compare Business Process Models, 7:30-9:00AM, 12 August 2022, by Zoom.**  
 The method of expectation values is introduced in statistics
 courses to determine the parameters of a distribution; however,
 that's just the starting point for this valuable method.
@@ -625,17 +625,12 @@ factor can take on many different forms - most often money - so
 the method finds many important applications in quality cost and
 business cost analysis including:
 
-* Calculate the expected earnings of a simple
-  game
-* Calculate the expected earnings of a business
-  process (i.e. a more elaborate game)
+* Calculate the expected earnings of a simple game
+* Calculate the expected earnings of a business process (i.e. a more elaborate game)
 * Taguchi's Loss Function (i.e. a special game)
-* Calculate the threshold value for making a
-  process change, e.g. a machine adjustment
-* Calculate the average sample number for an
-  acceptance sampling plan or an SPC chart run rule
-* Calculate the cost of operating an acceptance
-  sampling plan or SPC control chart
+* Calculate the threshold value for making a process change, e.g. a machine adjustment
+* Calculate the average sample number for an acceptance sampling plan or an SPC chart run rule
+* Calculate the cost of operating an acceptance sampling plan or SPC control chart
 
 In addition to using the expectation value method to
 characterize a single process, the results from expectation value
@@ -650,7 +645,7 @@ quality cost analysis.
 
 **Functional Applications of Machine Learning presented by Keith
 Fritz, in person at ASM International (reservation required), or
-by Zoom, 7:30-9:00AM, 8 July 2022**
+by Zoom, 7:30-9:00AM, 8 July 2022**  
 Machine Learning (ML), Artificial Intelligence (AI), and
 Integrated Computational Materials Engineering (ICME) cover a
 broad ranges of topics and applications. This presentation will
@@ -1151,7 +1146,7 @@ data to be used to determine process capability or just to provide
 pass/fail results relative to specification limits. We'll discuss
 all of these issues at our April 10th meeting.
 
-**Quality Audit Checklists with Examples, 13 March 2020, **7:30-9:00AM,** at GGP**  
+**Quality Audit Checklists with Examples, 13 March 2020, 7:30-9:00AM, at GGP**    
 Quality audit checklists are a crucial quality management tool for
 processes that are complex and difficult to quantify. At this
 month's meeting we will discuss the design, construction, and use of
