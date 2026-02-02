@@ -1,8 +1,5 @@
-|  |  |  |
-| --- | --- | --- |
-| ![2^3 Design](Graphics/MMB%202%5E3C%20Only.jpg) | Mathews Malnar and Bailey, Inc.    Quality engineering, applied statistical consulting,  and training services for R&D, product, process,  and manufacturing engineering organizations. | ![Run Chart](Graphics/MMB%20Chart%20Only.jpg) |
 
-Meeting announcements are in reverse order with the most recent
+QMN meeting announcements are in reverse order with the most recent
 meeting at the top. All meetings are free and everyone is welcome to
 present or to recommend a topic. Please e-mail me at
 paul@mmbstatistical to be added to the mailing list.
@@ -10,7 +7,7 @@ paul@mmbstatistical to be added to the mailing list.
 Use these meetings to earn recertification units (RUs) for your ASQ
 certifications.
 
-**The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom**
+**The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom**    
 I was helping Matt B and his team interpret the results from a
 rather complex experiment this week. During that discussion, we
 recognized several gaps in our knowledge that were worrisome. I
@@ -24,7 +21,7 @@ knowledge can accumulate from many small experiments into something
 substantial. At this month's QMN meeting we'll discuss the joy and
 benefits from running little experiments and where to find them.
 
-**Consequences of Poor Measurement Resolution, 9 January 2026, 7:30-9:00AM by Zoom**
+**Consequences of Poor Measurement Resolution, 9 January 2026, 7:30-9:00AM by Zoom**    
 Recently a customer asked me to help him analyze a data set with
 very poor measurement resolution. He'd planned to analyze the data
 using a two-sample t test, but because of the coarseness of the
@@ -64,7 +61,7 @@ methods:
 * Jittering measurements
 * Number of distinct categories (NDC)
 
-**MINITAB Macros, 5 December 2025, 7:30-9:00AM by Zoom**
+**MINITAB Macros, 5 December 2025, 7:30-9:00AM by Zoom**    
 Recently one of my students/customers was analyzing data from a
 large process capability study with many variables. He was
 frustrated about 1) having to repeat the same analyses over and over
@@ -78,7 +75,7 @@ operations and turn that code into a MINITAB macro. We'll also
 discuss how to convert an EXEC style macro into a more general LOCAL
 macro.
 
-**Measurement Systems Validation, 7 November 2025, 7:30-9:00AM by Zoom**
+**Measurement Systems Validation, 7 November 2025, 7:30-9:00AM by Zoom**    
 We've talked many times about gage error studies, most often about
 the operator-by-part crossed experiment design, but there are many
 other gage R&R study designs possible and even that topic is
@@ -91,7 +88,7 @@ for showing special conditions like measurement linearity. We'll
 also look at MINITAB's new gage R&R method: **Stat> Quality
 Tools> Gage Study> Evaluate Measurement Process**.
 
-**How to Choose a Statistical Analysis Method, 3 October 2025, 7:30-9:00AM by Zoom**
+**How to Choose a Statistical Analysis Method, 3 October 2025, 7:30-9:00AM by Zoom**    
 Many of you have seen my matrix of hypothesis testing methods. The
 matrix is a two-way classification table of distribution
 characteristics (mean, standard deviation, proportion, counts, and
@@ -110,7 +107,7 @@ use of this matrix and also where specialized quality engineering
 methods like SPC, acceptance sampling, and tolerance intervals
 belong.
 
-**Managing Missing Values in Designed Experiments II, 6 June 2025, 7:30-9:00AM****, by Zoom**
+**Managing Missing Values in Designed Experiments II, 6 June 2025, 7:30-9:00AM, by Zoom**    
 At last month's QMN meeting we started discussing how to handle
 missing values in a designed experiment. In that meeting we covered
 how to detect missing values using the correlation matrix of model
@@ -118,8 +115,7 @@ terms and how missing values affect estimates for model
 coefficients. At this follow-up meeting we will discuss specific
 strategies to mitigate the effects of missing values.
 
-**Managing Missing Values in Designed Experiments,
-2 May 2025, 7:30-9:00AM****, by Zoom**
+**Managing Missing Values in Designed Experiments, 2 May 2025, 7:30-9:00AM, by Zoom**    
 When we build a designed experiment\* we usually build an equal
 number of runs (aka replicates) in each of the experiment's cells
 because that imparts some desirable mathematical properties to the
@@ -132,9 +128,9 @@ month's QMN meeting we'll look at how to use a correlation matrix to
 detect unbalancedness in designed experiments, its consequences, and
 some potential corrective actions for the analysis including the
 following methods: ignoring the problem, omitting some runs, mean
-substitution, and imputation methods for managing missing values.
+substitution, and imputation methods for managing missing values.  
 
-\* A designed experiment is any experiment that involves the planned
+A designed experiment is any experiment that involves the planned
 collection of data from a process for the purpose of understanding
 that process better to aid in its management, improvement, or
 control. The data set could be very simple (e.g. data collected for
@@ -142,7 +138,7 @@ a single response from a single stable population) or very
 complicated (e.g. data collected for one or more responses from a
 factorial, response surface, or other design).
 
-**Comparing Different Models In Designed Experiments, 4 April 2025, 7:30-9:00AM, by Zoom**
+**Comparing Different Models In Designed Experiments, 4 April 2025, 7:30-9:00AM, by Zoom**    
 One of the things that we learn to do during the analysis of a
 designed experiment is to fit a first, best guess model, and then to
 refine the model, usually by dropping terms that are not
@@ -164,7 +160,7 @@ a data set. Some of the cases that we will consider are:
   input variables might work better.
 
 **Analysis of Life/Survival Data When There Are No
-Failures, 7:30-9:00AM, 7 March 2025, by Zoom**
+Failures, 7:30-9:00AM, 7 March 2025, by Zoom**  
 I was recently helping Matt B. analyze data from a life/survival
 study. Matt was trying to compare two products - an old product and
 a new product - for the purpose of showing that the new product is
@@ -182,7 +178,7 @@ QMN meeting we'll discuss what analyses we can do with these data
 and if we can answer the "at least as good as" claim.
 
 **A Checklist of Good and Bad Statistical Practices
-(Part 3), 7:30-9:00AM, 7 February 2025, by Zoom**
+(Part 3), 7:30-9:00AM, 7 February 2025, by Zoom**  
 We spent the previous two QMN meetings reviewing my checklist of
 good and bad statistical practices. I thought that we'd get through
 the entire list in the first meeting, but you guys have had good
@@ -194,7 +190,7 @@ latest version so please try to review it in advance to see if you
 have anything to add or any recommendations for changes.
 
 **A Checklist of Good and Bad Statistical Practices
-(Part 2), 7:30-9:00AM, 10 January 2025, by Zoom**
+(Part 2), 7:30-9:00AM, 10 January 2025, by Zoom**  
 At last month's QMN meeting we started discussing a long list of
 good and bad statistical practices that I developed for a new pharma
 customer. The list was very well received and I have since added
@@ -204,7 +200,7 @@ the items on the last half of the list. I've attached the document
 so you can review it in advance.
 
 **A Checklist of Good and Bad Statistical Practices
-(Part 1), 7:30-9:00AM, 6 December 2024, by Zoom**
+(Part 1), 7:30-9:00AM, 6 December 2024, by Zoom**  
 Some of my consulting friends and I recently did applied statistics
 training for a new pharma customer who is expanding into a product
 type where we have experience but they do not. The purpose of the
@@ -220,7 +216,7 @@ checklist.
 
 **Debugging the Real-Time Data Collection and Processing
 Functions of a Hobby Electronics Project, 7:30-9:00AM, 1
-November 2024 via Zoom**
+November 2024 via Zoom**  
 In the QMN meeting back on 5 August 2022 I described some of the
 real-time data processing problems I was having on my hobby
 electronics project to replace the instruments on my sailboat. At
@@ -241,7 +237,7 @@ configuration. I was able to fix both problems and now the system
 does an excellent job collecting, processing, and displaying data.
 
 **Paradoxes in Statistics, 7:30-9:00AM, 4 October
-2024, by Zoom**
+2024, by Zoom**  
 Statistical methods can be confusing enough, but they are aggravated
 by a set of common traps/mistakes that get clustered into a family
 of "statistical paradoxes". (See the list in Wikipedia:
@@ -270,7 +266,7 @@ charts, distribution fit analysis, hypothesis testing, regression
 analysis, graphs and plots, DOE, and more as time permits.
 
 **Pugh Concept Selection Matrix, 7 June 2024,
-7:30-9:00AM, by Zoom**
+7:30-9:00AM, by Zoom**  
 Following the Analyze phase of the Six Sigma DMAIC process (for
 improving an existing process) or the DMADV process (for designing a
 new product or service) it is necessary to leverage the process
@@ -292,7 +288,7 @@ DMAIC Define, Measure, Analyze, Improve, and Control
 DMADV Define, Measure, Analyze, Design, Verify
 
 **The Ramirez-Runger Test: Do my data come from a
-single stable population?, 3 May 2024, 7:30-9:00AM, by Zoom**
+single stable population?, 3 May 2024, 7:30-9:00AM, by Zoom**  
 
 When we're collecting data from some process, we usually make the
 assumption that the process is stable in time, that is, that its
@@ -329,7 +325,7 @@ Ramirez and Runger, Quantitative Techniques to Evaluate Process
 Stability, June 2006, Quality Engineering 18(1):53-68
 
 **The Many Uses of the Sign Test, 5 April 2024,
-7:30-9:00AM, by Zoom**
+7:30-9:00AM, by Zoom**  
 The nonparametric sign test is one of the few statistical methods
 that have a simple instinctive interpretation. It appears any time
 you're expecting binary observations to have a 50/50 split. Consider
@@ -369,7 +365,7 @@ you'll learn to recognize the many places that it appears and how to
 interpret its results.
 
 **Accelerated Life Test of a Hand Sanitizer
-Product, 2 February 2024, 7:30-9:00AM, by Zoom**
+Product, 2 February 2024, 7:30-9:00AM, by Zoom**  
 In our December and January meetings we discussed many ways to
 analyze the data for an accelerated life test. This month we'll
 consider another type of life test. In the previous discussions, the
@@ -389,14 +385,14 @@ using 6 month data.
 
 **Design, Analysis, and Sample Size Calculations
 for an Accelerated Life Test - Part 2, 5 January 2024,
-7:30-9:00AM, by Zoom**
+7:30-9:00AM, by Zoom**  
 We didn't finish our discussion of accelerated life tests last month
 so we will continue our discussion in January. See the December
 abstract for the planned scope of the discussion.
 
 **Design, Analysis, and Sample Size Calculations
 for an Accelerated Life Test, 1 December 2023, 7:30-9:00AM, by
-Zoom**
+Zoom**  
 I am working on an experiment design and sample size calculation for
 an accelerated life test for a customer. MINITAB has methods for the
 the data analysis and the sample size calculation; however, I'm
@@ -430,7 +426,7 @@ the sample size calculation) is here:
 > perform the same test under unaccelerated conditions.
 
 **Goodness of Fit Tests for Linear Regression, 3
-November 2023, 7:30-9:00AM, by Zoom**
+November 2023, 7:30-9:00AM, by Zoom**  
 One of the assumptions of the linear regression method is that the
 form of the model is appropriate for the data. This condition is
 referred to as "goodness of fit" or "lack of fit". Many people make
@@ -450,7 +446,7 @@ will consider some of these goodness of fit tests and implement them
 manually and using MINITAB's built in capabilities.
 
 **Examples of Equivalence, Superiority, and Noninferiority
-Tests, 6 October 2023, 7:30-9:00AM via Zoom**
+Tests, 6 October 2023, 7:30-9:00AM via Zoom**  
 At last month's QMN meeting we discussed the formulation of
 equivalence, superiority, and noninferiority test hypotheses. We'll
 continue that topic this month by discussing detailed examples of
@@ -459,7 +455,7 @@ consider volunteering to explain your work.
 
 **Formulating Equivalence, Superiority, and
 Noninferiority Test Hypotheses, 1 September 2023, 7:30-9:00AM,
-by Zoom**
+by Zoom**  
 After learning the basic significance test methods we often find
 ourselves with the need to perform equivalence, superiority, and
 noninferiority tests. The analyses and interpretation of these
@@ -469,7 +465,7 @@ issues at September's QMN meeting.
 
 **Sample Size Calculations for One-way, Two-way,
 and Multi-way Classification Designs, 4 August 2023,
-7:30-9:00AM, by Zoom**
+7:30-9:00AM, by Zoom**  
 In our previous sessions we discussed how to adapt the sample size
 calculation for the two-sample t test using Bonferroni's correction
 to the more general case of testing for biases between three or more
@@ -482,7 +478,7 @@ those from the Bonferroni-corrected two-sample t test method.
 
 **Connections Between Sample Size Calculations for
 the Two-sample T Test, Two-level Factorial Designs, and Linear
-Regression****, 2 June 2023, 7:30-9:00AM, by Zoom**
+Regression****, 2 June 2023, 7:30-9:00AM, by Zoom**  
 In recent past QMN meetings we've discussed sample size calculations
 for the two-sample t test, the two-level factorial designs, and
 linear regression. All sample size calculations have similar
@@ -494,7 +490,7 @@ may be opportunities to perform a calculation for one method by
 using another method's solution or software implementation.
 
 **Sample Size Calculations for Linear Regression, 5
-May 2023, 7:30-9:00AM, by Zoom**
+May 2023, 7:30-9:00AM, by Zoom**  
 The next topic in our ongoing discussion of sample size calculation
 methods is linear regression. This is probably one of the most
 abused and ignored sample size calculation methods in engineering,
@@ -513,7 +509,7 @@ however, they are not supported in MINITAB and other common
 software.
 
 **Sample Size Calculations: Poisson Count
-Responses, 7:30-9:00AM, Friday, 7 April 2023, by Zoom**
+Responses, 7:30-9:00AM, Friday, 7 April 2023, by Zoom**  
 At this month's QMN meeting we will discuss sample size calculations
 for Poisson count responses. Poisson counts appear whenever you are
 counting the number of events per unit area of opportunity, such as:
@@ -546,7 +542,7 @@ following situations:
 Thankfully MINITAB supports most of these methods.
 
 **Sample Size Calculations: Two Proportions,
-7:30-9:00AM, 3 March 2023 by Zoom**
+7:30-9:00AM, 3 March 2023 by Zoom**  
 One of the most common and important experiment design categories is
 the two populations design. This design can be used to generically
 compare any two populations but it is especially important when
@@ -585,7 +581,7 @@ MINITAB macro can be used. At this month's QMN meeting will consider
 both of these tools.
 
 **Sample Size Calculations: One Proportion,
-7:30-9:00AM, 3 February 2023 by Zoom**
+7:30-9:00AM, 3 February 2023 by Zoom**  
 Near the top of the list on the Pareto chart of most-used
 statistical analysis methods are methods for one proportion. These
 methods include the generic confidence intervals and hypotheses
@@ -609,7 +605,7 @@ sample size calculator (<https://homepage.divms.uiowa.edu/~rlenth/Power/>)
 if you don't have MINITAB.
 
 **Sample Size Calculations: Standard Deviations and
-Process Capability, 7:30-9:00AM, 6 January 2023 by Zoom**
+Process Capability, 7:30-9:00AM, 6 January 2023 by Zoom**  
 At our December meeting we discussed sample size calculations for
 the two-sample means problem and the associated many-sample means
 problem. At our January QMN meeting we will discuss sample size
@@ -619,7 +615,7 @@ sample size calculations for process capability metrics. The result
 is quite depressing.
 
 **An Introduction to Sample Size Calculations -
-Part 3, 7:30-9:00AM, 2 December 2022, by Zoom**
+Part 3, 7:30-9:00AM, 2 December 2022, by Zoom**  
 At our November meeting we discussed sample size calculations for
 the one-sample and two-sample Student t tests for location and at
 the end of that discussion we rushed into the extension of the
@@ -633,7 +629,7 @@ calculation for one-way ANOVA relates to ANOVA for two-way and
 multi-way classification designs.
 
 **An Introduction to Sample Size Calculations -
-Part 2, 7:30-9:00AM, 4 November 2022, by Zoom**
+Part 2, 7:30-9:00AM, 4 November 2022, by Zoom**  
 At last month's meeting we started a discussion of sample size
 calculation methods. We started all the way back at the beginning of
 the topic and took our time with the material. We got through the z-
@@ -647,7 +643,7 @@ material as slowly as you like, so please come prepared to ask lots
 of questions. We will continue with this topic in future meetings.
 
 **An Introduction to Sample Size Calculations,
-7:30-9:00AM, 7 October 2022, by Zoom**
+7:30-9:00AM, 7 October 2022, by Zoom**  
 We frequently address the topic of sample size calculations in this
 forum, usually taking on a specific method of interest. I recently
 heard a request to backtrack from the advanced material a bit and
@@ -670,7 +666,7 @@ prepared to ask lots of questions. We can continue on with this
 topic in future meetings.
 
 **Diagnostic Tests and ROC Curves, 7:30-9:00AM, 2
-September 2022, by Zoom**
+September 2022, by Zoom**  
 A diagnostic test is used to distinguish two populations, for
 example, between diseased and healthy subjects, using a quantitative
 measurement compared to a threshold value. Observations that fall on
@@ -699,7 +695,7 @@ the false positive rate or 1 - specificity.
 
 **Smoothing Noisy Time Series Data - A Solution
 from the Technical Trading Stock Market Community, 7:30-9:00AM,
-5 August 2022, by Zoom**
+5 August 2022, by Zoom**  
 Most of you know that my wife and I have a sailboat that we race and
 cruise on Lake Erie. The boat's instrument system is over 20 years
 old now and its LCD displays have lost their contrast so are
@@ -742,7 +738,7 @@ MINITAB code or other software.
 
 **The Rank-Order Transform and Nonparametric
 Analysis Methods for When Your Data Aren't Normal, 3 June 2022,
-7:30-9:00AM, by Zoom**
+7:30-9:00AM, by Zoom**  
 We all know that the classical statistical analysis methods like the
 one-sample t test, two-sample t test, and ANOVA require that the
 data be normally distributed. Those methods aren't particularly
@@ -761,7 +757,7 @@ nonparametric methods can be applied to any rank ordered data, even
 when a measurement scale isn't available.
 
 **Fitting Multiple Regression Models with Inputs
-Expressed in Physical Units, 7:30-9:00AM, 6 May 2022, by Zoom**
+Expressed in Physical Units, 7:30-9:00AM, 6 May 2022, by Zoom**  
 When we build a designed experiment in MINITAB, MINITAB prompts us
 to enter the physical values of our process input variables (PIV);
 however, when it reports the results of the analysis it expresses
@@ -787,7 +783,7 @@ physical values of the PIVs.
 
 **Double and Multiple Sampling Plans Versus
 Bonferroni-Corrected Single Sampling Plans Adapted for Double
-and Multiple Sampling, 1 April 2022, 7:30-9:00AM, by Zoom**
+and Multiple Sampling, 1 April 2022, 7:30-9:00AM, by Zoom**  
 At our last meeting I described how to use Bonferroni's method to
 expand a zero acceptance number sampling plan to allow one or more
 defectives in double or multiple inspection episodes. The Bonferroni
@@ -801,7 +797,7 @@ designing double and multiple sampling plans.
 
 **Use of Bonferroni's Method to Account for Early
 Defectives in Attribute Sampling, 7:30-9:00AM, 4 March 2022, by
-Zoom**
+Zoom**  
 At last month's QMN meeting we discussed the application of
 Bonferroni's correction to the post-ANOVA multiple comparisons test
 problem; however, applications of Bonferroni's method have much
@@ -823,7 +819,7 @@ sampling plan design and these related methods at this month's QMN
 meeting.
 
 **Bonferroni's Correction for Multiple Comparisons
-Tests, 7:30-9:00AM, 4 February 2022, by Zoom**
+Tests, 7:30-9:00AM, 4 February 2022, by Zoom**  
 When we're planning a statistical analysis by hypothesis test or
 confidence interval one of the decisions we have to make is what
 type 1 or false alarm error rate to tolerate. The most common choice
@@ -854,7 +850,7 @@ more often than every other type of multiple comparisons test.
 
 **Weighted ANOVA and Weighted Regression (What To
 Do When You Can't Find a Variable Transform), 7:30-9:00AM, 7
-January 2022, by Zoom**
+January 2022, by Zoom**  
 When we perform ANOVA or regression we always analyze the model
 residuals to determine if the assumptions of normality and
 homoscedasticity (aka equal variances) are satisfied. When they're
@@ -878,7 +874,7 @@ original/raw residuals. We'll take a look at these methods in this
 month's meeting.
 
 **Resampling Methods, 7:30-9:00AM, 3 December 2021,
-by Zoom**
+by Zoom**  
 I'm so used to my old habits when working in MINITAB that I often
 don't notice additions that have been made to the program. Recently
 I was talking a customer through an analysis and did a double-take
@@ -904,7 +900,7 @@ session so make sure you join us next week so that you're not behind
 in the following sessions.
 
 **Tests and Sample Size Calculations for Poisson
-Count Responses, 7:30-9:00AM, 5 November 2021, by Zoom**
+Count Responses, 7:30-9:00AM, 5 November 2021, by Zoom**  
 We've spent a lot of time discussing tests and sample size
 calculations for measurement responses and for proportions (e.g.
 proportions defective or yield); however, we haven't taken up the
@@ -916,7 +912,7 @@ Poisson counts and their associated sample size calculations.
 
 **Tests for Homoscedasticity (aka Equal Variances)
 by F, Bonett, and Levene Test Methods, 7:30-9:00AM, 1 October
-2021, by Zoom**
+2021, by Zoom**  
 At this month's QMN meeting we will review the F test for
 homoscedasticity and consider two alternative tests: Bonett's and
 Levene's tests.
@@ -936,7 +932,7 @@ Levene's method also has the added benefit of being applicable when
 there are two, three, or more treatment groups.
 
 **The Two-Sample T Test and the Paired-Sample T Test,
-7:30-9:00AM, 3 September 2021 by Zoom**
+7:30-9:00AM, 3 September 2021 by Zoom**  
 Two of the most frequently used hypothesis testing methods are the
 two-sample t test and the paired-sample t test. Both methods are
 tests of means so they're obviously closely related which makes them
@@ -979,7 +975,7 @@ extra sample size that we planned for the two-sample t test just
 provides greater power for the paired-sample t test.
 
 **Organizational Statistical Maturity Checklist, 7:30-9:00AM,
-6 August 2021 by Zoom**
+6 August 2021 by Zoom**  
 As a consultant I see a wide range of statistical and quality
 engineering skills and practices among my many customers. Invariably
 they all want to know how their company compares to others. An
@@ -993,7 +989,7 @@ should be organized, and how it should be scored. Maybe we'll follow
 up by executing the checklist at work and then comparing results at
 a future meeting.
 
-**Modeling Standard Deviations, 7:30-9:00AM, 4 June 2021 by Zoom**
+**Modeling Standard Deviations, 7:30-9:00AM, 4 June 2021 by Zoom**  
 When we're doing experimental work our first concern is for
 understanding how process input variables (PIV) affect the process's
 mean response. The statistical analysis methods used to compare two
@@ -1016,7 +1012,7 @@ treatment groups, many treatment groups, and in designed
 experiments.
 
 **The Slipped Confidence Intervals Method versus
-the Two-Sample t Test Method, 7:30-9:00AM, 7 May 2021, by Zoom**
+the Two-Sample t Test Method, 7:30-9:00AM, 7 May 2021, by Zoom**  
 My friend Mark is planning a clinical trial for which we designed an
 appropriate experiment to be analyzed using a two-sample t test with
 a matching sample size calculation; however, his sponsors, who have
@@ -1047,7 +1043,7 @@ using 84% confidence intervals is equivalent to the two-sample t
 test.
 
 **Normality - When Does It Matter and When Does It
-Not? (Part 3), 7:30-9:00AM, 2 April 2021, by Zoom**
+Not? (Part 3), 7:30-9:00AM, 2 April 2021, by Zoom**  
 At the last two QMN meetings we've been talking about where the
 normality assumption applies and where it does not, especially in
 the context of process capability analysis. We weren't quite done
@@ -1059,7 +1055,7 @@ Hopefully after this meeting we can achieve some better
 understanding if not clarity on these issues.
 
 **Normality - When Does It Matter and When Does It
-Not? (Part 2), 7:30-9:00AM, 5 March 2021, by Zoom**
+Not? (Part 2), 7:30-9:00AM, 5 March 2021, by Zoom**  
 Many statistical analysis methods require or work better when the
 data follow a normal distribution; however, in experiments with
 complex structure it can be difficult to decide what to check for
@@ -1074,7 +1070,7 @@ meeting we'll discuss how to run the analysis in this situation and
 some more complex ones.
 
 **Normality - When Does It Matter and When Does It
-Not?, 7:30-9:00AM, 5 February 2021, by Zoom**
+Not?, 7:30-9:00AM, 5 February 2021, by Zoom**  
 I ran into two recent instances of mistakes made in testing for
 normality to support another analysis:
 
@@ -1107,7 +1103,7 @@ two and many other cases at this month's meeting.
 
 **Development, Validation, and Use of Subjective
 Measurement/Observation Scales Using Ordinal Data, 7:30-9:00AM,
-8 January 2021, by Zoom**Way back at our 4 August 2017 QMN meeting we discussed
+8 January 2021, by Zoom**  Way back at our 4 August 2017 QMN meeting we discussed
 the development of a pseudo-measurement system for making subjective
 observations on an ordinal scale. The specific application was Joe
 R's need for developing a measurement system for interpreting the
@@ -1127,7 +1123,7 @@ response and the associated issue of determining the sample size for
 such an experiment.
 
 **Quality, Statistics, Engineering, and Science
-Reading List, 7:30-9:00AM, Friday, 4 December 2020, by Zoom**
+Reading List, 7:30-9:00AM, Friday, 4 December 2020, by Zoom**  
 On the small chance that anyone else out there still reads (yes, I
 still read actual physical books with paper pages), let's discuss
 our favorite quality engineering, statistics, engineering, and
@@ -1136,7 +1132,7 @@ recommend posted **[here](http://www.mmbstatistical.com/ReadingList.html)**
 that we can start from but come ready with your own recommendations.
 
 **Why We Randomize, 7:30-9:00AM, 6 November
-2020, by Zoom**
+2020, by Zoom**  
 One of the good indicators of you or your organization's
 "statistical maturity" is your understanding and insistence on the
 use of randomization when you're collecting experimental data. As is
@@ -1170,7 +1166,7 @@ work.
 
 **Configuring MINITAB's Stat> ANOVA> General
 Linear Model Menu (Part 2) and Related Methods****,
-7:30-9:00AM, 2 October 2020, by Zoom**
+7:30-9:00AM, 2 October 2020, by Zoom**  
 Last month we discussed how to configure MINITAB's **Stat>
 ANOVA> General Linear Model** menu. I was rushing at the end
 of the presentation, skipping some of the examples and advanced
@@ -1189,7 +1185,7 @@ MINITAB provides for including:
   Study**)
 
 **Configuring MINITAB's Stat> ANOVA> General
-Linear Model Menu, 7:30-9:00AM, 4 September 2020, by Zoom**
+Linear Model Menu, 7:30-9:00AM, 4 September 2020, by Zoom**  
 One of the most powerful tools that MINITAB provides for data
 analysis is its **Stat> ANOVA> General Linear Model**
 menu. This menu can be used to analyze a quantitative response as a
@@ -1218,7 +1214,7 @@ ANOVA> General Linear Model** for the following issues:
 * Making predictions from the fitted model
 
 **Fitting Curved Functions to Y versus X Data,
-7:30-9:00AM, 7 August 2020, by Zoom**
+7:30-9:00AM, 7 August 2020, by Zoom**  
 At this month's QMN meeting we will discuss methods for fitting
 curved functions to experimental y versus x data from a scatterplot.
 
@@ -1244,7 +1240,7 @@ principles understanding when possible. We will use MINITAB to fit
 models to example data using all of these methods.
 
 **Sample Size Calculations for One- and Two-Sample
-Proportions - Examples, 7:30-9:00AM, 5 June 2020, by Zoom**
+Proportions - Examples, 7:30-9:00AM, 5 June 2020, by Zoom**  
 Given the great interest in last month's topic (sample size
 calculations for proportions), let's do a follow-up session. Last
 month I felt that I rushed through the material, spent too much time
@@ -1263,7 +1259,7 @@ at sample size calculations for the following problems:
 
 **Sample Size** ****Calculation**s for One- and Two-Sample
 Proportions with Applications to Managing Defective Rate and
-Reliability,** **7:30-9:00AM, 1 May 2020, by Zoom**
+Reliability,** **7:30-9:00AM, 1 May 2020, by Zoom**  
 I've had a recent flurry of requests for help with sample size
 calculations for attribute pass/fail responses. These are very
 common problems and many companies have internal expertise to get
@@ -1296,7 +1292,7 @@ there are several problems that MINITAB doesn't do that we'll also
 consider.
 
 **An Introduction to MINITAB Macros, 7:30-9:00AM, 3 April
-2020, by Zoom**
+2020, by Zoom**  
 You have all seen in class or meetings that I frequently use the
 MINITAB command line or macros to do some tasks. I find the command
 line is often faster than using the mouse and GUI to configure

@@ -10,7 +10,7 @@ added to the mailing list.
 Use these meetings to earn recertification units (RUs) for your
 ASQ certifications.
 
-**Free Software!, 12 December 2025, 7:30-9:00AM by Zoom**
+**Free Software!, 12 December 2025, 7:30-9:00AM by Zoom**  
 Everyone loves free stuff! We haven't done this topic in over five
 years and some things have changed, so let's take it on again. And
 the timing should allow you to investigate some of these
@@ -30,7 +30,7 @@ ideas and suggestions.
 
 **Book Review: *Where Good Ideas Come From: The Natural
 History of Innovation* by Steven Johnson, 14
-November 2025, 7:30-9:00AM by Zoom**
+November 2025, 7:30-9:00AM by Zoom**  
 This year I've been on a reading binge of science history books
 and I found a gem that helps to put them into perspective. That
 book is Steven Johnson's Where Good Ideas Come From: The Natural
@@ -66,13 +66,13 @@ I found on the way including:
 * Sobel, Longitude
 
 I don't intend to offer up these book suggestions into a vacuum. I
-hope that that you can make some time over your holidays to read
+hope that you can make some time over your holidays to read
 one or more of them and then maybe better understand how your own
 organization manages creativity and innovation.
 
 **Acceptance Sampling for Defectives with ANSI/ASQ Z1.4 and
 Squeglia's *Zero Acceptance Number Sampling Plans*: What
-Do You Get?, 12 September 2025, 7:30-9:00AM, by Zoom**
+Do You Get?, 12 September 2025, 7:30-9:00AM, by Zoom**  
 Two of the most common standards used for choosing acceptance
 sampling plans for defectives are ANSI/ASQ Z1.4 and Squeglia's *Zero
 Acceptance Number Sampling Plans*; however, those methods are
@@ -87,7 +87,7 @@ performance of the sampling plan using an operating characteristic
 curve.
 
 **Book Review: Wayne Taylor, Statistical Procedures for the
-Medical Device Industry, 8 August 2025, 7:30-9:00AM, by Zoom**
+Medical Device Industry, 8 August 2025, 7:30-9:00AM, by Zoom**  
 One of the difficulties in learning applied statistical methods
 and quality engineering is that the information you need to learn
 is scattered over many text books, journals, industry and
@@ -121,7 +121,7 @@ organizations should buy and make available to their staff.
 
 **Which Interval Do I Need: Confidence, Prediction, or
 Tolerance?,** **11
-April 2025,  7:30-9:00AM, by Zoom**
+April 2025,  7:30-9:00AM, by Zoom**  
 Statistical software like MINITAB can be an amazing tool
 but it can also present a bewildering collection of methods that
 look so much alike that it can be difficult to determine which
@@ -135,7 +135,7 @@ share for this discussion, please send them to me (Paul) with a
 short description of what you're trying to do.
 
 **The Blake and Mouton Leader/Follower
-Model,** **7:30-9:00AM, 14 March 2025, by Zoom**
+Model,** **7:30-9:00AM, 14 March 2025, by Zoom**  
 One of the most important things we have to learn in the practice
 of applied statistics is how to deal with people who are
 statistically naive. I was recently working with one of my
@@ -171,7 +171,7 @@ from learnings from the Blake and Mouton model. I'll talk about
 these and many other cases at this month's meeting.
 
 **Deming's Funnel Experiment,** **7:30-9:00AM,
-14 February 2025, by Zoom**
+14 February 2025, by Zoom**  
 Deming's funnel experiment was one of the exercises he performed
 during his famous three day seminars. The purpose of the
 experiment is to show the effect of tampering with a process, i.e.
@@ -198,7 +198,7 @@ exercise helps demonstrate these mistakes so you can recognize and
 eliminate them in your own processes.
 
 **IT'S A TRAP! (Box-Cox and Johnson Transforms),** **7:30-9:00AM, 13 December 2024, by
-Zoom**
+Zoom**  
 A constant problem that we all have is choosing an
 appropriate distribution model for a problematic data set. MINITAB
 has the fabulous **Stat> Quality Tools> Individual
@@ -221,7 +221,7 @@ sets to see what distribution models fit and if there was any
 chance to detect and avoid the problem.
 
 **Which Analysis to Choose: Confidence Interval or Hypothesis
-Test?, 7:30-9:00AM, 8 November 2024 via Zoom**
+Test?, 7:30-9:00AM, 8 November 2024 via Zoom**  
 We know that point estimates like the sample mean and standard
 deviation are insufficient for making data-based decisions because
 they don't take estimation precision into account. Proper
@@ -235,7 +235,7 @@ trying to choose between a confidence interval and a hypothesis
 test for the analysis of a planned experiment.
 
 **Applications of Chat GPT to Quality
-Engineering Problems, 7:30-9:00AM, 11 October 2024, by Zoom**
+Engineering Problems, 7:30-9:00AM, 11 October 2024, by Zoom**  
 
 At our September QEN meeting Sergei Ivanov of FoundAItion AI
 described the basics of using of Chat GPT for general problem
@@ -249,7 +249,7 @@ consider other problems if you have something in mind that would
 be interesting.
 
 **Applications of Chat GPT in Manufacturing
-Quality Engineering, 13 September, 7:30-9:00AM, by Zoom**
+Quality Engineering, 13 September, 7:30-9:00AM, by Zoom**  
 
 Join us for an engaging presentation that explores the
 transformative capabilities of Chat GPT in Manufacturing Quality
@@ -264,7 +264,7 @@ processes. Discover how to leverage Chat GPT to improve your
 workflow and achieve quality excellence.
 
 **Nonstandard SPC Charts, 9
-August 2024, 7:30-9:00AM, by Zoom**
+August 2024, 7:30-9:00AM, by Zoom**  
 
  At our last two QEN meetings we discussed the
 Shewhart family of SPC charts. At this month's meeting we will
@@ -292,7 +292,7 @@ to do superficial coverage of these methods. Most of them are
 supported in MINITAB.
 
 **Introduction to Statistical Process Control (SPC)
-Part 2, 12 July 2024, 7:30-9:00AM, by Zoom**
+Part 2, 12 July 2024, 7:30-9:00AM, by Zoom**  
 At our June QEN meeting we discussed:
 
 * Taguchi's Loss Function as a motivator for
@@ -340,7 +340,7 @@ discussion of SPC charts including:
  * SPC chart lifetime
 
 **An Introduction to SPC with Implementation in MINITAB, 14 June
-2024, 7:30-9:00AM, by Zoom**
+2024, 7:30-9:00AM, by Zoom**  
 At the request of a local company we are going to discuss the
 basics of Statistical Process Control (SPC) at this month's QEN
 meeting. We will begin with a discussion of the different types of
@@ -356,7 +356,7 @@ run rules, the risks of using too many run rules or keeping too
 many charts, and the implementation of these charts using MINITAB.
 
 **The Kano Model for Classifying Process
-Output Variables,** **10 May 2024, 7:30-9:00AM, by Zoom**
+Output Variables,** **10 May 2024, 7:30-9:00AM, by Zoom**  
 You guys know that I like to use an Input-Process-Output (IPO)
 diagram to document all of a process's process input variables
 (PIV) and process output variables (POV). The next step in
@@ -374,7 +374,7 @@ look at the Kano Model at this month's QEN meeting.
 
 Kano Model: https://en.wikipedia.org/wiki/Kano\_model
 
-**Interpreting the Results of a Medical Diagnostic Test,** **9 February 2024, 7:30-9:00AM, by Zoom**
+**Interpreting the Results of a Medical Diagnostic Test,** **9 February 2024, 7:30-9:00AM, by Zoom**  
 There is a famous biomedical statistics problem that I use
 in homework assignments that was originally published by Edler and
 then followed up by Gerd Gigerenzer. The problem involves a cancer
@@ -390,7 +390,7 @@ variations at this month's meeting. If you don't have time to join
 us you can watch the brilliant presentation of the problem by
 Grant Sanderson (3 Blue 1 Brown) on Youtube [here](https://www.youtube.com/watch?v=lG4VkPoG3ko).
 
-**Analysis of Means, 12 January 2024, 7:30-9:00AM, via Zoom**
+**Analysis of Means, 12 January 2024, 7:30-9:00AM, via Zoom**  
 The go-to method for testing for differences between treatment
 groups means in one-way or multi-way classification designs is the
 Analysis of Variance (ANOVA) method. An alternative but lesser
@@ -403,7 +403,7 @@ counts and MINITAB's implementation of them in the **Stat>
 ANOVA> Analysis of Means** menu.
 
 **Variable Transforms,** **10 November
-2023, 7:30-9:00AM, by Zoom**
+2023, 7:30-9:00AM, by Zoom**  
 Most statistical analysis methods that test a characteristic of a
 distribution (e.g. mean, standard deviation, or distribution
 shape) make assumptions about the behavior of the data. These
@@ -421,7 +421,7 @@ a statistical analysis method is violated and how to resolve the
 problem using an appropriate variable transform.
 
 **Confession Time: Things I've Done That Will Send Me to
-Statistics Hell, 13 October 2023, 7:30-9:00AM, by Zoom**
+Statistics Hell, 13 October 2023, 7:30-9:00AM, by Zoom**  
 Whether it's happened out of naivite, laziness, or desperation,
 I'm sure that we've all compromised "best practice" in some aspect
 of our statistical work. It's confession time: Let's share some of
@@ -431,7 +431,7 @@ keep you out of statistics hell but this may help you avoid moving
 further up in line.
 
 **Manipulating Data in MINITAB,** **8
-September 2023, 7:30-9:00AM, by Zoom**
+September 2023, 7:30-9:00AM, by Zoom**  
 Most of us use MINITAB for our statistical analysis needs but
 often format our data for analysis in Excel and then copy the
 Excel worksheet over into MINITAB. MINITAB has its own rich tool
@@ -441,7 +441,7 @@ many tools for data manipulation.
 
 **Specifying Success Criteria for
 Attribute GR&R Studies, 11 August 2023, 7:30-9:00AM, by
-Zoom**
+Zoom**  
 GR&R attribute studies require a completely different set of
 performance metrics from their variables data siblings because of the pass/fail nature of their
 inspection results. If you look at the output from
@@ -453,7 +453,7 @@ metrics are used for and which of them present the best
 opportunities to define attribute R&R study success criteria.
 
 **Assessing Agreement Between Two Measurement Systems with the
-Bland-Altman Method, 9 June 2023****,** **7:30-9:00AM,** **by Zoom**
+Bland-Altman Method, 9 June 2023****,** **7:30-9:00AM,** **by Zoom**  
 Some measurement systems can be difficult to use, take too
 long to perform, or are too expensive. In such cases, it is
 natural that an measurement alternative system be considered that
@@ -472,7 +472,7 @@ method because it addresses issues of bias and scaling in absolute
 terms.
 
 **Experiment Protocol Documents, 12 May 2023, 7:30-9:00AM, by
-Zoom**
+Zoom**  
 As a consultant I've seen a wide range of practices with respect
 to how organizations plan and execute their experimental work.
 Those that skimp on the early planning and preparation phases and
@@ -493,7 +493,7 @@ own experimental processes.
 
 **Design and Operation of Variables
 Sampling Plans for Defectives, 7:30-9:00AM, Friday, 14 April
-2023, by Zoom**
+2023, by Zoom**  
 At last month's QEN meeting we discussed the calculation of and
 application of normal tolerance intervals. A closely related and
 well known alternative method is variables sampling plans (VSP)
@@ -523,7 +523,7 @@ means and using MINITAB.
 
 **Normal Tolerance
 Intervals for Two or More Treatment Groups,** **7:30-9:00AM, 10 March 2023, by
-Zoom**
+Zoom**  
 Given measurement data from a sample, a normal
 tolerance interval can be used to calculate an interval that
 contains a specified proportion of a population with a
@@ -588,7 +588,7 @@ more treatment groups by combining their information into a
 single analysis.
 
 **Outliers!,** **7:30-9:00AM, 10 February 2023, by
-Zoom**
+Zoom**  
 I've been struggling recently to help a customer analyze
 his lab data. The analysis wouldn't be difficult except that
 there are occasional outliers in the data sets. Sometimes there
@@ -599,7 +599,7 @@ At this month's QEN meeting we will discuss methods for
 detecting outliers, their possible causes, and the right and
 wrong way to handle them in our analyses.
 
-**The Effect of Part Choice on Gage R&R Study Results,** **7:30-9:00AM, 13 January 2023, by Zoom**
+**The Effect of Part Choice on Gage R&R Study Results,** **7:30-9:00AM, 13 January 2023, by Zoom**  
 The classic gage R&R study experiment design uses three
 operators who each measure ten parts twice. In previous meetings
 we've discussed why three operators isn't enough and why measuring
@@ -615,7 +615,7 @@ look at these choices and other possibilities at this month's
 meeting.
 
 **Analysis of Censored Data, 7:30-9:00AM, 9 December 2022, by
-Zoom**
+Zoom**  
 In most inspection or measurement operations we collect complete
 data; that is, we collect an observation from each unit in a
 sample and we use well known methods for analyzing the complete
@@ -640,7 +640,7 @@ incomplete/censored data like this, how to get MINITAB to do the
 work, and how to interpret the results.
 
 **Statistical Quick Tests,** **7:30-9:00AM,
-11 November 2022, by Zoom**
+11 November 2022, by Zoom**  
 We all know that most statistical tests involve some manual
 calculation or require special software. The calculations aren't
 too difficult to perform but they do take some time, resources,
@@ -657,7 +657,7 @@ methods.
 
 **Case Study: Analysis of Very
 Noisy Serial Data,** **7:30-9:00AM, 14 October
-2022, by Zoom**
+2022, by Zoom**  
 I was recently helping network member Ralph L analyze some
 interesting lab data. His experiment involves two treatment groups
 - a test group and a control group - and he is trying to determine
@@ -677,7 +677,7 @@ experimental data for this discussion. If you want to get a jump
 on understanding the analysis method check out this classic paper
 on the topic <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1662443/>.
 
-**Editing Graphs in MINITAB,** **7:30-9:00AM, 9 September 2022, by Zoom**
+**Editing Graphs in MINITAB,** **7:30-9:00AM, 9 September 2022, by Zoom**  
 In addition to its broad scope and depth in the statistical
 methods topics, MINITAB software provides an equally broad and
 deep set of graphical methods. MINITAB's default graphs are
@@ -746,7 +746,7 @@ Engineering for solving real world engineering and quality
 problems.
 
 **The Life Cycle of an SPC Control Chart,** **10 June 2022, 7:30-9:00AM****, by
-Zoom**
+Zoom**  
 When Walter Shewhart invented control charts a century ago,
 they were constructed using rocks and sticks (aka pencils and
 paper). Today SPC software is ubiquitous; however, many people who
@@ -758,7 +758,7 @@ administration of SPC charts as intended by Shewhart and what
 revisions to his intentions are required today when SPC is
 implemented in software.
 
-**Taguchi's Loss Function and the S-Double-Bar ($) Chart,** **7:30-9:00AM, 13 May 2022, by Zoom**
+**Taguchi's Loss Function and the S-Double-Bar ($) Chart,** **7:30-9:00AM, 13 May 2022, by Zoom**  
 Most of us were taught the goalpost model of interpreting
 specification limits: Any units that fall between the
 specification limits (aka the goalposts) are good and any units
@@ -773,7 +773,7 @@ design a Loss Function-based S-Double-Bar ($) Chart that can be
 used to supplement the usual SPC X-bar and R charts.
 
 **Misuse of Two-Sample T Tests To Analyze Two-way and Multi-way
-Classification Designs,** **8 April 2022, 7:30-9:00AM, by Zoom**
+Classification Designs,** **8 April 2022, 7:30-9:00AM, by Zoom**  
 I have recently seen a flurry of incidents when people have
 inappropriately used a two-sample t test to analyze data from a
 two-way or multi-way classification design. There is a close
@@ -790,7 +790,7 @@ and disagreement between the different analysis methods.
 
 **Use Operating Characteristic (OC) Curves to Interpret Sampling
 Plan Performance,** **7:30-9:00AM,
-11 March 2022, by Zoom**
+11 March 2022, by Zoom**  
 Acceptance sampling plans, of both the attribute and
 variable type, are workhorse methods in quality engineering. We
 often pick a plan to meet one or two stated requirements, but we
@@ -806,7 +806,7 @@ performance of two or more competing sampling plans.
 
 **The Role of Two-level Factorial, Fractional Factorial, and
 Responses Surface Designs in a Program of Designed Experiments,
-7:30-9:00AM, 11 February 2022, by Zoom**
+7:30-9:00AM, 11 February 2022, by Zoom**  
 At our December 10th meeting we introduced the two-level factorial
 experiment designs and at our January 14th meeting we extended
 them to the fractional factorial and response surface designs. At
@@ -823,7 +823,7 @@ program and how they can put you ahead of schedule and under
 budget.
 
 **Extending the Two-Level Factorial Designs to Fractional
-Factorial and Response Surface Designs,** **7:30-9:00AM, 14 January 2022, by Zoom**
+Factorial and Response Surface Designs,** **7:30-9:00AM, 14 January 2022, by Zoom**  
 This session is a follow up to our last (December 10)
 session when we discussed the basics of the two-level factorial
 experiment designs. In those designs all of the study variables
@@ -852,7 +852,7 @@ response surface designs in the second situation. We will look at
 these designs in this month's session.
 
 **An Introduction to Two-Level Factorial Experiment Designs,
-7:30-9:00AM, 10 December 2021, by Zoom**
+7:30-9:00AM, 10 December 2021, by Zoom**  
 Design of Experiments (DOE) is a very broad topic and textbooks
 and courses on the topic can be very intimidating; however, the
 most basic concepts of the design and analysis of designed
@@ -869,7 +869,7 @@ fractional factorial and response surface designs. This topic may
 be extended to more sessions if there is sufficient interest.
 
 **Design of SPC Chart Run Rules, 7:30-9:00AM, 12 November 2021,
-by Zoom**
+by Zoom**  
 In many circumstances, Walter Shewhart's Western Electric Rules
 for out-of-control patterns on SPC charts are safe and sufficient;
 however, Shewhart didn't anticipate that SPC charts could become
@@ -883,7 +883,7 @@ their performance in the context of Shewhart's era, and how the
 rules can be modified to be save in the modern context of
 automated SPC charts.
 
-**The SPC Between/Within Subgroups Chart,** **7:30-9:00AM, 8 October 2021, by Zoom**
+**The SPC Between/Within Subgroups Chart,** **7:30-9:00AM, 8 October 2021, by Zoom**  
 At this month's QEN meeting will will discuss SPC
 Between/Within Subgroups Charts and the associated process
 capability analysis.
@@ -914,7 +914,7 @@ process capability statistics that indicate the true capability of
 the process.
 
 **MINITAB's Graph Builder Tool, 7:30-9:00AM, 10
-September 2021, by Zoom**
+September 2021, by Zoom**  
 Finding the right graphical presentation method for a data set can
 be crucial to conveying the correct interpretation of the data to
 your audience; however, finding that perfect graph can be a
@@ -933,7 +933,7 @@ month's QEN meeting.
 
 **Using Jitter to Address a Coarse Measurement
 Scale When Assessing Normality, 7:30-9:00AM, 13 August 2021 by
-Zoom**
+Zoom**  
 One of the most common assumptions we check in the many different
 statistical analyses that we perform is the assumption of normality.
 Normality tests appear in ordinary confidence intervals and
@@ -954,7 +954,7 @@ when the use of jitter is appropriate, how to implement jitter, and
 how to report the results.
 
 **Crafting Hypotheses, 7:30-9:00AM, 11 June 2021 by
-Zoom**
+Zoom**  
 The issues surrounding statistical methods can present a bewildering
 array of choices to statistical novices. One of the most crucial
 topics - and the among the most difficult to learn - is how to craft
@@ -978,7 +978,7 @@ have to be considered when crafting hypotheses including:
 * What decision criterion to use?
 
 **Improving the Quality of Your Graphical
-Presentations, 7:30-9:00AM, 14 May 2021, by Zoom**
+Presentations, 7:30-9:00AM, 14 May 2021, by Zoom**  
 I recently suffered through a presentation that included a series of
 horrendous graphs. Axis labels were missing, measurement units were
 missing, the font size of numbers on the axis scales were too small
@@ -995,7 +995,7 @@ We'll discuss some of these best and worst practices in this month's
 meeting.
 
 **Gage R&R Studies With More Variables Than
-Operator and Part, 7:30-9:00AM, 9 April 2021, by Zoom**
+Operator and Part, 7:30-9:00AM, 9 April 2021, by Zoom**  
 At last month's QEN meeting we talked about MINITAB's Type 1 Gage
 Study and Gage Linearity and Bias Study in relation to the classic
 Gage R&R Study operator by part crossed design. It came up in
@@ -1021,7 +1021,7 @@ meeting.
 
 **Comparing MINITAB's Three Gage Study Methods:
 Type 1 Study, Linearity and Bias Study, and GR&R Study,
-7:30-9:00AM, 12 March 2021, by Zoom**
+7:30-9:00AM, 12 March 2021, by Zoom**  
 The gage R&R study operator-by-part crossed design, implemented
 in MINITAB's **Stat> Quality Tools> Gage Study> Gage
 R&R Study (Crossed)** method, is by far the most-used gage
@@ -1034,7 +1034,7 @@ conditions would indicate a preference for one method over the
 others.
 
 **Part Selection for Gage R&R Studies,
-7:30-9:00AM, 12 February 2021, by Zoom**
+7:30-9:00AM, 12 February 2021, by Zoom**  
 Many people give little thought to part selection for their GR&R
 studies; however, the choice of parts can have a huge impact on the
 results and usefulness for these studies. As one example: the choice
@@ -1051,7 +1051,7 @@ be appropriate. There are many other situations that must be
 considered when choosing parts for a gage study. We'll talk about
 them at this month's meeting.
 
-**ASQ Certification, 7:30-9:00AM, 15 January 2021, by Zoom**
+**ASQ Certification, 7:30-9:00AM, 15 January 2021, by Zoom**  
 Within your own company your managers and peers probably have a good
 idea of your quality engineering skill set but if you want to
 reinforce their opinions or obtain a credential that is known and
@@ -1074,7 +1074,7 @@ requirements for applying for certification, how to prepare for the
 exam, and the general value of holding these certifications.
 
 **Free Software!, 7:30-9:00AM, Friday, 11 December
-2020, by Zoom**
+2020, by Zoom**  
 Everybody loves free stuff! This is a topic that we do periodically
 that's always a lot of fun and everyone leaves finding something
 that they need or at least want to try out. I've posted my four page
@@ -1082,7 +1082,7 @@ list of free software that you can check out **[here](/Notes/FreeSoftware.pdf)**
 been updated in a while) but plan to come with your own suggestions.
 
 **Tests for Proportions or Fractions Defective, 7:30-9:00AM,
-13 November 2020, by Zoom**
+13 November 2020, by Zoom**  
 I was in a meeting recently with a customer where the topic of
 discussion was the possibility of a difference between the defective
 rates of two product assembly processes. When both processes were
@@ -1112,7 +1112,7 @@ will discuss this and similar situations:
 
 **Two Types of Missing Values in Data Sets: Data
 Truncation and Data Censoring, 7:30-9:00AM, 9 October 2020, by
-Zoom**
+Zoom**  
 At last month's QEN meeting we discussed the use of mathematical
 transformations to convert nonnormal responses to normal so that
 classical statistical tests and analysis methods can be used. During
@@ -1132,7 +1132,7 @@ common ones:
   failed
 
 **Variable Transformations for Nonnormal Data, 7:30-9:00AM,
-11 September 2020, by Zoom**
+11 September 2020, by Zoom**  
 I recently heard from a customer who was struggling to analyze and
 present data which had a number of outliers with large values in the
 data set. She was trying to make the case that those observations
@@ -1152,7 +1152,7 @@ principles of the process that produced the response.
 
 **Use An Input-Process-Output Diagram to Document
 the Variables in Your Process, 7:30-9:00AM, 14 August 2020, by
-Zoom**
+Zoom**  
 We all use the well known Cause and Effect Diagram (aka Fishbone or
 Ishikawa diagram) for documenting the factors that affect a process.
 Recall that in the absence of specific categories for organizing the
@@ -1170,7 +1170,7 @@ board work great, but we will use the free software package FreeMind
 to study the construction of and some examples of IPO diagrams.
 
 **Which Interval Do I Need: Confidence, Prediction,
-or Tolerance?, 7:30-9:00AM, 10 July 2020, by Zoom**
+or Tolerance?, 7:30-9:00AM, 10 July 2020, by Zoom**  
 Statistical software like MINITAB can be an amazing tool but it can
 also present a bewildering collection of methods that look so much
 alike that it can be difficult to determine which ones are
@@ -1184,7 +1184,7 @@ you would like to share for the discussion, please send them to me
 
 **Improve the Quality of Your Inspection Results by
 Upgrading the Measurement Scale, 7:30-9:00AM, 12 June 2020, by
-Zoom**
+Zoom**  
 I've seen a recent flurry of customers who were struggling to define
 methods to characterize somewhat subjective quality characteristics
 in their experiments:
@@ -1220,7 +1220,7 @@ high-value observations, and the possibilities for reducing
 experimental sample size.
 
 **Errors, Mistakes, and
-Failures of Measurement Instruments,** **8 May 2020,** ****7****:30-9:00AM,**by Zoom**
+Failures of Measurement Instruments,** **8 May 2020,** ****7****:30-9:00AM,**by Zoom**  
 At last month's QEN meeting we discussed considerations in choosing
 a measurement instrument to match the requirements of a measurement
 task. We discussed the usual issues: range, discrimination,
