@@ -246,9 +246,9 @@ training and practice you can learn how to recognize and avoid these
 potential analysis errors. We'll consider some of these paradoxes at
 this month's QMN meeting.
 
-****An Introduction to Blue Sky
-Statistics Statistical Software, Sanjay Kumar, CEO, Blue Sky
-Statistics, 7:30-9:00AM, 2 August 2024, by Zoom.****Sanjay Kumar, CEO and co-founder of
+**An Introduction to Blue Sky Statistics Statistical Software, Sanjay Kumar, CEO, Blue Sky
+Statistics, 7:30-9:00AM, 2 August 2024, by Zoom**  
+Sanjay Kumar, CEO and co-founder of
 BlueSky Statistics, a Chicago-based company, will introduce BlueSky
 Statistics Software through a live demo and Q&A. BlueSky
 Statistics is a comprehensive, easy-to-use, point-and-click
@@ -265,8 +265,7 @@ as process capability analysis, measurement system analysis, SPC
 charts, distribution fit analysis, hypothesis testing, regression
 analysis, graphs and plots, DOE, and more as time permits.
 
-**Pugh Concept Selection Matrix, 7 June 2024,
-7:30-9:00AM, by Zoom**  
+**Pugh Concept Selection Matrix, 7 June 2024, 7:30-9:00AM, by Zoom**  
 Following the Analyze phase of the Six Sigma DMAIC process (for
 improving an existing process) or the DMADV process (for designing a
 new product or service) it is necessary to leverage the process
@@ -1311,7 +1310,7 @@ to create a LOCAL macro.
 
 **Taguchi's Contributions to Quality Engineering,
 Paul Pastor, 7:30-9:00AM, 6 March 2020, Lakeland Community
-College, Room T136**
+College, Room T136**  
 Dr. Genichi Taguchi was a mechanical engineer who made several
 important advancements in Quality Engineering. Among them, Taguchi
 introduced Â“Robust DesignÂ” to the quality world. Robustness in
@@ -1322,7 +1321,7 @@ FunctionÂ” which merges process variation, cost, and process targets
 into a key metric used to determine lost value passed on to society.
 This metric considers specifications as a minor factor in
 determining lost value. Taguchi also made significant contributions
-to Â“parameter designÂ” techniques used in quality improvement of
+to parameter design techniques used in quality improvement of
 products and processes.
 Today we will present Taguchi's Robust Design, Loss Function, and
 "Off-lineÂ” Quality improvement process consisting of: 1) System
@@ -1332,9 +1331,7 @@ noise factors, and the use of orthogonal arrays to perform a
 designed experiment. The Signal-to-Noise (S/N) ratio concept that
 Taguchi developed will also be discussed.
 
-**Goodness-of-Fit (aka Lack-of-Fit) Tests, 7
-February 2020, 7:30-9:00AM, Lakeland Community College, Room
-T136**
+**Goodness-of-Fit (aka Lack-of-Fit) Tests, 7 February 2020, 7:30-9:00AM, Lakeland Community College, Room T136**  
 The most common model-fitting task most of us perform is fitting a
 simple linear regression model of the form y = b0 + b1x
 where y is the response, x is the predictor, and b0 and b1
@@ -1351,25 +1348,20 @@ model fitting diagnostic tools called goodness-of-fit, aka
 lack-of-fit, tests.
 
 The general strategy of a goodness-of-fit test has three steps:
-1) Fit your desired model to the data.
-2) Propose a logical complication to your model that could fit the
-data better. Fit the more complicated model.
-3) Compare the two models by testing for statistical significance of
-the added complication. If the complication is statistically
-significant, then the original model provides an insufficient fit to
-the data. If the complication is not statistically significant, then
-the original model provides a sufficient fit to the data.
+
+1. Fit your desired model to the data. 
+2. Propose a logical complication to your model that could fit the data better. Fit the more complicated model.
+3. Compare the two models by testing for statistical significance of the added complication. If the complication is statistically significant, then the original model provides an insufficient fit to the data. If the complication is not statistically significant, then the original model provides a sufficient fit to the data.
 
 This strategy can be easily applied to our simple linear regression
 problem:
-1) Fit a linear model to the data.
-2) A deviation from a linear model could involve curvature in y
-versus x, so fit a quadratic model of the form y = b0 + b1x
-+ b2x2 to the data.
-3) Check the quadratic regression coefficient b2 for
-statistical significance. If b2 is statistically
+1. Fit a linear model to the data.
+2. A deviation from a linear model could involve curvature in $y$
+versus $x$, so fit a quadratic model of the form $y = b_0 + b_{1}x + b_{2}x^2$ to the data. 
+3. Check the quadratic regression coefficient b2 for
+statistical significance. If $b_2$ is statistically
 significant, then the linear model was insufficient and the
-quadratic model fits the data better. If b2 is not
+quadratic model fits the data better. If $b_2$ is not
 statistically significant, then the quadratic term can be dropped
 from the model and the linear model is a sufficient fit to the data.
 
@@ -1379,9 +1371,8 @@ available and the same strategy can be applied to more complicated
 cases. We'll look at these and other examples of goodness-of-fit
 tests at our February meeting.
 
-**Fixed and Random Variables in Statistical
-Analysis****, 10 January 2020, 7:30-9:00AM, Lakeland
-Community College, Room T136**
+**Fixed and Random Variables in Statistical Analysis, 10 January 2020, 7:30-9:00AM, Lakeland
+Community College, Room T136**  
 American Statistical Association's (ASA) Statistical Consulting
 Section is currently hosting a discussion about the distinction
 between fixed and random variables in ANOVA and regression models.
@@ -1414,8 +1405,8 @@ analysis, and how they are interpreted. Then we will read and
 discuss some of the more interesting postings in the Statistical
 Consulting Section's discussion of the topic.
 
-**Like Nails On A Chalkboard, 6 December 2019,**  **7:30-9:00AM,** Lakeland Community College,
-Room T136
+**Like Nails On A Chalkboard, 6 December 2019, 7:30-9:00AM, Lakeland Community College,
+Room T136**  
 As creators and consumers of information presented using statistical
 methods we've all suffered through instances of the abuse and misuse
 of those methods. At this month's QMN meeting let's discuss the
@@ -1444,7 +1435,7 @@ are:
 
 **Critique of a YouTuber's Experiment to Test the
 Mechanical Properties of 3D Printed Parts, 1 November 2019,
-7:30-9:00AM,** Lakeland Community College, Room T136
+7:30-9:00AM, Lakeland Community College, Room T136**  
 My brother is a hobbyist woodworker and uses a 3D printer to make
 jigs and fixtures for some of his fancier work. A while ago he
 pointed me to the YouTuber CNCKitchen who posts videos on building
@@ -1461,9 +1452,7 @@ me. I thought it would be fun (cathartic?) to watch his video
 together and then go back through it to critique his work and
 identify opportunities to improve his future experiments.
 
-Equivalence, Superiority, and Non-inferiority Tests -
-Part 2,
-**4 October 2019**, 7:30-9:00AM, Lakeland Community College, Room T136
+**Equivalence, Superiority, and Non-inferiority Tests - Part 2, 4 October 2019, 7:30-9:00AM, Lakeland Community College, Room T136**  
 At this month's QMN meeting we will continue our discussion of
 equivalence tests and their related methods. We'll start with a
 quick review of equivalence tests, especially of the two one-sided
@@ -1472,11 +1461,9 @@ the one-sample, two-sample, and many-sample cases with examples.
 We'll follow up with discussion and examples of superiority and
 non-inferiority tests.
 
-Equivalence Tests, **6
-September 2019**, 7:30-9:00AM, Lakeland
-Community College, Room T136
+**Equivalence Tests, 6 September 2019, 7:30-9:00AM, Lakeland Community College, Room T136**  
 The hypothesis testing method that all of us learned first and
-use almost exclusively is the method of *significance**tests*. The goal of significance testing is to reject the null
+use almost exclusively is the method of *significance tests*. The goal of significance testing is to reject the null
 hypothesis of no difference or no effect in favor of the alternate
 hypothesis that a difference or effect is present. As an example,
 suppose that the goal of an experiment is to demonstrate that the
@@ -1508,7 +1495,7 @@ us at this month's meeting to discuss the use of these other testing
 methods.
 
 **Paper Helicopter Experiments, 2 August 2019,
-7:30-9:00AM, LCC Room T136**
+7:30-9:00AM, LCC Room T136**  
 In the theme of summer vacation, let's do something fun at next
 week's QMN meeting: Let's run paper helicopter experiments! Because
 of its low cost, ease of construction, and myriad design variables,
@@ -1532,7 +1519,7 @@ conditions that maximize flight time.
 to confirm the predicted maximal flight time.
 
 **SPC and Process Capability for Processes with a
-Drifting Mean - Part 2, 7 June 2019, 7:30-9:00AM, LCC Room T136**
+Drifting Mean - Part 2, 7 June 2019, 7:30-9:00AM, LCC Room T136**  
 At last month's QMN meeting we discussed SPC and process capability
 methods for processes with drifting means such as tool wear
 processes. Our discussion was limited to the simplest cases so this
@@ -1542,7 +1529,7 @@ presented below to provide more background on the topic.
 
 **SPC and Process Capability for Processes with a
 Drifting Mean, Such as Tool Wear,** **3 May 2019,
-7:30-9:00AM, LCC Room T136**
+7:30-9:00AM, LCC Room T136**  
 The ideal conditions for the use of a traditional Shewhart SPC
 control chart is when the process being studied is producing units
 that come from a single stable process with a constant mean,
@@ -1565,7 +1552,7 @@ process control methods for processes with drifting process means
 and some ideas for evaluating their process capability.
 
 **Reliability Test Planning, Part 2, 5 April 2019,
-7:30-9:00AM, LCC Room T136**
+7:30-9:00AM, LCC Room T136**  
 At last month's meeting we discussed the basic concepts of
 reliability test planning and considered some of the simplest
 experiment designs. (See last month's abstract below.) This month we
@@ -2687,7 +2674,7 @@ the software that he will discuss is presented [here](http://www.mmbstatistical.
 ****To be
 rescheduled: A Comparison of Practices Used to
 Manage Experimental Work**,****7:30-9:00AM,
-???, Room T136**As a consultant I see a wide range of practices in how
+???, Room T136**  As a consultant I see a wide range of practices in how
 organizations manage their experimental work. (By "experiment" I
 mean any activity that involves data collection, analysis, and
 interpretation for the purpose of managing a process.) Some
@@ -2704,7 +2691,7 @@ the problems, management tools, and solutions associated with
 different approaches to managing experimental work.
 
 **Diagnostic Tests and ROC Curves,** **7:30-9:00AM, 5
-April 2013, Room T136**.
+April 2013, Room T136**  .
 At this month's QMN meeting Paul Mathews will introduce the
 fundamental concepts and issues of diagnostic tests with examples
 from medicine, engineering, manufacturing, and science.
@@ -2738,7 +2725,7 @@ Notes](http://www.mmbstatistical.com/Notes/ROC.pdf)
 
 **Use of ISight Software for Propagation of Error Analysis,
 Paul Mathews with Mike Plishka and Jim Soltisz of Dassault
-Systems, 1 February 2013, 7:30-9:00AM, Room T136****.**
+Systems, 1 February 2013, 7:30-9:00AM, Room T136**  **.**
 At the last QMN meeting in November we talked about propagation of
 error - how variation in process input variables (PIV) causes
 variation in a critical-to-quality (CTQ) response. As a case study,
@@ -2772,7 +2759,7 @@ Paul)
 
 **Stack-up Tolerance Analysis for O-ring Compression in a
 Mechanical Seal, 7 December 2012,** **7:30-9:00AM,
-Room T136****.**
+Room T136**  **.**
 At the last QMN meeting in October we decided that in a future
 meeting we'd discuss electronic data collection methods using a
 communication interface (e.g. RS232, GPIB, ...) between a computer
@@ -3785,7 +3772,7 @@ tests and then he will use MINITAB to analyze a stepped-stress
 experiment.
 
 **Reliability Demonstration Tests, 31 March
-2006, 7:30 - 9:00 AM, T136**
+2006, 7:30 - 9:00 AM, T136**  
 Common goals of reliability experiments are to: demonstrate
 that the mean life exceeds a minimum value; demonstrate that
 the reliability at a specified time exceeds a minimum value;
@@ -3800,7 +3787,7 @@ and he will demonstrate how to design such tests using the new
 tools available in MINITAB V14.
 
 **Analysis of Experiments with
-Nested Variables, 24 February 2006, 7:30 - 9:00 AM, T136**
+Nested Variables, 24 February 2006, 7:30 - 9:00 AM, T136**  
 Experiments that include all possible combinations of levels
 of two or more variables are called factorial experiments,
 however, sometimes the levels of an experimental variable are
@@ -4133,7 +4120,7 @@ requirements for the test. If you have any reliability study
 examples or case studies that you would like to share,
 please contact Paul at pmathews@apk.net.
 
-**Reliability II, 30 July 2004, 7:30-9:00AM, T136**
+**Reliability II, 30 July 2004, 7:30-9:00AM, T136**  
 At the last network meeting Paul Mathews presented an
 overview of reliability experiments, data, and analysis using
 exponential and Weibull reliability models. He also demonstrated how
@@ -4145,7 +4132,7 @@ he'll present some less well-behaved examples. If you have data that
 you'd like to share with the group please forward it to Paul at
 pmathews@apk.net.
 
-**Reliability I, 25 June 2004, 7:30-9:00AM, T136**
+**Reliability I, 25 June 2004, 7:30-9:00AM, T136**  
 In our next three meetings (June, July, and August) Paul
 Mathews will give presentations on the design and analysis of
 experiments to study reliability. In the first meeting (June 25,
@@ -4161,7 +4148,7 @@ have an interesting reliability problem that you think would be of
 general interest and would like to share with the Network members
 please contact Paul at pmathews@apk.net.
 
-**Management of Circular Normal Quality Characteristics, 21 May 2004, 7:30-9:00AM, T136**
+**Management of Circular Normal Quality Characteristics, 21 May 2004, 7:30-9:00AM, T136**  
 The normal distribution model is the one usually invoked to
 characterize measurement data, however, in some cases the normal
 model isn't appropriate. One such case is common in manufacturing
@@ -4180,7 +4167,7 @@ calculations for circular normal data. If you have data that you
 think might be circular normal please bring them to class in an
 Excel or Minitab file or forward them to Paul at pmathews@apk.net.
 
-**Acceptance Sampling  and Quality Cost, 23 April 2004, 7:30-9:00AM, T136**
+**Acceptance Sampling  and Quality Cost, 23 April 2004, 7:30-9:00AM, T136**  
 Although quality engineers frequently use the ANSI/ASQ Z1.4
 standard (formerly MIL-STD-105) to design sampling plans for
 pass/fail inspection, Z1.4 does not explicitly take into account the
@@ -4196,7 +4183,7 @@ If you have a case that you would like Paul to discuss in his
 presentation please forward him your sampling plan design and cost
 information at pmathews@apk.net.
 
-**How to Use Statistical Methods to Analyze Investments, Paul Mathews and George Braidich, 26 March 2004, 7:30-9:00AM, T136**
+**How to Use Statistical Methods to Analyze Investments, Paul Mathews and George Braidich, 26 March 2004, 7:30-9:00AM, T136**  
 Statistics are an extremely powerful and reliable tool in
 determining an investment's short-term performance. Still today they
 are not widely talked about. This presentation will illustrate how
@@ -4208,7 +4195,7 @@ some basic statistical concepts. In the second half George Braidich
 will illustrate how to apply these concepts to evaluate financial
 investments.
 
-**How to Read a  Financial Statement - An Overview for Non-Financial Managers, George Braidich, 20 Feb 2004, 7:30-9:00AM, T136**
+**How to Read a  Financial Statement - An Overview for Non-Financial Managers, George Braidich, 20 Feb 2004, 7:30-9:00AM, T136**  
 Financial statements are the instrument panel of a business
 enterprise. They constitute a report on current managerial
 performance and flash warning signals of future impending
@@ -4230,7 +4217,7 @@ effectively demonstrates the use of gage error studies to guide an
 important business decision – one that you'll probably have to live
 with for years after the purchasing decision is made.
 
-**Are Your Data Normal?, 20 Nov 2003, 7:30-9:00AM, T136**
+**Are Your Data Normal?, 20 Nov 2003, 7:30-9:00AM, T136**  
 Most QC methods for products and processes assume that the
 distribution of errors follows the normal or bell-shaped curve. When
 this assumption is violated those methods can give erroneous results
@@ -4248,7 +4235,7 @@ capability for such responses. If you have responses that you think
 might behave in the manner described please bring it on a floppy
 disk in Excel or Minitab format to share with the network members.
 
-**Are Your Data  Normal?, 23 Sept and 23 Oct, 2003,  7:30-9:00AM, T136**
+**Are Your Data  Normal?, 23 Sept and 23 Oct, 2003,  7:30-9:00AM, T136**  
 Many statistical analysis methods (e.g. SPC, acceptance
 sampling, GR&R studies, process capability studies, tolerancing)
 require that the distribution of measurement values under
@@ -4267,7 +4254,7 @@ describe some special not-quite-normal distributions, specifically
 the half-normal and circular normal distributions, that show up
 frequently in real life situations.
 
-**Methods of Setting Specifications, 25 July and 22 August, 2003, 7:30-9:00AM, T136**
+**Methods of Setting Specifications, 25 July and 22 August, 2003, 7:30-9:00AM, T136**  
 Quality characteristics that are critical to quality (CTQ)
 for your customer must have their specifications set to meet your
 customer's requirements. However, the specifications for many other
