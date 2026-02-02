@@ -1220,17 +1220,15 @@ curved functions to experimental y versus x data from a scatterplot.
 
 The most frequently used method to fit a function to y versus x data
 in a scatter plot is linear regression which has a linear model of
-the form y = b0 + b1x where b0 and b1 are
+the form $y = b_0 + b_{1}x where $b0$ and $b1$ are
 regression coefficients determined from the sample data; however,
 when the y versus x plot shows curvature we have to consider a
 different model. There are three approaches which might be
 appropriate:
 
-* Use a higher order polynomial model such as a quadratic: y = b0
-  + b1x + b2x2
+* Use a higher order polynomial model such as a quadratic: $y = b_0 + b_{1}x + b_{2}x2$
 * Apply a variable transformation to y and/or x that transforms
-  the curved data to a straight line such as y' = b0 +
-  b1x or y = b0 + b1x' where a
+  the curved data to a straight line such as $y' = b_0 + b_{1}x$ or $y = b_0 + b_{1}x'$ where a
   transformation has been applied to the primed variable
 * Use a true nonlinear model that is outside the scope of the
   other methods
@@ -1334,8 +1332,8 @@ Taguchi developed will also be discussed.
 
 **Goodness-of-Fit (aka Lack-of-Fit) Tests, 7 February 2020, 7:30-9:00AM, Lakeland Community College, Room T136**  
 The most common model-fitting task most of us perform is fitting a
-simple linear regression model of the form y = b0 + b1x
-where y is the response, x is the predictor, and b0 and b1
+simple linear regression model of the form $y = b_0 + b_{1}x$
+where $y$ is the response, $x$ is the predictor, and $b0$ and $b1$
 are regression coefficients. An appropriate - and necessary -
 follow-up analysis is to question whether the linear model provides
 a good fit to the experimental data. Most people check the R-squared
@@ -1359,7 +1357,7 @@ problem:
 1. Fit a linear model to the data.
 2. A deviation from a linear model could involve curvature in $y$
 versus $x$, so fit a quadratic model of the form $y = b_0 + b_{1}x + b_{2}x^2$ to the data. 
-3. Check the quadratic regression coefficient b2 for
+3. Check the quadratic regression coefficient $b_2$ for
 statistical significance. If $b_2$ is statistically
 significant, then the linear model was insufficient and the
 quadratic model fits the data better. If $b_2$ is not
@@ -2187,12 +2185,12 @@ own experimental processes.
 
 **Nonlinear Regression Models, 8 April 2016, 7:30-9:00AM,
 Lakeland Community College, Room T136.**  
-When a simple linear model (y = b0 + b1x) for
+When a simple linear model ($y = b_0 + b_{1}x$) for
 data in a scatter plot doesn't fit the data we can often apply a
 variable transformation to the x and/or y values and linearize the
 relationship; however, when transformations are inadequate it may be
 necessary to employ other methods. For example, when the theoretical
-functional form of y = f(x) is known we can fit a model of that form
+functional form of $y = f(x)$ is known we can fit a model of that form
 with appropriate nonlinear regression software. When the theoretical
 form is unknown it may be necessary to resort to a higher order
 polynomial model. At this month's meeting we'll take a look at all

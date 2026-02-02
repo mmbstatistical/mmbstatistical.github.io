@@ -13,7 +13,7 @@ title: Mathews Malnar and Bailey, Inc.
 # markdown: GFM         # Garbles the table in index.md
 
 
-# Build settings
+# Build settings came from https://github:com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml
 remote_theme: jekyll/minima@3cdd14d
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
@@ -26,11 +26,14 @@ minima:
 markdown: kramdown
 
 
+
 # themes:
 # https://foolishgeneralist.com/p/a-little-help-with-github-pages-and
-
 
 # https://mantejjosan.github.io/math-made-easy/tut/
 
 # https://github:com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml
-# Nice web page and has some useful items, including math
+# Nice web page and has some useful items, including very nice math
+
+# Index of yaml settings:
+# https://github.com/boolyes1/boolyes1.github.io/blob/master/_config.yml
