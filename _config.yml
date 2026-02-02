@@ -1,8 +1,14 @@
 
 title: Mathews Malnar and Bailey, Inc.
-theme: minima
+# theme: minima
+theme: jekyll-theme-cayman
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 # markdown: GFM         # Garbles the table in index.md
 
 # themes:
 # https://foolishgeneralist.com/p/a-little-help-with-github-pages-and
+
+
+# https://mantejjosan.github.io/math-made-easy/tut/
