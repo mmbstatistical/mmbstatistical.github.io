@@ -1,11 +1,9 @@
 ---
-title: null
+title: Design of Experiments with MINITAB
 nav_exclude: true
 ---
 
-## Design of Experiments with MINITAB
-### Paul Mathews, ASQ Quality Press*, 2004.
-### ISBN 0-87389-637-8.
+## Design of Experiments with MINITAB <br/> Paul Mathews, ASQ Quality Press*, 2004.
 
 #### Publisher and Acquiring Copies of the Book
 \* ASQ Quality Press was the original publisher of the book but in 2025 I (Paul) reacquired all rights to the book. 

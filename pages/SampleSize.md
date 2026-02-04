@@ -3,8 +3,7 @@ title: Sample Size Calculations
 nav_exclude: true
 ---
 
-## Sample Size Calculations: <br/> Practical Methods for Engineers and Scientists
-### Paul Mathews, Mathews Malnar and Bailey, Inc., 2010
+## Sample Size Calculations: <br/> Practical Methods for Engineers and Scientists <br/> Paul Mathews, Mathews Malnar and Bailey, Inc., 2010
 *Sample Size Calculations: Practical Methods for Engineers and Scientists* presents power and sample size calculations for 
 common statistical analyses including methods for means, standard deviations, proportions, counts, regression, correlation, 
 and measures of agreement. Topics of special interest to quality engineering professionals include designed experiments, 

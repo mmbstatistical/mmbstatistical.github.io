@@ -14,7 +14,7 @@ nav_exclude: true
 **[What We Do](pages/WhatWeDo.html)**
 
 **Textbooks:**
-* [**Design of Experiments with MINITAB**](pages/DOEwithMINITAB.html)
+* [**Design of Experiments with MINITAB**](pages/DOE/DOEwithMINITAB.html)
 * [**Sample Size Calculations: Practical Methods for Engineers and Scientists**](/pages/SampleSize.md)
 
 **[Courses](Courses.html):** Quality engineering statistics, design of experiments, applied statistical methods, metrology, Six Sigma Green Belt and Black Belt, and much more!

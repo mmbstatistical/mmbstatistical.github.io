@@ -1,15 +1,17 @@
 
 
-  
+ ---
+title: Links
+nav_exclude: true
+--- 
 
   
 
   
-Technical Organizations:  
-
+**Technical Organizations:**
 *   [American Society for Quality (ASQ)](http://www.asq.org)
 *   [ASQ - Cleveland Section (800)](http://www.asqcleveland.org/)    
-*   [ASQ - Akron-Canton Section (810)](http://asq810.org/)      https://my.asq.org/communities/community-home?communitykey=cef1e6de-ab1e-431c-ab3d-018670cc8375
+*   [ASQ - Akron-Canton Section (810)](http://asq810.org/)  
 *   [ASQ - Youngstown-Warren (805)](http://www.asqyw.org)
 *   [ASQ - Erie PA (809)](http://asq0809.weebly.com/)  
 *   [American Statistical Association (ASA)](http://www.amstat.org/)
@@ -21,8 +23,7 @@ Technical Organizations:
     
 
   
-References:  
-
+**References:**
 *   [Russ Lenth's Power and Sample Size Calculator](http://www.stat.uiowa.edu/%7Erlenth/Power/)
 *   [Don Wheeler's Quality Digest articles](http://www.spcpress.com/djw_columns.php)
 *   [Harrell and Slaughter, Biostatistics for Biomedical Research](http://hbiostat.org/doc/bbr.pdf)  
@@ -57,8 +58,7 @@ References:
 *   [Vassar Stats](http://faculty.vassar.edu/lowry/VassarStats.html)
 
   
-Statistical and Graphical Software:  
-
+**Statistical and Graphical Software:**
 *   [MINITAB](http://www.minitab.com/)
 *   [Piface (Russ Lenth's Power and Sample Size Calculator)](http://www.stat.uiowa.edu/%7Erlenth/Power/)
 *   [NCSS and PASS](http://www.ncss.com/)
@@ -73,49 +73,50 @@ Statistical and Graphical Software:
 *   [gnuplot](http://www.gnuplot.info/)
 
   
-Science, Math, and Engineering Education  
-
-*   **[Smarter Every Day](http://www.smartereveryday.com)**
-*   **[Veritasium](http://www.veritasium.com)**
-*   **[Sciencium](https://www.youtube.com/user/sciencium)**
-*   **[Minute Physics](https://www.youtube.com/user/minutephysics)**
-*   **[Minute Earth](https://www.youtube.com/user/minuteearth)**
-*   [**XKCD**](https://xkcd.com/)
-*   **[What If?](http://what-if.xkcd.com/)**
-*   **[MythBusters](http://www.discovery.com/tv-shows/mythbusters/)**
-*   **[Hidden Brain](http://www.hiddenbrain.org/)**  
-*   **[VSauce](http://www.vsauce.com/#/)**
-*   [TED (Ideas Worth Spreading](http://www.ted.com/))
-*   [Skeptical Inquirer](http://www.csicop.org/si/)
-*   [Science News](http://www.sciencenews.org/)
-*   [Scientific Computing](http://www.scientific-computing.com/)
-*   [Martindale's Index](http://www.martindalecenter.com/)
-*   [Omega Engineering Inc.](http://www.omega.com/)
-*   [ScienceBlogs.com](http://scienceblogs.com/)
-*   [**Quanta Magazine**](https://www.quantamagazine.org/)  
+**Science, Math, and Engineering Education**
+* [Smarter Every Day](http://www.smartereveryday.com)
+* [Veritasium](http://www.veritasium.com)
+* [Sciencium](https://www.youtube.com/user/sciencium)
+* [Minute Physics](https://www.youtube.com/user/minutephysics)
+* [Minute Earth](https://www.youtube.com/user/minuteearth)
+* [XKCD](https://xkcd.com/)
+* [SMBC Comics](https://www.smbc-comics.com/) 
+* [What If?](http://what-if.xkcd.com/)
+* [MythBusters](http://www.discovery.com/tv-shows/mythbusters/)
+* [Hidden Brain](http://www.hiddenbrain.org/) 
+* [VSauce](http://www.vsauce.com/#/)
+* [TED (Ideas Worth Spreading](http://www.ted.com/))
+* [Skeptical Inquirer](http://www.csicop.org/si/)
+* [Science News](http://www.sciencenews.org/)
+* [ScienceBlogs.com](http://scienceblogs.com/)
+* [Quanta Magazine](https://www.quantamagazine.org/)  
     
 
   
-Makers:  
+**Makers:**  
+* Magazines
+    * [Hackaday](http://hackaday.com/)
+    * [Make:](http://makezine.com/) 
+    * [Instructables](http://www.instructables.com)
+    * [The Kids Should See This](https://thekidshouldseethis.com/)
+* Suppliers
+    * [SparkFun](https://www.sparkfun.com)
+    * [AdaFruit](https://www.adafruit.com/)
+    * [Seeed Studio](http://www.seeedstudio.com)
+    * [Waveshare](https://www.waveshare.com)   
+    * [Pololu](https://www.pololu.com)
+    * [DigiKey](https://www.digikey.com)
+    * [Mouser](https://www.mouser.com)
+* Maker Spaces (Cleveland area) 
+    * [Sears think[box]](https://case.edu/thinkbox/)
+    * [Madison Public Library CreateSpace](https://www.madison-library.info/createspace/)
+    * [Ingenuity Cleveland](http://ingenuitycleveland.com/)
+    * [Hamilton Collaborative](http://ingenuitycleveland.com/hamilton-collaborative/)  
 
-*   [Make:](http://makezine.com/)
-*   [SparkFun](https://www.sparkfun.com)
-*   [AdaFruit](https://www.adafruit.com/)     
-*   [Maker Shed](http://www.makershed.com/)
-*   [Seeed Studio](http://www.seeedstudio.com)
-*   [Waveshare](https://www.waveshare.com)   
-*   [Pololu](https://www.pololu.com)
-*   [Hackaday](http://hackaday.com/)
-*   [Instructables](http://www.instructables.com)
-*   [The Kids Should See This](https://thekidshouldseethis.com/)  
     
 
   
-Cleveland, Ohio:  
-
-*   [Ingenuity Cleveland](http://ingenuitycleveland.com/)
-*   [Hamilton Collaborative](http://ingenuitycleveland.com/hamilton-collaborative/)  
-*   [Cleveland Mini Maker Faire](http://makerfairecleveland.com/)
+**Cleveland, Ohio:**
 *   [West 78th Street Studios](http://www.78thstreetstudios.com/)
 *   [Screw Factory Artists](https://www.screwfactoryartists.org/)  
 *   [Great Lakes Science Center](http://www.greatscience.com/)
@@ -123,41 +124,33 @@ Cleveland, Ohio:
     
 
   
-News Links:  
-
+**News Links:**
 *   [National Public Radio](http://www.npr.org/)
-*   [NPR's Science Friday](http://www.sciencefriday.com/)
-*   [APM Marketplace.org](http://www.marketplace.org)
-*   [FiveThirtyEight](http://fivethirtyeight.com/)
 *   [PBS](http://www.pbs.org/)
+*   [IdeaStream (WKSU and WVIZ)](https://www.ideastream.org/)
+*   [Reuters](https://www.reuters.com)
 *   [BBC](http://www.bbc.com/)
 *   [CBC](http://www.cbc.ca/news/)
 *   [DW](http://www.dw.com)
-*   [Reuters](https://www.reuters.com)  
-*   [Media Bias / Fact Check](https://mediabiasfactcheck.com/)  
-    
-
+*   [NPR's Science Friday](http://www.sciencefriday.com/)
+*   [APM Marketplace.org](http://www.marketplace.org)
   
   
-Other Links (mostly so I can find them myself):  
-
+**Other Links (mostly so I can find them myself):**
 *   [Fairport Harbor Public Library](http://www.fairportlibrary.com/default.htm)
 *   [CLEVNET](http://www.clevnet.org/)  
 *   [Grand River Sailing Club](http://grsc.net/)
 *   [Grand River Yacht Club](https://grycohio.com/)  
 *   [Racing Rules of Sailing](http://www.racingrulesofsailing.org/)  
 *   [Dan Pfeiffer's home page](http://dan.pfeiffer.net/dhp.htm)
-*   [Paul's sailing stuff, e.g. handicapping, etc.](http://junior.apk.net/%7Epmathews)
-*   [MacKichan Software, Inc.](http://www.mackichan.com/)
+*   [MacKichan Software, Inc. (Scientific Word)](http://www.mackichan.com/)
 
   
-**Weather:**  
-
+**Weather:**
 *   [Dan Pfeiffer's weather page](http://www.dan.pfeiffer.net/weather_erie.htm)
 *   [Dan's Marine Weather (compact)](http://dan.pfeiffer.net/mwc.htm)
 *   [Cleveland NOAA Marine Forecast](http://www.weather.gov/cle/marine_forecast)
-*   [Cleveland NWS Marine Forecast](http://forecast.weather.gov/MapClick.php?lat=41.77131167976406&lon=-81.28028869628906&site=cle&smap=1&unit=0&lg=en&FcstType=marine)  
-    
+*   [Cleveland NWS Marine Forecast](http://forecast.weather.gov/MapClick.php?lat=41.77131167976406&lon=-81.28028869628906&site=cle&smap=1&unit=0&lg=en&FcstType=marine)   
 *   [Weather Underground - Fairport Harbor](http://www.wunderground.com/weather-forecast/zmw:44077.3.99999)
 *   [Accuweather - Fairport Harbor](https://www.accuweather.com/en/us/fairport-harbor/44077/weather-forecast/344877)  
 *   [Weather Channel - Fairport Harbor](https://weather.com/weather/today/l/Fairport+Harbor+OH+USOH1141:1:US)  
@@ -165,10 +158,8 @@ Other Links (mostly so I can find them myself):
 *   [Wind Finder - Fairport Harbor](https://www.windfinder.com/weatherforecast/lake_erie_fairport_harbor)
 *   [WindAlert - Fairport Harbor](http://www.windalert.com/spot/69649)
 *   [Windy - Fairport Harbor](https://www.windy.com/?41.735,-81.192,11)
-*   [Lake Metroparks Web Cams](https://www.lakemetroparks.com/webcams)  
-    
-*   Weather stations:  
-    
+*   [Lake Metroparks Web Cams](https://www.lakemetroparks.com/webcams)
+*   **Weather stations:**
     *   [Fairport Harbor Lighthouse FAIO1](http://www.ndbc.noaa.gov/station_page.php?station=faio1)
     *   [Fairport Harbor Lighthouse FAIO1 at NOAA](https://tidesandcurrents.noaa.gov/met.html?id=9063053)
     *   [Cleveland Water Alliance Buoy 45207](https://www.ndbc.noaa.gov/station_page.php?station=45207)  
@@ -176,7 +167,11 @@ Other Links (mostly so I can find them myself):
     *   [Geneva State Park Marina GEL01](https://www.ndbc.noaa.gov/station_page.php?station=gelo1)
     *   [Grand River Flow Rate (USGS 04212100)](https://waterdata.usgs.gov/nwis/uv?04212100)
     
-
-https://www.scrapingdog.com/url-to-markdown-coverter/  
+<!--- 
+This .md file was created from the .html web page using this converter:
+https://www.scrapingdog.com/url-to-markdown-coverter/ 
+It did a very good job.
+--->
+ 
   
 [Return to MM&B Home Page](http://www.mmbstatistical.com/)
