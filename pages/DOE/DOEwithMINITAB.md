@@ -7,21 +7,30 @@ nav_exclude: true
 ### Paul Mathews, ASQ Quality Press*, 2004.
 ### ISBN 0-87389-637-8.
 
-\* ASQ Quality Press was the original publisher but in 2025 I (Paul) reacquired all rights to the book. 
+#### Publisher and Acquiring Copies of the Book
+\* ASQ Quality Press was the original publisher of the book but in 2025 I (Paul) reacquired all rights to the book. 
 I can have books printed if you need them. The printed books are soft-bound with a simple green cover. 
 There is a web link to the free pdf copy below.
 
-Why I Wrote This Book
-I wrote this book over a period of about 8 year to supplement the textbooks that I was teaching from. 
-I was using the following books:
-* Montgomery, Design and Analysis of Experiments
-* Box and Hunter, Statistics for Experimenters
-* Hicks, Fundamental Concepts in the Design of Experiments  
+#### Why I Wrote This Book
+I wrote this book over a period of about 8 years to supplement the textbooks that I was teaching from.
+The particular problems I was trying to solve were:
+* The textbooks I was using didn't have a good review of core statistical methods, especially for students who hadn't ever or recently had a statistics course.
+* Notation varies from book to book. I wanted consistent notation from the introductory chapters through the advanced material.
+* Older books weren't written with modern software in mind, so they carried an unnecessary level of detail about DOE calculations.
+* The majority of my customers and students use MINITAB so I wanted to include MINITAB-specific instructions.
+* I wanted to keep the scope of the book small. Montgomery's book, Design and Analysis of Experiments, is one of my favorites; however, 
+it's scope is excessive with respect to the needs of students new to DOE methods. I highly recommend that after using
+DOE with MINITAB for an introduction to DOE methods, students continue their study with Montgomery, Box and Hunter, etc. 
 
-These are all excellent books, and I still highly recommend them; however, there are many newer books 
-today that should be considered.
 
-
+#### Organization of the Material
+* Chapters 1-3 provide a review of core statistical methods and introduce the use of MINITAB
+* Chapter 4 is largely qualitative. It provides an introduction to key DOE language and concepts that will be used and expanded in later chapters. 
+* Chapters 5-11 provide the core DOE material, including one-way and multi-way classification designs, linear regression, general linear model,
+two-level full-factorial and fractional-factorial designs, and response surface designs.
+* The book does not cover advanced topics like longitudinal designs, mixture experiments, Taguchi designs, etc. There are
+other excellent books available that cover those topics.
  
 
 #### Table of Contents:
@@ -40,11 +49,11 @@ today that should be considered.
 
 
 #### Documents:
-Electronic/PDF copy of the textbook
-Course Notes
-Homework Problems
-Homework Problem Data (zipped Excel files)
-Solutions to Selected Homework Problems
-Classroom Exercises and Labs
-R Code Solutions to Example Problems in the Textbook
-Paper Helicopter Template
+* Electronic/PDF copy of the textbook
+* Course Notes
+* Homework Problems
+* Homework Problem Data (zipped Excel files)
+* Solutions to Selected Homework Problems
+* Classroom Exercises and Labs
+* R Code Solutions to Example Problems in the Textbook
+* Paper Helicopter Template
