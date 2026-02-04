@@ -1,3 +1,8 @@
+---
+title: Sample Size Calculations
+nav_exclude: true
+---
+
 ## Sample Size Calculations: 
 ## Practical Methods for Engineers and Scientists
 ### Paul Mathews, Mathews Malnar and Bailey, Inc., 2010

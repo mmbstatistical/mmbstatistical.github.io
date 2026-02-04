@@ -1,3 +1,8 @@
+---
+title: null
+nav_exclude: true
+---
+
 ## Design of Experiments with MINITAB
 ### Paul Mathews, ASQ Quality Press*, 2004.
 ### ISBN 0-87389-637-8.

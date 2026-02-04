@@ -17,7 +17,7 @@ url: https://mmbstatistical.github.io/
 # markdown: GFM         # Garbles the table in index.md
 
 
-# Build settings came from https://github:com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml
+# Build settings came from https://github.com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml
 remote_theme: jekyll/minima@3cdd14d
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one

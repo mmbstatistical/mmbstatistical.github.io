@@ -1,5 +1,10 @@
+---
+title: Quality Engineers Network
+nav_exclude: true
+---
 
-## Quality Engineers Network Meeting Abstracts 
+
+## Quality Engineers Network Meetings 
 QEN meeting announcements are in
 reverse order with the most recent meeting at the top. All meetings
 are free and everyone is welcome to present or to

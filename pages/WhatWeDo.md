@@ -1,3 +1,8 @@
+---
+title: What We Do
+nav_exclude: true
+---
+
 <!--- What We Do --->
 The following is a short list of the technical areas in which we provide training, mentoring, and consulting services to our customers:
 ## Statistics and Quality Engineering

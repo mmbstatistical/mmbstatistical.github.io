@@ -1,13 +1,14 @@
 ---
 layout: default
+nav_exclude: true
 ---
 
 
 **Upcoming Events:**
-* [**Quality Managers Network:**](pages/QMN.md)
+* [**Quality Managers Network:**](pages/QMN.md)  
     * **The Joy of Little Experiments, 7:30-9:00AM, 6 February 2026, by Zoom.**  
 
-* [**Quality Engineers Network:**](pages/QEN.md)
+* [**Quality Engineers Network:**](pages/QEN.md)  
     * **Topic TBD, 7:30-9:00AM, 6 2026, by Zoom.**
 
 **[What We Do](pages/WhatWeDo.html)**
@@ -29,7 +30,7 @@ layout: default
 
 **[Reading List](ReadingList.html):** Our favorite quality engineering and statistics references!
 
-**[Links](Links.html):** To on-line quality engineering and applied statistics resources, ...
+**[Links](Links.md):** To on-line quality engineering and applied statistics resources, ...
 
 **[Contact MM&B Inc.](ContactMMBInc.html)**
 
