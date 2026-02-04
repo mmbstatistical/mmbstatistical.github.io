@@ -14,7 +14,7 @@ methods. Solutions are presented for more than 170 example problems. Solutions f
 MINITAB, Piface, and R are posted on the Internet.
 
 !["Sample Size Calculations"](/pages/SampleSize/SampleSizeCalculationsCoverImageForWebsite.jpg)
-<br>
+<br/> <br/>
 
 * Preview the book at [Google Books](http://books.google.com/books?id=3uqZ_81If4UC&hl=en&dq=9780615324616&ei) or [Amazon](http://www.amazon.com/Sample-Size-Calculations-Practical-Scientists/dp/0615324614)
 * Buy the book from [Amazon](http://www.amazon.com/Sample-Size-Calculations-Practical-Scientists/dp/0615324614) or [Barnes & Noble](http://search.barnesandnoble.com/Sample-Size-Calculations/Paul-Mathews/e/9780615324616/)

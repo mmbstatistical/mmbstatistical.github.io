@@ -3,12 +3,14 @@ title: Design of Experiments with MINITAB
 nav_exclude: true
 ---
 
-## Design of Experiments with MINITAB <br/> Paul Mathews, ASQ Quality Press*, 2004.
-
-#### Publisher and Acquiring Copies of the Book
+## **Design of Experiments with MINITAB** <br/> Paul Mathews, ASQ Quality Press*, 2004.
 \* ASQ Quality Press was the original publisher of the book but in 2025 I (Paul) reacquired all rights to the book. 
-I can have books printed if you need them. The printed books are soft-bound with a simple green cover. 
-There is a web link to the free pdf copy below.
+
+
+#### Acquiring Copies of the Book
+* MM&B Inc. prints books using Ingram's Lightning Source print-on-demand service. We can have books printed if you need them.
+The printed books are soft-bound with a simple green cover. 
+* There is a web link to the free pdf copy of the book below.
 
 #### Why I Wrote This Book
 I wrote this book over a period of about 8 years to supplement the textbooks that I was teaching from.
