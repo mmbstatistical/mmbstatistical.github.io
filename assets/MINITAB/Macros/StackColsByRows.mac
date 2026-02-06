@@ -1,0 +1,40 @@
+macro
+StackColsByRows Source.1-Source.k Out
+
+#This macro stacks the data in cols Source.1-Source.k rowwise, i.e. its result is
+# Out
+# Source.1(1)
+# Source.2(1)
+# Source.3(1)
+# ...
+# Source.1(2)
+# Source.2(2)
+# Source.3(2)
+# ...
+# Source.k(nrows)
+
+#Example calling statement:
+#   mtb > %stackcolsbyrows c1-c3 c4
+
+#20190318, V18, original version
+
+#Paul Mathews, President
+#Mathews Malnar and Bailey, Inc.
+#440-350-0911
+#paul@mmbstatistical.com
+
+
+mcolumn Source.1-Source.k Out
+mconstant k i j nrows index
+
+count Source.1 nrows		#number of rows in the data table
+
+let index = 0				#index to keep track of Out's row number
+do i = 1:nrows
+	do j = 1:k
+		let index = index + 1
+		let Out(index) = Source.j(i)
+	enddo
+enddo
+
+endmacro

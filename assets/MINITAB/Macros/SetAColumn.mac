@@ -1,0 +1,62 @@
+macro
+SetAColumn Col nSeq nInd Dest
+
+#This macro performs the command line set function for the values in a column.
+#Col is the source column. nSeq is the number of times to repeat the whole
+#sequence. nInd is the number of times to repeat each value. Dest is the 
+#destination column. In MINITAB#s set command syntax this macro does:
+#   mtb > set Dest
+#   mtb > nSeq(Col)nInd
+#   mtb > end
+
+#Example calling statement:
+#   mtb > %setacolumn c1 3 5 c2
+
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+#Rev: 20160527, Paul Mathews for V17
+
+#This macro may contain errors. Always check its results.
+
+
+mcolumn Col Dest Src
+mconstant nSeq nInd i
+
+#Create the column Src of repeated rows
+if nInd = 1
+   let Src = Col
+else
+   call repeatrows Col nInd Src
+endif
+
+#Stack Src nSeq times
+let Dest = Src
+if nSeq > 1
+   do i = 2:nSeq	  
+      stack Dest Src Dest   
+   enddo
+endif
+
+endmacro
+
+
+
+macro
+repeatrows col num dest
+
+#This macro repeats each row in column col num times and writes
+#the resulting column to dest.
+
+mcolumn col dest
+mconstant num j k L nrows
+
+count col nrows
+
+do j=1:nrows			    #the row of the original data set
+   do k=1:num		        #this counts off the replicated rows
+      let L=(j-1)*num+k	    #row index for the destination column
+      let dest(L)=col(j)	#write the destination column values
+   enddo
+enddo
+
+endmacro

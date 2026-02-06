@@ -1,0 +1,100 @@
+Macro
+RunRuleExercise2 TotalPts Bias.
+
+#This macro displays the points on a control chart one point at a time so that students can 
+#practice applying the run rules. The macro actually creates a time-ordered series of graphs
+#in reverse order (so the oldest one ends up on top)
+#with one new point on each graph. After it runs, minimize the Session window, maximize the 
+#first window in the series, and then delete each graph to uncover the next one.
+
+#This macro creates its own data with its own onset point for OOC. TotalPts is the total number
+#of points that will be created and Bias is the size of the bias in the mean. The time point
+#when the bias is first applied is determined by OnSet which is randomly chosen from the interval
+#from 25 to 45.
+
+#Example calling statement:
+#   mtb > %runruleexercise 80 1.5
+
+
+
+mcolumn OnSet S1 S2 Source Sour
+mconstant TotalPts Bias ThisOnSe OOCPts ShowRows
+
+Default TotalPts = 60
+Default Bias = 1
+
+rand 10 OnSet;			#The number of stable points to start the process.
+   uniform 25 45.
+let ThisOnSe = round(OnSet(1))
+rand ThisOnSe S1;
+   normal 0 1.
+
+let OOCPts = TotalPts - ThisOnSe
+rand OOCPts S2;
+   normal Bias 1.
+
+Stack S1 S2 Source
+
+
+Do ShowRows = TotalPts:20
+   copy Source Sour;			#Start from the first 40 observations.
+      include;
+         rows 1:ShowRows.
+   #Update graph now
+
+Tsplot Sour;
+  Include;
+      Rows 1:ShowRows;
+  AxLabel 1;
+    ADisplay 1;
+    Label "Observation Number";
+      ALevel 1;
+  AxLabel 2 "Statistic";
+    ADisplay 1;
+  Index;
+  Connect;
+  Symbol;
+  Reference 2 3;
+    Type 1;
+    Color 17;
+    Size 3;
+    MODEL 1;
+  Reference 2 2;
+    Type 2;
+    Color 17;
+    Size 1;
+    MODEL 1;
+  Reference 2 1;
+    Type 2;
+    Color 17;
+    Size 1;
+    MODEL 1;
+  Reference 2 0;
+    Type 1;
+    Color 17;
+    Size 3;
+    MODEL 1;
+  Reference 2 -1;
+    Type 2;
+    Color 17;
+    Size 1;
+    MODEL 1;
+  Reference 2 -2;
+    Type 2;
+    Color 17;
+    Size 1;
+    MODEL 1;
+  Reference 2 -3;
+    Type 1;
+    Color 17;
+    Size 3;
+    MODEL 1;
+  Footnote;
+    FPanel;
+  NoDTitle.
+
+#   pause
+EndDo
+
+
+EndMacro

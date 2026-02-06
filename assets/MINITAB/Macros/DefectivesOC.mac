@@ -1,0 +1,122 @@
+macro
+defectivesOC n c;
+   output p Pa.
+
+#This macro calculates and plots the OC curve for the single sampling
+#plan for defectives given by Pa=b(c;n,p) where the sample size (n) and
+#acceptance number (c) are specified by the user. The macro automatically
+#determines the appropriate bounds for the OC curve plot axes.
+
+#Example call:
+#   mtb > %defectivesOC 300 0;
+#   subc> output c1 c2.
+
+#This macro has known defects and can generate erroneous data.
+#The user is responsible for checking all work and MM&B Inc.
+#takes no responsibility for the results from or misuse of this
+#macro.
+
+#by Mathews and Malnar for Minitab V13
+#217 Third Street, Fairport Harbor, OH 44077
+#Phone: 440-350-0911   Fax: 440-350-7210
+#E-mail: pmathews@apk.net, paul@mmbstatistical.com
+
+#Copyright December 2001 All Rights Reserved
+#Rev. (PGM,6/17/02) Added n and c to plot title.
+#Rev. (PGM, 11/28/04) Validated for V14 and added output subcommand.
+#Rev. (PGM, 6/4/04) Validated for V15.
+
+mcolumn p Pa c100 c101 c102 c103 c104 c105
+mconstant n c i npvals answ thisp pmax dp dtick thetitle
+
+if n < c
+   note
+   note Error in calling statement.
+   note The sample size must be greater than the acceptance number.
+   note
+   return
+endif
+
+name p 'p'
+name Pa 'Pa'
+
+let pmax=6/n*sqrt(c+1)	#good upper bound for plotting
+let dp=pmax/100		#increment for points along OC curve
+set p
+   0:pmax/dp
+end   
+
+let npvals=101
+let Pa(1)=1
+do i=2:npvals
+   let thisp=p(i)
+   cdf c answ;		#find Pa for this c, n, and p
+      binomial n thisp.
+   let Pa(i)=answ
+enddo
+
+erase c100-c105
+let c100 = "Defectives OC Curve: "
+let c101 = "n = "
+let c102 = n
+text c102 c102
+let c103 = ", c = "
+let c104 = c
+text c104 c104
+concatenate c100-c104 c105
+let thetitle=c105(1)
+
+call finddtick pmax dtick	#determine how far apart the p axis ticks will be
+
+plot Pa*p;			#plot the OC curve
+   connect;
+   scale 1;
+      model 1;
+         tick 0:pmax/dtick;
+      endmodel;
+   scale 2;
+      model 1;
+         tick 0:1/0.1;
+      endmodel;
+   reference 1 0;
+      size 3;
+      side 0;
+   reference 2 0;
+     size 3;
+     side 0;
+   grid 1;
+   grid 2;
+   axlabel 1 "Fraction Defective (p)";
+   axlabel 2 "Pa";
+   title thetitle;
+   footnote "MM&B Inc., Rev. 11/28/04";
+      size 0.8.
+
+endmacro
+
+#################################################################
+macro
+finddtick pmax dtick
+
+#This macro finds a good design for fraction defective (p) value plot ticks.
+
+#by Mathews and Malner for use with macro defectivesOC.mac
+#Copyright December 2001 All Rights Reserved
+
+mcolumn tryd
+mconstant pmax dtick i thistry
+
+#these are good increment choices for the p axis
+set tryd
+(0.0001 0.0002 0.0005 0.001 0.002 0.005 0.01 0.02 0.05 0.10)
+end
+
+let i=0
+let thistry=100
+while thistry>8			#>8 is too many ticks
+   let i=i+1
+   let thistry=pmax/tryd(i)
+endwhile
+let dtick=tryd(i)		#the magic tick spacing
+ 
+endmacro

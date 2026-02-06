@@ -1,0 +1,37 @@
+macro
+fold block x.1-x.n
+
+#This macro creates the fold-over design of the experiment in x.1-x.n by
+#inverting the signs of those columns and appending the new rows to the
+#original ones. The column called block is used to distinguish the runs
+#from the original experiment (block=1) from the folded ones (block=2).
+#Warning: This macro overwrites the original columns!
+
+#Consider using Stat> DOE> Modify Design instead.
+
+#Copyright (c) 2005 MM&B Inc.
+#Mathews Malnar and Bailey, Inc.
+#Phone: 440-350-0911
+#E-mail: paul@mmbstatistical.com
+#Web: www.mmbstatistical.com (Check for revisions to this macro at the website.)
+#Rev. 3/7/05, PGM: For MINITAB V14, 15, 16.
+#Rev. 3/24/05, PGM: Added block feature and appended folded design to original.
+#20160119, PGM: Validated for V17.
+
+#Example calling statement:
+#   mtb > %fold c4 c5-c14
+
+mcolumn block x.1-x.n fx.1-fx.100
+mconstant n i nruns
+
+count x.1 nruns			#Count the number of runs in the original experiment.
+do i = 1:n			#For each column of the original design ...
+   let fx.i=-x.i		#... invert the signs ...
+   stack x.i fx.i x.i	 	#... and append them to the original column.
+enddo
+set block
+   (1:2)nruns			#Create the blocking column
+end
+
+echo
+endmacro

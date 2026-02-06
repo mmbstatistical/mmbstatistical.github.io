@@ -1,0 +1,160 @@
+macro
+ROC Ocond Oy sens spec notspec
+
+#This macro calculates sensitivity and specificity for a diagnostic test with a dichotomous response.
+#The input diagnostic value (y) is in a single column indexed by disease cond(ition),
+#where cond = 0 is the control (non-diseased) group and cond = 1 is the case (diseased) group.
+#Sens(itivity), spec(ificity), and the complement of the specificity (notspec) are outputs.
+#The macro also plots the ROC curve and reports the AUC and its approximate standard error.
+
+#Example calling statement:
+#	mtb > %ROC c1 c2 c3-c5
+#where c1 is a column of 0s and 1s and c2 is the column containing the diagnostic response.
+
+#By Paul Mathews, Mathews Malnar and Bailey, Inc.
+#Phone: 440-350-0911
+#E-mail: paul@mmbstatistical.com
+#Web: www.mmbstatistical.com
+
+#20091125, PGM: For MINITAB V15?
+#20160119, PGM: Validated for V17
+
+mcolumn Ocond Oy sens spec notspec cond y ry se sp lbl1 lbl2 lbl3 lbl4 lbl5
+mconstant i n0 n1 ntot temp AUC seAUC lblAUC U0 U1 con dis
+
+noecho
+notitle
+
+let cond = Ocond	#Assign the original condition column (Ocond) to the working variable cond
+let y = Oy		#Likewise for the original y column (Oy) to the working variable y
+
+name sens "Sens"
+name spec "Spec"
+name notspec "1-Spec"
+
+let n0 = sum(if(cond = 0, 1))		#number of controls
+let n1 = sum(if(cond = 1, 1))		#number of cases
+let ntot = n0 + n1			#total number of cases and controls
+
+sort cond y cond y;			#sort the data by the measurement scale
+   by y.
+
+do i = 1:ntot
+   let se = (y > y(i)) * (cond = 1)		#sensitivity: cases with y > y(i)
+   let sp = (y < y(i)) * (cond = 0)		#specificity: controls with y < y(i)
+   sum se temp
+   let sens(i) = temp				#sensitivity for threshold at y(i)
+   sum sp temp
+   let spec(i) = temp				#specificity for threshold at y(i)
+enddo
+
+let sens = sens / n1
+let spec = spec / n0
+let notspec = 1 - spec				#complement of the specificity
+
+pause
+#Simplify the table of sens, spec, and notspec by eliminating duplicate observations:
+call findunique sens notspec		#necessary to clean up the plot and to simplify the AUC calculations.
+let spec = 1 - notspec			#Re-calculate spec after the call to findunique. Wasn't included in the call because spec isn't included in the plot.
+count notspec ntot
+let sens(ntot + 1) = 0				#add the point at the origin of the ROC curve
+let spec(ntot + 1) = 1
+let notspec(ntot + 1) = 0
+
+#Now calculate the AUC by the trapezoidal method:
+#note By the trapezoidal method:
+#let AUC = 0
+#do i = 2:ntot
+#   let AUC = AUC + sens(i) * ((notspec(i) - notspec(i-1))/2 + (notspec(i+1) - notspec(i))/2)	#dAUC = y(i) * dx
+#enddo
+#let AUC = AUC + sens(1)*(notspec(2) - notspec(1))/2 + sens(ntot + 1)*(notspec(ntot + 1) - notspec(ntot))/2	#Adding on the ends
+#let AUC = - AUC			#Because notspec is monotonically decreasing
+
+#Now calculate the AUC by the Mann-Whitney-Wilcoxon method. See mannwhitney.mac for details of this method.
+note By the Mann-Whitney-Wilcoxon method:
+note U1 is concordant pairs, U0 is discordant pairs, con and dis are corresponding rates
+rank y ry
+let U0 = sum(ry * if(cond = 0, 1)) - n0*(n0+1)/2
+let U1 = sum(ry * if(cond = 1, 1)) - n1*(n1+1)/2
+let dis = U0 / n0 / n1
+let con = U1 / n0 / n1
+print U1 U0 con dis n0 n1
+
+let AUC = con
+let seAUC = AUC * (1 - AUC) + (n0 - 1) * (AUC / (2 - AUC) - AUC * AUC) + (n1 - 1) * (2 * AUC * AUC / ( 1 + AUC) - AUC * AUC)
+let seAUC = sqrt(seAUC) / sqrt(n0 * n1)
+print AUC seAUC
+
+
+#Now make up the label with the AUC info for the plot:
+let lbl1(1) = "AUC +/- se = "
+let lbl2(1) = round(AUC,3)
+text lbl2 lbl2
+let lbl3(1) = " +/- "
+let lbl4(1) = round(seAUC,3)
+text lbl4 lbl4
+conc lbl1 lbl2 lbl3 lbl4 lbl5
+let lblAUC = lbl5(1)
+
+Plot sens * notspec;
+  Scale 1;
+    MODEL 1;
+      Min -0.05;
+      Max 1.05;
+    EndMODEL;
+  Scale 2;
+    MODEL 1;
+      Min -0.05;
+      Max 1.05;
+    EndMODEL;
+  AxLabel 1 "1 - Specificity";
+    ADisplay 1;
+  AxLabel 2 "Sensitivity";
+    ADisplay 1;
+  NoJitter;
+  Connect;
+     Step -1;
+     Order 2;
+  Line 0 0 1 1;
+    Unit 1;
+  Title "ROC Curve";
+  text 0.4 0.07 lblAUC;
+     psize 14.
+
+echo
+endmacro
+
+
+###################################
+macro
+findunique x.1-x.m
+
+#This macro removes consecutive duplicate rows in x.1-x.m.
+#The first row is always retained.
+#You might want to pre-sort the data by byme.
+#This macro overwrites the original columns!
+
+#This is a different version of the original findunique.mac macro. This one checks to see if the whole row is the same as the row above it.
+#If it is, the current row is omitted.
+
+#dumpit is a boolean column used to determine if a row should be dumped or not. If dumpit = 0, the row is retained.
+
+mcolumn x.1-x.m dumpit
+mconstant i j ni
+
+count x.1 ni
+
+let  dumpit(1) = 0		#Always keep the first row
+do i = 2:ni
+   let dumpit(i) = 1		#Assume that this row's going to get dumped.
+   do j = 1:m				
+      let dumpit(i) = dumpit(i) * (x.j(i) = x.j(i-1))	#If any value in the row is different from the row above, then keep the row.
+   enddo
+enddo
+
+copy x.1-x.m x.1-x.m;
+   include;
+      where "dumpit=0".
+
+endmacro
+

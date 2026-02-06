@@ -1,0 +1,32 @@
+macro
+MeansAndResiduals ID Y Fits Resid ByVar Means 
+
+#This macro extracts the subgroup means and the residuals for the one-way classification model.
+#ID and Y are inputs. Fits, Means, ByVar, and Resid are outputs where Y(i,j) = Fits(j) + Resid(i,j).
+#Columns ByVar and Means provide the summary table of subgroup means by subgroup ID.
+
+#Example calling statement:
+#%MeansAndResiduals 'ID' 'Msmt' c3-c6
+
+#By Paul Mathews, President
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+
+#Rev. 1.0, PGM: Written for Version 18 of MINITAB
+
+mcolumn ID Y Fits Resid Means ByVar
+
+statistics Y;
+   by ID;
+   GValues ByVar;
+   Mean Means.
+
+convert ByVar Means ID Fits
+let Resid = Y - Fits
+
+name Fits "Fits"
+name Resid "Resid"
+name ByVar "ByVar"
+name Means "Means"
+
+endmacro

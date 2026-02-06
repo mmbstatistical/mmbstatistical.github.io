@@ -1,0 +1,39 @@
+macro
+PChartSim nObs p nomSS SS D;
+   Overdispersion ODF.
+
+#This chart creates simulated data for a p chart.
+#Constant nObs is the number of observations (input)
+#Constant p is the proportion defective (input).
+#Constant nomSS is the nominal sample size (input).
+#Column SS is the sample size column (output). SS is normal with mean nomSS and std dev 10% of the mean
+#Column D is the defective count column (output).
+#ODF is the overdispersion factor. ODF = 1 is no overdispersion. 
+
+#Example calling statement:
+# %pchartsim 100 0.08 200 c1 c2;
+#     overdispersion 2.
+
+
+mconstant nObs p nomSS ODF SD i SSi Di
+mcolumn SS D temp
+
+let SD = 0.10 * nomSS                  #Standard deviation of sample size is 10% of the mean
+rand nObs SS;
+   normal nomSS SD.
+let SS = round(SS)   
+
+do i = 1:nObs
+    let SSi = SS(i)
+    rand 1 temp;
+        binomial SSi p.
+    let D(i) = temp(1)
+enddo
+
+if Overdispersion
+   let D = SS * (p + (D / SS - p) * ODF)
+   let D = round(D)
+   let D = D * (D>0)
+endif
+
+endmacro

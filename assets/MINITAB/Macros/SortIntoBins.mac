@@ -1,0 +1,57 @@
+macro
+sortintobins x mark bin;
+   tally freq;
+   hist.
+
+#This macro sorts the observations in x into bins defined by their class marks.
+#Each x is put into the bin that is its best match based on the absolute value
+#of the distance between the observation and the marks. Columns x and mark are
+#inputs. Column bin is the output, indicates the class mark for each x.
+#The tally subroutine outputs the class frequencies (freq).
+#The hist subroutine creates the histogram from the frequency table.
+
+#By PGMathews, 29April09, for MINITAB V15.
+
+#Example calling statement:
+# rand 100 c1;
+#    normal 100 10.
+# set c2
+# 64.5:134.5/10
+# end
+# %sortintobins c1-c3;
+#    tally c4;
+#    hist.
+
+mcolumn x mark bin freq
+mconstant nx nmark i j diff
+
+#Determine the number of observations (nx) and number of class marks (nmark):
+let nx = count(x)
+let nmark = count(mark)
+
+#Determine which bin to put each obseration into:
+do i = 1:nx				#For each observation . . .
+   let diff = 1e8			#Start with a really big distance
+   do j = 1:nmark			#Compare the obseration to the jth mark
+      if abs(x(i) - mark(j)) < diff	#Test whether the jth mark is closer than the last one
+         let diff = abs(x(i) - mark(j))	#The jth mark is closer, so update the diff(erence)
+         let bin(i) = mark(j)		#Put the x observation in its bin
+      endif
+   enddo
+enddo
+
+if tally		#Make the table of class frequencies
+   do j = 1:nmark
+      let freq(j) = sum(bin = mark(j))
+   enddo
+endif
+
+if hist			#Make the histogram from the table of class frequencies and their marks
+   histogram mark;
+      frequencies freq;
+      midpoint mark;
+      yfrequency;
+      bar.
+endif
+
+endmacro

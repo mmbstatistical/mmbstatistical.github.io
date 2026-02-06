@@ -1,0 +1,83 @@
+macro
+twosamplepoissonpower L1 L2 n1 n2;
+   sign alpha.
+
+#This macro calculates the power to reject Ho: L1 = L2 in favor of Ha: L1 < L2
+#where L1 and L2 are Poisson rates, i.e. counts per sampling unit. The sample sizes
+#are n1 and n2 sampling units, respectively. The condition under which you could
+#reject Ho comes from the two-sample one-sided Poisson test using the binomial
+#distribution p-value:
+
+#   p-value = b(0 <= x <= x1; n = x1 + x2, p = n1/(n1+n2))
+
+#where x1 and x2 are the respective counts. x1 and x2 are Poisson distributed with
+#means mu1 = n1*L1 and mu2 = n2*L2, respectively.
+
+#The power is determined by considering all possible combinations of x1 and x2. Since
+#obtaining x1 and x2 are independent events, the Power gets contributions of the form:
+
+#   Power(x1,x2) = (p-value <= alpha)*Poisson(x1;mu1)*Poisson(x2;mu2)
+
+#The Boolean term (p-value <= alpha) guarantees that the power only gets contributions where
+#a particular x1,x2 combination meets the Ho rejection condition described above. The
+#total power is determined by summing over all possible x1 and x2 values, however, the
+#summations can be safely limited to the ranges over which x1 and x2 are likely, that
+#is, in the neighborhoods of mu1 and mu2, respectively.
+
+#This macro was validated using twosamplepoissonpowervalidation.mac.
+
+#In MINITAB V16: Consider using Stat> Power and Sample Size> 2-Sample Poisson Rate instead.
+
+#Example calling statement:
+#   mtb > %twosamplepoissonpower 4 8 5 2
+#(Calulates power to reject Ho when L1 = 4, L2 = 8, and sample sizes are 5 and 2, respectively.)
+
+#Copyright (c) Paul Mathews, MM&B Inc., 21Apr05
+#PGM, 21Dec05: Original release for MINITAB V14
+#PGM, 22Dec05: Modified for unequal sample sizes
+#PGM, 20101130: Confirmed accurate in V16
+#PGM, 20160119: Confirmed accurate in V17
+
+mconstant L1 L2 n1 n2 alpha mu1 mu2 x1 x2 x1L x1U x2L x2U c SS p pvalue P1 P2 Power
+default alpha=0.05			#Default value of alpha.
+
+note Consider using or checking this macro's result with (V16) Stat> Power and Sample Size> 2-Sample Poisson Rate
+note
+note This macro runs very slowly. Please be patient.
+note Running ...
+noecho
+
+let mu1 = n1 * L1			#Calculate the Poisson means for x1 ...
+let mu2 = n2 * L2			#... and x2.
+let p = n1 / (n1 + n2)			#This is the fraction of any sample that should be x1.
+
+let x1L = round(mu1 - 3*sqrt(mu1))	#Approximate expected ranges for x1 ...
+if x1L < 0
+   let x1L = 0
+endif
+let x1U = round(mu1 + 3*sqrt(mu1))
+let x2L = round(mu2 - 3*sqrt(mu2))	#... and x2.
+if x2L < 0
+   let x2L = 0
+endif
+let x2U = round(mu2 + 3*sqrt(mu2))
+
+let Power = 0				#Initialize.
+do x1 = x1L:x1U				#Consider a rectangular matrix of x1 ...
+   do x2 = x2L:x2U			#... and x2 values in the neighborhood of mu1 and mu2, respectively.
+      let SS = x1 + x2			#For the binomial calculation.
+      cdf x1 pvalue;			#Calculates the p-value for the specific x1, x2 case.
+         binomial SS p.
+      if (pvalue <= alpha)		#Then we'd reject Ho for this x1, x2 pair.
+         pdf x1 P1;
+            poisson mu1.
+         pdf x2 P2;
+            poisson mu2.
+         let Power = Power+P1*P2
+      endif
+   enddo
+enddo
+print Power
+
+echo
+endmacro

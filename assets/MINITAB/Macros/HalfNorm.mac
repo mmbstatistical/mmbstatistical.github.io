@@ -1,0 +1,167 @@
+macro
+halfnorm r;
+   Label ID.
+
+#Copyright © 30 November 2000 Mathews and Malnar 
+#All rights reserved
+#Rev. 1.0 for Minitab V13.2 (Bek)
+#Rev. 1.1 for MINITAB V14 (Bek)
+#Rev. 5/24/05 (PGM) Changed plotting positions to those from Neter, Kutner, ..., p. 597.
+
+#This macro is used to construct a probability plot for 
+#half-normal data.  The macro input is one column 
+#containing the response and an optional label column used
+#in the graphing routine. The macro calculates the mid 
+#band percentiles and the corresponding z values. The 
+#probability plot shows the responses verses their z
+#values. A best fit line passing through the origin is 
+#superimposed on the data.
+#This macro may be altered to show the calculating columns, 
+#otherwise there is only graphical output.     
+
+#Mathews Malnar & Bailey, Inc.
+#217 Third Street, Fairport Harbor, OH 44077
+#(440)350-0911
+#pmathews@apk.net
+
+#This macro should be copied into the Minitab source macros directory for
+#immediate use, otherwise a change directory (cd) command will be needed.
+
+#Example call:
+#	mtb> %halfnorm c1;
+#       subc> label c2.         where c1 is the column of responses
+#				and c2 has a list of labels.
+
+mcolumn r ID sortedr sortID index  percent z labels refperc sum abssum
+mconstant  NResp slope xcoordin ycoordin 
+
+let sum=sum(r)
+let abssum=sum(abs(r))
+If sum=abssum
+
+   If Label
+     sort r ID sortedr sortID
+     Copy sortedr sortID sortedr sortID;
+      Omit sortedr = '*'.                    #searches and drops missing values
+   Else
+     sort r sortedr 
+     Copy sortedr sortedr;
+      Omit sortedr = '*'.
+   Endif.                               #Label sorting routine
+
+   let NResp=N(sortedr)           	#counts non-missing values
+    set index                           #index for postion equation
+      1:NResp
+      end. 
+
+#   let percent=(NResp+index-0.5)/(2*NResp)         #finds percent position
+   let percent=(Nresp+index-1/8)/(2*NResp+1/2)		#Neter, Kutner, ..., p. 597
+   invcdf percent z                        #z scale
+
+   let slope=mean(sortedr)/mean(z)          #slope of reference line
+
+#reference lines
+   set labels			
+      0.10
+      0.50
+      0.90
+      0.99
+      end.	
+
+   let refperc=0.5*(labels+1)	#find corresponding percentile on right side
+   invcdf refperc refperc	#these are their z values
+   let refperc=ROUND(refperc,3)
+   Text labels labels; 
+      Maxwidth 80. 
+
+#   let xcoordin=(NResp+index(NREsp)-0.5)/(2*NResp)          #z for last point
+   let xcoordin=(Nresp+index(NResp)-1/8)/(2*NResp+1/2)		#Neter, Kutner, ..., p. 597
+      if xcoordin < 2.576
+         let xcoordin=2.576             #set zeta to 99th percent when there are few points
+      endif
+   let ycoordin=xcoordin*slope	              #predicted response for last point at end of line
+
+if Label                     #Plots data with IDs
+Plot sortedr * z;
+  Scale 1;
+    LDisplay 1 1 1 0;
+    MODEL 1;
+      Tick refperc;
+      Min 0;
+      Label labels;
+    EndMODEL;
+  Scale 2;
+    LDisplay 1 1 1 0;
+  AxLabel 1 "Probability";
+    PSize 9;
+  AxLabel 2 "Response";
+    PSize 9;
+  Grid 2;
+  Data 0.1 0.9 0.1 0.9;
+  NoJitter;
+  Data 0.1 0.9 0.1 0.9;
+  Symbol;
+    Type 1;
+    Color 16;
+    Size 0.5;
+  Datlab sortID;
+    PSize 6;
+    Placement -1 1;
+    Offset 0 0.0125;
+  Reference 1 refperc;
+    Side 0;
+    MODEL 1;
+  Title "Half-Normal Probability Plot";
+   Footnote &
+      "Mathews and Malnar, November 2000";
+    PSize 7;
+  Footnote;
+    FPanel;
+  Line 0 0 xcoordin ycoordin;
+    Color 2;
+  NoDTitle.
+else
+Plot sortedr * z;
+  Scale 1;
+    LDisplay 1 1 1 0;
+    MODEL 1;
+      Tick refperc;
+      Min 0;
+      Label labels;
+    EndMODEL;
+  Scale 2;
+    LDisplay 1 1 1 0;
+  AxLabel 1 "Probability";
+    PSize 9;
+  AxLabel 2 "Response";
+    PSize 9;
+  Grid 2;
+  Data 0.1 0.9 0.1 0.9;
+  NoJitter;
+  Data 0.1 0.9 0.1 0.9;
+  Symbol;
+    Type 1;
+    Color 16;
+    Size 0.5;
+  Reference 1 refperc;
+    Side 0;
+    MODEL 1;
+  Title "Half-Normal Probability Plot";
+   Footnote &
+      "Mathews and Malnar, November 2000";
+    PSize 7;
+  Footnote;
+    FPanel;
+  Line 0 0 xcoordin ycoordin;
+    Color 2;
+  NoDTitle.
+endif 
+
+Else 		                 #when one or more data values are negative 
+     Note 
+     Note Half normal data must all be postive.
+     Note Please check data before running macro again.
+  
+endif.                   #ends main if statement 
+
+endmacro.

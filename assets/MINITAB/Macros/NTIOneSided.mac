@@ -1,0 +1,79 @@
+macro
+NTIOneSided nTotal nGroups nObs;
+   Confidence Conf;
+   Coverage Cover;
+   Validate.
+
+#Calculate the one-sided normal tolerance interval factor k1 for a sample of size nObs
+#when there are nTotal observations and nGroups groups and the NTI will be calculated
+#using the sample's mean and the pooled standard deviation.
+
+#The Confidence and Coverage subcommands allow those values to be
+#changed from their default 0.95 and 0.95 values, respectively.
+
+#The Validate subcommand runs a simulation that caculates the
+#proportion of 10,000 trials that satisfy the coverage condition.
+#That proportion should come close to matching the target confidence level
+
+#The values obtained from this macro with nGroups = 1 match the values 
+#tabulated in ISO 16269-6.
+
+#Example calling statement:
+# %NTIOneSided 30 3 10;
+#     Coverage 0.99;
+#     Validate.
+
+# 20221221, PGMathews, Mathews Malnar and Bailey, Inc., for MINITAB V20.4
+# 20230112, PGMathews: Modified macro to change the inputs to nTotal, nGroups, nObs
+
+mconstant nTotal nGroups nObs Conf Cover k1 k1prime dfError i spooled simConf zp delta nct
+mcolumn UTL ID x cmean cstdev Y 
+
+default Conf=0.95                 #default confidence level
+default Cover=0.95                #defaulte coverage
+
+#Calculate the one-sided normal tolerance interval factor k1 for nGroups = 1
+invcdf Cover zp
+let delta = zp * sqrt(nTotal)         #noncentrality parameter
+let dfError = nTotal - 1
+invcdf Conf nct;
+   t dfError delta.
+let k1 = nct / sqrt(nTotal)           #one-sided normal tolerance interval factor k1
+
+#Calculate the one-sided normal tolerance interval factor k1 for nGroups > 1
+invcdf Cover zp
+let delta = zp * sqrt(nObs)         #noncentrality parameter
+let dfError = nTotal - nGroups      #error degrees of freedom
+invcdf Conf nct;
+   t dfError delta.
+let k1prime = nct / sqrt(nObs)      #one-sided normal tolerance interval factor k1   
+
+if Validate
+    #Confirm the k1 value by simulation:
+    if nTotal = nGroups * nObs
+        do i = 1:10000
+            set ID
+                (1:nGroups)nObs
+            end
+            rand nTotal x
+            
+            statistics x;
+               by ID
+               mean cmean;
+               stdev cstdev.
+            let spooled = sqrt((nObs-1) * ssq(cstdev) / dfError)     
+            let UTL(i) = cmean(1) + k1prime * spooled
+        enddo
+
+        cdf UTL Y
+        let simConf = sum(Y>Cover) / 10000      #This value should come close to matching the confidence level
+        
+        print nTotal nGroups nObs Conf Cover delta dfError nct k1 k1prime simConf
+    else
+        print "Validation method not available because of unequal sample sizes in groups"
+    endif
+else    
+    print nTotal nGroups nObs Conf Cover delta dfError nct k1 k1prime
+endif
+
+endmacro

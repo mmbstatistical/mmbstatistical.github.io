@@ -29,7 +29,9 @@ minima:
 # Build settings
 markdown: kramdown
 
-# header_pages: null        # This line will cause links to each page to be included in the header. Must be commented to permit yaml nav_exclude: true to work.
+# header_pages: null        # This line (with null or not) will cause links to each page to be included in the header.
+# Must be commented out to permit yaml nav_exclude: true to work.
+# Also had to add header class in _includes/header.html
 
 
 

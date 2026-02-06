@@ -1,0 +1,60 @@
+macro 
+findunique x.1-x.m byme;
+   debug instance last.
+
+#This macro removes rows from x.1-x.m that have consecutive duplicate byme values.
+#The column instance numbers the repeats of byme, 1, 2, ...
+#The first row of a run of duplicate values (instance = 1) in byme is retained.
+#The debug subcommand writes the columns instance and last to the worksheet and does not remove the repeated rows.
+
+#You might want to pre-sort the data by byme.
+#This macro overwrites the original columns! You might want to run this macro on a copy of the original worksheet.
+
+#Example calling statement:
+#   MTB >  %findunique c1-c10 c5;
+#   SUBC> debug c11 c12.
+
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+#paul@mmbstatstical.com
+
+#20160127, PGM: Validated for MINITAB V17
+
+
+mcolumn x.1-x.m byme instance last
+mconstant i ni
+
+count byme ni					#number of observations in the columns
+
+#Number the instances of each run of consecutive observations 1, 2, ...:
+let  instance(1) = 1				#keep the first row
+do i = 2:ni
+   #let instance(i) = (byme(i) <> byme(i - 1))	#this works - the first instance of a new run is set to 1
+
+   #In this version of the code, the observations in a run are numbered 1, 2, 3, ... 
+   #Each new run starts over at 1.
+   if (byme(i) <> byme(i - 1))
+      let instance(i) = 1				#this is the start of a new run
+   else
+      let instance(i) = instance(i - 1) + 1		#this keeps a running count of the number of observations in a run
+   endif
+enddo
+
+if debug
+   #This code finds the last observation of every run. It does not remove the duplicate rows.
+   let last(ni) = 1
+   do i = ni:2
+      if instance(i) = 1
+         let last(i-1) = 1			#The observation before the first in a run is the last in the previous run
+      else
+         let last(i-1) = 0
+      endif
+   enddo
+else
+   #Cull out all of the observations except the last one of each run:
+   copy x.1-x.m byme x.1-x.m byme;
+      include;
+         where "instance=1".
+endif
+
+endmacro

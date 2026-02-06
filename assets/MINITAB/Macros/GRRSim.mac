@@ -1,0 +1,82 @@
+macro
+grrsim nparts kops lrepli part op msmt;
+   PV sdParts;
+   AV sdOps;
+   EV sdError.
+
+#By PGMathews, President
+#Mathews Malnar and Bailey, Inc., 217 Third Street, Fairport Harbor, OH 44077
+#Web: www.mmbstatistical.com
+#Phone: 440-350-0911
+#Copyright © February 2000 PGMathews
+
+#Rev. 1.0, PGM: Written for Version 12 of MINITAB
+#Rev. 2.0, PGM: Added input of nparts, kops, and lrepli to calling statement and validated for V14.
+#Rev. 2.1, PGM: Added subcommands to input standard deviations for parts, ops, and error and validated for V15, V16. 
+
+#This macro is a simulator for a gage error long study. It creates a
+#data set with specified numbers of parts, operators, and replicates.
+#The user can modify the values of the repeatability, reproducibility, and
+#part variation using the subcommands. The user must specify the number of parts,
+#the number of operators, the number of trials, and three output columns for
+#the corresponding measurement values, the part ID, and the
+#operator ID.
+
+#If there are n parts, k operators, and l replicates, there are a total
+#of nomsmts=n*k*l observations. The standard deviations may be recovered
+#by variance components analysis using two-way random effects ANOVA (Stat> ANOVA>
+#General Linear Model) or GR&R analysis (Stat> Quality Tools> Gage Study> Gage R&R Study (Crossed).
+
+#Example calling statement:
+#   mtb> %grrsim 10 3 2 c1 c2 c3;
+#   subc>   AV 10.
+
+mcolumn opmeans prtmeans msmt part op
+mconstant SdParts sdOps sdError
+mconstant nparts kops lrepli nl nomsmts
+mconstant index thispart thatop
+
+default sdParts = 25
+default sdOps = 1.666
+default sdError = 1.666
+#Use these defaults with a spec of 1000 +/- 100. Will give PV/Tol = 75% (cp = 1.33), AV/Tol = 5%, and EV/Tol = 5%.
+
+name msmt 'Msmt'
+name part 'Part'
+name op 'Op'
+
+let nl=nparts*lrepli			#special variable required to use set command below
+let nomsmts=nparts*kops*lrepli		#total number of measurements
+
+set op					#ID numbers for the operators
+   (1:kops)nl
+end
+set part				#ID numbers for the parts
+   kops(1:nparts)lrepli
+end
+
+rand nparts prtmeans;			#prtmeans is column of part means
+   normal 1000 sdParts.			#part mean and variability
+rand kops opmeans;			#opmeans is column of operator means
+   normal 0 sdOps.				#reproducibility
+rand nomsmts msmt;
+   normal 0 sdError.				#repeatability
+
+do index=1:nomsmts
+   let thispart=part(index)		#the part ID
+   let thatop=op(index)			#the operator ID
+   let msmt(index)=prtmeans(thispart)+opmeans(thatop)+msmt(index)	#part+operator+error terms
+enddo
+
+
+GageRR;
+  Parts part;
+  Opers op;
+  Response msmt;
+  Studyvar 6;
+  Tolerance 200.
+ 
+endmacro
+
+
+

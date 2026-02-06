@@ -1,0 +1,20 @@
+macro
+RowOf InCol;
+   Output RowOfMin RowOfMax.
+
+mcolumn InCol ThisRow
+mconstant RowOfMin RowOfMax nInCol 
+
+#This macro finds the row containing the minimum and maximum value in the column.
+#The macro assumes that these are unique values. If there are duplicates of the max or min, then the sum of their row numbers will be reported.
+#The input to the macro is InCol (a column) and the output is RowOfMin and RowOfMax (constants).
+
+let nInCol = count(InCol)				#number of observations in the column
+set ThisRow						#create row number indices
+   1:nInCol
+end
+let RowOfMin = sum((InCol = min(InCol)) * ThisRow)	#find the row of the min
+let RowOfMax = sum((InCol = max(InCol)) * ThisRow)	#find the row of the max
+print RowOfMin RowOfMax
+
+endmacro

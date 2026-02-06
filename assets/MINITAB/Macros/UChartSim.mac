@@ -1,0 +1,30 @@
+macro
+UChartSim nObs lambda nomSS SS c
+
+#This chart creates simulated data for a u chart.
+#Constant nObs is the number of observations (input)
+#Constant lambda is the Poisson mean (input) per sampling unit.
+#Constant nomSS is the nominal sample size (input) expressed in sampling units.
+#Column SS is the sample size column (output). SS is normal with mean nomSS, std dev 20% of the mean, and rounded to an integer.
+#Column c is the defective count column (output).
+
+#Example calling statement:
+# %UChartSim 100 8 5 c1 c2
+
+
+mconstant nObs lambda nomSS SD i ci mui
+mcolumn SS c temp 
+
+let SD = 0.2 * nomSS
+rand nObs SS;
+   normal nomSS SD.
+let SS = round(SS)
+
+do i = 1:nobs
+    let mui = SS(i) * lambda
+    rand 1 temp;
+        Poisson mui.
+    let c(i) = temp(1)
+enddo
+
+endmacro

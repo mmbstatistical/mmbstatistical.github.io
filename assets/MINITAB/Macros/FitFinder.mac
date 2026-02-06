@@ -1,0 +1,1671 @@
+macro
+FitFinder x y;
+Key.
+
+#This macro creates a 6x6 matrix of transforms for (x,y) data that can be used to identify
+#a system of transformations that linearizes the original nonlinear data. The Key subcommand
+#creates a 6x6 legend that indicates the transformations used in each position of the 6x6
+#matrix of graphs.
+
+#WARNING: Some transforms (log and square root) cannot tolerate negative values. Those observations
+#that do not survive the transform will be omitted from the resulting graphs. It is the user's
+#responsibility to recognize and deal with these cases.
+
+#Copyright © 2004 Mathews Malnar and Bailey, Inc.
+#V1.0 Rebecca Malnar, September 2004
+#Mathews Malnar and Bailey, Inc.
+#217 Third Street, Fairport Harbor, OH 44077
+#Phone: 440-350-0911
+#Fax: 440-350-7210
+#E-mail: pmathews@apk.net, rmalnar@apk.net
+
+mcolumns x y 
+mcolumns xsqrt xsqr xln tenx xrecip 
+mcolumns ysqrt ysqr yln teny yrecip 
+
+let xsqrt=SQRT(x)
+let xsqr=x**2
+let xln=logt(x)
+let tenx=10**x
+let xrecip=1/x
+let ysqrt=SQRT(y)
+let ysqr=y**2
+let yln=logt(y)
+let teny=10**y
+let yrecip=1/y
+
+Layout;
+
+Footnote "Mathews Malnar and Bailey, Inc., 2004";
+ PSize 6.
+
+Plot y * x;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0.8333 1;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "y vs x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot y * xsqrt;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.1667 0.333 0.8333 1;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "y vs Square Root x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot y * xsqr;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure .3333 0.5 0.8333 1;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "y vs Square of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot y * xln;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure .5 0.6667 0.8333 1;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "y vs Natural Log of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot y * tenx;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure .6667 0.8333 0.8333 1;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "y vs Ten Raised to the x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot y * xrecip;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.8333 1 0.8333 1;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "y vs Reciprocal of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqrt * x;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0.6667 0.8333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square Root of y vs x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqrt * xsqrt;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.1667 0.3333 0.6667 0.8333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square Root of y vs Square Root of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqrt * xsqr;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.3333 0.5 0.6667 0.8333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square Root of y vs Square of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqrt * xln;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.5 0.6667 0.6667 0.8333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square Root of y vs Natural Log of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqrt * tenx;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.6667 0.8333 0.6667 0.8333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square Root of y vs Ten Raised to the x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqrt * xrecip;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.8333 1 0.6667 0.8333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square Root of y vs Reciprocal of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqr * x;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0.5 0.6667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square of y vs x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqr * xsqrt;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.1667 0.3333 0.5 0.6667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square of y vs Square Root of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqr * xsqr;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.3333 0.5 0.5 0.6667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square of y vs Square of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqr * xln;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.5 0.6667 0.5 0.6667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square of y vs Natural Log of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqr * tenx;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.6667 0.8333 0.5 0.6667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square of y vs Ten Raised to the x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot ysqr * xrecip;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.8333 1 0.5 0.6667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Square of y vs Reciprocal of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yln * x;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0.3333 0.5;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Natural Log y vs x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yln * xsqrt;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.1667 0.3333 0.3333 0.5;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Natural Log y vs Square Root of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yln * xsqr;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.3333 0.5 0.3333 0.5;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Natural Log y vs Square of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yln * xln;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.5 0.6667 0.3333 0.5;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Natural Log y vs Natural Log x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yln * tenx;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.6667 0.8333 0.3333 0.5;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Natural Log y vs Ten Raised to the x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yln * xrecip;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.8333 1 0.3333 0.5;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Natural Log y vs Reciprocal of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot teny * x;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0.1667 0.3333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Ten Raised to the y vs x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot teny * xsqrt;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.1667 0.3333 0.1667 0.3333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Ten Raised to the y vs Square Root of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot teny * xsqr;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.3333 0.5 0.1667 0.3333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Ten Raised to the y vs Square of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot teny * xln;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.5 0.6667 0.1667 0.3333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Ten Raised to the y vs Natural Log of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot teny * tenx;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.6667 0.8333 0.1667 0.3333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Ten Raised to the y vs Ten Raised to the x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot teny * xrecip;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.8333 1 0.1667 0.3333;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Ten Raised to the y vs Reciprocal of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yrecip * x;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0 0.1667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Reciprocal of y vs x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yrecip * xsqrt;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.1667 0.3333 0 0.1667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Reciprocal of y vs Square Root of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yrecip * xsqr;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.3333 0.5 0 0.1667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Reciprocal of y vs Square of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yrecip * xln;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.5 0.6667 0 0.1667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Reciprocal of y vs Natural Log of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yrecip * tenx;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.6667 0.8333 0 0.1667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Reciprocal of y vs Ten Raised to the x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+
+Plot yrecip * xrecip;
+  Scale 1;
+    PSize 6;
+  Scale 2;
+    PSize 6;
+  AxLabel 1 "x";
+    ADisplay 0;
+  AxLabel 2 "y";
+    ADisplay 0;
+  NoJitter;
+  Data 0.05 0.97 0.05 0.94;
+  Figure 0.8333 1 0 0.1667;
+  Regress;
+  Symbol;
+    Type 6;
+    Size 3;
+  Footnote;
+    FPanel;
+  Title "Reciprocal of y vs Reciprocal of x";
+     Offset 0.002  -0.02;
+  NoDTitle.
+endlayout.
+########################################
+If Key
+
+Layout;
+
+Footnote "Mathews Malnar and Bailey, Inc., 2004";
+ PSize 6.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0 0.1667 0.8333 1;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x, y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.  
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.1667 0.333 0.8333 1;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^(1/2), y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure .3333 0.5 0.8333 1;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^2, y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure .5 0.6667 0.8333 1;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(ln(x), y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.6667 0.8333 0.8333 1;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(10^x, y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.8333 1 0.8333 1;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(1/x, y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0 0.1667 0.6667 0.8333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x, y^(1/2))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+     
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.1667 0.3333 0.6667 0.8333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^(1/2), y^(1/2))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+  Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.3333 0.5 0.6667 0.8333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^2, y^(1/2))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.5 0.6667 0.6667 0.8333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+  Title "(ln(x), y^(1/2))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.6667 0.8333 0.6667 0.8333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(10^x, y^(1/2))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+ 
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+    Figure 0.8333 1 0.6667 0.8333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(1/x, y^(1/2))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0 0.1667 0.5 0.6667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x, y^2)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.1667 0.3333 0.5 0.6667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+  Title "(x^(1/2), y^2)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.3333 0.5 0.5 0.6667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^2, y^2)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.5 0.6667 0.5 0.6667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+  Title "(ln(x), y^2)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.6667 0.8333 0.5 0.6667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(10^x, y^2)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.8333 1 0.5 0.6667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(1/x, y^2)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0 0.1667 0.3333 0.5;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x, ln(y))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+   
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.1667 0.3333 0.3333 0.5;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^(1/2), ln(y))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.3333 0.5 0.3333 0.5;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^2, ln(y))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.5 0.6667 0.3333 0.5;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(ln(x), ln(y))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.6667 0.8333 0.3333 0.5;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(10^x, ln(y))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.8333 1 0.3333 0.5;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(1/x, ln(y))";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+  Figure 0 0.1667 0.1667 0.3333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x, 10^y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.1667 0.3333 0.1667 0.3333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^(1/2), 10^y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.3333 0.5 0.1667 0.3333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^2, 10^y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.5 0.6667 0.1667 0.3333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(ln(x), 10^y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.6667 0.8333 0.1667 0.3333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(10^x, 10^y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.8333 1 0.1667 0.3333;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(1/x, 10^y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0 0.1667 0 0.1667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x, 1/y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.1667 0.3333 0 0.1667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(x^(1/2), 1/y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.3333 0.5 0 0.1667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+  Title "(x^2, 1/y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.5 0.6667 0 0.1667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(ln(x), 1/y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.6667 0.8333 0 0.1667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(10^x, 1/y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+  
+Plot y * x;
+   Scale 1;
+    LDisplay 1 0 0 0;
+   Scale 2;
+     LDisplay 1 0 0 0;
+     AxLabel 1 "x";
+     ADisplay 0;
+     AxLabel 2 "y";
+     ADisplay 0;
+   NoJitter;
+   Data 0.05 0.97 0.05 0.94;
+   Figure 0.8333 1 0 0.1667;
+   Symbol;
+     Type 0;
+     Size 1;
+   Footnote;
+     FPanel;
+   Title "(1/x, 1/y)";
+     PSize 28;
+      Offset -0.002 -0.483;
+     Center;
+   NoDTitle.
+endlayout.
+endif
+endmacro

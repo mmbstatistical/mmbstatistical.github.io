@@ -1,0 +1,25 @@
+noecho
+#Simulation of 3 variable problem with interactions and squared terms
+#Design matrix must be in 'A'-'C'. Response will go in 'Y'.
+#By PGMathews 2/22/95 for Minitab V8
+#Updated RMalnar 1/24/01 for Minitab V13.3
+#Updated PGMathews for V16
+
+noecho
+name c8 "Y"
+
+let 'Y'=88+14*'A'-8*'B'+11*'C'-3*'A'*'B'+12*'A'*'C'-2*'B'*'C'+4*'A'&
+*'A'-8*'B'*'B'	#the equation
+
+let k1=count('A')		#number of runs
+
+random k1 c200;			#random noise
+   normal 0 10.			#mean 0 and standard deviation/error
+
+let 'Y'='Y'+c200		#put the noise on the signal
+
+round 'Y' 'Y'
+
+erase c200			#get rid of the evidence
+echo
+

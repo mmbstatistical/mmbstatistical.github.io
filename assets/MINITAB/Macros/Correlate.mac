@@ -1,0 +1,618 @@
+macro
+correlate x.1-x.k
+
+#This macro calculates and reports the correlation matrix for designed experiments involving 2-12 independent variables.
+#The matrix includes all main effects, two-factor interactions, and quadratic terms. If you need to inspect the p-values,
+#edit the relevant corr command by: 1) removing the ";" from the end of the corr command line AND 2) adding a "#" character
+#to the beginning of the nopvalues subcommand line. The macro uses an output width of 132 characters but sets the width
+#back to 80 when it is finished.
+
+#This macro will run on Minitab version 19. Version 19 discontinued the use of the & line continuation character in previous versions.
+
+#17 May 2004, PGMathews, V1.0
+#Copyright © 2004 Mathews Malnar and Bailey, Inc.
+#171 Casement Ave, Painesville, OH 44077
+#Phone: 440-350-0911
+#E-mail: paul@mmbstatistical.com
+
+#Example calling statement:
+#   mtb> %correlate c5-c7
+
+mcolumn x.1-x.k
+
+# ow 132		#set output width to 132 characters
+if k=2
+   call corr2 x.1-x.k
+   elseif k=3
+      call corr3 x.1-x.k
+      elseif k=4
+         call corr4 x.1-x.k
+         elseif k=5
+            call corr5 x.1-x.k
+            elseif k=6
+               call corr6 x.1-x.k
+               elseif k=7
+                  call corr7 x.1-x.k
+                  elseif k=8
+                     call corr8 x.1-x.k
+                     elseif k = 9
+                        call corr9 x.1-x.k
+                        elseif k = 10
+                           call corr10 x.1-x.k
+                           elseif k = 11
+                              call corr11 x.1-x.k
+                              elseif k = 12
+                                 call corr12 x.1-x.k
+                              else
+                                 note Error in correlate.mac: Sorry, too many variables.
+endif
+# ow 80		#set the output width back to 80 characters
+endmacro
+
+#########################################
+macro
+corr2 A B
+
+
+mcolumn A B AB AA BB
+
+let AB=A*B
+let AA=A*A
+let BB=B*B
+corr A B AB AA BB.
+
+endmacro
+
+#########################################
+macro
+corr3 A B C
+
+mcolumn A B C AB AC BC ABC AA BB CC
+
+let AB=A*B
+let AC=A*C
+let BC=B*C
+let ABC=A*B*C
+let AA=A*A
+let BB=B*B
+let CC=C*C
+corr A B C AB AC BC ABC AA BB CC
+
+endmacro
+
+#########################################
+macro
+corr4 A B C D
+
+mcolumn A B C D AB AC AD BC BD CD ABC ABD ACD BCD ABCD AA BB CC DD
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let BC=B*C
+let BD=B*D
+let CD=C*D
+let ABC=A*B*C
+let ABD=A*B*D
+let ACD=A*C*D
+let BCD=B*C*D
+let ABCD = A*B*C*D
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+corr A B C D AB AC AD BC BD CD ABC ABD ACD BCD ABCD AA BB CC DD.
+
+endmacro
+
+#############################################
+macro
+corr5 A B C D E
+
+mcolumn A B C D E AB AC AD AE BC BD BE CD CE DE AA BB CC DD EE
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let CD=C*D
+let CE=C*E
+let DE=D*E
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+corr A B C D E AB AC AD AE BC BD BE CD CE DE AA BB CC DD EE.
+
+endmacro
+
+##################################################
+macro
+corr6 A B C D E F
+
+mcolumn A B C D E F AB AC AD AE AF BC BD BE BF CD CE CF DE DF EF AA BB CC DD EE FF
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let DE=D*E
+let DF=D*F
+let EF=E*F
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+corr A B C D E  F AB AC AD AE AF BC BD BE BF CD CE CF DE DF EF AA BB CC DD EE FF.
+
+endmacro
+
+######################################################
+macro
+corr7 A B C D E F G
+
+mcolumn A B C D E F G
+mcolumn AB AC AD AE AF AG BC BD BE BF BG CD CE CF CG DE DF DG EF EG FG
+mcolumn AA BB CC DD EE FF GG
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let AG=A*G
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let BG=B*G
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let CG=C*G
+let DE=D*E
+let DF=D*F
+let DG=D*G
+let EF=E*F
+let EG=E*G
+let FG=F*G
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+let GG=G*G
+corr A B C D E  F G AB AC AD AE AF AG BC BD BE BF BG CD CE CF CG DE DF DG EF EG FG AA BB CC DD EE FF GG.
+
+endmacro
+
+######################################################
+macro
+corr8 A B C D E F G H
+
+mcolumn A B C D E F G H
+mcolumn AB AC AD AE AF AG AH BC BD BE BF BG BH CD CE CF CG CH DE DF DG DH EF EG EH FG FH GH
+mcolumn AA BB CC DD EE FF GG HH
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let AG=A*G
+let AH=A*H
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let BG=B*G
+let BH=B*H
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let CG=C*G
+let CH=C*H
+let DE=D*E
+let DF=D*F
+let DG=D*G
+let DH=D*H
+let EF=E*F
+let EG=E*G
+let EH=E*H
+let FG=F*G
+let FH=F*H
+let GH=G*H
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+let GG=G*G
+let HH=H*H
+corr A B C D E  F G H AB AC AD AE AF AG AH BC BD BE BF BG BH CD CE CF CG CH DE DF DG DH EF EG EH FG FH GH AA BB CC DD EE FF GG HH.
+
+endmacro
+
+################################################
+macro
+corr9 A B C D E F G H I
+
+mcolumn A B C D E F G H I
+mcolumn AB AC AD AE AF AG AH AI
+mcolumn    BC BD BE BF BG BH BI
+mcolumn       CD CE CF CG CH CI
+mcolumn          DE DF DG DH DI
+mcolumn             EF EG EH EI
+mcolumn                FG FH FI
+mcolumn                   GH GI
+mcolumn                      HI
+mcolumn AA BB CC DD EE FF GG HH II
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let AG=A*G
+let AH=A*H
+let AI=A*I
+
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let BG=B*G
+let BH=B*H
+let BI=B*I
+
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let CG=C*G
+let CH=C*H
+let CI=C*I
+
+let DE=D*E
+let DF=D*F
+let DG=D*G
+let DH=D*H
+let DI=D*I
+
+let EF=E*F
+let EG=E*G
+let EH=E*H
+let EI=E*I
+
+let FG=F*G
+let FH=F*H
+let FI = F*I
+
+let GH=G*H
+let GI=G*I
+
+let HI=H*I
+
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+let GG=G*G
+let HH=H*H
+let II=I*I
+
+corr A B C D E F G H I AB AC AD AE AF AG AH AI BC BD BE BF BG BH BI CD CE CF CG CH CI DE DF DG DH DI EF EG EH EI FG FH FI GH GI HI AA BB CC DD EE FF GG HH II
+
+endmacro
+
+################################################
+macro
+corr10 A B C D E F G H I J
+
+mcolumn A B C D E F G H I J
+mcolumn AB AC AD AE AF AG AH AI AJ
+mcolumn    BC BD BE BF BG BH BI BJ
+mcolumn       CD CE CF CG CH CI CJ
+mcolumn          DE DF DG DH DI DJ
+mcolumn             EF EG EH EI EJ
+mcolumn                FG FH FI FJ
+mcolumn                   GH GI GJ
+mcolumn                      HI HJ
+mcolumn                         IJ
+mcolumn AA BB CC DD EE FF GG HH II JJ
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let AG=A*G
+let AH=A*H
+let AI=A*I
+let AJ=A*J
+
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let BG=B*G
+let BH=B*H
+let BI=B*I
+let BJ=B*J
+
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let CG=C*G
+let CH=C*H
+let CI=C*I
+let CJ=C*J
+
+let DE=D*E
+let DF=D*F
+let DG=D*G
+let DH=D*H
+let DI=D*I
+let DJ=D*J
+
+let EF=E*F
+let EG=E*G
+let EH=E*H
+let EI=E*I
+let EJ=E*J
+
+let FG=F*G
+let FH=F*H
+let FI = F*I
+let FJ = F*J
+
+let GH=G*H
+let GI=G*I
+let GJ=G*J
+
+let HI=H*I
+let HJ=H*J
+
+let IJ=I*J
+
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+let GG=G*G
+let HH=H*H
+let II=I*I
+let JJ=J*J
+
+corr A B C D E  F G H I J AB AC AD AE AF AG AH AI AJ BC BD BE BF BG BH BI BJ CD CE CF CG CH CI CJ DE DF DG DH DI DJ EF EG EH EI EJ FG FH FI FJ GH GI GJ HI HJ IJ AA BB CC DD EE FF GG HH II JJ.
+
+endmacro
+
+################################################
+macro
+corr11 A B C D E F G H I J K
+
+mcolumn A B C D E F G H I J K
+mcolumn AB AC AD AE AF AG AH AI AJ AK
+mcolumn    BC BD BE BF BG BH BI BJ BK
+mcolumn       CD CE CF CG CH CI CJ CK
+mcolumn          DE DF DG DH DI DJ DK
+mcolumn             EF EG EH EI EJ EK
+mcolumn                FG FH FI FJ FK
+mcolumn                   GH GI GJ GK
+mcolumn                      HI HJ HK
+mcolumn                         IJ IK
+mcolumn                            JK
+mcolumn AA BB CC DD EE FF GG HH II JJ KK
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let AG=A*G
+let AH=A*H
+let AI=A*I
+let AJ=A*J
+let AK=A*K
+
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let BG=B*G
+let BH=B*H
+let BI = B*I
+let BJ = B*J
+let BK = B*K
+
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let CG=C*G
+let CH=C*H
+let CI = C*I
+let CJ=C*J
+let CK=C*K
+
+let DE=D*E
+let DF=D*F
+let DG=D*G
+let DH=D*H
+let DI = D*I
+let DJ = D*J
+let DK = D*K
+
+let EF=E*F
+let EG=E*G
+let EH=E*H
+let EI = E*I
+let EJ = E*J
+let EK = E*K
+
+let FG=F*G
+let FH=F*H
+let FI = F*I
+let FJ = F*J
+let FK = F*K
+
+let GH=G*H
+let GI = G*I
+let GJ = G*J
+let GK = G*K
+
+let HI=H*I
+let HJ = H*J
+let HK=H*K
+
+let IJ = I*J
+let IK = I*K
+
+let JK = J*K
+
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+let GG=G*G
+let HH=H*H
+let II = I*I
+let JJ = J*J
+let KK = K*K
+
+corr A B C D E  F G H I J K AB AC AD AE AF AG AH AI AJ AK BC BD BE BF BG BH BI BJ BK CD CE CF CG CH CI CJ CK DE DF DG DH DI DJ DK EF EG EH EI EJ EK FG FH FI FJ FK GH GI GJ GK HI HJ HK IJ IK JK AA BB CC DD EE FF GG HH II JJ KK.
+
+endmacro
+
+##############################################
+macro
+corr12 A B C D E F G H I J K L
+
+mcolumn A B C D E F G H I J K L
+mcolumn AB AC AD AE AF AG AH AI AJ AK AL
+mcolumn    BC BD BE BF BG BH BI BJ BK BL
+mcolumn       CD CE CF CG CH CI CJ CK CL
+mcolumn          DE DF DG DH DI DJ DK DL
+mcolumn             EF EG EH EI EJ EK EL
+mcolumn                FG FH FI FJ FK FL
+mcolumn                   GH GI GJ GK GL
+mcolumn                      HI HJ HK HL
+mcolumn                         IJ IK IL
+mcolumn                            JK JL
+mcolumn                               KL
+mcolumn AA BB CC DD EE FF GG HH II JJ KK LL
+
+let AB=A*B
+let AC=A*C
+let AD=A*D
+let AE=A*E
+let AF=A*F
+let AG=A*G
+let AH=A*H
+let AI=A*I
+let AJ=A*J
+let AK=A*K
+Let AL=A*L
+
+let BC=B*C
+let BD=B*D
+let BE=B*E
+let BF=B*F
+let BG=B*G
+let BH=B*H
+let BI = B*I
+let BJ = B*J
+let BK = B*K
+let BL=B*L
+
+let CD=C*D
+let CE=C*E
+let CF=C*F
+let CG=C*G
+let CH=C*H
+let CI = C*I
+let CJ=C*J
+let CK=C*K
+let CL=C*L
+
+let DE=D*E
+let DF=D*F
+let DG=D*G
+let DH=D*H
+let DI = D*I
+let DJ = D*J
+let DK = D*K
+let DL=D*L
+
+let EF=E*F
+let EG=E*G
+let EH=E*H
+let EI = E*I
+let EJ = E*J
+let EK = E*K
+let EL=E*L
+
+let FG=F*G
+let FH=F*H
+let FI = F*I
+let FJ = F*J
+let FK = F*K
+let FL=F*L
+
+let GH=G*H
+let GI = G*I
+let GJ = G*J
+let GK = G*K
+let GL=G*L
+
+let HI=H*I
+let HJ=H*J
+let HK=H*K
+let HL=H*L
+
+let IJ = I*J
+let IK = I*K
+let IL = I*L
+
+let JK = J*K
+let JL = J*L
+
+let KL = K*L
+
+let AA=A*A
+let BB=B*B
+let CC=C*C
+let DD=D*D
+let EE=E*E
+let FF=F*F
+let GG=G*G
+let HH=H*H
+let II = I*I
+let JJ = J*J
+let KK = K*K
+let LL = L*L
+ 
+corr A B C D E  F G H I J K L AB AC AD AE AF AG AH AI AJ AK AL BC BD BE BF BG BH BI BJ BK BL CD CE CF CG CH CI CJ CK CL DE DF DG DH DI DJ DK DL EF EG EH EI EJ EK DL FG FH FI FJ FK FL GH GI GJ GK GL HI HJ HK HL IJ IK IL JK JL KL AA BB CC DD EE FF GG HH II JJ KK LL.
+
+endmacro

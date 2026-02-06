@@ -1,0 +1,54 @@
+macro
+ColumnsOperation c.1-c.k;
+   DaysToSeconds;
+   Add A;
+   Multiply B;
+   Divide D;
+   Loge;
+   Rank.
+
+#This macro applies a simple operation to all of the specified columns.
+#The original columns are overwritten.
+
+#An alternative, faster algorithm is to stack all of the columns, apply the operation, and then unstack.
+
+#Example calling statement:
+#   %columnsoperation c.2-c.8;
+#      multiply c1.
+
+#20190218: For MINITAB V18
+#Paul Mathews
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+
+mcolumn c.1-c.k A B D
+mconstant k i
+
+do i = 1:k									#for each of the i = 1 to k columns
+	
+	if Add
+		let c.i = c.i + A					#add a column
+	endif
+	
+	if Multiply
+		let c.i = c.i * B					#multiply by a column
+	endif
+	
+	if Divide
+		let c.i = c.i / D					#divide by a column
+	endif
+	
+	if Loge
+		let c.i = loge(c.i)					#natural log
+	endif
+	
+	if Rank
+		let c.i = rank(c.i)					#rank transform
+	endif
+	
+	if DaysToSeconds
+		let c.i = c.i * 24 * 60 * 60		#convert days to seconds
+	endif	
+enddo
+
+endmacro

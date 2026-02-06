@@ -1,0 +1,681 @@
+macro
+   power cname column;
+     sign alpha;
+     powfloat.    
+
+#Rev. 1.0 for Minitab V13.3 (Paul and Bek)
+#Rev. 1.1 (Paul)
+#Rev. 1.2 Textbox in graph (Bek)
+#Rev. 1.3 Begin graph at (reps/x) 1 if dfmodel<runs or 2 if case #is false (5-21-01 Bek)
+#Rev. 1.4 Added Power vs. Delta calculations and graph (2-12-02 Bek)
+#Rev. 1.5 Added Power vs. Sigma calculations and graph (5-15-02 Bek)
+#Rev. 2.0 Updated to run in Minitab Version 14.  This version will not run in Minitab Version 13.
+#Rev. 2.1 Updated to run in MINITAB V16. (20130607, Paul)
+#Rev. 2.1 Validated to run in V17 (20160119, Paul)
+
+#Mathews Malnar & Bailey, Inc.
+#www.mmbstatistical.com
+#paul@mmbstatistical.com
+
+
+#This macro calculates the power for one-way and multi-way balanced fixed effects
+#ANOVA. The user specifies parameters that characterize the experiment
+#and the size of the difference to be detected between two levels.
+#The input specifications can be entered from a column of the worksheet
+#or by responding to prompts in the session window. (The Session window
+#must have commands enabled. Do this from the Editor menu when the
+#Session window is active.) The default significance level is alpha=0.05
+#but the user can specify other values with the sign(ificance) subcommand.  By default 
+#the graphical max and min power values will be set to 0 and 1 respectively
+#Incorporating the powfloat subcommand will allow the max and min to float.
+
+#The order of the input parameters is:
+#Runs
+#Replicates
+#Levels
+#dfmodel
+#sigma
+#delta  
+
+############### Description of the Variables #################################
+
+#Runs is the number of runs in one replicate of the experiment. For example:
+#1) For a one-way analysis with 5 treatments Runs=5.
+#2) For a 3x2x5 design Runs=30.
+
+#Replicates is the number of complete replicates of the design to be used. The
+#minimum number of replicates is 1.
+
+#Levels is the number of levels of the variable to be used in the power
+#calculation. If all variables are of interest then the largest number of
+#levels should be specified. The exact power will be different for variables
+#that have different numbers of levels. For example, a 3x8 design will have
+#more observations per level of the 3 level variable than of the 8 level
+#variable so the power to detect a difference between a pair of levels of the
+#3 level variable will be higher than the power to detect a difference between
+#a pair of levels of the 8 level variable. The user must decide which variable
+#is most important and then provide the appropriate delta. If the user wants to
+#determine the power to detect a difference delta for two-factor interactions
+#then the number of Levels is equal to the product of the number of levels of
+#those two variables.
+
+#dfmodel is the number of model degrees of freedom. The user must make this
+#calculation himself.  Remember to add df for blocks if you intend to block on
+#replicates. For example:
+#1) A one-way classification problem with 5 levels will have dfmodel=5-1=4.
+#2) A 3x5 factorial design with interactions will have dfmodel=2+4+(2x4)=14.
+#3) A 3x5 factorial design with interactions and four replicates in blocks, with
+#a block term in the model will have dfmodel=3+2+4+(2x4)=17.
+#4) A 3x2x5 factorial design with two and three factor interactions will have
+#   dfmodel=2+1+4+(2x1)+(2x4)+(1x4)+(2x1x4)=29.
+
+#Sigma is the process standard deviation or precision error. The design space
+#is assumed to be homoscedastic, that is, this one sigma characterizes the errors
+#throughout the entire design space.
+
+#Delta is the smallest difference that we want to detect between two levels of
+#a variable. For example, if Levels is specified to be 5, then the macro reports
+#the power or probability of detecting the difference delta between 2 of these
+#5 levels. 
+
+################################################################################
+
+#This macro should be copied into the Minitab source macros directory for
+#immediate use, otherwise a change directory (cd) command will be needed.
+
+#Example call:
+#	mtb>  %power c1 c2;
+#     	subc> sign 0.01.		
+
+#Copy the following lines, excluding the leading # signs, to the command line:
+#%power c1 c2;
+#sign 0.01.    
+
+###################### Examples ####################################################
+
+#Example: (Montgomery, p. 217) 3x3 factorial design with 4 replicates. The standard
+#deviation is 25 and we want to detect a difference of 40 between two levels of a
+#variable.
+#Solution: We have Runs=9, Replicates=4, Levels=3, dfmodel=2+2+(2x2)=8, sigma=25,
+#and delta=40. The macro returns Power=0.9225.
+
+#Example: (Mathews, p. 119) 5 level one-way classification with 7 replicates. The
+#standard deviation is 4.2 and we want to detect a difference of 10 between two
+#levels of the one variable.
+#Solution: We have Runs=5, Replicates=7, Levels=5, dfmodel=5-1=4, sigma=4.2, and
+#delta=10. The macro returns Power=0.9279.
+
+#Example: 3x8 factorial design with 6 replicates. The standard deviation is 80 and
+#we want the power to detect a difference of 60 between two levels of the first
+#variable (3 levels) and a difference of 80 between two levels of the second variable
+#(8 levels). Consider two-factor interactions in the model.
+#Solution: This problem requires two runs of the macro, one run for each variable.
+#The first run for the first variable with Runs=24, Replicates=6, Levels=3,
+#dfmodel=2+7+(2x7)=23, sigma=80, and delta=60 returns Power=0.9126.
+#The second run for the second variable with Runs=24, Replicates=6, Levels=8,
+#dfmodel=2+7+(2x7)=23, sigma=80, and delta=80 returns Power=0.5347.
+
+##################### Here's the code ###############################################
+
+mcolumn cname column TermCol colRuns colrep colLev coldf colsig coldelta colal 
+mcolumn PRepGC PDelGC PSigGC PrintPRC PrintPDC PrintPSC
+mcolumn replic colpow reps2 
+mcolumn txtcol labcol labels 
+mcolumn delta2 thispow colsigma powsig
+mconstant powfloat one Quest Runs reps N Levels dfmodel sigma delta alpha 
+mconstant PowRepG PowDelG PowSigG PrintPR PrintPD PrintPS
+mconstant Fcrit lambda dferror Notalpha df1 beta Power 
+mconstant N2 lambda2 beta2 pow2 K1 dferr2 
+mconstant xdelmax yruns ylevels ydfmodel yalpha ysigma ydelta yreps dist 
+mconstant txruns txlevel txdfmo txalp txsig txdel txreps ymin ymax K1count
+mconstant thislamb thisbeta betasig lambsig xsigmax
+mconstant nparam nmparam
+Default alpha=0.05
+
+Name cname "Parameter"
+Name column "Value"
+
+Let cname(1) = "Runs"
+Let cname(2) = "Replicates"
+Let cname(3) = "Levels"
+Let cname(4) = "df_model"
+Let cname(5) = "Sigma"
+Let cname(6) = "Delta"
+
+Note
+Note Do you want to specify your design from the terminal or from a column?
+Note
+Note If from terminal a column will be created in the column specified.
+Note Otherwise the column specified will be the input.
+Note
+Note (terminal=1, column=2)
+Set TermCol;
+  FILE "Terminal";
+  NOBS 1;
+  END.
+Copy TermCol Quest
+Note
+
+If Quest=1		#collecting parameter values from the terminal
+  Erase column
+  Name column "Value"
+
+  Note How many runs are in one replicate?
+  Set colRuns;
+    File "Terminal";
+    NOBS 1.
+  Copy colRuns Runs
+  Let column(1) = Runs
+  Note
+
+  Note How many replicates?
+  Set colrep;
+    File "Terminal";
+    Nobs 1.
+  Copy Colrep reps
+  Let column(2) = reps
+  Note
+
+  Note How many levels does the variable have?
+  Set colLev;
+    File "Terminal";
+    Nobs 1.
+  Copy colLev Levels
+  Let column(3) = Levels
+  Note
+
+  Note How many model degrees of freedom are there?
+  Set coldf;
+    File "Terminal";
+    Nobs 1.
+  Copy coldf dfmodel
+  Let column(4) = dfmodel
+  Note
+
+  Note What is the standard deviation?
+  Set colsig;
+    File "Terminal";
+    Nobs 1.
+  Copy colsig sigma
+  Let column(5) = sigma
+  Note
+
+  Note What is the smallest difference that you
+  Note want to detect between two levels?
+  Set coldelta;
+    File "Terminal";
+    Nobs 1. 
+  Copy coldelta delta
+  Let column(6) = delta
+
+  #The following command isn't necessary anymore as each parameter value is reported as it is read. 
+  #Stack colRuns colrep colLev coldf colsig coldelta column.
+
+else				#using the parameter values in column
+
+  Let nparam = count(column)	#number of parameter values in column
+  Let nmparam = nmiss(column)	#number of missing parameter values in column
+  If nparam = 6 AND nmparam = 0	#correct number of parameters and no missing values
+    Let Runs=column(1)		#identifies variables from column 
+    Let reps=column(2)
+    Let Levels=column(3)
+    Let dfmodel=column(4)
+    Let sigma=column(5) 
+    Let delta=column(6) 
+  Else
+    Note Incorrect or missing parameter values in column Values
+    Note Aborting the macro ...
+    Exit
+  EndIf
+
+endif
+
+Note
+Note Would you like to see a graph of Power vs. Replicates?
+Note
+Note (Yes=1, No=2)
+Set PRepGC;
+  FILE "Terminal";
+  NOBS 1;
+  END.
+Copy PRepGC PowRepG
+Note
+
+If PowRepG=1
+  Note
+  Note Would you like a copy of the Power and Replicates columns
+  Note used to create the graph to appear in the session window?
+  Note
+  Note (Yes=1, No=2)
+  Set PrintPRC;
+    FILE "Terminal";
+    NOBS 1;
+    END.
+  Copy PrintPRC PrintPR
+  Note
+Endif
+
+Note
+Note Would you like to see a graph of Power vs. Delta?
+Note
+Note (Yes=1, No=2)
+Set PDelGC;
+  FILE "Terminal";
+  NOBS 1;
+  END.
+Copy PDelGC PowDelG
+Note
+
+If PowDelG=1
+  Note
+  Note Would you like a copy of the Power and Delta columns
+  Note used to create the graph to appear in the session window?
+  Note
+  Note (Yes=1, No=2)
+  Set PrintPDC;
+    FILE "Terminal";
+    NOBS 1;
+    END.
+  Copy PrintPDC PrintPD
+  Note
+Endif
+
+Note
+Note Would you like to see a graph of Power vs. Sigma?
+Note
+Note (Yes=1, No=2)
+Set PSigGC;
+  FILE "Terminal";
+  NOBS 1;
+  END.
+Copy PSigGC PowSigG
+Note
+
+If PowSigG=1
+  Note
+  Note Would you like a copy of the Power and Sigma columns
+  Note used to create the graph to appear in the session window?
+  Note
+  Note (Yes=1, No=2)
+  Set PrintPSC;
+    FILE "Terminal";
+    NOBS 1;
+    END.
+  Copy PrintPSC PrintPS
+  Note
+Endif
+
+################### General Set-up Calculations
+
+Let N=Runs*reps			#Total number of runs in the experiment
+Let Notalpha=1-alpha		#Complement of alpha 
+Let df1=Levels-1		#Numerator degrees of freedom for F distribution
+Let dferror=N-1-dfmodel		#Error degrees of freedom
+
+If dferror <= 0 
+   Note WARNING: Model is too big. 
+   Note Reduce the size of the model or use more replicates.
+   return
+endif
+
+invcdf Notalpha Fcrit;		#Critical F value for accept/reject bound
+  f df1 dferror.
+
+Let lambda=(N/2/Levels)*(delta/sigma)**2	#F distribution noncentrality parameter
+
+#lambda is the noncentral F distribution noncentrality parameter. It is related to
+#the expected F value when Ho is false by lambda=(Levels-1)F. Note that Levels-1 is
+#the numerator degrees of freedom for the F distribution. Be careful referencing
+#lambda from the literature - sometimes its square or square root is called the
+#noncentrality parameter.
+
+cdf Fcrit beta;			#Finds beta value to left of Fcrit for noncentral F
+  f df1 dferror lambda.
+
+Let Power=1-beta		#Here's the power
+
+Print N Runs reps Levels dfmodel dferror Fcrit lambda sigma delta Power
+
+
+################# The Power vs. Replicates Graphing Calculations
+If PowRepG=1 
+  Note
+  Note Please wait.
+  Note Power vs. Replicates graph is in progress.
+    
+  If  dfmodel < (Runs-1)
+    set reps2		#sets replicate values
+        (1:10 15:100/5)
+    end
+    Let K1count=28
+  Else
+    set reps2		#sets replicate values
+        (2:10 15:100/5)
+    end
+    Let K1count=27
+  Endif
+
+     Do K1=1:K1count    
+       Let N2=Runs*reps2(K1)
+       Let dferr2=N2-1-dfmodel
+       invcdf Notalpha Fcrit;
+         f df1 dferr2.
+ 
+       Let lambda2=(N2/2/Levels)*(delta/sigma)**2
+
+       cdf Fcrit beta2;
+        f df1 dferr2 lambda2.
+
+       Let Pow2=1-beta2
+       Let colpow(K1)=pow2
+
+     enddo
+  
+  If PrintPR=1
+     Note
+     Note Here are the Power and Replicates columns you requested:
+     Name colpow 'Power(Reps)'
+     Name reps2 'Replicates'
+     Print colpow reps2
+  Endif
+
+Endif
+
+######################## The Power vs. Delta Graphing Calculations 
+If PowDelG=1 
+  Note
+  Note Please wait.
+  Note Power vs. Delta graph is in progress.
+    
+  set delta2		#sets delta values
+      (0.333 0.5 0.6667 0.8333 1 1.5 2 2.5 3)
+  end
+  Let K1count=9
+
+  Let delta2=delta2*delta
+  Let dferr2=N-1-dfmodel
+  invcdf Notalpha Fcrit;
+     f df1 dferr2.
+ 
+ # Let lambda2=(N/2/Levels)*(delta2/sigma)**2
+
+  Do K1=1:K1count
+  #    Let thislamb=lambda2
+       Let thislamb=(N/2/Levels)*(delta2(K1)/sigma)**2
+      cdf Fcrit thisbeta;
+        f df1 dferr2 thislamb.
+      Let thispow(K1)=1-thisbeta
+  Enddo
+
+  If PrintPD=1
+     Note
+     Note Here are the Power and Delta columns you requested:
+     Name thispow 'Power(Delta)'
+     Name delta2 'Delta'
+     Print thispow delta2
+  Endif
+
+Endif
+
+################# The Power vs. Sigma Graphing Calculations
+If PowSigG=1 
+  Note
+  Note Please wait.
+  Note Power vs. Sigma graph is in progress.
+
+  set colsigma
+     (0.50, 0.55, 0.65, 0.80, 1.00, 1.40, 2.00)
+  end
+  
+  Let K1count=7
+  Let colsigma=colsigma*sigma
+  Let dferr2=N-1-dfmodel
+  invcdf Notalpha Fcrit;
+     f df1 dferr2.
+
+Do K1=1:K1count
+  Let lambsig=(N/2/Levels)*(delta/colsigma(k1))**2
+  cdf Fcrit betasig;
+    f df1 dferr2 lambsig.
+  Let powsig(K1)=1-betasig
+Enddo
+
+  If PrintPS=1
+     Note
+     Note Here are the Power and Sigma columns you requested:
+     Name powsig 'Power(Sigma)'
+     Name colsigma 'Sigma'
+     Print powsig colsigma
+  Endif
+Endif
+
+############################## Textbox setup (for reps and delta and sigma)!
+Let labcol(1)="Runs    = "      #creates column with first portion of text line
+Let labcol(2)="Levels  = "
+Let labcol(3)="dfmodel = "
+Let labcol(4)="Alpha   = "
+Let labcol(5)="Sigma   = "
+Let labcol(6)="Delta   = "
+Let labcol(7)="Reps    ="
+
+
+#Something wrong with the following in V16:
+#Fixed: Original variable textcol() was a reserved word. Changed to txtcol.
+Let txtcol(1)=text(runs)		#creates column for number in textline
+Let txtcol(2)=text(levels)
+Let txtcol(3)=text(dfmodel)
+Let txtcol(4)=text(alpha)
+Let txtcol(5)=text(sigma)
+Let txtcol(6)=text(delta)
+Let txtcol(7)=text(reps)
+
+#This code would work instead of the individual text() function calls above. Unnecessary while they're there.
+#Text txtcol txtcol; 		#changes numbers to text
+#  Maxwidth 80.
+
+concatenate labcol-txtcol labels	#merges two columns together
+
+Let txruns=labels(1)		#plucks cell into constant
+Let txlevel=labels(2)
+Let txdfmo=labels(3)
+Let txalp=labels(4)
+Let txsig=labels(5)
+Let txdel=labels(6)
+Let txreps=labels(7)
+
+############################## The Power vs. Reps Plot
+If PowRepG=1
+
+If powfloat			#settings for layout mode
+   let ymin=colpow(1)
+   If K1count=28
+      let ymax=colpow(28)
+   Else
+      let ymax=colpow(27)
+   Endif
+Else
+   let ymin=0.0
+   let ymax=1.0
+endif		#ends powfloat if
+
+let dist=(ymax-ymin)*0.06	#finds distance correction factor for spacing of text
+
+   Let ydelta=ymin+.05
+   Let ysigma=ydelta+dist
+   Let yalpha=ysigma+dist
+   Let ydfmodel=yalpha+dist
+   Let ylevels=ydfmodel+dist
+   Let yruns=ylevels+dist
+
+ Plot colpow*reps2;
+   Connect;
+      Size 2;
+      COLOR 16;
+   Scale 2;
+      Max ymax;
+      Min ymin;
+      TICK .1 .2 .3 .4 .5 .6 .7 .8 .9 1.0;
+      Nminor 1;
+   Scale 1;   
+      LOGS10;
+     Tick 1 1 2 3 4 5 6 7 8 9 10 20 30 40 50 60 70 80 90 100;
+     TSize .7;
+   Title "Power vs. Replicates";
+   Footnote "Mathews Malnar & Bailey, Inc. December 2000";
+     TSize 0.7;
+     Right;
+   Text 95 yruns txruns;
+   Text 95 ylevels txlevel;
+   Text 95 ydfmodel txdfmo;
+   Text 95 yalpha txalp; 
+   Text 95 ysigma txsig;
+   Text 95 ydelta txdel;
+   Figure  0.0 1.00 0 1.00;
+     TYPE 1;
+     COLOR 23;
+     ETYPE 0;
+     ECOLOR 22; 
+   Data 0.15 0.85 0.15 0.85;
+ AXLABEL 1 "Number of Replicates";
+     TSize .9;
+  AXLABEL 2 "Power";
+     TSize .9;
+   Grid 2;
+ color 22;
+ type 1;
+   MGrid 2;
+ color 22;
+ type 1;
+   Grid 1;
+ color 22;
+ type 1.
+endif		#ends graph if
+
+#########################  The Power vs. Delta Plot
+If PowDelG=1
+
+If powfloat			#settings for layout mode
+    let ymin=thispow(1)
+    let ymax=thispow(9)
+Else
+   let ymin=0.0
+   let ymax=1.0
+endif		#ends powfloat if
+
+let dist=(ymax-ymin)*0.06	#finds distance correction factor for spacing of text
+
+   Let xdelmax=delta2(9)
+   Let yreps=ymin +.05         	#finds range of y scale
+   Let ysigma=yreps+dist
+   Let yalpha=ysigma+dist
+   Let ydfmodel=yalpha+dist
+   Let ylevels=ydfmodel+dist
+   Let yruns=ylevels+dist
+
+   Plot thispow*delta2;  
+   Connect;
+      Size 2;
+      COLOR 16;
+   Scale 2;
+      Max ymax;
+      Min ymin;
+      TICK .1 .2 .3 .4 .5 .6 .7 .8 .9 1.0;
+      Nminor 1;
+   Title "Power vs. Delta";
+   Footnote "Mathews Malnar & Bailey, Inc. February 2002";
+     TSize 0.7;
+     Right;
+   Text xdelmax yruns txruns; 
+   Text xdelmax ylevels txlevel;
+   Text xdelmax ydfmodel txdfmo;
+   Text xdelmax yalpha txalp;
+   Text xdelmax ysigma txsig;
+   Text xdelmax yreps txreps;
+   Figure 0.0 1.00 0 1.00;
+     TYPE 1;
+     COLOR 23;
+     ETYPE 0; 
+     ECOLOR 23;
+   Data 0.15 0.85 0.15 0.85;
+  AXLABEL 1 "Delta";
+     TSize .9;
+  AXLABEL 2 "Power";
+     TSize .9;
+   Grid 2;
+ color 22;
+ type 1;
+   MGrid 2;
+ color 22;
+ type 1;
+   Grid 1;
+ color 22;
+ type 1.
+endif		#ends graph if
+
+############################## The Power vs. Sigma Plot
+If PowSigG=1
+
+If powfloat			#settings for layout mode
+   let ymin=powsig(7)
+   let ymax=powsig(1)
+Else
+   let ymin=0.0
+   let ymax=1.0
+endif		#ends powfloat if
+
+let dist=(ymax-ymin)*0.06	#finds distance correction factor for spacing of text
+
+   Let xsigmax=colsigma(7)
+   Let yruns=ymax-dist
+   Let ylevels=yruns-dist
+   Let ydfmodel=ylevels-dist
+   Let yalpha=ydfmodel-dist
+   Let ydelta=yalpha-dist
+   Let yreps=ydelta-dist
+
+   Plot powsig*colsigma;
+   Connect;
+      Size 2;
+      COLOR 16;
+   Scale 2;
+      Max ymax;
+      Min ymin;
+      TICK .1 .2 .3 .4 .5 .6 .7 .8 .9 1.0;
+      Nminor 1;
+   Title "Power vs. Sigma";
+   Footnote "Mathews Malnar & Bailey, Inc. May 2003";
+    TSize 0.7;
+     Right;
+   Text xsigmax yruns txruns; 
+   Text xsigmax ylevels txlevel;
+   Text xsigmax ydfmodel txdfmo;
+   Text xsigmax yalpha txalp;
+   Text xsigmax yreps txreps;
+   Text xsigmax ydelta txdel;
+   Figure 0.0 1.00 0 1.00;
+     TYPE 1;
+     COLOR 23;
+     ETYPE 0; 
+     ECOLOR 23;
+  Data 0.15 0.85 0.15 0.85;
+  AXLABEL 1  "Sigma";
+     TSize .9;
+  AXLABEL 2 "Power";
+     TSize .9;
+   Grid 2;
+ color 22;
+ type 1;
+   MGrid 2;
+ color 22;
+ type 1;
+   Grid 1;
+ color 22;
+ type 1.
+endif
+
+endmacro
+
+
+
+
+

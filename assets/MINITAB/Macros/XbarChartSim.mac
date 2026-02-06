@@ -1,0 +1,66 @@
+macro
+XbarChartSim n k ID Msmt;
+   WSSD sdWS;
+   BSSD sdBS;
+   PartMean prtmean;
+   Shift size.
+
+#By Paul Mathews, President
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+
+#PGM: Written for Version 18 of MINITAB 
+#PGM: Validated for V19 and V20
+
+#This macro simulates the data for an Xbar and R chart  with k subgroups, all of size n.
+#The user can also specify custom values for the within-subgroup and between-subgroup standard deviations
+#and there is a subcommand to specify a shift in the process mean that occurs at a random time
+#late in the series of observations. The size of the shift is specified as a multiple of the
+#within-subgroup standard deviations, i.e. Shift 1.5 causes a shift in the process mean by 1.5sigma_within.
+
+#Example calling statement:
+#   %xbarchartsim 5 60 c1 c2;		
+#       WSSD 100;					
+#       BSSD 20;
+#       PartMean 1020;
+#       Shift 1.5.
+
+mcolumn SGMeans Msmt ID tID tMeans nShifted
+mconstant n k sdWS sdBS prtmean nomsmts size
+
+default sdWS = 50		#std dev within subgroups
+default sdBS = 10		#std dev between subgroups
+default prtmean = 1040	#part mean
+
+name Msmt 'Msmt'
+name ID 'Subgroup'
+
+let nomsmts = n * k		#total number of measurements
+
+set tID					#temporary subgroup ID for conversion table to map subgroup bias values
+   1:k
+end
+
+set ID							#subgroup IDs for the k * n observations
+   (1:k)n
+end
+
+rand k tMeans;					#temporary column of subgroup means
+   normal 0 sdBS.				#simulate subgroup means 
+convert tID tMeans ID SGMeans;	#map the subgroup means to subgroup IDs
+   nodefault.					#don't report the summary table to the Session window
+   
+rand nomsmts Msmt;				#for k * n parts
+   normal 0 sdWS.				#simulate within-subgroup variability
+let Msmt = prtmean + Msmt + SGMeans     #add up the contributions from the process mean, subgroup biases, and random noise
+
+if Shift
+    rand 1 nShifted;            #Number of post-shift subgroups at the end of the data set
+        uniform 10 30.
+    let nShifted = round(nShifted, 0)
+    let Msmt = if(ID < k - nShifted(1), Msmt, Msmt + Size * sdWs)   #apply the shift to the last nShifted subgroups
+endif
+
+endmacro
+
+

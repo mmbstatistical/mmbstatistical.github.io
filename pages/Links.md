@@ -1,11 +1,7 @@
-
-
 ---
 title: Links
 nav_exclude: true
---- 
-
-  
+---
 
   
 **Technical Organizations:**
@@ -20,7 +16,7 @@ nav_exclude: true
 *   [ASA - Cleveland Chapter](https://sites.google.com/view/cleveland-asa)
 *   [ASA - Columbus Chapter](https://sites.google.com/view/cbus-asa/home)  
 *   [ASA Consulting Section Newsletter](http://www.amstat.org/sections/cnsl/newsletter.cfm)    
-    
+<br> <br>     
 
   
 **References:**
@@ -56,23 +52,23 @@ nav_exclude: true
 *   [David Garson's StatNotes](http://www.statisticalassociates.com/booklist.htm)
 *   [Real Statistics Using Excel](http://www.real-statistics.com/)       
 *   [Vassar Stats](http://faculty.vassar.edu/lowry/VassarStats.html)
-
+<br> <br> 
   
 **Statistical and Graphical Software:**
-*   [MINITAB](http://www.minitab.com/)
-*   [Piface (Russ Lenth's Power and Sample Size Calculator)](http://www.stat.uiowa.edu/%7Erlenth/Power/)
-*   [NCSS and PASS](http://www.ncss.com/)
-*   [The R Project for Statistical Computing](http://cran.r-project.org/)
-*   [R Studio](https://posit.co/)
-*   [simpleR - John Verzani's on-line R reference](https://faculty.washington.edu/fscholz/DATAFILES498B2008/Verzani-SimpleR.pdf)
-*   [R Graphics by Paul Murrell](http://www.stat.auckland.ac.nz/%7Epaul/RGraphics/rgraphics.html)
-*   [Blue Sky Statistics](https://www.blueskystatistics.com/)
-*   [JASP](https://jasp-stats.org/)
-*   [Jamovi](https://jamovi.org/)     
-*   [ASA's Journal of Statistical Software](http://www.jstatsoft.org/)
-*   [gnuplot](http://www.gnuplot.info/)
+* [MINITAB](http://www.minitab.com/)
+* [Piface (Russ Lenth's Power and Sample Size Calculator)](http://www.stat.uiowa.edu/%7Erlenth/Power/)
+* [NCSS and PASS](http://www.ncss.com/)
+* R Stuff
+    * [The R Project for Statistical Computing](http://cran.r-project.org/)
+    * [R Studio](https://posit.co/)
+    * [simpleR - John Verzani's on-line R reference](https://faculty.washington.edu/fscholz/DATAFILES498B2008/Verzani-SimpleR.pdf)
+    * [R Graphics by Paul Murrell](http://www.stat.auckland.ac.nz/%7Epaul/RGraphics/rgraphics.html)
+* R Front Ends (Custom GUI using R for analysis)
+    * [Blue Sky Statistics](https://www.blueskystatistics.com/)
+    * [JASP](https://jasp-stats.org/)
+    * [Jamovi](https://jamovi.org/)
+<br> <br> 
 
-  
 **Science, Math, and Engineering Education**
 * [Smarter Every Day](http://www.smartereveryday.com)
 * [Veritasium](http://www.veritasium.com)
@@ -90,7 +86,7 @@ nav_exclude: true
 * [Science News](http://www.sciencenews.org/)
 * [ScienceBlogs.com](http://scienceblogs.com/)
 * [Quanta Magazine](https://www.quantamagazine.org/)  
-    
+<br> <br>     
 
   
 **Makers:**  
@@ -112,16 +108,14 @@ nav_exclude: true
     * [Madison Public Library CreateSpace](https://www.madison-library.info/createspace/)
     * [Ingenuity Cleveland](http://ingenuitycleveland.com/)
     * [Hamilton Collaborative](http://ingenuitycleveland.com/hamilton-collaborative/)  
-
-    
-
+<br> <br>
   
 **Cleveland, Ohio:**
 *   [West 78th Street Studios](http://www.78thstreetstudios.com/)
 *   [Screw Factory Artists](https://www.screwfactoryartists.org/)  
 *   [Great Lakes Science Center](http://www.greatscience.com/)
 *   [Rockefeller Park Greenhouse](https://www.facebook.com/RockefellerGreenhouse)  
-    
+<br> <br>     
 
   
 **News Links:**
@@ -134,7 +128,7 @@ nav_exclude: true
 *   [DW](http://www.dw.com)
 *   [NPR's Science Friday](http://www.sciencefriday.com/)
 *   [APM Marketplace.org](http://www.marketplace.org)
-  
+<br> <br>  
   
 **Other Links (mostly so I can find them myself):**
 *   [Fairport Harbor Public Library](http://www.fairportlibrary.com/default.htm)
@@ -144,7 +138,7 @@ nav_exclude: true
 *   [Racing Rules of Sailing](http://www.racingrulesofsailing.org/)  
 *   [Dan Pfeiffer's home page](http://dan.pfeiffer.net/dhp.htm)
 *   [MacKichan Software, Inc. (Scientific Word)](http://www.mackichan.com/)
-
+<br> <br> 
   
 **Weather:**
 *   [Dan Pfeiffer's weather page](http://www.dan.pfeiffer.net/weather_erie.htm)
@@ -174,4 +168,4 @@ It did a very good job.
 --->
  
   
-[Return to MM&B Home Page](http://www.mmbstatistical.com/)
+[Return to MM&B Home Page](/index.md)

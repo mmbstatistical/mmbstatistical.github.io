@@ -1,0 +1,46 @@
+macro
+OrthogonalRegression y x;
+   ThroughOrigin;
+   Results b01 b11 b02 b12.
+   
+#This macro calculates the slope of the orthogonal regression equation assuming that var(x) = var(y).
+#Note that there are two slope solutions from the quadratic formula.
+#Orthogonal regression is also known as Deming regression.
+
+#There is a modified version of this macro in ORRaceResults.mac.
+
+#Example calling statement:
+#   %OrthogonalRegression 'y' 'x'
+
+mcolumn y x 
+mconstant SSx SSY Sxy b01 b11 b02 b12
+
+if ThroughOrigin
+	let SSx = sum(x * x)
+	let SSy = sum(y * y)
+	let Sxy = sum(x * y)
+else
+	let SSx = sum((x - mean(x))**2)
+	let SSy = sum((y - mean(y))**2)
+	let Sxy = sum((x - mean(x)) * (y - mean(y)))
+endif
+   
+#There are two solutions to the quadratic formula:
+#	y = b01 + b11x
+#   y = b02 + b12x
+let b11 = (-(SSx - SSy) + sqrt((SSx - SSy)**2 + 4 * Sxy**2)) / 2 / Sxy 
+let b12 = (-(SSx - SSy) - sqrt((SSx - SSy)**2 + 4 * Sxy**2)) / 2 / Sxy
+
+if ThroughOrigin
+   let b01 = 0
+   let b02 = 0
+else   
+   let b01 = mean(y) - b11 * mean(x)
+   let b02 = mean(y) - b12 * mean(x)
+endif
+
+print b01 b11
+print b02 b12
+
+endmacro   
+ 

@@ -1,0 +1,173 @@
+macro
+circnorm r; 
+    Label ID.
+
+#Copyright © 20 November 2000 Mathews and Malnar All rights reserved
+#Rev. 1.0 for Minitab V13.2 (Bek)
+#Rev. 1.1 (PGM) extended line to last point plotted and minor modifications
+#Rev. 1.2 (Bek) added a label subcommand for graphing routine, combined func.
+#Rev. 1.3. (Bek) updated to Minitab V14
+#20120104, PGM: Confirmed runs in V16.
+
+#This macro is used to construct a probability plot for circular
+#normal data.  The macro input is one column containing the response
+#and an optional ID column used in graphing. The 
+#macro calculates the mid band percentiles and the corresponding zeta
+#values. The probability plot shows the responses verses their zeta
+#values and reference lines are drawn at some key percentage values. A
+#best fit line passing through the origin is superimposed on the data.
+#This macro may be altered to show the calculating columns, 
+#otherwise there is only graphical output.     
+
+#Mathews Malnar & Bailey, Inc.
+#217 Third Street, Fairport Harbor, OH 44077
+#(440)350-0911
+#pmathews@apk.net
+
+#MM&B offers a 20 page document describing the circular normal distribution
+#and QC procedures for handling circular normal data. Training is also available.
+#Call or email for details.
+
+#This macro sould be copied into the Minitab source macros directory for
+#immediate use, otherwise a change directory (cd) command will be needed.
+
+
+
+#Example call:
+#	mtb> %circnorm c1    #where, c1 is the column of responses.
+#		Label c2.    #where, c2 is a column of labels
+#Copy the following line, minus the leading #, to the command line:
+#%circnorm c1
+#    Label c2.
+
+mcolumn r ID sortedr sortID index percent Zeta labels refperc sum abssum
+mconstant NResp	slope xcoordin ycoordin		
+
+let sum=sum(r)
+let abssum=sum(abs(r))
+If sum=abssum 			#tests for positive data values
+
+     If Label
+       sort r ID sortedr sortID
+       Copy sortedr sortID sortedr sortID;
+          Omit sortedr = '*'.
+     Else
+       sort r sortedr 
+       Copy sortedr sortedr;
+          Omit sortedr = '*'.
+     Endif.                     #Label sorting routine
+
+  let NResp=N(sortedr)
+  set index
+     1:NResp
+  end. 
+
+  let percent=(index-0.5)/NResp
+  let Zeta=SQRT(-2*loge(1-percent))
+
+  let slope=mean(sortedr)/mean(Zeta)	#slope of line through circular normal data
+
+  set labels		#reference lines
+    0.01
+    0.10
+    0.50
+    0.90
+    0.99
+    end.
+
+  let refperc=SQRT(-2*loge(1-labels))
+  let refperc=ROUND(refperc,3)
+  Text labels labels; 
+      Maxwidth 80.
+  let xcoordin=SQRT(-2*loge(1-(NResp - 0.5)/Nresp))   #zeta for last point
+    if xcoordin < 3.035
+       let xcoordin=3.035   #set zeta to 99th percentile when there are few points
+    endif
+  let ycoordin=xcoordin*slope	#predicted response for last point at end of line
+
+if Label                     #Plots data with IDs
+Plot sortedr * Zeta;
+  Scale 1;
+    LDisplay 1 1 1 0;
+    MODEL 1;
+      Tick refperc;
+      Min 0;
+      Label labels;
+    EndMODEL;
+  Scale 2;
+    LDisplay 1 1 1 0;
+  AxLabel 1 "Probability";
+    PSize 9;
+  AxLabel 2 "Response";
+    PSize 9;
+  Grid 2;
+  Data 0.1 0.9 0.1 0.9;
+  NoJitter;
+  Data 0.1 0.9 0.1 0.9;
+  Symbol;
+    Type 1;
+    Color 16;
+    Size 0.5;
+  Datlab sortID;
+    PSize 6;
+    Placement -1 1;
+    Offset 0 0.0125;
+  Reference 1 refperc;
+    Side 0;
+    MODEL 1;
+  Title "Circular Normal Probability Plot";
+   Footnote &
+      "Mathews and Malnar, November 2000";
+    PSize 7;
+  Footnote;
+    FPanel;
+  Line 0 0 xcoordin ycoordin;
+    Color 2;
+  NoDTitle.
+else
+Plot sortedr * Zeta;
+  Scale 1;
+    LDisplay 1 1 1 0;
+    MODEL 1;
+      Tick refperc;
+      Min 0;
+      Label labels;
+    EndMODEL;
+  Scale 2;
+    LDisplay 1 1 1 0;
+  AxLabel 1 "Probability";
+    PSize 9;
+  AxLabel 2 "Response";
+    PSize 9;
+  Grid 2;
+  Data 0.1 0.9 0.1 0.9;
+  NoJitter;
+  Data 0.1 0.9 0.1 0.9;
+  Symbol;
+    Type 1;
+    Color 16;
+    Size 0.5;
+  Reference 1 refperc;
+    Side 0;
+    MODEL 1;
+  Title "Circular Normal Probability Plot";
+   Footnote &
+      "Mathews and Malnar, November 2000";
+    PSize 7;
+  Footnote;
+    FPanel;
+  Line 0 0 xcoordin ycoordin;
+    Color 2;
+  NoDTitle.
+endif 
+
+Else 		                 #when one or more data values are negative 
+     Note 
+     Note Circular normal data must all be postive.
+     Note Please check data before running macro again.
+  
+endif.                   #ends main if statement 
+
+endmacro.
+
+

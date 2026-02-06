@@ -1,0 +1,94 @@
+macro
+NTITwoSided nTotal nGroups nObs;
+   Confidence Conf;
+   Coverage Cover;
+   Validate.
+
+#Calculate 
+# 1) the two-sided normal tolerance interval factor k2 for one sample of size nTotal
+# 2) k2prime for a sample of size nObs when there are nGroups groups with
+#    a total number of observations nTotal and the NTI will be calculated using
+#    the sample's mean and the pooled standard deviation.
+
+##The Confidence and Coverage subcommands allow those values to be
+#changed from their default 0.95 and 0.95 values, respectively.
+
+#The Validate subcommand runs a simulation that caculates the
+#proportion of 10,000 trials that satisfy the coverage condition for n = nObs.
+#That proportion should come close to matching the target confidence level
+
+#The values obtained from this macro with nGroups = 1 match the values 
+#tabulated in ISO 16269-6.
+
+#Example calling statement:
+# %NTITwoSided 30 3 10;
+#     Coverage 0.99;
+#     Validate.
+
+# 20221221, PGMathews, Mathews Malnar and Bailey, Inc., for MINITAB V20.4
+# 20230112, PGMathews: Modified macro to change the inputs to nTotal, nGroups, nObs
+
+mconstant nTotal nGroups nObs Conf alpha Cover p k2 k2prime dfError i spooled simConf zp chisq Corr w
+mcolumn UTL LTL ID x cmean cstdev Y p1
+
+default Conf=0.95                 #default confidence level
+default Cover=0.95                #default coverage
+
+
+let p = (1 + Cover) / 2                            
+invcdf p zp
+let alpha = 1 - Conf
+
+#k2 calculation for one treatment group
+let dfError = nTotal - 1                                            #error degrees of freedom
+invcdf alpha chisq;
+   chisq dfError.
+#let w = 1
+let w = sqrt(1 + (nTotal - 3 - chisq) / 2 / (nTotal + 1)**2)        #Guenther's correction based on nTotal
+#let w = sqrt(1 + (nObs - 3 - chisq) / 2 / (nObs + 1)**2)           #Guenther's correction based on nObs
+let k2 = w * zp * sqrt((1 + 1/nTotal) * dfError / chisq)            #Should match ISO 16269-6
+                                     
+#k2' calculation for two or more treatment groups
+let dfError = nTotal - nGroups                                      #error degrees of freedom
+invcdf alpha chisq;
+   chisq dfError.
+let k2prime = w * zp * sqrt((1 + 1/nObs) * dfError / chisq) 
+
+ 
+let Corr = sqrt((1 + 1/nObs) / (1 + 1/nTotal))       #Correction factor to convert k2 with nGroups = 1 to k2 with nGroups >= 2
+#This Corr value should match the ratio between k2prime and k2
+#In the ISO table look up k2 for n = (nTotal - nGroups +1)
+#Multiply that k2 value by Corr to obtain k2prime
+
+
+if Validate
+    if nTotal = nGroups * nObs
+        #Confirm the k2prime value by simulation:
+        do i = 1:10000
+            set ID
+                (1:nGroups)nObs
+            end
+            rand nTotal x
+            
+            statistics x;
+               by ID
+               mean cmean;
+               stdev cstdev.
+            let spooled = sqrt((nObs-1) * ssq(cstdev) / dfError)     
+            let UTL(i) = cmean(1) + k2prime * spooled
+            let LTL(i) = cmean(1) - k2prime * spooled
+        enddo
+
+        cdf LTL p1
+        cdf UTL Y
+        let Y = Y - p1
+        let simConf = sum(Y>Cover) / 10000      #This value should come close to matching the confidence level
+        print nTotal nGroups nObs Conf Cover dfError Corr k2 k2prime simConf
+    else
+        print "Validation method not available because of unequal sample sizes in groups"
+    endif
+else
+    print nTotal nGroups nObs Conf Cover dfError w Corr k2 k2prime
+endif
+
+endmacro

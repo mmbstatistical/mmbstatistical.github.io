@@ -1,0 +1,47 @@
+macro
+makeRBD k SS Std Run Block Treat
+
+#This macro creates the run matrix for the balanced randomized complete block design with
+#k treatments/levels and SS replicates where the experiment is blocked on replicates.
+
+#Example calling statement:
+#   mtb> %makeRBD 3 8 c1-c4
+
+#Copyright © November 2000 Mathews Malnar and Bailey, Inc.
+
+mcolumn Std Run Block Treat
+mconstant k SS nobs
+
+name Std "Std" Run "Run" Block "Block" Treat "Treatment"
+set Block							
+   (1:SS)k
+end
+set Treat
+   SS(1:k)
+end
+
+let nobs=k*SS							#number of observations
+
+set Std			
+   1:nobs
+end.
+
+sample nobs Std Run						
+
+sort Std Run Block Treat Std Run Block Treat;
+     by Block.			#sorts by block
+
+sort Std Run Block Treat Std Run Block Treat;   
+     by Run.			#sorts using generated random normal values
+
+sort Std Run Block Treat Std Run Block Treat;
+     by Block.
+
+set Run			#Creates run order
+   1:nobs
+end.
+
+endmacro.
+
+
+

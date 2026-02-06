@@ -1,0 +1,30 @@
+#MINITAB SIM5 macro
+#By: PGMathews, V12, 3/12/96
+#Updated RMalnar 1/24/01 V13.3
+#Updated PGMathews 20191216 for V19
+
+noecho
+#Simulation of 5 variable problem with interactions and squared terms
+#Design matrix must be in 'A'-'E'. Response will go in 'Y'. 
+#Stat> DOE> Factorial> Create Factorial Design will create a compatible design.
+
+#Run the macro from the File> Other Files> Run an EXEC menu or from the command prompt.
+#Example calling statement from the command prompt:
+#  mtb > exec "sim5"
+
+name c10 "Y"		#Doesn't work in V13, OK in later versions
+
+#Calculate the response:
+let 'Y' = 110-4*'A'+80*'B'-36*'C'-18*'E'
+let 'Y'= 'Y' +6*'A'*'C'+28*'B'*'C'-12*'C'*'E'
+let 'Y'= 'Y' +24*'B'*'B'-6*'C'*'C'+16*'E'*'E'
+
+let k1=count('A')
+
+random k1 c15;		#random error
+   Normal 0 20.		#mean 0 and standard deviation/error
+
+let 'Y'='Y'+c15		#add the signal to the noise
+let 'Y' = round('Y')
+erase c15			#get rid of the evidence
+

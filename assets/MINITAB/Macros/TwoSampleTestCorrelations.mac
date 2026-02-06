@@ -1,0 +1,43 @@
+macro
+TwoSampleTestCorrelations x11 x12 x21 x22
+
+#This macro calculates the correlations between columns x11 and x12 and between columns x21 and x22
+#and then tests the two-correlations hypotheses H0: rho1 = rho2 versus HA: rho1 <> rho2. 
+#See https://www.real-statistics.com/correlation/two-sample-hypothesis-testing-correlation/
+
+#Example calling statement:
+#   mtb> %TwoSampleTestCorrelations c1-c4
+
+#By MM&B Inc., www.mmbstatistical.com
+#20211203, PGM: For MINITAB V20
+
+
+mcolumn x11 x12  x21 x22                #two pairs of columns, inputs to the macro
+mcolumn c101 c102 c103 c104             #columns for the correlation matrix
+mconstant r1 r2 n1 n2 Z1 Z2 sZ z p
+mmatrix M1                              #correlation matrix
+
+corr x11 x12 x21 x22;
+   scorrelation M1.             #save the correlation matrix M1
+copy M1 c101 c102 c103 c104     #copy M1 matrix to columns
+let r1 = c101(2)                #r1 is correlation between x11 and x12
+let r2 = c103(4)                #r2 is correlation between x21 and x22
+
+let n1 = N(x11*x12)             #number of nonmissing observations
+let n2 = N(x21*x22)
+
+let Z1 = loge((1+r1) / (1-r1))          #Fisher's Z transform for correlation
+let Z2 = loge((1+r2) / (1-r2))
+let sZ = sqrt(1/(n1-3) + 1/(n2-3))      #standard deviation of difference between two Fisher's Z values
+
+let z = (Z1 - Z2) / sZ                  #z statistic for two-correlations test
+cdf z p                                 #p value
+if p<0.5
+   let p = 2*p
+else
+   let p = 2*(1-p)
+endif      
+
+print r1 r2 n1 n2 z p
+
+endmacro

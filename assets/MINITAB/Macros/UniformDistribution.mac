@@ -1,0 +1,26 @@
+macro
+UniformDistribution x
+
+#This macro creates a probability plot for uniformly distributed data.
+
+#Example calling statement:
+#   mtb> %uniformdistribution c1
+
+#By MM&B Inc., 20210716, for V20
+
+mcolumn x xsorted mbp
+mconstant nobs
+
+sort x xsorted;
+   by x.
+let nobs = count(x)
+set mbp
+   1:nobs
+end
+let mbp = (mbp - 0.5) / nobs        #midband percentiles
+
+plot mbp*xsorted;                   #probability plot with fitted line
+   symbol;
+   regress.   
+
+endmacro

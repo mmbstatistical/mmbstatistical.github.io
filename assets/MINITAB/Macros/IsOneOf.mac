@@ -1,0 +1,23 @@
+macro
+IsOneOf Level Ref OK
+
+#This macro checks every observation in column Level to see if it matchs one of the values in Ref.
+#The output is a Boolean column, OK, paired to column Level. For example, if Level contains values
+#from 1 to 7 and Ref contains values from 1 to 6 then OK = 0 when Level = 7, OK = 1 otherwise.
+
+#Example calling statement:
+#   mtb > %IsOneOf c1 c2 c3
+
+#V1.0 for MINITAB V17, 20151209, by Paul Mathews 
+
+mcolumn Level Ref OK
+mconstant nL nR i
+
+let nL = count(Level)
+let nR = count(Ref)
+
+do i = 1:nL
+   let OK(i) = if(sum(Ref = Level(i)) > 0, 1, 0)
+enddo
+
+endmacro

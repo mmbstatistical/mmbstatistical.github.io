@@ -1,0 +1,44 @@
+macro
+makeCRD k n Std Rand Treat
+
+#This macro creates the design matrix for the completely randomized one-way design.
+#The experiment will have k treatments and n observations in each treatment. The
+#macro creates the matrix of runs, analyzes the random order as a function of the
+#treatment levels, and then sorts the matrix by run order so the worksheet is
+#ready to print and send to the shop floor. If the ANOVA F statistic is significant
+#(p<0.05), then the randomized run order isn't and you should run the macro again.
+
+#200005 (PGM) Rev. 1.0 for Minitab V13.
+#200312 (PGM) Confirmed that the macro still runs on V14.
+#201601 (PGM) Revised for V17. Will not run on earlier versions.
+
+#Copyright © 2000-2016 Mathews Malnar and Bailey, Inc.
+#Disclaimer: This macro may contain errors or report erroneous results. Use at your own risk.
+
+#Example calling statement:
+#   mtb> %makeCRD 5 8 c1-c3
+
+mcolumn Std Rand Treat
+mconstant k n Nobs
+
+name Std "StdOrder" Rand "RandOrder" Treat "Treatment" 
+
+set Treat				#Create the column of k treatment with n observations per
+   (1:n)k
+end
+
+let Nobs = k*n				#Total number of observations
+set Std					#Create the standard order column
+   1:Nobs
+end
+
+sample Nobs Std Rand			#Create the random order column
+
+OneWay;					#Check to see if the random order is not
+  Response Rand;
+  Categorical Treat.
+			
+sort Std Rand Treat Std Rand Treat;	#Sort the worksheet by the random order
+   by Rand.
+
+endmacro

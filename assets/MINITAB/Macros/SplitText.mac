@@ -1,0 +1,38 @@
+macro
+SplitText Source Delimit Out.1-Out.k
+
+#This macro splits entries in the text column Source by the character Delimit(or)
+#and writes the results to columns Out.1, Out.2, ... The user is responsible for
+#specifying the correct number of Out.k columns.
+
+#This macro is incomplete. For instance, the space delimiter case has not been tested and
+#the case of different numbers of instances of the delimiter in rows hasn't been tested
+
+#Example calling statement where c7 contains two text strings delimited by "+":
+#   mtb > %splittext c7 "+" c8 c9
+
+#V1.0 for MINITAB V17, 20151209, original version by Paul Mathews
+
+mcolumn Source Out.1-Out.k Position PLeft PRight
+mconstant Delimit k i j kminus1
+
+if Delimit = " "		#item parses on the specified delimiter AND spaces, i.e. there's no way to turn off the space delimiter
+   do i = 1:k
+      let Out.i = item(Source, i)
+   enddo
+else
+   let kminus1 = k - 1
+   do i = 1:kminus1
+      let Position = find(Delimit, Source)			#find the position of the delimiter
+      let PLeft = Position - 1					#number of characters to keep to delimiter's left
+      let Out.i = Left(Source, PLeft)				#left-most output string 
+      let PRight = Length(Source) - Position - Length(Delimit) + 1	#number of characters to keep to delimiter's right
+      let j = i + 1						
+      let Out.j = Right(Source, PRight)				#next output string
+   enddo
+endif
+
+#It might be necessary to trim following spaces from the last output:
+let Out.k = Trim(Out.k)			#removes extra spaces between words, in this case those added at the end of the last output string
+
+endmacro

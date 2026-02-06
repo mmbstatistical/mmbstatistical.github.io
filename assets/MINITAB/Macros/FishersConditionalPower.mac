@@ -1,0 +1,128 @@
+macro
+fishersconditionalpower p1 p2 n1 n2;
+   sign alpha;
+   interim x1_1 x2_1 n1_1 n2_1.
+
+#Fisher's exact test is the two independent sample test for Ho: p1 = p2 vs.
+#Ha: p1 < p2. This macro calculates the power of the test for user
+#specified values of p1, p2, n1, and n2 where:
+#   p1 and p2 are the population fractions defective where the specified values of p1 and p2 must meet the condition p1 < p2
+#   n1 and n2 are the sizes of the two samples.
+
+#The interim option calculates the conditional power (i.e. probability of rejecting H0)
+#with interim results x1_1, x2_1, n1_1, and n2_1. These values are constants.
+#In the second sampling phase, between the interim evaluation point and the end of the study, the counts
+#are x1_2 and x2_2 (variable values) and the sample sizes are n1_2 = n1 - n1_1, and n2_2 = n1 - n2_2.
+
+#Example calling statement:
+#   mtb > %fishersconditionalpower 0.25 0.50 72 72;
+#   subc> interim 18 18 36 36.
+
+#See Mathews, Sample Size Calculations, Section 4.3.2.1, p. 97.
+
+#This macro may contain errors. MM&B Inc. is not responsible for its use or misuse.
+#Always check its answers by manual calculation or cross check with another calculator.
+
+#Copyright (c) Mathews Malnar and Bailey, Inc., 2001 - 2016, All rights reserved.
+#Mathews Malnar and Bailey, Inc.
+#Phone: 440-350-0911
+#E-mail: paul@mmbstatistical.com
+#20050213, PGM: Validated for V14.
+#20131005, PGM: Added interim analysis subroutine.
+#20160119, PGM: Validated for V17.
+
+
+mconstant p1 p2 n1 n2 x1_1 x2_1 n1_1 n2_1 x1_2 x2_2 n1_2 n2_2
+mconstant alpha x1 x2 bx1 bx2 cumbx2
+mconstant ntot xtot thisp power time incpow condpow
+default alpha=0.05
+
+#This algorithm searches the x1 x x2 table, with x1 in rows and x2 in columns, from top to
+#bottom, left to right, where x1 = 0:n1 and x2 = 0:n2, for the smallest x2 that makes Fisher's
+#test significant (p <= alpha) for a given x1. All of the values to the right of x2 up to n2
+#are also statistically significant. The row's contribution to the power is given by
+#b(x = x1;n1,p1) x b(x2 <= x <= n2;n2,p2).
+
+note
+note This macro runs very slowly. Please be patient.
+note The macro is running ...
+note
+
+brief 0 
+
+#Fisher's exact test power calculation:
+let ntot=n1+n2
+let power=0
+let x2=0
+do x1=0:n1
+   let thisp=1
+   while (thisp>alpha) and (x2<n2)	#loop to find the smallest x2 that gives a significant result
+      let x2=x2+1
+      let xtot=x1+x2
+      cdf x1 thisp;			#thisp is the Fisher's test p value
+         hypergeometric ntot n1 xtot.
+   endwhile
+   if thisp<=alpha			#if the loop found a signficant result rather than the end
+      pdf x1 bx1;			#the probability of this x1 happening
+         binomial n1 p1.
+      let x2=x2-1			#back up
+      cdf x2 cumbx2;			#the probability of this x2 or fewer happening
+         binomial n2 p2.
+      let incpow = bx1*(1-cumbx2)	#incremental increase in the power
+      let power=power+incpow		#cumulative power
+      print thisp x1 x2 incpow power	#Remember x2 is low by 1 here, so x1 and x2+1:n2 are statistically significant
+      #leaving x2 set back by 1 in preparation for the next loop
+   endif
+enddo
+
+brief 1
+print power
+brief 0
+
+#Conditional power calculation:
+if interim
+   let ntot = n1 + n2			#total sample size
+   let n1_2 = n1 - n1_1			#second phase (between interim point and endpoint) sample size
+   let n2_2 = n1 - n2_1
+
+   #x1 and x2 in this algorithm are still the row and column of the full x1 x x2 table
+   let condpow = 0
+   let x2 = x2_1				#start from the interim counts
+   do x1 = x1_1:n1
+      #for this x1, loop through x2 values looking for p <= alpha
+      #this part of the code is the same for power and conditional power calculations
+      let thisp = 1
+      while (thisp > alpha) and (x2 < n2)	#loop to find the smallest x2 that gives a significant result
+         let x2 = x2 + 1
+         let xtot = x1 + x2
+         cdf x1 thisp;			#thisp is the Fisher's test p value for x1, x2, n1, n2
+            hypergeometric ntot n1 xtot.
+      endwhile
+
+      #this part of the code is different for power and conditional power calculations
+      if thisp <= alpha			#if the loop found a signficant result rather than the end
+         let x1_2 = x1 - x1_1		#number of x1 events in the second phase
+         pdf x1_2 bx1;			#the probability of this x1 happening
+            binomial n1_2 p1.
+         let x2_2 = x2 - x2_1		#number of x2 events in the second phase
+         let x2_2 = x2_2 - 1		#back up for the complement probability calculation
+         cdf x2_2 cumbx2;		
+            binomial n2_2 p2.
+	 let cumbx2 = 1 - cumbx2
+	 let x2_2 = x2_2 + 1		#put it back
+         let incpow = bx1 * cumbx2			#incremental increase in the power
+         let condpow = condpow + incpow			#cumulative power
+         print x1 x2 thisp x1_2 x2_2 incpow condpow	
+         let x2 = x2 - 1 		#setting x2 back by 1 in preparation for the next loop
+      endif
+   enddo
+   
+   brief 1
+   print condpow
+endif
+
+brief 1
+
+
+
+endmacro

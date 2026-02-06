@@ -1,0 +1,69 @@
+macro
+RandomizeWithinBlocks Block RO
+
+mcolumn Block RO Bl keeper Runs randRuns
+mconstant nBl i thisBl nRuns
+
+#This macro randomizes the run order within blocks. As an example of its use, if a custom
+#experiment is built with the runs in logical order, the macro can be used to randomize
+#the order of the runs within each block. The macro counts the number of blocks. Then
+#determines the number of runs within each block and then calculates a random order for
+#the runs.
+
+#Example calling statement:
+#   mtb > %randomizewithinblocks 'Block' 'RO'
+
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+#Rev: 20160510, Paul Mathews for V17
+
+#This macro may contain errors. Always check its results.
+
+let Bl = Block					#Set up for the FindUnique call which overwrites the input column
+call FindUnique Bl Bl   		#Find the unique block IDs
+count Bl nBl					#Count the number of unique block IDs
+
+do i = 1:nBl						#For each block
+	let thisBl = Bl(i)				#For the ith block
+	let keeper = (Block = thisBl)	#ID the runs from the ith block
+	let nRuns = sum(keeper)			#number of runs in the ith block
+	set Runs
+		1:nRuns
+	end
+	sample nRuns Runs randRuns	#Randomize the run order within the ith block
+	if i = 1					#For the first block
+		let RO = randRuns		
+	else
+		stack RO randRuns RO	#Append the run order for the ith block to the bottom of RO
+	endif
+enddo
+	
+endmacro
+
+
+macro
+findunique x.1-x.m byme
+
+#This macro removes rows with consecutive duplicate byme values from x.1-x.m.
+#The first unique row of a run of values in byme is retained.
+#You might want to pre-sort the data by byme.
+#This macro overwrites the original columns!
+
+#This is a new version of the findunique.mac macro because I can't find the old one (17June08, PGM).
+
+mcolumn x.1-x.m byme keeper
+mconstant i ni
+
+count byme ni
+
+let  keeper(1) = 1		#keep the last row
+do i = 2:ni
+   let keeper(i) = (byme(i) <> byme(i - 1))
+enddo
+
+copy x.1-x.m byme x.1-x.m byme;
+   include;
+      where "keeper=1".
+
+endmacro
+

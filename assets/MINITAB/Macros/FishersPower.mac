@@ -1,0 +1,73 @@
+macro
+fisherspower p1 p2 n1 n2;
+   sign alpha.
+
+#Fisher's exact test is the two independent sample test for Ho: p1 = p2 vs.
+#Ha: p1 < p2. This macro calculates the power of the test for user
+#specified values of p1, p2, n1, and n2 where:
+#   p1 and p2 are the population fractions defective and
+#   n1 and n2 are the sizes of the two samples.
+#The specified values of p1 and p2 must meet the condition p1 < p2.
+
+#Example calling statement:
+#   mtb > %fisherspower 0.01 0.05 80 80
+#Macro should return power = 0.211135
+
+#See Mathews, Sample Size Calculations, Section 4.3.2.1, p. 97.
+
+#This macro may contain errors. MM&B Inc. is not responsible for its use or misuse.
+#Always check its answers by manual calculation or cross check with another calculator.
+
+#Mathews Malnar and Bailey, Inc.
+#217 Third Street, Fairport Harbor, OH 44077
+#Phone: 440-350-0911
+#E-mail: paul@mmbstatistical.com
+#Copyright (c) Mathews Malnar and Bailey, Inc., 2001 - 2013, All rights reserved.
+#Rev. (2/13/05, PGM): Validated for V14.
+
+
+mconstant p1 p2 n1 n2 alpha x1 x2 bx1 bx2 cumbx2
+mconstant ntot xtot thisp power time incpow
+default alpha=0.05
+
+#This algorithm searches the x1 by x2 table where x1 = 0:n1 and x2 = 0:n2
+#for the smallest x2 that makes Fisher's test significant for a given x1.
+#Then it calculates the contribution to the power from the binomial distributions
+#of x1 and x2: b(x = x1;n1,p1) x b(c = x2;n2,p2).
+
+note
+note This macro runs very slowly. Please be patient.
+note The macro is running ...
+note
+
+brief 0 		#suppress diagnostic print statements when not needed
+
+let ntot=n1+n2
+let power=0
+let x2=0		#Should this be x2 = -1? Technically yes but practically no because can never reject HA when x2=0.
+do x1=0:n1
+   let thisp=1
+   while (thisp>alpha) and (x2<n2)	#loop to find the smallest x2 that gives a significant result, x2 is incremented below, hence x2 < n2 instead of x2 <= n2.
+      let x2=x2+1
+      let xtot=x1+x2
+      cdf x1 thisp;			#thisp is the Fisher's exact test p value for this x1, x2, n1, n2
+         hypergeometric ntot n1 xtot.
+   endwhile
+   if thisp<=alpha			#if the loop found a signficant result rather than the end
+      pdf x1 bx1;			#the probability of this x1 happening
+         binomial n1 p1.
+      let x2=x2-1			#back up
+      cdf x2 cumbx2;			#the probability of this x2 or fewer happening
+         binomial n2 p2.
+      let incpow = bx1*(1-cumbx2)		#incremental increase in the power
+      let power=power+incpow		#cumulative power
+      print thisp x1 x2 incpow power	#Remember x2 is low by 1 here, so x1 and x2+1:n2 are statistically significant
+      #leaving x2 set back by 1 in preparation for the next loop
+   endif
+enddo
+
+brief 1
+
+print power
+
+endmacro

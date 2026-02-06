@@ -1,0 +1,28 @@
+macro
+ChangeCase column.1-column.m;
+   ToLower.
+
+#This macro converts the entries in text columns to upper case.
+#The upper command does this but only on one column at a time.
+#The ToLower subcommand changes the text to lower case.
+
+#Mathews Malnar and Bailey, Inc.
+#www.mmbstatistical.com
+#20150915, PGM: For MINITAB V15
+#20160119, PGM: Validated for MINITAB V17
+
+#Example calling statement:
+#   mtb> %ChangeCase c1-c5
+
+mcolumn column.1-column.m
+mconstant m i
+
+do i = 1:m
+   if ToLower
+      let column.i = lower(column.i)
+   else
+	  let column.i = upper(column.i)
+   endif
+enddo
+
+endmacro

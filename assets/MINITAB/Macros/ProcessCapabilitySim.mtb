@@ -1,0 +1,92 @@
+#ProcessCapabilityDataSim.mtb
+#This code creates simulated data for a process capability study spanning several lots
+#There are two standard deviations:
+#     a within lots standard deviation
+#     a between lots standard deviation
+#Analysis suggestions:
+#   Boxplots by lot
+#   x-bar and R chart
+#   random effects ANOVA
+#   Normal plots of 1) raw data, 2) ANOVA residuals, and 3) lot means
+#   SPC: If the between lots standard deviation is large, consider using MINITAB's Between/Within control chart method.
+#       In the normal xbar and R chart it is assumed that sigma_between subgroups is zero and Rbar is used to determine the xbar chart's control limits.
+#       The Between/Within chart is intended for those situations in which sigma_between is greater than zero. The method uses the moving range of the xbars to determine the xbar chart's control limits.
+#Problem: When there are two standard deviations both be estimated. Each standard deviation requires its own sample size calculation.
+
+
+name c1 'LotID'
+name c2 'LotMean'
+name c3 'LM'
+name c4 'Error'
+name c5 'Lot'
+name c6 'Part'
+name c7 'Msmt'
+
+let k1 = 60                 #Number of Lots
+let k2 = 5                  #Number of Samples per Lot
+let k3 = k1 * k2            #Total number of Samples across all Lots
+let k4 = 10                 #Standard deviation within Lots
+let k5 = 50                 #Standard deviation between Lots
+
+
+set 'LotID'
+1:k1
+end
+
+rand k1 'LotMean';
+    normal 0 k5.
+    
+set 'Lot'
+(1:k1)k2
+end 
+
+set 'Part'
+k1(1:k2)
+end   
+
+Convert 'LotID' 'LotMean' 'Lot' 'LM';
+   nodefault.
+   
+rand k3 'Error';
+   normal 0 k4.   
+   
+let 'Msmt' = 1000 + 'LM' + 'Error'
+
+#let 'Msmt' = 'Msmt' + 2 * 'Lot'          #Add a small time-dependent drift of the mean
+
+
+################## Analyses #####################
+#XRChart 'Msmt' 'Lot'.
+
+Capa 'Msmt' 'Lot';
+Lspec 900;
+Uspec 1100;
+Pooled;
+AMR;
+UnBiased;
+OBiased;
+Toler 6;
+Within;
+Overall; 
+Confidence 95; 
+TwoCI;
+PPM;
+CStat.
+
+Sixpack 'Msmt' 'Lot';
+Lspec 900;
+Uspec 1100;
+Pooled;
+AMR;
+CCRbar;
+CCSbar;
+CCAMR;
+UnBiased;
+OBiased;
+Breakout 25;
+Toler 6;
+CStat;
+Test 1.
+
+normtest 'LotMean'
+normtest 'Error'

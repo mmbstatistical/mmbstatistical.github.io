@@ -1,0 +1,52 @@
+macro
+OneSidedUpperCIforProportionSampleSize p_upper;
+   Conf CLevel.
+
+#This macro finds sample sizes for acceptance numbers (c) from 0 to 10 for
+#the test to demonstrate a specified upper bound on the proportion defective
+#with a specified confidence level. The confidence interval's form is
+#P(0 < p < p_upper) = 1 - alpha. The default is 1 - alpha = 0.95 but the user
+#can specify the confidence level with the Conf subcommand.
+
+#This routine uses the chi-square form of the Poisson distribution approximation
+#to the exact binomial method to  determine the sample size. The result slightly
+#overestimates the exact sample size.
+
+#This macro is necessary because the built in sample size calculator in Stat>
+#Power and Sample Size> Estimation> Proportion cannot do the one-sided upper
+#analysis which is so common in many inspection operations. The Stat> Reliability/
+#Survival> Test Plans> Demonstration menu can be configured to solve the problem
+#but the menu is too complicated to set up.
+
+#Example calling statement:
+#   mtb> %OneSidedUpperCIforProportionSampleSize 0.01;
+#   subc>   Conf 0.99.
+
+#Mathews Malnar & Bailey, Inc.
+#www.mmbstatistical.com
+#paul@mmbstatistical.com
+
+mconstant p_upper CLevel i thisc thisDF thisChSq String
+mcolumn c SSize
+default CLevel = 0.95
+
+set c									#set acceptance numbers
+0:10
+end
+
+do i = 1:11								#for each c value
+   let thisc = c(i)
+   let thisDF = 2*(thisc + 1)			#degrees of freedom for the chi-square distribution
+   invcdf CLevel thisChSq;
+      chisq thisDF.
+   let SSize(i) = thisChSq / 2 / p_upper	#sample size = chisq(0.95, 2(c+1)) / (2*p_upper)
+enddo
+let SSize = floor(SSize + 1)		#round up to the integer value
+
+notitle
+let String = conc("Acceptance number and sample size to demonstrate P(0 < p < ", p_upper, ") = ", CLevel)
+write String
+name SSize "n"
+print c SSize
+
+endmacro
