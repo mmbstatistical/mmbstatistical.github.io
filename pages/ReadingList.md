@@ -4,7 +4,7 @@ nav_exclude: true
 ---
 
   
-####Quality Engineering and Quality Management
+#### Quality Engineering and Quality Management
 * Juran, The Quality Control Handbook  
 * Juran, Quality Planning and Analysis
 * Kuhn, Structures of Scientific Revolution  
@@ -44,7 +44,7 @@ nav_exclude: true
 * Sagan, A Demon-Haunted World: Science as a Candle in the Dark  
 
 
-####Six Sigma
+#### Six Sigma
 * Breyfogle, Implementing Six Sigma
 * Pande et al, The Six Sigma Way
 * Pande et al, The Six Sigma Way Team Fieldbook
@@ -52,7 +52,7 @@ nav_exclude: true
  
 
 
-####Lean  
+#### Lean  
 * Womack, Jones, and Khoo, The Machine that Changed the World
 * Womack and Jones, Lean Thinking
 * Hammer and Champy, Reengineering the Corporation  
@@ -61,7 +61,7 @@ nav_exclude: true
 
   
   
-####Case Studies
+#### Case Studies
 * **Kahneman, Thinking Fast and Slow**
 * **Taleb, The Black Swan**  
 * **Taleb, Fooled By Randomness**  
@@ -79,7 +79,7 @@ nav_exclude: true
   
   
   
-####Math and Graphics
+#### Math and Graphics
 * Peterson, The Jungles of Randomness
 * Casti, Searching for Certainty
 * **Tufte, The Visual Display of Quantitative Information**
@@ -90,7 +90,7 @@ nav_exclude: true
 
   
   
-####Design of Experiments
+#### Design of Experiments
 * **Montgomery, Design and Analysis of Experiments**
 * **Box, Hunter, and Hunter, Statistics for Experimenters**
 * Hicks, Introduction to Design of Experiments
