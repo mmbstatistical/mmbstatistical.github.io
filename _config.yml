@@ -33,7 +33,9 @@ markdown: kramdown
 # Must be commented out to permit yaml nav_exclude: true to work.
 # Also had to add header class in _includes/header.html
 
-
+# Required (maybe) to prevent GitHub Pages from loading jekyll-theme-primer
+sass:
+  sass_dir: assets
 
 # themes:
 # https://foolishgeneralist.com/p/a-little-help-with-github-pages-and
