@@ -8,6 +8,7 @@ layout: default
 <div class="side-nav">
 <strong>Jump to:</strong>
 <ul>
+  <li><a href="#introduction">Introduction</a></li>
   <li><a href="#operations">Data and Worksheet Operations</a></li>
   <li><a href="#analysis">Statistical Analysis</a></li>
   <li><a href="#doe">Design of Experiments</a></li>
@@ -17,7 +18,7 @@ layout: default
 </div>
 
 
-
+#### Introduction {#introduction}
 This page provides links to text files containing MINITAB macros. Open the files in NotePad or NotePad++ to see the code,
 a description of the macro, and an example calling statement.  
   
