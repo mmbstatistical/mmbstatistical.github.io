@@ -17,6 +17,7 @@ layout: default
   <li><a href="#news">News</a></li>
   <li><a href="#other">Other</a></li> 
   <li><a href="#weather">Weather</a></li>
+  <li><a href="#stations">Weather Stations</a></li>
 </ul>
 </div>
   
@@ -158,6 +159,7 @@ layout: default
 *   [MacKichan Software, Inc. (Scientific Word)](http://www.mackichan.com/)
 <br> <br> 
   
+
 ## Weather {#weather}
 *   [Dan Pfeiffer's weather page](http://www.dan.pfeiffer.net/weather_erie.htm)
 *   [Dan's Marine Weather (compact)](http://dan.pfeiffer.net/mwc.htm)
@@ -170,15 +172,19 @@ layout: default
 *   [Wind Finder - Fairport Harbor](https://www.windfinder.com/weatherforecast/lake_erie_fairport_harbor)
 *   [WindAlert - Fairport Harbor](http://www.windalert.com/spot/69649)
 *   [Windy - Fairport Harbor](https://www.windy.com/?41.735,-81.192,11)
-*   [Lake Metroparks Web Cams](https://www.lakemetroparks.com/webcams)
-*   **Weather stations**  
-    *   [Fairport Harbor Lighthouse FAIO1](http://www.ndbc.noaa.gov/station_page.php?station=faio1)
-    *   [Fairport Harbor Lighthouse FAIO1 at NOAA](https://tidesandcurrents.noaa.gov/met.html?id=9063053)
-    *   [Cleveland Water Alliance Buoy 45207](https://www.ndbc.noaa.gov/station_page.php?station=45207)  
-    *   [Cleveland Intake Crib Buoy 45176](https://www.ndbc.noaa.gov/station_page.php?station=45176)
-    *   [Geneva State Park Marina GEL01](https://www.ndbc.noaa.gov/station_page.php?station=gelo1)
-    *   [Grand River Flow Rate (USGS 04212100)](https://waterdata.usgs.gov/nwis/uv?04212100)
-    
+*   [Lake Metroparks Web Cams](https://www.lakemetroparks.com/webcams)  
+<br> <br>
+
+## Weather Stations {#stations} 
+*   [Fairport Harbor Lighthouse FAIO1](http://www.ndbc.noaa.gov/station_page.php?station=faio1)
+*   [Fairport Harbor Lighthouse FAIO1 at NOAA](https://tidesandcurrents.noaa.gov/met.html?id=9063053)
+*   [Cleveland Water Alliance Buoy 45207](https://www.ndbc.noaa.gov/station_page.php?station=45207)  
+*   [Cleveland Intake Crib Buoy 45176](https://www.ndbc.noaa.gov/station_page.php?station=45176)
+*   [Geneva State Park Marina GEL01](https://www.ndbc.noaa.gov/station_page.php?station=gelo1)
+*   [Grand River Flow Rate (USGS 04212100)](https://waterdata.usgs.gov/nwis/uv?04212100)
+  
+<br> <br>
+
 <!--- 
 This .md file was created from the .html web page using this converter:
 https://www.scrapingdog.com/url-to-markdown-coverter/ 

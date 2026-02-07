@@ -23,7 +23,7 @@ This page provides links to text files containing MINITAB macros. Open the files
 a description of the macro, and an example calling statement.  
   
 The macros are of both LOCAL (.mac) and EXEC (.mtb) types. Copy them to the MINITAB macros folder on your hard drive.
-If you don't already have a macros folder, I recommend that you create a folder like *C:/Documents/MINITAB/Macros/Macros V2/*
+If you don't already have a macros folder, I recommend that you create a folder like *C:/Documents/MINITAB/Macros/Macros V22/*
 so that 1) your macros get backed up when you back up the rest of your data and 2) so that you can update your macros for different versions of MINITAB.  
   
 Run EXEC macros from the **File> Run an EXEC** menu or from the command prompt.  
@@ -36,9 +36,9 @@ Some of these macros are redundant to built-in commands in MINITAB; however, man
 supported by the program and have features that are different or code that might be of interest for other purposes.  
   
 **These macros have been validated but they may give incorrect results for some input conditions. MM&B Inc. accepts no
-responsibility for their results. Use these macros at your own risk.  
+responsibility for their results. Use these macros at your own risk.**    
   
-**MINITAB also maintains an extensive macro library *[here](https://support.minitab.com/en-us/minitab/macro-library/)*.  
+MINITAB also maintains an extensive macro library *[here](https://support.minitab.com/en-us/minitab/macro-library/)*.  
 <br/> <br/>
 
 ## Data and Worksheet Operations {#operations}

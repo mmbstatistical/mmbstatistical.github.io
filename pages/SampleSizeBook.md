@@ -20,8 +20,7 @@ MINITAB, Piface, and R are posted on the Internet.
 * Buy the book from [Amazon](http://www.amazon.com/Sample-Size-Calculations-Practical-Scientists/dp/0615324614) or [Barnes & Noble](http://search.barnesandnoble.com/Sample-Size-Calculations/Paul-Mathews/e/9780615324616/)
 * [Errata: First printing (24 February 2010)](/assets/SampleSize/SSCErrata20100224.txt)
 * [Solutions to Selected Example Problems](/assets/SampleSize/SampleSizeExampleSolutions.pdf) Using Piface, PASS, MINITAB, and (soon) R (3.6MB PDF)
-* Homework Problems
-* Sample Size Calculations course
+* [Sample Size Calculations Course]({% link pages/SampleSizeCourse.md %})
 
 
 ### Book Review: Willis Jenson, Journal of Quality Technology, Vol. 44, No. 2, April 2012.

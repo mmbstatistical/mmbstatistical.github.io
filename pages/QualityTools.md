@@ -1,6 +1,7 @@
 ---
 title: Quality Tools of the Trade
 nav_exclude: true
+layout: default
 ---
 
   
@@ -17,19 +18,20 @@ materials and we also let customers pick from the list to design their own custo
 be covered in a 1.0-1.5 hour session which includes time to work through the example problems and for discussion.  
   
 
-* Tukey's Quick Test
-* Boxplot Slippage Tests
+* [Tukey's Quick Test]({% link assets/QualityTools/Tukey's%20Quick%20Test.pdf})
+* [Boxplot Slippage Tests]({% link assets/QualityTools/Boxplot%20Slippage%20Tests.pdf})
 * The Two Independent Sample t Test
-* Runs Test for Randomness
+* [Runs Test for Randomness]({% link assets/QualityTools/Runs%20Test%20for%20Randomness.pdf})
 * Fisher's Exact Test
 * McNemar's Test
-* Process Precontrol
+* [Process Precontrol]({% link assets/QualityTools/ProcessPrecontrol.pdf})
 * The Bland-Altman Method
 * Gage Error Long Studies
 * Gage Error Short Studies
-* Design of Single Sampling Plans for Defectives
+* [Design of Single Sampling Plans for Defectives]({% link assets/QualityTools/Design%20of%20Single%20Sampling%20Plans%20for%20Defectives.pdf})
 * Analysis of Means (ANOM)
-* Normal Probability Plotting
+* [Normal Probability Plots]({% link assets/QualityTools/Normal%20Probability%20Plots.pdf})
+* [Variable Transforms]{% link assets/QualityTools/Variable%20Transforms.pdf})
 * Circular Normal Distribution
 * Taguchi's Loss Function
 * The Blake and Mouton Managerial Grid
@@ -38,7 +40,7 @@ be covered in a 1.0-1.5 hour session which includes time to work through the exa
 * Control Charts for Defects
 * Control Charts for Measurement Data
 * Sample Size Calculations for Zero Defects Sampling Plans
-* Chebyshev's Theorem
+* [Chebyshev's Theorem]({% link assets/QualityTools/Chebyshev's%20Theorem.pdf})
 * Confidence Intervals for cp and cpk
 * Minitab Exec Macros
 * SPC Audit Checklist
