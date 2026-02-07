@@ -1,6 +1,7 @@
 ---
 title: MINITAB Macros
 nav_exclude: true
+layout: default
 ---
 
 
