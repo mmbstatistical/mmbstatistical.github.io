@@ -3,6 +3,7 @@ layout: default
 nav_exclude: true
 ---
 
+<!--- https://github.com/mmbstatistical/mmbstatistical.github.io _--->
 
 **Upcoming Events:**
 * [**Quality Managers Network:**](pages/QMN.md)  
@@ -30,8 +31,8 @@ nav_exclude: true
 <br/> <br/>
 
 **MINITAB Resources**  
-    * **[MINITAB Macros](pages/MINITABMacros.md):** Links to MINITAB macros
-    * **[Introduction to MINITAB course](pages/IntroMINITABCourse.md)**
+* **[MINITAB Macros](pages/MINITABMacros.md):** Links to MINITAB macros  
+* **[Introduction to MINITAB course](pages/IntroMINITABCourse.md)**
 <br/> <br/>
 
 **[Reading List](pages/ReadingList.md):** Our favorite quality engineering and statistics references!

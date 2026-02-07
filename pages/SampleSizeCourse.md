@@ -1,4 +1,4 @@
- ---
+---
 title: Sample Size Calculations Course
 nav_exclude: true
 ---
