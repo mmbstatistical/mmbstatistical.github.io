@@ -1,8 +1,10 @@
 
 
-<link rel="stylesheet" href="{{ '/assets/main.scss' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
 <!---  This came from https://github:com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml --->
+
+<!---
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -19,3 +21,12 @@
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
 </script>
+
+--->
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
