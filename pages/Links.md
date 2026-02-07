@@ -1,10 +1,26 @@
 ---
 title: Links
 nav_exclude: true
+layout: default
 ---
 
+
+
+<div class="side-nav">
+<strong>Jump to:</strong>
+<ul>
+  <li><a href="#orgs">Technical Organizations</a></li>
+  <li><a href="#refs">References</a></li>
+  <li><a href="#stem">STEM</a></li>
+  <li><a href="#makers">Makers</a></li>
+  <li><a href="#cle">Cleveland</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#other">Other</a></li> 
+  <li><a href="#weather">Weather</a></li>
+</ul>
+</div>
   
-**Technical Organizations:**
+## Technical Organizations {#orgs}
 *   [American Society for Quality (ASQ)](http://www.asq.org)
 *   [ASQ - Cleveland Section (800)](http://www.asqcleveland.org/)    
 *   [ASQ - Akron-Canton Section (810)](http://asq810.org/)  
@@ -19,7 +35,7 @@ nav_exclude: true
 <br> <br>     
 
   
-**References:**
+## References {#refs}
 *   [Russ Lenth's Power and Sample Size Calculator](http://www.stat.uiowa.edu/%7Erlenth/Power/)
 *   [Don Wheeler's Quality Digest articles](http://www.spcpress.com/djw_columns.php)
 *   [Harrell and Slaughter, Biostatistics for Biomedical Research](http://hbiostat.org/doc/bbr.pdf)  
@@ -54,7 +70,7 @@ nav_exclude: true
 *   [Vassar Stats](http://faculty.vassar.edu/lowry/VassarStats.html)
 <br> <br> 
   
-**Statistical and Graphical Software:**
+## Statistical and Graphical Software {#stats}
 * [MINITAB](http://www.minitab.com/)
 * [Piface (Russ Lenth's Power and Sample Size Calculator)](http://www.stat.uiowa.edu/%7Erlenth/Power/)
 * [NCSS and PASS](http://www.ncss.com/)
@@ -69,7 +85,7 @@ nav_exclude: true
     * [Jamovi](https://jamovi.org/)
 <br> <br> 
 
-**Science, Math, and Engineering Education**
+## Science, Math, and Engineering Education {#stem}
 * [Smarter Every Day](http://www.smartereveryday.com)
 * [Veritasium](http://www.veritasium.com)
 * [Sciencium](https://www.youtube.com/user/sciencium)
@@ -89,7 +105,7 @@ nav_exclude: true
 <br> <br>     
 
   
-**Makers:**  
+## Makers {#makers}  
 * Magazines
     * [Hackaday](http://hackaday.com/)
     * [Make:](http://makezine.com/) 
@@ -110,7 +126,8 @@ nav_exclude: true
     * [Hamilton Collaborative](http://ingenuitycleveland.com/hamilton-collaborative/)  
 <br> <br>
   
-**Cleveland, Ohio:**
+
+## Cleveland, Ohio {#cle}
 *   [West 78th Street Studios](http://www.78thstreetstudios.com/)
 *   [Screw Factory Artists](https://www.screwfactoryartists.org/)  
 *   [Great Lakes Science Center](http://www.greatscience.com/)
@@ -118,7 +135,7 @@ nav_exclude: true
 <br> <br>     
 
   
-**News Links:**
+## News Links {#news}
 *   [National Public Radio](http://www.npr.org/)
 *   [PBS](http://www.pbs.org/)
 *   [IdeaStream (WKSU and WVIZ)](https://www.ideastream.org/)
@@ -130,7 +147,8 @@ nav_exclude: true
 *   [APM Marketplace.org](http://www.marketplace.org)
 <br> <br>  
   
-**Other Links (mostly so I can find them myself):**
+
+## Other Links (mostly so I can find them myself) {#other}
 *   [Fairport Harbor Public Library](http://www.fairportlibrary.com/default.htm)
 *   [CLEVNET](http://www.clevnet.org/)  
 *   [Grand River Sailing Club](http://grsc.net/)
@@ -140,7 +158,7 @@ nav_exclude: true
 *   [MacKichan Software, Inc. (Scientific Word)](http://www.mackichan.com/)
 <br> <br> 
   
-**Weather:**
+## Weather {#weather}
 *   [Dan Pfeiffer's weather page](http://www.dan.pfeiffer.net/weather_erie.htm)
 *   [Dan's Marine Weather (compact)](http://dan.pfeiffer.net/mwc.htm)
 *   [Cleveland NOAA Marine Forecast](http://www.weather.gov/cle/marine_forecast)
@@ -153,7 +171,7 @@ nav_exclude: true
 *   [WindAlert - Fairport Harbor](http://www.windalert.com/spot/69649)
 *   [Windy - Fairport Harbor](https://www.windy.com/?41.735,-81.192,11)
 *   [Lake Metroparks Web Cams](https://www.lakemetroparks.com/webcams)
-*   **Weather stations:**
+*   **Weather stations**  
     *   [Fairport Harbor Lighthouse FAIO1](http://www.ndbc.noaa.gov/station_page.php?station=faio1)
     *   [Fairport Harbor Lighthouse FAIO1 at NOAA](https://tidesandcurrents.noaa.gov/met.html?id=9063053)
     *   [Cleveland Water Alliance Buoy 45207](https://www.ndbc.noaa.gov/station_page.php?station=45207)  
