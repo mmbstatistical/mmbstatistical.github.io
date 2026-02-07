@@ -3,6 +3,15 @@ title: MINITAB Macros
 nav_exclude: true
 ---
 
+<div class="side-nav">
+**Jump to:** 
+
+* [Data and Worksheet Operations](#Operations)
+* [Statistical Analysis](#Analysis)
+* [Design of Experiments](#DOE)
+* [Sample Size and Power Calculations](#SampleSize)
+* [Simulations](#Simulations)
+</div>
 
 
 This page provides links to text files containing MINITAB macros. Open the files in NotePad or NotePad++ to see the code,
@@ -27,7 +36,7 @@ responsibility for their results. Use these macros at your own risk.
 **MINITAB also maintains an extensive macro library *[here](https://support.minitab.com/en-us/minitab/macro-library/)*.  
 <br/> <br/>
 
-**Data and Worksheet Operations**
+#### Data and Worksheet Operations {#Operations}
 * [RepeatRows.mac](/assets/MINITAB/Macros/RepeatRows.mac) - Duplicates each row of the specified columns the specified number of times. Overwrites the original columns.
 * [SetAColumn.mac](/assets/MINITAB/Macros/SetAColumn.mac) - Duplicates each row of a column the specified number of times and the whole sequence a specific number of times. Reproduces the functionality of the **Calc> Make Patterned Data> Arbitrary Set of Numbers** or **set** command for a column.
 * [ColumnsOperation.mac](/assets/MINITAB/Macros/ColumnsOperation.mac) - Applies a simple math operation to all of the specified columns.   
@@ -38,10 +47,10 @@ responsibility for their results. Use these macros at your own risk.
 * [SplitText.mac](/assets/MINITAB/Macros/SplitText.mac) - Like the VB function **split()** - splits a text column by a character delimiter and writes the results to output columns.
 * [ChangeCase.mac](/assets/MINITAB/Macros/ChangeCase.mac) - Changes entries in text columns from lower to upper case. MINITAB's **upper** function does this but only on one column at a time. The **ToLower** subcommand changes text from upper to lower case.
 * [StackColsByRows.mac](/assets/MINITAB/Macros/StackColsByRows.mac) - Stacks the data in two or more columns by rows into a single column  
-    
+<br/> <br/>    
 
   
-**Statistical Analysis**
+#### Statistical Analysis {#Analysis}
 * [MeansAndResiduals.mac](/assets/MINITAB/Macros/MeansAndResiduals.mac) - Extracts the subgroup means and the fits and residuals for a one-way classification.
 * [HalfNorm.mac](/assets/MINITAB/Macros/HalfNorm.mac) - Creates a probability plot for half-normal, aka folded-normal data.
 * [CircNorm.mac](/assets/MINITAB/Macros/CircNorm.mac) - Create a probability plot for circular-normal data.
@@ -51,11 +60,11 @@ responsibility for their results. Use these macros at your own risk.
 * [NTIOneSided.mac](/assets/MINITAB/Macros/NTIOneSided.mac) - Calculates the one-sided normal tolerance interval factor k1 for either 1) one treatment group or 2) for one treatment group among several using the pooled standard deviation.
 * [NTITwoSided.mac](/assets/MINITAB/Macros/NTITwoSided.mac) - Calculates the two-sided normal tolerance interval factor k2 for either 1) one treatment group or 2) for one treatment group among several using the pooled standard deviation.
 * [ROC.mac](/assets/MINITAB/Macros/ROC.mac) - Creates the receiver operating characteristic curve (ROC) curve with AUC value for a binary diagnostic test. Use the **Stat> Regression> Binary Logistic Regression** method instead.  
-    
+<br/> <br/>    
 
   
 
-**Design of Experiments**
+#### Design of Experiments {#DOE}
 * [FitFinder.mac](/assets/MINITAB/Macros/FitFinder.mac) - Creates a 6x6 matrix of scatterplots using common mathematical transformations applied to the x and y axes. The transformations used are: untransformed, square root, square, log, power, and reciprocal. Used to find transforms to x and/or y that linearize a nonlinear scatterplot when the first principles model is unknown.
 * [MakeCRD.mac](/assets/MINITAB/Macros/MakeCRD.mac) - Creates the worksheet for a completely randomized design with the specified number of factor levels and replicates. Runs one-way ANOVA on the random order to confirm if the randomization was effective.
 * [MakeRBD.mac](/assets/MINITAB/Macros/MakeRBD.mac) - Creates the worksheet for a randomized block design with the specified number of levels of the study variable and blocks.   
@@ -63,10 +72,10 @@ responsibility for their results. Use these macros at your own risk.
 * [TwoSampleTestCorrelations.mac](/assets/MINITAB/Macros/TwoSampleTestCorrelations.mac) - Performs the two-correlations hypothesis test of H0: ρρ1 = ρ2 versus HA: ρ1 <> ρ2
 * [Fold.mac](/assets/MINITAB/Macros/Fold.mac) - Folds a two-level experiment design on all columns. Consider using **Stat> DOE> Modify Design** instead.
 * [RandomizeWithinBlocks.mac](/assets/MINITAB/Macros/RandomizeWithinBlocks.mac) - Creates a column for the random run order for runs within blocks.  
-    
+<br/> <br/>    
 
   
-**Sample Size and Power Calculations**
+#### Sample Size and Power Calculations {#SampleSize}
 * [Power.mac](/assets/MINITAB/Macros/Power.mac) - Calculates the power for the balanced fixed-effects full factorial design with optional graphs. This macro's capabilities are duplicated in **Stat> Power and Sample Size> General Full Factorial Design**; however, the macro is more flexible in its use.
 * [OneSidedUpperCIforProportionSampleSize.mac](/assets/MINITAB/Macros/OneSidedUpperCIforProportionSampleSize.mac) - Calculates the sample size required to demonstrate that a proportion is less than a specified upper limit with specified confidence level.
 * Power for Fisher's Exact Test:  
@@ -74,10 +83,10 @@ responsibility for their results. Use these macros at your own risk.
     * [FishersPowerSlow.mac](/assets/MINITAB/Macros/FishersPowerSlow.mac) - Calculates the power for Fisher's Exact Test using the one-sided test method. Uses two different methods to complete the calculations - one fast but complicated and the other VERY slow but easier to understand. Study this macro to understand the calculations. Use FishersPower.mac to get the job done.
     * [FishersConditionalPower.mac](/assets/MINITAB/Macros/FishersConditionalPower.mac) - Calculates the power for Fisher's Exact Test (one-sided) and the conditional power given interim results.
 * [TwoSamplePoissonPower.mac](/assets/MINITAB/Macros/TwoSamplePoissonPower.mac) - Calculates the power for the two-sample Poisson count problem. Consider using or checking this macro's result with (V17) **Stat> Power and Sample Size> 2-Sample Poisson Rate**.
-
+<br/> <br/>
   
   
-**Simulations**
+#### Simulations {#Simulations}
 * [GRRSim.mac](/assets/MINITAB/Macros/GRRSim.mac) - Creates simulated data for a gage error study using the common operator by part crossed design. The operator controls how many operators, parts, and trials are used and EV, AV, and PV values can be set with subcommands.
 * [PChartSim.mac](/assets/MINITAB/Macros/PChartSim.mac) - Creates simulated data for a P chart.
 * [UChartSim.mac](/assets/MINITAB/Macros/UChartSim.mac) - Creates simulated data for a U chart.   
@@ -86,6 +95,6 @@ responsibility for their results. Use these macros at your own risk.
 * [Sim3.mtb](/assets/MINITAB/Macros/Sim3.mtb) - Creates simulated response data for a three variable experiment design, e.g. two-level factorial with or without centers and response surface designs.
 * [Sim5.mtb](/assets/MINITAB/Macros/Sim5.mtb) - Creates simulated response data for a five variable experiment design.
 * [RunRuleExercise.mac](/assets/MINITAB/Macros/RunRuleExercise.mac) - This macro creates a series of control charts with one point added to each chart. Minimize the Session window, maximize the last graph created, and then delete each graph while watching for the process to go out of control.
-
+<br/> <br/>
   
 [Return to MM&B Inc. Home Page]({% link index.md %})
