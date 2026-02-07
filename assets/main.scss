@@ -1,17 +1,17 @@
 ---
 ---
 
-@import "minima";
-/* @import "minima/skins/classic", "minima/initialize"; */
+/* @import "minima"; */
+@import "minima/skins/dark", "minima/initialize";
 
 .side-nav {
   position: fixed;
   left: 20px;
   top: 120px;
-  width: 180px;
+  width: 200px;
   padding: 10px;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
+  background: #222;
+  border: 1px solid #444;
   font-size: 0.9em;
   z-index: 1000;
 }
@@ -21,5 +21,5 @@
 }
 
 .page-content {
-  margin-left: 220px;
+  margin-left: 240px;
 }
