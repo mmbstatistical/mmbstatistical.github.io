@@ -3,15 +3,18 @@ title: MINITAB Macros
 nav_exclude: true
 ---
 
-<div class="side-nav">
-**Jump to:** 
 
-* [Data and Worksheet Operations](#Operations)
-* [Statistical Analysis](#Analysis)
-* [Design of Experiments](#DOE)
-* [Sample Size and Power Calculations](#SampleSize)
-* [Simulations](#Simulations)
+<div class="side-nav">
+<strong>Jump to:</strong>
+<ul>
+  <li><a href="#operations">Data and Worksheet Operations</a></li>
+  <li><a href="#analysis">Statistical Analysis</a></li>
+  <li><a href="#doe">Design of Experiments</a></li>
+  <li><a href="#samplesize">Sample Size and Power Calculations</a></li>
+  <li><a href="#simulations">Simulations</a></li>
+</ul>
 </div>
+
 
 
 This page provides links to text files containing MINITAB macros. Open the files in NotePad or NotePad++ to see the code,
@@ -36,7 +39,7 @@ responsibility for their results. Use these macros at your own risk.
 **MINITAB also maintains an extensive macro library *[here](https://support.minitab.com/en-us/minitab/macro-library/)*.  
 <br/> <br/>
 
-#### Data and Worksheet Operations {#Operations}
+#### Data and Worksheet Operations {#operations}
 * [RepeatRows.mac](/assets/MINITAB/Macros/RepeatRows.mac) - Duplicates each row of the specified columns the specified number of times. Overwrites the original columns.
 * [SetAColumn.mac](/assets/MINITAB/Macros/SetAColumn.mac) - Duplicates each row of a column the specified number of times and the whole sequence a specific number of times. Reproduces the functionality of the **Calc> Make Patterned Data> Arbitrary Set of Numbers** or **set** command for a column.
 * [ColumnsOperation.mac](/assets/MINITAB/Macros/ColumnsOperation.mac) - Applies a simple math operation to all of the specified columns.   
@@ -50,7 +53,7 @@ responsibility for their results. Use these macros at your own risk.
 <br/> <br/>    
 
   
-#### Statistical Analysis {#Analysis}
+#### Statistical Analysis {#analysis}
 * [MeansAndResiduals.mac](/assets/MINITAB/Macros/MeansAndResiduals.mac) - Extracts the subgroup means and the fits and residuals for a one-way classification.
 * [HalfNorm.mac](/assets/MINITAB/Macros/HalfNorm.mac) - Creates a probability plot for half-normal, aka folded-normal data.
 * [CircNorm.mac](/assets/MINITAB/Macros/CircNorm.mac) - Create a probability plot for circular-normal data.
@@ -64,7 +67,7 @@ responsibility for their results. Use these macros at your own risk.
 
   
 
-#### Design of Experiments {#DOE}
+#### Design of Experiments {#doe}
 * [FitFinder.mac](/assets/MINITAB/Macros/FitFinder.mac) - Creates a 6x6 matrix of scatterplots using common mathematical transformations applied to the x and y axes. The transformations used are: untransformed, square root, square, log, power, and reciprocal. Used to find transforms to x and/or y that linearize a nonlinear scatterplot when the first principles model is unknown.
 * [MakeCRD.mac](/assets/MINITAB/Macros/MakeCRD.mac) - Creates the worksheet for a completely randomized design with the specified number of factor levels and replicates. Runs one-way ANOVA on the random order to confirm if the randomization was effective.
 * [MakeRBD.mac](/assets/MINITAB/Macros/MakeRBD.mac) - Creates the worksheet for a randomized block design with the specified number of levels of the study variable and blocks.   
@@ -75,7 +78,7 @@ responsibility for their results. Use these macros at your own risk.
 <br/> <br/>    
 
   
-#### Sample Size and Power Calculations {#SampleSize}
+#### Sample Size and Power Calculations {sSampleSize}
 * [Power.mac](/assets/MINITAB/Macros/Power.mac) - Calculates the power for the balanced fixed-effects full factorial design with optional graphs. This macro's capabilities are duplicated in **Stat> Power and Sample Size> General Full Factorial Design**; however, the macro is more flexible in its use.
 * [OneSidedUpperCIforProportionSampleSize.mac](/assets/MINITAB/Macros/OneSidedUpperCIforProportionSampleSize.mac) - Calculates the sample size required to demonstrate that a proportion is less than a specified upper limit with specified confidence level.
 * Power for Fisher's Exact Test:  
@@ -86,7 +89,7 @@ responsibility for their results. Use these macros at your own risk.
 <br/> <br/>
   
   
-#### Simulations {#Simulations}
+#### Simulations {#simulations}
 * [GRRSim.mac](/assets/MINITAB/Macros/GRRSim.mac) - Creates simulated data for a gage error study using the common operator by part crossed design. The operator controls how many operators, parts, and trials are used and EV, AV, and PV values can be set with subcommands.
 * [PChartSim.mac](/assets/MINITAB/Macros/PChartSim.mac) - Creates simulated data for a P chart.
 * [UChartSim.mac](/assets/MINITAB/Macros/UChartSim.mac) - Creates simulated data for a U chart.   
