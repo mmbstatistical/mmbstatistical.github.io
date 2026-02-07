@@ -72,6 +72,6 @@ Students are also expected to have basic Microsoft Windows skills.
 21. MINITAB Macros  
 <br/> <br/>
   
-[Return to MM&B Courses](/pages/Courses.md)  
+[Return to MM&B Courses](/pages/Courses.html)  
   
-[Return to MM&B Home Page](/index.md)
+[Return to MM&B Home Page](/index.html)

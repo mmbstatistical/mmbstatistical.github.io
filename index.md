@@ -10,7 +10,7 @@ Jekyll renders this page
 
 
 **Upcoming Events:**
-* [**Quality Managers Network:**]({% link pages/QMN.md %})  
+* [**Quality Managers Network:**](pages/QMN.md)  
     * **The Joy of Little Experiments, 7:30-9:00AM, 13 February 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**](pages/QEN.md)  
