@@ -7,7 +7,7 @@ nav_exclude: true
   
 Note: All courses can be modified in duration, format, and content to satisfy a customer's specific training requirements. The details below reflect the most common and successful course designs.The prices shown are for a class (i.e. not per student) of up to 15 students.  
 
-* **[Quality Engineering Statistics](/pages/QES.html)** (40 contact hours)
+* **[Quality Engineering Statistics]({% link /pages/QES.md })** (40 contact hours)
 * **[Design of Experiments](/pages/DOEwithMINITAB.html)** (40 contact hours)
 * **[Sample Size Calculations](/pages/SampleSizeCourse.html)** (8-20 contact hours)
 * **Nonparametric Statistical Methods** (12 contact hours)
@@ -26,4 +26,4 @@ Note: All courses can be modified in duration, format, and content to satisfy a 
 We charge $300 per classroom contact hour plus a per-student fee for course materials if required. 
  
   
-[Return to MM&B Inc. Home Page](/index.md)
+[Return to MM&B Inc. Home Page]({% link index.md %})
