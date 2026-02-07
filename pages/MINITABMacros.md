@@ -88,4 +88,4 @@ responsibility for their results. Use these macros at your own risk.
 * [RunRuleExercise.mac](/assets/MINITAB/Macros/RunRuleExercise.mac) - This macro creates a series of control charts with one point added to each chart. Minimize the Session window, maximize the last graph created, and then delete each graph while watching for the process to go out of control.
 
   
-[Return to MM&B Inc. Home Page](/index.md)
+[Return to MM&B Inc. Home Page]({% link index.md %})

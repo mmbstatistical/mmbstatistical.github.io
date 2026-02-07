@@ -61,7 +61,6 @@ be covered in a 1.0-1.5 hour session which includes time to work through the exa
 * Sample Size Calculations for Fixed Effects ANOVA
 * Post-ANOVA Multiple Comparison Methods
 * Propagation of Error
-<br/> <br/>
+<br/> <br/> 
   
-  
-[Return to MM&B Home Page](/index.html)
+[Return to MM&B Inc. Home Page]({% link index.md %})

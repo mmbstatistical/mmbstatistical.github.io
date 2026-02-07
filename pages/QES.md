@@ -36,6 +36,6 @@ Upon completion of this course students should be able to:
 * Estimate product reliability from experimental data using the exponential, normal, and Weibull models.
 
   
-[Return to MM&B Courses](/pages/Courses.md)  
+[Return to MM&B Courses]({% link pages/Courses.md %})  
   
-[Return to MM&B Home Page](/index.md)
+[Return to MM&B Home Page]({% link index.md %})

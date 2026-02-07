@@ -1396,4 +1396,4 @@ The topics to be discussed are but are not limited to:
 * Six Sigma
 * Lean
 
-[Return to MM&B Home Page](/index.md)
+[Return to MM&B Home Page]({% link index.md %})

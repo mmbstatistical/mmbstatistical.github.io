@@ -168,4 +168,4 @@ It did a very good job.
 --->
  
   
-[Return to MM&B Home Page](/index.md)
+[Return to MM&B Home Page]({% link index.md %})

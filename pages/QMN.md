@@ -4148,4 +4148,4 @@ these methods were taught, most such programs never or only weakly
 address these problems so come join us to finally learn how setting
 specifications should really be done.
 
-[Return to MM&B Home Page](/index.md)
+[Return to MM&B Home Page]({% link index.md %})

@@ -35,3 +35,6 @@ The following is a short list of the technical areas in which we provide trainin
 In addition to our statistical consulting and training services MM&B Inc. also builds custom test and measurement systems. 
 If you already have your hardware we can design and build your graphical user interface (GUI) or we can help you determine 
 your hardware needs and then build and deliver a turn-key system. Click here to learn more about our test and measurement systems capabilities.
+<br/> <br/> 
+  
+[Return to MM&B Inc. Home Page]({% link index.md %})

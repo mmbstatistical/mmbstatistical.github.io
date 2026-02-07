@@ -24,7 +24,7 @@ applications to medical clinical trials or behavioral sciences, although many of
 use, and interpretation of confidence intervals and hypothesis tests. They should also have extensive experience in the use 
 of these methods in quality and process improvement activities.  
   
-**Textbook:** [Paul Mathews, *Sample Size Calculations: Practical Methods for Engineers and Scientists*](/pages/SampleSizeBook.md).  
+**Textbook:** [Paul Mathews, *Sample Size Calculations: Practical Methods for Engineers and Scientists*]({% link pages/SampleSizeBook.md %}).  
 
 Contact Hours: 8 hours (without homework) to 20 hours (with homework)  
 
@@ -32,6 +32,6 @@ Contact Hours: 8 hours (without homework) to 20 hours (with homework)
 week. This gives students time to read and study the methods of the week, to complete homework assignments, to consider 
 personal applications of the methods, and to practice solving problems with the software of their choice.
 
-[Return to MM&B Courses](/pages/Courses.md)  
+[Return to MM&B Courses]({% link pages/Courses.md %})  
   
-[Return to MM&B Home Page](/index.md)
+[Return to MM&B Home Page]({% link index.md %})
