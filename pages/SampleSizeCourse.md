@@ -26,9 +26,9 @@ of these methods in quality and process improvement activities.
   
 **Textbook:** [Paul Mathews, *Sample Size Calculations: Practical Methods for Engineers and Scientists*]({% link pages/SampleSizeBook.md %}). 
 
-[**Solutions to the Example Problems**]({% link pages/SampleSizeExampleSolutions.pdf %})  
+[**Solutions to the Example Problems**]({% link assets/SampleSize/SampleSizeExampleSolutions.pdf %})  
 
-[**Presentation Notes**]({% link pages/SampleSizeAndPower20230106.pdf %})
+[**Presentation Notes**]({% link assets/SampleSize/SampleSizeAndPower20230106.pdf %})
 
 **Contact Hours:** 8 hours (without homework) to 20 hours (with homework)  
 
