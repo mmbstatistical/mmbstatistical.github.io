@@ -18,20 +18,20 @@ materials and we also let customers pick from the list to design their own custo
 be covered in a 1.0-1.5 hour session which includes time to work through the example problems and for discussion.  
   
 
-* [Tukey's Quick Test]({% link "/assets/QualityTools/Tukey's Quick Test.pdf"%})
-* [Boxplot Slippage Tests]({% link "/assets/QualityTools/Boxplot Slippage Tests.pdf"%})
+* [Tukey's Quick Test]({% link assets/QualityTools/Tukey's Quick Test.pdf %})
+* [Boxplot Slippage Tests]({% link assets/QualityTools/Boxplot Slippage Tests.pdf %})
 * The Two Independent Sample t Test
-* [Runs Test for Randomness]({% link "/assets/QualityTools/Runs Test for Randomness.pdf"%})
+* [Runs Test for Randomness]({% link assets/QualityTools/Runs Test for Randomness.pdf %})
 * Fisher's Exact Test
 * McNemar's Test
-* [Process Precontrol]({% link "/assets/QualityTools/ProcessPrecontrol.pdf"%})
+* [Process Precontrol]({% link assets/QualityTools/ProcessPrecontrol.pdf %})
 * The Bland-Altman Method
 * Gage Error Long Studies
 * Gage Error Short Studies
-* [Design of Single Sampling Plans for Defectives]({% link "/assets/QualityTools/Design of Single Sampling Plans for Defectives.pdf"%})
+* [Design of Single Sampling Plans for Defectives]({% link assets/QualityTools/Design of Single Sampling Plans for Defectives.pdf %})
 * Analysis of Means (ANOM)
-* [Normal Probability Plots]({% link "/assets/QualityTools/Normal Probability Plots.pdf"%})
-* [Variable Transforms]({% link "/assets/QualityTools/Variable Transforms.pdf"%})
+* [Normal Probability Plots]({% link assets/QualityTools/Normal Probability Plots.pdf %})
+* [Variable Transforms]({% link assets/QualityTools/Variable Transforms.pdf %})
 * Circular Normal Distribution
 * Taguchi's Loss Function
 * The Blake and Mouton Managerial Grid
@@ -40,7 +40,7 @@ be covered in a 1.0-1.5 hour session which includes time to work through the exa
 * Control Charts for Defects
 * Control Charts for Measurement Data
 * Sample Size Calculations for Zero Defects Sampling Plans
-* [Chebyshev's Theorem]({% link "/assets/QualityTools/Chebyshev's Theorem.pdf"%})
+* [Chebyshev's Theorem]({% link assets/QualityTools/Chebyshev's Theorem.pdf %})
 * Confidence Intervals for cp and cpk
 * Minitab Exec Macros
 * SPC Audit Checklist
