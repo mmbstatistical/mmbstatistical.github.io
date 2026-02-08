@@ -31,7 +31,7 @@ be covered in a 1.0-1.5 hour session which includes time to work through the exa
 * [Design of Single Sampling Plans for Defectives]({% link assets/QualityTools/Design of Single Sampling Plans for Defectives.pdf %})
 * Analysis of Means (ANOM)
 * [Normal Probability Plots]({% link assets/QualityTools/Normal Probability Plots.pdf %})
-* [Variable Transforms]({% link assets/QualityTools/Variable Transforms.pdf %})
+* [Variable Transforms]({% link assets/QualityTools/Variable Transformations.pdf %})
 * Circular Normal Distribution
 * Taguchi's Loss Function
 * The Blake and Mouton Managerial Grid
