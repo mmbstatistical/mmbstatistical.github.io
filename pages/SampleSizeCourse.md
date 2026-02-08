@@ -4,8 +4,6 @@ nav_exclude: true
 ---
 
 
-
-
 **Course Description:** As companies have discovered the value of data-based decision making methods during their adoption 
 of Six Sigma and Lean, they've become more conscious of the need to balance the costs associated with taking too much data 
 with the risks associated with taking too few. The purpose of this course is to teach students how to right-size their data collection activities.  

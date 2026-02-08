@@ -1,7 +1,6 @@
 ---
 title: MINITAB Macros
 nav_exclude: true
-layout: default
 ---
 
 
@@ -80,7 +79,7 @@ MINITAB also maintains an extensive macro library *[here](https://support.minita
 <br/> <br/>    
 
   
-## Sample Size and Power Calculations {sSampleSize}
+## Sample Size and Power Calculations {#samplesize}
 * [Power.mac](/assets/MINITAB/Macros/Power.mac) - Calculates the power for the balanced fixed-effects full factorial design with optional graphs. This macro's capabilities are duplicated in **Stat> Power and Sample Size> General Full Factorial Design**; however, the macro is more flexible in its use.
 * [OneSidedUpperCIforProportionSampleSize.mac](/assets/MINITAB/Macros/OneSidedUpperCIforProportionSampleSize.mac) - Calculates the sample size required to demonstrate that a proportion is less than a specified upper limit with specified confidence level.
 * Power for Fisher's Exact Test:  

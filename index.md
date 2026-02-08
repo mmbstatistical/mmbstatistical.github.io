@@ -4,9 +4,7 @@ nav_exclude: true
 ---
 
 <!--- https://github.com/mmbstatistical/mmbstatistical.github.io --->
-<!--- 
-Jekyll renders this page
---->
+<!--- Jekyll renders this page --->
 
 
 **Upcoming Events:**

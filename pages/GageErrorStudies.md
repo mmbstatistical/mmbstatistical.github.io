@@ -1,7 +1,6 @@
 ---
 title: Measurement Systems Analysis and Gage R&R Studies
 nav_exclude: true
-layout: default
 ---
 
 

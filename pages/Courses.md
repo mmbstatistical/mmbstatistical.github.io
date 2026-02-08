@@ -1,9 +1,7 @@
 ---
 title: Courses
 nav_exclude: true
-layout: default
 ---
-
 
   
 Note: All courses can be modified in duration, format, and content to satisfy a customer's specific training requirements. The details below reflect the most common and successful course designs.The prices shown are for a class (i.e. not per student) of up to 15 students.  

@@ -1,7 +1,6 @@
 ---
 title: Quality Engineering Statistics
 nav_exclude: true
-layout: default
 ---
 
 

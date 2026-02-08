@@ -1,7 +1,6 @@
 ---
 title: Links
 nav_exclude: true
-layout: default
 ---
 
 
@@ -11,6 +10,7 @@ layout: default
 <ul>
   <li><a href="#orgs">Technical Organizations</a></li>
   <li><a href="#refs">References</a></li>
+  <li><a href="#stats">Statistics Software</a></li>
   <li><a href="#stem">STEM</a></li>
   <li><a href="#makers">Makers</a></li>
   <li><a href="#cle">Cleveland</a></li>
@@ -20,6 +20,7 @@ layout: default
   <li><a href="#stations">Weather Stations</a></li>
 </ul>
 </div>
+
   
 ## Technical Organizations {#orgs}
 *   [American Society for Quality (ASQ)](http://www.asq.org)

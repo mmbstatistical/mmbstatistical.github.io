@@ -1,7 +1,6 @@
 ---
 title: Introduction to Statistical Process Control
 nav_exclude: true
-layout: default
 ---
 
 

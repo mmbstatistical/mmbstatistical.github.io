@@ -1,10 +1,8 @@
 ---
 title: Quality Tools of the Trade
 nav_exclude: true
-layout: default
 ---
-
-  
+ 
   
 In the early 1980s, Carl Mentch at GE Lighting in Cleveland wrote a series of short documents describing fundamental statistical 
 methods that he called Quality Tools of the Trade. These wonderful documents included: a short explanation of the method, data 
