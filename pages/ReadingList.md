@@ -87,6 +87,8 @@ nav_exclude: true
 * **Wulf, The Invention of Nature: Alexander von Humboldt's New World**
 * **Kanigel, The Man Who Knew Infinity: A Life of the Genius Ramanujan**
 * **Shetterly, Hidden Figures: The True Story of Four Black Women and the Space Race**
+* **Oresekes and Conway, Marchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming**
+* **Specter, Denialism: How Irrational Thinking Hinders Scientific Progress, Harms the Planet, and Threatens Our Lives**
 * **Darwin, Voyage of the Beagle**
 * **Bird and Sherwin, American Prometheus:The Triumph and Tragedy of J. Robert Oppenheimer**
 * **Costa, Radical by Nature: The Revolutionary Life of Alfred Russel Wallace**
@@ -122,21 +124,21 @@ nav_exclude: true
 * **Rich, Skunk Works**  
 * **Pohl, Chernobyl**  
 * **Norman, Design of Everyday Things**
-* * Crichton, Airframe
-* * Goldratt, The Goal
-* * Boyett et al, The Quality Journey
+* Crichton, Airframe
+* Goldratt, The Goal
+* Boyett et al, The Quality Journey
 <br/> <br/> 
   
   
   
 ## Math and Graphics {#math}
-* Peterson, The Jungles of Randomness
-* Casti, Searching for Certainty
+* **Salsburg, The Lady Tasting Tea: How Statistics Revolutionized Science in the Twentieth Century**
 * **Tufte, The Visual Display of Quantitative Information**
 * **Tung, Topics in Mathematical Modeling**
-* **Hoffman, The Man Who Loved Only Numbers**
-* Strogatz, The Joy of X  
 * **Silver, The Signal and The Noise**  
+* Strogatz, The Joy of X 
+* Peterson, The Jungles of Randomness
+* Casti, Searching for Certainty
 <br/> <br/> 
   
   
