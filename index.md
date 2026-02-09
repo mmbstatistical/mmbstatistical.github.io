@@ -41,5 +41,7 @@ nav_exclude: true
 <br/> <br/>
 
 **[Links]({% link pages/Links.md %}):** To on-line quality engineering and applied statistics resources, ...
+<br/> <br/>
+
 
 

@@ -104,12 +104,17 @@ nav_exclude: true
 * [Science News](http://www.sciencenews.org/)
 * [ScienceBlogs.com](http://scienceblogs.com/)
 * [Quanta Magazine](https://www.quantamagazine.org/)  
+* Kalman Filter
+    * [Labbe, Kalman and Bayesian Filters in Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python)
+    * [Labbe, FilterPy Library](https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html)
+    * [Kalman Filter Tutorial](https://kalmanfilter.net/)
+    * [Cookie Robotics](https://cookierobotics.com/)
 <br> <br>     
 
   
 ## Makers {#makers}  
 * Magazines
-    * [Hackaday](http://hackaday.com/)
+    * [**Hackaday**](http://hackaday.com/)
     * [Make:](http://makezine.com/) 
     * [Instructables](http://www.instructables.com)
     * [The Kids Should See This](https://thekidshouldseethis.com/)

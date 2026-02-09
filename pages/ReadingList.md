@@ -107,6 +107,9 @@ nav_exclude: true
 * **Bryson, A Short History of Nearly Everything** 
 * **Chevalier, Remarkable Creatures**
 * **McGrayne, The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy**
+* **Gleick, The Information: A History, a Theory, a Flood**
+* **Gleick, Chaos: Making a New Science**
+* **Lewis, The Undoing Project: A Friendship That Changed Our Minds** 
 <br/> <br/> 
 
   
