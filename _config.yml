@@ -5,18 +5,6 @@ author:
     name: Mathews Malnar and Bailey, Inc.
 url: https://mmbstatistical.github.io/
 
-# theme: minima
-# minima:
-#    skin: dark
-
-
-# theme: jekyll-theme-cayman
-# markdown: kramdown
-# kramdown:
-#   math_engine: mathjax
-# markdown: GFM         # Garbles the table in index.md
-
-
 # Build settings came from https://github.com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml
 remote_theme: jekyll/minima@3cdd14d
 plugins:
@@ -29,21 +17,12 @@ minima:
 # Build settings
 markdown: kramdown
 
-# header_pages: null        # This line (with null or not) will cause links to each page to be included in the header.
-# Must be commented out to permit yaml nav_exclude: true to work.
+# header_pages: null
+# This line (with null or not) will cause links to each page to be included in the header.
+# Must be commented out to permit yaml nav_exclude: true to work (in yaml header of each page)
 # Also had to add header class in _includes/header.html
 
 # Required (maybe) to prevent GitHub Pages from loading jekyll-theme-primer
 sass:
   sass_dir: assets
 
-# themes:
-# https://foolishgeneralist.com/p/a-little-help-with-github-pages-and
-
-# https://mantejjosan.github.io/math-made-easy/tut/
-
-# https://github:com/PrasannaMaddila/prasannamaddila.github.io/blob/main/_config.yml
-# Nice web page and has some useful items, including very nice math
-
-# Index of yaml settings:
-# https://github.com/boolyes1/boolyes1.github.io/blob/master/_config.yml

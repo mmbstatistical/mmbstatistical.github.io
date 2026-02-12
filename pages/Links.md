@@ -15,6 +15,7 @@ nav_exclude: true
   <li><a href="#makers">Makers</a></li>
   <li><a href="#cle">Cleveland</a></li>
   <li><a href="#news">News</a></li>
+  <li><a href="#clenews">Cleveland News</a></li>
   <li><a href="#other">Other</a></li> 
   <li><a href="#weather">Weather</a></li>
   <li><a href="#stations">Weather Stations</a></li>
@@ -23,17 +24,19 @@ nav_exclude: true
 
   
 ## Technical Organizations {#orgs}
-*   [American Society for Quality (ASQ)](http://www.asq.org)
-*   [ASQ - Cleveland Section (800)](http://www.asqcleveland.org/)    
-*   [ASQ - Akron-Canton Section (810)](http://asq810.org/)  
-*   [ASQ - Youngstown-Warren (805)](http://www.asqyw.org)
-*   [ASQ - Erie PA (809)](http://asq0809.weebly.com/)  
+* [Quality Managers Network]({% link pages/QMN.md %})  
+* [Quality Engineers Network]({% link pages/QEN.md %}) 
+* [American Society for Quality (ASQ)](http://www.asq.org)
+    *   [ASQ - Cleveland Section (800)](http://www.asqcleveland.org/)    
+    *   [ASQ - Akron-Canton Section (810)](http://asq810.org/)  
+    *   [ASQ - Youngstown-Warren (805)](http://www.asqyw.org)
+    *   [ASQ - Erie PA (809)](http://asq0809.weebly.com/)  
 *   [American Statistical Association (ASA)](http://www.amstat.org/)
-*   [ASA - AmStat News](http://magazine.amstat.org/)
-*   [ASA/RSS Significance (web site and magazine)](https://www.significancemagazine.com/)     
-*   [ASA - Cleveland Chapter](https://sites.google.com/view/cleveland-asa)
-*   [ASA - Columbus Chapter](https://sites.google.com/view/cbus-asa/home)  
-*   [ASA Consulting Section Newsletter](http://www.amstat.org/sections/cnsl/newsletter.cfm)    
+    *   [ASA - AmStat News](http://magazine.amstat.org/)
+    *   [ASA/RSS Significance (web site and magazine)](https://www.significancemagazine.com/)     
+    *   [ASA - Cleveland Chapter](https://sites.google.com/view/cleveland-asa)
+    *   [ASA - Columbus Chapter](https://sites.google.com/view/cbus-asa/home)  
+    *   [ASA Consulting Section Newsletter](http://www.amstat.org/sections/cnsl/newsletter.cfm)    
 <br> <br>     
 
   
@@ -81,10 +84,11 @@ nav_exclude: true
     * [R Studio](https://posit.co/)
     * [simpleR - John Verzani's on-line R reference](https://faculty.washington.edu/fscholz/DATAFILES498B2008/Verzani-SimpleR.pdf)
     * [R Graphics by Paul Murrell](http://www.stat.auckland.ac.nz/%7Epaul/RGraphics/rgraphics.html)
-* R Front Ends (Custom GUI using R for analysis)
+* R Front Ends (Custom GUIs using R for analysis)
     * [Blue Sky Statistics](https://www.blueskystatistics.com/)
     * [JASP](https://jasp-stats.org/)
     * [Jamovi](https://jamovi.org/)
+* [MacKichan Software, Inc.](http://www.mackichan.com/)
 <br> <br> 
 
 ## Science, Math, and Engineering Education {#stem}
@@ -137,7 +141,13 @@ nav_exclude: true
 ## Cleveland, Ohio {#cle}
 *   [West 78th Street Studios](http://www.78thstreetstudios.com/)
 *   [Screw Factory Artists](https://www.screwfactoryartists.org/)  
+*   [Cleveland Art Museum](https://www.clevelandart.org/)
+*   [Cleveland Arts](https://clevelandartsevents.com/)
+*   [Secret Cleveland](https://secretcleveland.co/culture/)
+*   [Ohio Festivals - Cleveland](https://ohiofestivals.net/ohio-festivals/cleveland-festivals/)
 *   [Great Lakes Science Center](http://www.greatscience.com/)
+*   [Cleveland Museum of Natural History](https://www.cmnh.org/)
+*   [Cleveland History Center](https://www.wrhs.org/plan-visit/places-to-visit/cleveland-history-center)
 *   [Rockefeller Park Greenhouse](https://www.facebook.com/RockefellerGreenhouse)  
 <br> <br>     
 
@@ -145,15 +155,24 @@ nav_exclude: true
 ## News Links {#news}
 *   [National Public Radio](http://www.npr.org/)
 *   [PBS](http://www.pbs.org/)
-*   [IdeaStream (WKSU and WVIZ)](https://www.ideastream.org/)
 *   [Reuters](https://www.reuters.com)
 *   [BBC](http://www.bbc.com/)
 *   [CBC](http://www.cbc.ca/news/)
 *   [DW](http://www.dw.com)
-*   [NPR's Science Friday](http://www.sciencefriday.com/)
-*   [APM Marketplace.org](http://www.marketplace.org)
-<br> <br>  
-  
+<br> <br> 
+
+
+## Cleveland News Links {#clenews}
+* [IdeaStream (WKSU and WVIZ)](https://www.ideastream.org/)
+* [Plain Dealer (cleveland.com)](https://www.cleveland.com/)
+* [Axios Cleveland](https://www.axios.com/local/cleveland)
+* [The Land](https://thelandcle.org)
+* [Cleveland Scene](https://www.clevescene.com/)
+* [Clevelandish](https://www.clevelandish.com)
+* [Channel 19 News](https://www.cleveland19.com/news/)
+* [reddit/Cleveland](https://www.reddit.com/r/Cleveland/)
+<br> <br>   
+
 
 ## Other Links (mostly so I can find them myself) {#other}
 *   [Fairport Harbor Public Library](http://www.fairportlibrary.com/default.htm)
@@ -162,7 +181,6 @@ nav_exclude: true
 *   [Grand River Yacht Club](https://grycohio.com/)  
 *   [Racing Rules of Sailing](http://www.racingrulesofsailing.org/)  
 *   [Dan Pfeiffer's home page](http://dan.pfeiffer.net/dhp.htm)
-*   [MacKichan Software, Inc. (Scientific Word)](http://www.mackichan.com/)
 <br> <br> 
   
 

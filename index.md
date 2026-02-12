@@ -19,7 +19,7 @@ nav_exclude: true
 <br/> <br/>
 
 **Textbooks:**
-* [**Design of Experiments with MINITAB**]({% link pages/DOEwithMINITAB.md %})
+* [**Design of Experiments with MINITAB**]({% link pages/DOEwithMINITABBook.md %})
 * [**Sample Size Calculations: Practical Methods for Engineers and Scientists**]({% link pages/SampleSizeBook.md %})
 <br/> <br/>
 
