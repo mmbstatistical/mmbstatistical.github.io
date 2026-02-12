@@ -151,7 +151,7 @@ nav_exclude: true
 * Hicks, Introduction to Design of Experiments
 * Neter, Kutner, Nachtsheim, and Wasserman, Applied Linear Statistical Models
 * **Bhote and Bhote, World Class Quality: Using Design of Experiments to Make It Happen**  
-* [Mathews, Design of Experiments with MINITAB]({% link pages/DOEwithMINITAB.md %})
+* [Mathews, Design of Experiments with MINITAB]({% link pages/DOEwithMINITABBook.md %})
 <br/> <br/> 
   
 [Return to MM&B Inc. Home Page]({% link index.md %})

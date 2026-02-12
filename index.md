@@ -43,5 +43,6 @@ nav_exclude: true
 **[Links]({% link pages/Links.md %}):** To on-line quality engineering and applied statistics resources, ...
 <br/> <br/>
 
+**[Contact MM&B Inc.]({% link pages/ContactUs.html %})
 
 
