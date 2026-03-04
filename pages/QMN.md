@@ -23,10 +23,12 @@ statistics and quality engineering knowledge. It was really good to catch up
 with him and we had fun comparing notes. One of the topics that came up is 
 how we handle Deming's Theory of Profound Knowledge (ToPK) in class. Deming's 
 ToPK has four components:
+
 1. System thinking
 2. Knowledge of variation
 3. Theory of knowledge
 4. Psychology  
+
 During our conversation Dan mentioned that he explicitly introduces the 
 ToPK in his courses whereas I routinely invoke the components but haven't 
 been presenting them together like this and now I think that's a mistake. 
