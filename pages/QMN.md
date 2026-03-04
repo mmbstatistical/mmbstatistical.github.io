@@ -26,7 +26,7 @@ ToPK has four components:
 1. System thinking
 2. Knowledge of variation
 3. Theory of knowledge
-4. Psychology
+4. Psychology  
 During our conversation Dan mentioned that he explicitly introduces the 
 ToPK in his courses whereas I routinely invoke the components but haven't 
 been presenting them together like this and now I think that's a mistake. 
