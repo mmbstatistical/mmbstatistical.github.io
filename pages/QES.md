@@ -36,9 +36,7 @@ Upon completion of this course students should be able to:
 * Estimate product reliability from experimental data using the exponential, normal, and Weibull models.
 
 **Downloads:**
-* {% include download.html file="assets/QES/Quality_Engineering_Statistics_20250414.pdf" text="QES Course Notes" %}
-* {% include download.html file="assets/QES/QES_Appendix_A_Statistical_Procedures.zip" text="QES Appendix A" %}
-* {% include download.html file="assets/QES/QES_Appendix_B_Statistical_Tables.zip" text="QES Appendix B" %}
+{% include download.html file="assets/QES/QESCourseMaterials.zip" text="QES Course Materials" %}
 
 <br/> <br/>
 
