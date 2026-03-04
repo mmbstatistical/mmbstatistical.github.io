@@ -17,6 +17,27 @@ your participation.
 <br> <br>  
 
 ## Meeting Abstracts  
+#### Deming's Theory of Profound Knowledge, 6 March 2026, 7:30-9:00AM by Zoom
+I recently had lunch with my old GE friend Dan S. who taught me much of my 
+statistics and quality engineering knowledge. It was really good to catch up 
+with him and we had fun comparing notes. One of the topics that came up is 
+how we handle Deming's Theory of Profound Knowledge (ToPK) in class. Deming's 
+ToPK has four components:
+1. System thinking
+2. Knowledge of variation
+3. Theory of knowledge
+4. Psychology
+During our conversation Dan mentioned that he explicitly introduces the 
+ToPK in his courses whereas I routinely invoke the components but haven't 
+been presenting them together like this and now I think that's a mistake. 
+After talking to Dan, I dredged up my old ToPK notes (just a few pages), 
+put them back into my course materials, and now find myself referencing 
+students back to them all of the time. Let's use this month's QMN meeting 
+to review the four components of the ToPK and the benefits of keeping them 
+grouped together. I have some good examples to stoke the discussion and 
+I'd like to make a case to add a fifth component, Communication, to Deming's 
+list.
+
 #### The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom    
 I was helping Matt B and his team interpret the results from a
 rather complex experiment this week. During that discussion, we
@@ -50,7 +71,8 @@ confirmed the t test results, so that's what we reported.
 We can press the issue further though. When we run a gage R&R
 study, the number-of-distinct-categories (NDC) statistic has a
 minimum acceptance value of 5, which matches the situation in my
-customer's data set. Maybe that's sufficient for a t test? But what
+customer's data set. Process pre-control also uses five bins for two-sided
+specifications. Maybe five bins is sufficient for a t test? But what
 happens if the resolution is worse; that the data falls into four or
 three or even just two bins? And how does the statistical power of
 the test methods vary across this range of measurement resolutions,
@@ -71,6 +93,7 @@ methods:
 * Ordinal regression
 * Jittering measurements
 * Number of distinct categories (NDC)
+* Process pre-control
 <br> <br>
 
 #### MINITAB Macros, 5 December 2025, 7:30-9:00AM by Zoom    

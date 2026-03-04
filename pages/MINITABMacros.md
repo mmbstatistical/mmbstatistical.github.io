@@ -21,14 +21,17 @@ nav_exclude: true
 This page provides links to text files containing MINITAB macros. Open the files in NotePad or NotePad++ to see the code,
 a description of the macro, and an example calling statement.  
   
-The macros are of both LOCAL (.mac) and EXEC (.mtb) types. Copy them to the MINITAB macros folder on your hard drive.
+The macros are of both LOCAL (`.mac`) and EXEC (`.mtb`) types. Copy them to the MINITAB macros folder on your hard drive.
 If you don't already have a macros folder, I recommend that you create a folder like *C:/Documents/MINITAB/Macros/Macros V22/*
 so that 1) your macros get backed up when you back up the rest of your data and 2) so that you can update your macros for different versions of MINITAB.  
   
-Run EXEC macros from the **File> Run an EXEC** menu or from the command prompt.  
+Run EXEC (`.mtb`) macros from the **File> Run an EXEC** menu or from the command prompt, such as   
+`exec 1 sim5`  
   
-Run LOCAL macros from the command prompt. Make sure that MINITAB is looking for macros in the correct folder as specified
-in **Tools> Options> General> Macro Location**. All macros should run on MINITAB V18 unless specified otherwise. E-mail me 
+Run LOCAL (`.mac`) macros from the command prompt using the % operator. For example:  
+`%grrsim 10 3 2 c1 c2 c3`  
+Make sure that MINITAB is looking for macros in the correct folder as specified in
+**Tools> Options> General> Macro Location**. All macros should run on MINITAB V22 unless specified otherwise. E-mail me 
 if you find something that doesn't run.  
   
 Some of these macros are redundant to built-in commands in MINITAB; however, many of those were written before they were
@@ -72,8 +75,8 @@ MINITAB also maintains an extensive macro library *[here](https://support.minita
 * [FitFinder.mac](/assets/MINITAB/Macros/FitFinder.mac) - Creates a 6x6 matrix of scatterplots using common mathematical transformations applied to the x and y axes. The transformations used are: untransformed, square root, square, log, power, and reciprocal. Used to find transforms to x and/or y that linearize a nonlinear scatterplot when the first principles model is unknown.
 * [MakeCRD.mac](/assets/MINITAB/Macros/MakeCRD.mac) - Creates the worksheet for a completely randomized design with the specified number of factor levels and replicates. Runs one-way ANOVA on the random order to confirm if the randomization was effective.
 * [MakeRBD.mac](/assets/MINITAB/Macros/MakeRBD.mac) - Creates the worksheet for a randomized block design with the specified number of levels of the study variable and blocks.   
-* [Correlate.mac](/assets/MINITAB/Macros/Correlate.mac) - Creates the correlation matrix of all of the specified columns, their two-factor interactions, and quadratic terms for up to 12 variables. Used to validate an experiment design/run matrix or to determine the consequences when a design is compromised because of missing runs, extra runs, or just bad design.
-* [TwoSampleTestCorrelations.mac](/assets/MINITAB/Macros/TwoSampleTestCorrelations.mac) - Performs the two-correlations hypothesis test of H0: ρρ1 = ρ2 versus HA: ρ1 <> ρ2
+* [Correlate.mac](/assets/MINITAB/Macros/Correlate.mac) - Creates the correlation matrix of the specified columns, their two-factor interactions, and quadratic terms for up to 12 variables. Used to validate an experiment design/run matrix or to determine the consequences when a design is compromised because of missing runs, extra runs, or just bad design.
+* [TwoSampleTestCorrelations.mac](/assets/MINITAB/Macros/TwoSampleTestCorrelations.mac) - Performs the two-correlations hypothesis test of $H_0: ρ_1 = ρ_2$ versus $H_A: ρ_1 <> ρ_2$
 * [Fold.mac](/assets/MINITAB/Macros/Fold.mac) - Folds a two-level experiment design on all columns. Consider using **Stat> DOE> Modify Design** instead.
 * [RandomizeWithinBlocks.mac](/assets/MINITAB/Macros/RandomizeWithinBlocks.mac) - Creates a column for the random run order for runs within blocks.  
 <br/> <br/>    
@@ -86,7 +89,7 @@ MINITAB also maintains an extensive macro library *[here](https://support.minita
     * [FishersPower.mac](/assets/MINITAB/Macros/FishersPower.mac) - Calculates the power for Fisher's Exact Test using the one-sided test method.
     * [FishersPowerSlow.mac](/assets/MINITAB/Macros/FishersPowerSlow.mac) - Calculates the power for Fisher's Exact Test using the one-sided test method. Uses two different methods to complete the calculations - one fast but complicated and the other VERY slow but easier to understand. Study this macro to understand the calculations. Use FishersPower.mac to get the job done.
     * [FishersConditionalPower.mac](/assets/MINITAB/Macros/FishersConditionalPower.mac) - Calculates the power for Fisher's Exact Test (one-sided) and the conditional power given interim results.
-* [TwoSamplePoissonPower.mac](/assets/MINITAB/Macros/TwoSamplePoissonPower.mac) - Calculates the power for the two-sample Poisson count problem. Consider using or checking this macro's result with (V17) **Stat> Power and Sample Size> 2-Sample Poisson Rate**.
+* [TwoSamplePoissonPower.mac](/assets/MINITAB/Macros/TwoSamplePoissonPower.mac) - Calculates the power for the two-sample Poisson count problem. Consider using or checking this macro's result with (V22) **Stat> Power and Sample Size> 2-Sample Poisson Rate**.
 <br/> <br/>
   
   
@@ -94,7 +97,7 @@ MINITAB also maintains an extensive macro library *[here](https://support.minita
 * [GRRSim.mac](/assets/MINITAB/Macros/GRRSim.mac) - Creates simulated data for a gage error study using the common operator by part crossed design. The operator controls how many operators, parts, and trials are used and EV, AV, and PV values can be set with subcommands.
 * [PChartSim.mac](/assets/MINITAB/Macros/PChartSim.mac) - Creates simulated data for a P chart.
 * [UChartSim.mac](/assets/MINITAB/Macros/UChartSim.mac) - Creates simulated data for a U chart.   
-* [XbarChartSim.mac](/assets/MINITAB/Macros/XbarChartSim.mac) - Creates simulated data for an Xbar and R chart or process capability analysis using the one-way random effects model.
+* [XbarChartSim.mac](/assets/MINITAB/Macros/XbarChartSim.mac) - Creates simulated data for a Xbar and R chart or process capability analysis using the one-way random effects model.
 * [ProcessCapabilitySim.mtb](/assets/MINITAB/Macros/ProcessCapabilitySim.mtb) - Creates simulated data for a process capability analysis and runs the analyses. Could create similar data with the XbarChartSim.mac macro.
 * [Sim3.mtb](/assets/MINITAB/Macros/Sim3.mtb) - Creates simulated response data for a three variable experiment design, e.g. two-level factorial with or without centers and response surface designs.
 * [Sim5.mtb](/assets/MINITAB/Macros/Sim5.mtb) - Creates simulated response data for a five variable experiment design.

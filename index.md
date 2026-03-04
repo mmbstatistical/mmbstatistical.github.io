@@ -9,10 +9,10 @@ nav_exclude: true
 
 **Upcoming Events:**
 * [**Quality Managers Network:**]({% link pages/QMN.md %})  
-    * **The Joy of Little Experiments, 7:30-9:00AM, 13 February 2026, by Zoom.**  
+    * **Deming's Theory of Profound Knowledge, 7:30-9:00AM, 6 March 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**]({% link pages/QEN.md %})  
-    * **Topic TBD, 7:30-9:00AM, 6 2026, by Zoom.**
+    * **Topic TBD, 7:30-9:00AM, 13 March 2026, by Zoom.**
 <br/> <br/>
 
 **[What We Do]({% link pages/WhatWeDo.md %})**

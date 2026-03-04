@@ -122,6 +122,7 @@ nav_exclude: true
     * [Make:](http://makezine.com/) 
     * [Instructables](http://www.instructables.com)
     * [The Kids Should See This](https://thekidshouldseethis.com/)
+    * [Nuts and Volts](https://www.nutsvolts.com/)
 * Suppliers
     * [SparkFun](https://www.sparkfun.com)
     * [AdaFruit](https://www.adafruit.com/)
@@ -130,11 +131,12 @@ nav_exclude: true
     * [Pololu](https://www.pololu.com)
     * [DigiKey](https://www.digikey.com)
     * [Mouser](https://www.mouser.com)
+    * [HGR Surplus](https://hgrinc.com/)
 * Maker Spaces (Cleveland area) 
     * [Sears think[box]](https://case.edu/thinkbox/)
     * [Madison Public Library CreateSpace](https://www.madison-library.info/createspace/)
-    * [Ingenuity Cleveland](http://ingenuitycleveland.com/)
-    * [Hamilton Collaborative](http://ingenuitycleveland.com/hamilton-collaborative/)  
+    * [Cleveland Public Library Makerspace](https://cpl.org/service/makerspace/)
+    * [Ingenuity Cleveland](https://ingenuitycleveland.org/) 
 <br> <br>
   
 
