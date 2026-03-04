@@ -1,0 +1,6 @@
+
+<!--- See download links in QES.md for example usage --->
+
+<a href="{{ include.file | relative_url }}" download>
+⬇ {{ include.text | default: include.file | split:'/' | last }}
+</a>

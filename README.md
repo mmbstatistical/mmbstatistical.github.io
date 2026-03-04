@@ -1,7 +1,7 @@
 
 
-**Repository:** https://github.com/mmbstatistical/mmbstatistical.github.io/
-**Live site:** https://mmbstatistical.github.io/
+**Repository:** https://github.com/mmbstatistical/mmbstatistical.github.io/  
+**Live site:** https://mmbstatistical.github.io/  
 * This repository contains the source for the GitHub Pages website.
 * www.mmbstatistical.com forwards to https://mmbstatistical.github.io/.
 

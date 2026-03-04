@@ -35,7 +35,14 @@ Upon completion of this course students should be able to:
 * Calculate sample sizes for hypothesis tests and confidence intervals for measuring means, standard deviations, and fractions defective.
 * Estimate product reliability from experimental data using the exponential, normal, and Weibull models.
 
-  
+**Downloads:**
+* {% include download.html file="assets/QES/Quality_Engineering_Statistics_20250414.pdf" text="QES Course Notes" %}
+* {% include download.html file="assets/QES/QES_Appendix_A_Statistical_Procedures.zip" text="QES Appendix A" %}
+* {% include download.html file="assets/QES/QES_Appendix_B_Statistical_Tables.zip" text="QES Appendix B" %}
+
+<br/> <br/>
+
+
 [Return to MM&B Courses]({% link pages/Courses.md %})  
   
 [Return to MM&B Home Page]({% link index.md %})
