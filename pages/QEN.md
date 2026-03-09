@@ -19,6 +19,22 @@ your participation.
 <br>
 
 ## Meeting Abstracts
+
+#### What We Saw at Science Fair, 13 March 2026, 7:30-9:00AM by Zoom  
+I (and Paul Pastor) am volunteering again next Tuesday (March 10th) to judge at the Northeastern Ohio Science and 
+Engineering Fair for American Statistical Association (ASA). This year the event is being held at Lakeland Community 
+College which is home ground. The fair draws approximately 600 winners from grades 9-12 from each school in the region. 
+In addition to regular judging, ASA and other technical societies participate and give out their own special 
+awards - often cash. ASA judges specifically for statistical content which can be hard to find. It's still great fun 
+for the judges and good experience for the students. At this QEN meeting I (and hopefully Paul) will explain how the 
+process works and report back on what we saw.
+
+There are always some good projects, and some amazing ones, but I still joke about giving out awards for the 
+"least-worst" projects because most of our winners have committed some serious statistical sins. It just feels somewhat 
+counterproductive to me, that we award students for doing sketchy statistical work and and then send them home believing 
+that they did good science when we've really just given them an early start in the line to statistics hell. 
+
+
 #### Free Software!, 12 December 2025, 7:30-9:00AM by Zoom  
 Everyone loves free stuff! We haven't done this topic in over five
 years and some things have changed, so let's take it on again. And
