@@ -12,7 +12,7 @@ nav_exclude: true
     * **Deming's Theory of Profound Knowledge, 7:30-9:00AM, 6 March 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**]({% link pages/QEN.md %})  
-    * **Topic TBD, 7:30-9:00AM, 13 March 2026, by Zoom.**
+    * **What We Saw at Science Fair, 7:30-9:00AM, 13 March 2026, by Zoom.**
 <br/> <br/>
 
 **[What We Do]({% link pages/WhatWeDo.md %})**
