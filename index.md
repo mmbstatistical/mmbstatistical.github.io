@@ -9,10 +9,10 @@ nav_exclude: true
 
 **Upcoming Events:**
 * [**Quality Managers Network:**]({% link pages/QMN.md %})  
-    * **Deming's Theory of Profound Knowledge, 7:30-9:00AM, 6 March 2026, by Zoom.**  
+    * **A Physics Story: Lab Data Meets Statistical Theory, 7:30-9:00AM, 3 April 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**]({% link pages/QEN.md %})  
-    * **What We Saw at Science Fair, 7:30-9:00AM, 13 March 2026, by Zoom.**
+    * **TBD, 7:30-9:00AM, 10 April 2026, by Zoom.**
 <br/> <br/>
 
 **[What We Do]({% link pages/WhatWeDo.md %})**

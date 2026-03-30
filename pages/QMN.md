@@ -16,7 +16,40 @@ list against the attendance records and send you a letter confirming
 your participation. 
 <br> <br>  
 
-## Meeting Abstracts  
+## Meeting Abstracts
+#### A Physics Story: Lab Data Meets Statistical Theory, 3 April 2026, 7:30-9:00AM by Zoom  
+When I was in college they told us a joke. If you fall asleep in class and wake up in a lab but aren't sure which lab 
+you're in, there's a way to tell: If it moves it's biology, if it stinks it's chemistry, and if it doesn't work it's 
+physics. This is one of the few lab stories where physics actually works.
+
+During our discussion of Deming's Theory of Profound Knowledge at last month's QMN meeting I mentioned an interesting 
+experiment we performed long ago at GE. The experiment involved measuring the breakdown time distribution of arc lamps 
+(aka light bulbs) as a function of voltage. These were very tedious measurements, with three days of cool-down time 
+between measurements to get each new data point, so we built an automated test rack that we just parked in a corner of 
+the lab and let it take data. As we collected more and more data, something weird struck me about the distribution of 
+breakdown times: The mean breakdown time varied over many orders of magnitude, from tens of milliseconds to many hours, 
+but the standard deviation of the log-transformed breakdown times was a constant. I'd seen lamp responses produce 
+homogeneous noise across a wide range of values before, but that always happened within a lamp or lamp type. In this 
+breakdown time study all lamps and all lamp types had the exact same standard deviation of breakdown time - it was a 
+pure number that I could estimate with a pretty tight confidence interval. I couldn't find anything in the literature 
+so I dug in and approached the problem from first principles. The math was scary, but in the end I confirmed that the 
+breakdown distribution (on a log scale) did indeed have a constant standard deviation (sigma = 1.28) and it matched the 
+value that we were measuring in the lab! This finding had a huge impact on our lab work because after we knew the 
+standard deviation of the distribution we only had to take a few measurements on each lamp to estimate the mean.
+
+In the process of writing up this result to publish, I happened to talk to my friend/mentor Dan Sommers who listened to 
+my story and then handed me a copy of Wayne Nelson's brilliant book *Applied Life Data Analysis*. There, in the bowels of 
+the book, I found the chapter on extreme value distributions and the specific case of the least significant value 
+distribution which matched what we'd found. If we'd talked to Dan earlier, or if one of us had known about the Nelson 
+book, we'd have saved ourselves a lot of time and effort. In the end, the company decided against publishing our findings 
+because we had competitors working on similar products and we didn't want to tip them off to something that would save 
+them time and let them move on on other problems.
+
+In addition to some fascinating statistical issues (exponential distribution, Poisson distribution, log transforms, and 
+extreme value distributions), this discussion will include some equally fascinating physics including electrical 
+breakdown of gases, cosmic rays, cloud chambers, residual ionization, and metastable atomic states. 
+<br> <br> 
+
 #### Deming's Theory of Profound Knowledge, 6 March 2026, 7:30-9:00AM by Zoom
 I recently had lunch with my old GE friend Dan S. who taught me much of my 
 statistics and quality engineering knowledge. It was really good to catch up 
@@ -39,6 +72,7 @@ to review the four components of the ToPK and the benefits of keeping them
 grouped together. I have some good examples to stoke the discussion and 
 I'd like to make a case to add a fifth component, Communication, to Deming's 
 list.
+<br/> <br/>
 
 #### The Joy of Little Experiments, 6 February 2026, 7:30-9:00AM by Zoom    
 I was helping Matt B and his team interpret the results from a
