@@ -9,10 +9,10 @@ nav_exclude: true
 
 **Upcoming Events:**
 * [**Quality Managers Network:**]({% link pages/QMN.md %})  
-    * **A Physics Story: Lab Data Meets Statistical Theory, 7:30-9:00AM, 3 April 2026, by Zoom.**  
+    * **Building a Designed Experiment with a Reliability/Survival Response, 7:30-9:00AM, 8 May 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**]({% link pages/QEN.md %})  
-    * **TBD, 7:30-9:00AM, 10 April 2026, by Zoom.**
+    * **TBD, 7:30-9:00AM, 12 June 2026, by Zoom.**
 <br/> <br/>
 
 **[What We Do]({% link pages/WhatWeDo.md %})**

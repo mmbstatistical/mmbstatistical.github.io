@@ -17,6 +17,16 @@ your participation.
 <br> <br>  
 
 ## Meeting Abstracts
+#### Building a Designed Experiment with a Reliability/Survival Response, 8 May 2026, 7:30-9:00AM by Zoom 
+When we learn designed experiments, we do so under the assumptions that the error/noise is homoscedastic and normally 
+distributed. There's an additional unspoken assumption that we will have complete data, that is, that there won't be 
+any missing observations due to the kinds of censoring that we find in reliability/survival problems. Reliability also 
+comes with other probability distributions like Weibull, exponential, lognormal, etc. So what do we do if we have to 
+build a designed experiment, even simple ones like a two-sample, one-way or multi-way classification design, or a 
+two-level factorial design, when the response is expected to be other-than-normal and/or have censored observations? 
+We'll take a look at this family of experiment designs at this month's QMN meeting.
+<br> <br> 
+
 #### A Physics Story: Lab Data Meets Statistical Theory, 3 April 2026, 7:30-9:00AM by Zoom  
 When I was in college they told us a joke. If you fall asleep in class and wake up in a lab but aren't sure which lab 
 you're in, there's a way to tell: If it moves it's biology, if it stinks it's chemistry, and if it doesn't work it's 
