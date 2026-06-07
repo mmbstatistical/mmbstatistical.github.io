@@ -9,7 +9,7 @@ nav_exclude: true
 
 **Upcoming Events:**
 * [**Quality Managers Network:**]({% link pages/QMN.md %})  
-    * **Building a Designed Experiment with a Reliability/Survival Response, 7:30-9:00AM, 8 May 2026, by Zoom.**  
+    * **Variables Sampling Plans, Normal Tolerance Intervals, and Process Capability, 7:30-9:00AM, 5 JUne 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**]({% link pages/QEN.md %})  
     * **TBD, 7:30-9:00AM, 12 June 2026, by Zoom.**

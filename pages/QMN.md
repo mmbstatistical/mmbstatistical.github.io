@@ -17,6 +17,19 @@ your participation.
 <br> <br>  
 
 ## Meeting Abstracts
+#### Variables Sampling Plans, Normal Tolerance Intervals, and Process Capability, 5 June 2026, 7:30-9:00AM by Zoom
+The quality engineering community offers three methods for characterizing the defective rate of a process relative to 
+specification limits: variables sampling plans, normal tolerance intervals, and process capability. The three methods 
+are closely related - so much so that they were probably developed by different communities/practitioners who were not 
+communicating with each other to solve the exact same problem. At this month's QMN meeting we'll review the use of the 
+three methods, show that they solve the same problem, and that their sample size calculations match.
+
+Note: The default process capability metrics like Cp and Cpk are usually expressed as point estimates (bad practice) - 
+i.e. not in the form of a confidence interval or hypothesis test (good practice). Showing the  equivalence of the 
+process capability method to variables sampling plans and normal tolerance intervals requires the application of 
+confidence intervals and hypothesis tests to the process capability metrics.
+<br> <br> 
+
 #### Building a Designed Experiment with a Reliability/Survival Response, 8 May 2026, 7:30-9:00AM by Zoom 
 When we learn designed experiments, we do so under the assumptions that the error/noise is homoscedastic and normally 
 distributed. There's an additional unspoken assumption that we will have complete data, that is, that there won't be 
