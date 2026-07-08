@@ -17,6 +17,15 @@ your participation.
 <br> <br>  
 
 ## Meeting Abstracts
+
+#### Contradictory Results from Tolerance Interval and Process Capability Analyses?, 10 July 2026, 7:30-9:00AM by Zoom
+At last month's meeting we talked about the equivalence/interchangeability of the variables sampling plan, normal 
+tolerance interval, and process capability methods. The topic was instigated by a question from Scott H. who noticed 
+seemingly contradictory results from tolerance interval and process capability analyses. I think the dissonance comes 
+from our different sensitivities to the scales used to interpret results by the two methods. We'll talk about this issue 
+at this month's QMN meeting.
+<br> <br> 
+
 #### Variables Sampling Plans, Normal Tolerance Intervals, and Process Capability, 5 June 2026, 7:30-9:00AM by Zoom
 The quality engineering community offers three methods for characterizing the defective rate of a process relative to 
 specification limits: variables sampling plans, normal tolerance intervals, and process capability. The three methods 

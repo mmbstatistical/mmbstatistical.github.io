@@ -9,7 +9,7 @@ nav_exclude: true
 
 **Upcoming Events:**
 * [**Quality Managers Network:**]({% link pages/QMN.md %})  
-    * **Variables Sampling Plans, Normal Tolerance Intervals, and Process Capability, 7:30-9:00AM, 5 June 2026, by Zoom.**  
+    * **Contradictory Results from Tolerance Interval and Process Capability Analyses?, 7:30-9:00AM, 10 July 2026, by Zoom.**  
 
 * [**Quality Engineers Network:**]({% link pages/QEN.md %})  
     * **TBD, 7:30-9:00AM, 12 June 2026, by Zoom.**
