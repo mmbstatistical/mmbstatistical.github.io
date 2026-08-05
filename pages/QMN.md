@@ -18,7 +18,7 @@ your participation.
 
 ## Meeting Abstracts
 
-#### Contradictory Results from Tolerance Interval and Process Capability Analyses?, 10 July 2026, 7:30-9:00AM by Zoom
+#### Contradictory Results from Tolerance Interval and Process Capability Analyses?, 7 August 2026, 7:30-9:00AM by Zoom
 At last month's meeting we talked about the equivalence/interchangeability of the variables sampling plan, normal 
 tolerance interval, and process capability methods. The topic was instigated by a question from Scott H. who noticed 
 seemingly contradictory results from tolerance interval and process capability analyses. I think the dissonance comes 
